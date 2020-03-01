@@ -206,6 +206,44 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-684495-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-684495-5', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -639,6 +677,9 @@ https://forms.gle/8Q8GnSkWXjk9cXUa7
   
   
   
+  <span class="middot-divider"></span>
+  <a href="/post/research-steps-data-collection-via-survey/#disqus_thread"></a>
+  
 
   
   
@@ -725,6 +766,9 @@ https://forms.gle/8Q8GnSkWXjk9cXUa7
 
   
   
+  
+  <span class="middot-divider"></span>
+  <a href="/post/integrating-r-with-powerbi-desktop/#disqus_thread"></a>
   
 
   
@@ -818,6 +862,9 @@ Github needs no introduction. If you are unfamiliar with git, its a version cont
   
   
   
+  <span class="middot-divider"></span>
+  <a href="/post/frequently-used-git-commands/#disqus_thread"></a>
+  
 
   
   
@@ -908,6 +955,9 @@ Well, I wish I …
   
   
   
+  <span class="middot-divider"></span>
+  <a href="/post/to-the-aspiring-data-scientists/#disqus_thread"></a>
+  
 
   
   
@@ -996,6 +1046,9 @@ Well, I wish I …
 
   
   
+  
+  <span class="middot-divider"></span>
+  <a href="/post/statisticians-in-the-data-science-era/#disqus_thread"></a>
   
 
   
@@ -1091,6 +1144,9 @@ Employments …
   
   
   
+  <span class="middot-divider"></span>
+  <a href="/post/cv/#disqus_thread"></a>
+  
 
   
   
@@ -1175,6 +1231,9 @@ Employments …
 
   
   
+  
+  <span class="middot-divider"></span>
+  <a href="/post/collaborative-research-workflow/#disqus_thread"></a>
   
 
   
@@ -1285,6 +1344,8 @@ Employments …
     
 
     
+    
+    <script id="dsq-count-scr" src="https://eraheem.disqus.com/count.js" async></script>
     
 
     
