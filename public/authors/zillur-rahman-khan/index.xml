@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zillur Rahman Khan | Enayetur Raheem</title>
+    <link>/authors/zillur-rahman-khan/</link>
+      <atom:link href="/authors/zillur-rahman-khan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zillur Rahman Khan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Mon, 28 May 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Zillur Rahman Khan</title>
+      <link>/authors/zillur-rahman-khan/</link>
+    </image>
+    
+    <item>
+      <title>Managing autism spectrum disorder in developing countries by utilizing existing resources: A perspective from Bangladesh</title>
+      <link>/publication/managing-autism-developing-countries/</link>
+      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/managing-autism-developing-countries/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shameema Ferdous | Enayetur Raheem</title>
+    <link>/authors/shameema-ferdous/</link>
+      <atom:link href="/authors/shameema-ferdous/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shameema Ferdous</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Sat, 12 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Shameema Ferdous</title>
+      <link>/authors/shameema-ferdous/</link>
+    </image>
+    
+    <item>
+      <title>Is Childhood Overweight/Obesity Perceived as a Health Problem by Mothers of Preschool Aged Children in Bangladesh? A Community Level Cross-Sectional Study</title>
+      <link>/publication/perception_childhood_obesity_2019/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/perception_childhood_obesity_2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

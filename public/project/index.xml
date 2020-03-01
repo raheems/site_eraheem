@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Enayetur Raheem</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>বাংলায় R</title>
+      <link>/project/banglar/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/project/banglar/</guid>
+      <description>&lt;p&gt;বাংলা আর বই। গবেষণায় R এর কীভাবে ব্যবহার হয় তা নিয়ে এই বইটি লেখার পরিকল্পণা করছি। সব রকম আপডেট এখানে দেয়া হবে ইনশাল্লাহ।&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ফলিত পরিসংখ্যান ও ডেটা সায়েন্স</title>
+      <link>/project/asds/</link>
+      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/project/asds/</guid>
+      <description>&lt;p&gt;ফলিত পরিসংখ্যানের বাংলা বই লেখার কাজ চলছে। সব আপডেট এখানে দেয়া হবে।&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

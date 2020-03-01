@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>applied statistics | Enayetur Raheem</title>
+    <link>/tags/applied-statistics/</link>
+      <atom:link href="/tags/applied-statistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>applied statistics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Fri, 30 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>applied statistics</title>
+      <link>/tags/applied-statistics/</link>
+    </image>
+    
+    <item>
+      <title>ফলিত পরিসংখ্যান ও ডেটা সায়েন্স</title>
+      <link>/project/asds/</link>
+      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/project/asds/</guid>
+      <description>&lt;p&gt;ফলিত পরিসংখ্যানের বাংলা বই লেখার কাজ চলছে। সব আপডেট এখানে দেয়া হবে।&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

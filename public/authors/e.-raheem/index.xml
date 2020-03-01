@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>E. Raheem | Enayetur Raheem</title>
+    <link>/authors/e.-raheem/</link>
+      <atom:link href="/authors/e.-raheem/index.xml" rel="self" type="application/rss+xml" />
+    <description>E. Raheem</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Wed, 24 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>E. Raheem</title>
+      <link>/authors/e.-raheem/</link>
+    </image>
+    
+    <item>
+      <title>Adaptation to climate change in coastal saline area of south-western region of Bangladesh</title>
+      <link>/publication/adaptation_climate_change/</link>
+      <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/adaptation_climate_change/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

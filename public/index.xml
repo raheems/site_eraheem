@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enayetur Raheem</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Enayetur Raheem</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Enayetur Raheem</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>বাংলায় R</title>
+      <link>/project/banglar/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/project/banglar/</guid>
+      <description>&lt;p&gt;বাংলা আর বই। গবেষণায় R এর কীভাবে ব্যবহার হয় তা নিয়ে এই বইটি লেখার পরিকল্পণা করছি। সব রকম আপডেট এখানে দেয়া হবে ইনশাল্লাহ।&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>গবেষণা পদ্ধতির ধাপসমূহ ও জরিপের মাধ্যমে ডেটা সংগ্রহ</title>
+      <link>/post/research-steps-data-collection-via-survey/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/research-steps-data-collection-via-survey/</guid>
+      <description>&lt;p&gt;জরিপের ঠিকানা&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://forms.gle/8Q8GnSkWXjk9cXUa7&#34;&gt;https://forms.gle/8Q8GnSkWXjk9cXUa7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;আজকে যে টপিক নিয়ে আলোচনা করেছি সেটি হচ্ছে গবেষণার পদ্ধতি। এটি গবেষণা পদ্ধতির পূর্ণাঙ্গ আলোচনা নয় বরং সংক্ষেপে গবেষণার ধাপসমূহ আমি বর্ণনা করেছি।&lt;/p&gt;
+&lt;p&gt;সেই সাথে একটি বাস্তব উদাহরণ দিয়েছি এবং যার মাধ্যমে গবেষণার ধাপ গুলো কিভাবে আমরা অনুসরণ করে একটি সমস্যার সমাধান করতে পারি সেটি দেখিয়েছি।&lt;/p&gt;
+&lt;p&gt;আজকের লেকচারের মূল উদ্দেশ্য আমাদের পরবর্তী লেকচার গুলোতে কাজে লাগানোর জন্য একটি ডেটা সংগ্রহ করা। যেটি একটি জরিপের মাধ্যমে আমরা করতে চাই।&lt;/p&gt;
+&lt;p&gt;এই লেকচারে শেষে একটি জরিপের লিংক দেয়া আছে অনুগ্রহ করে তাতে অংশগ্রহণ করুন।&lt;/p&gt;
+&lt;p&gt;গবেষণা পদ্ধতি সম্পর্কে বিস্তারিত জানার জন্য ডঃ রাগিব হাসানের &amp;ldquo;গবেষণায় হাতে খড়ি&amp;rdquo; বইটি দেখে নিতে পারেন।&lt;/p&gt;
+&lt;p&gt;জরিপের ঠিকানা
+&lt;a href=&#34;https://forms.gle/8Q8GnSkWXjk9cXUa7&#34;&gt;https://forms.gle/8Q8GnSkWXjk9cXUa7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ধন্যবাদ।&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rHRFfTndNKk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Is Childhood Overweight/Obesity Perceived as a Health Problem by Mothers of Preschool Aged Children in Bangladesh? A Community Level Cross-Sectional Study</title>
+      <link>/publication/perception_childhood_obesity_2019/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/perception_childhood_obesity_2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrating R with Power BI</title>
+      <link>/post/integrating-r-with-powerbi-desktop/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/post/integrating-r-with-powerbi-desktop/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Microsoft Power BI&lt;/em&gt; Desktop version nicely integrates with &lt;strong&gt;R&lt;/strong&gt;. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. &lt;em&gt;Power BI&lt;/em&gt; is Microsoft&amp;rsquo;s flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for &lt;em&gt;Power BI Desktop&lt;/em&gt;, you can do many cool things, which can be categorized into three broad applications&amp;ndash;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;using R to import data into Power BI,&lt;/li&gt;
+&lt;li&gt;using R to query existing data in Power BI, and&lt;/li&gt;
+&lt;li&gt;creating visuals with R script&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this article, I have demonstrated how to use R with Power BI to perform these applications.&lt;/p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#preparing-the-r-script-in-r-studio&#34;&gt;Preparing the R script in R Studio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#run-your-r-script-and-import-data&#34;&gt;Run your R script and import data&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#error-message&#34;&gt;Error message&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#loading-the-data&#34;&gt;Loading the data&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#updating-the-r-script&#34;&gt;Updating the R script&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#example-to-demonstrate-re-coding&#34;&gt;Example to demonstrate re-coding&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#entering-r-script-to-transform-data&#34;&gt;Entering R script to transform data&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#example-with-mtcars-data&#34;&gt;Example with mtcars data&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h1 id=&#34;application-1-using-r-to-import-data-sets-into-power-bi&#34;&gt;Application 1: Using R to import data sets into Power BI&lt;/h1&gt;
+&lt;p&gt;Power BI can import data from a variety of sources. For a complete list, please see 
+&lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-data-sources&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Importing Excel &lt;code&gt;.xlsx&lt;/code&gt; or &lt;code&gt;.csv&lt;/code&gt; files into Power BI is perhaps the most common usage. However, I&amp;rsquo;ve personally found it to be problematic. In particular, if your source data is continuously updating including addition or removal of columns, then the changes do not get updated when you simply refresh the data sources from Power BI Desktop. This is a problematic when you are developing your interactive report and also when the dashboard is in production.&lt;/p&gt;
+&lt;p&gt;A more robust solution of importing data is to use R script. This is known as 
+&lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-r-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Running R scripts in Power BI Desktop&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;preparing-the-r-script-in-r-studio&#34;&gt;Preparing the R script in R Studio&lt;/h2&gt;
+&lt;p&gt;This is the stage you would write your R script to load your data. I use R studio for that. RStudio is a popular Integrated Development Environment (IDE) for R. If you are not familiar with RStudio, you can use the default R editor or wherever you write your R codes. You do not need any special preparation. Just use the editor to test your code before using in Power BI.&lt;/p&gt;
+&lt;p&gt;I am going to create a smiple data set with two columns using the R codes below. This data is being created for demonstration purposes only so that you can reproduce it when you are learning.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Sample data frame object
+
+df &amp;lt;- data.frame(
+  x= rnorm(100),
+  y= rnorm(100) + rnorm(100)
+)
+
+head(df)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This code creates an R &lt;code&gt;data.frame&lt;/code&gt; and saves in an object &lt;code&gt;df&lt;/code&gt;. This will be the name of the data when you import into Power BI. You can give the data object any valid R-name you want.&lt;/p&gt;
+&lt;p&gt;The above code also shows &lt;code&gt;head(df)&lt;/code&gt;, but Power BI only imports &lt;code&gt;data.frame&lt;/code&gt;. In this case, it will only import the &lt;code&gt;df&lt;/code&gt; object and ignore the rest. So you don&amp;rsquo;t have to worry about other codes in the script. Just make sure all codes run without error and without any dependencies.&lt;/p&gt;
+&lt;h2 id=&#34;run-your-r-script-and-import-data&#34;&gt;Run your R script and import data&lt;/h2&gt;
+&lt;p&gt;In Power BI Desktop, the R Script data connector is found in Get Data menu. Click on &lt;strong&gt;Get Data &amp;gt; More&amp;hellip;&lt;/strong&gt;, then select &lt;strong&gt;Other &amp;gt; R script&lt;/strong&gt; as shown in the following image:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/get_data_R_script.png&#34; alt=&#34;Get Data using R script&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_interface_powerbi.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;
+Notice that at the bottom of the above image, the your R installation path is displayed. If you have multiple installation of R, then you would need to go to &lt;strong&gt;Options and Settings &amp;gt; Options &amp;gt; R scripting&lt;/strong&gt; and then setting the location of the R installation you would like to use.&lt;/p&gt;
+&lt;h2 id=&#34;error-message&#34;&gt;Error message&lt;/h2&gt;
+&lt;p&gt;After you enter the R script and hit OK, you might see a connection error message as follows:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/unable_to_connect_r_script.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;
+In that case, you need to click on &lt;em&gt;Retry&lt;/em&gt; and that will take to you the following message to enable native database query. Click on Run. If you want to know more about risk involved with this option please see the 
+&lt;a href=&#34;https://support.office.com/en-us/article/import-data-from-database-using-native-database-query-power-query-f4f448ac-70d5-445b-a6ba-302db47a1b00?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/enable_native_data_base_query_r_script.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;
+After that, it should run without any issue and you should see a window like the following:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_navigator_screen.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;loading-the-data&#34;&gt;Loading the data&lt;/h2&gt;
+&lt;p&gt;Once you are at this stage, you select the data frame created with the R script (in this case &lt;code&gt;df&lt;/code&gt;), and then click Load (or Edit if you want). This should load the data in Power BI. You can verify that in the Fields pane that the &lt;code&gt;df&lt;/code&gt; has indeeded loaded as shown in the folowing:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_fields_pane.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;
+Now that you&amp;rsquo;ve successfully imported the data using R script, you can use the variables the typical way you would work within Power BI Desktop. If you want to add or edit any new column/variables or anything with the data using the R script, you would need to update the R script and load the data as usual.&lt;/p&gt;
+&lt;p&gt;When you edit the R script, you should not see any error/warning messages because you&amp;rsquo;ve already made those exceptions.&lt;/p&gt;
+&lt;h2 id=&#34;updating-the-r-script&#34;&gt;Updating the R script&lt;/h2&gt;
+&lt;p&gt;It is obvious that you would be updating the R script since that was the whole purpose of importing the data via R script. You continue to edit the script in RStudio and when you are ready to update the code within Power BI, you need to go to Edit Queries option.&lt;/p&gt;
+&lt;p&gt;Simply right-click on the data under the &lt;strong&gt;FIELDS&lt;/strong&gt; pane, and select &lt;em&gt;Edit query&lt;/em&gt;. This should open the Power Query Editor and you can click on the gear icon ([1] in figure) as shown below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/edit_r_script.png&#34; alt=&#34;Edit R script&#34;&gt;
+Clicking that gear icon should open the R script editor where you can replace the existing code with the updated code. When you are ready, click OK, and then click &lt;strong&gt;Close &amp;amp; Apply&lt;/strong&gt; ([2] in the figure) in the Power Query Editor to apply the changes.&lt;/p&gt;
+&lt;h1 id=&#34;application-2-using-r-to-query-existing-data-in-power-bi&#34;&gt;Application 2: Using R to query existing data in Power BI&lt;/h1&gt;
+&lt;p&gt;This application is useful for manipulating an already imported dataset. That is, data have been imported into Power BI Desktop, and now you want to do some cleaning or perform transformations. Essentially, you could do all of those while importing the data (Application 1). Interested readers may find the detailed document available from Microsoft Power BI on 
+&lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-r-in-query-editor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;using R in Query Editor.&lt;/a&gt;
+I am giving an example to demonstrate how it works.&lt;/p&gt;
+&lt;h2 id=&#34;example-to-demonstrate-re-coding&#34;&gt;Example to demonstrate re-coding&lt;/h2&gt;
+&lt;p&gt;Suppose we&amp;rsquo;ve imported a data set with missing vlaues and unusually large numbers in some of the fields. We want to perform some cleaning. Of course this is a fictitious example just to demonstrate the idea.&lt;/p&gt;
+&lt;p&gt;We use the R code to generate the data&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;df &amp;lt;- data.frame(
+  name = c(&amp;quot;John&amp;quot;, &amp;quot;Arif&amp;quot;,&amp;quot;Samira&amp;quot;),
+  sex = c(1, 1, 2),
+  gpa = c(4, 3.9, 3.95)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We will import this data using the R (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the &lt;code&gt;sex&lt;/code&gt; variable to indicate &lt;code&gt;Male&lt;/code&gt; for &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;Female&lt;/code&gt; for &lt;code&gt;2&lt;/code&gt;. For that, we use the following codes which we would enter in the R script:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# &#39;dataset&#39; holds the input data for this script
+library(dplyr)
+
+newcalc &amp;lt;- dataset %&amp;gt;% 
+  mutate(
+    sex = ifelse(sex == 1, &amp;quot;Male&amp;quot;, &amp;quot;Female&amp;quot;)
+  )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Note that the name of the source data in R  is: &lt;code&gt;dataset&lt;/code&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;entering-r-script-to-transform-data&#34;&gt;Entering R script to transform data&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Click on the &lt;strong&gt;Edit Queries&lt;/strong&gt; button in Power BI Desktop to open the query editor.&lt;/li&gt;
+&lt;li&gt;Select the appropriate query under the &lt;code&gt;Queries[]&lt;/code&gt; menu on the left of the screen.&lt;/li&gt;
+&lt;li&gt;Click on the &lt;strong&gt;Transform&lt;/strong&gt; menu above the ribbon.&lt;/li&gt;
+&lt;li&gt;You will see the &lt;strong&gt;Run R Script&lt;/strong&gt; button with the &lt;code&gt;R&lt;/code&gt; icon. Click that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_window.png&#34; alt=&#34;R script Window&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enter the R code that will be used to do the transformation. The screen would look like the following:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_trans_code.png&#34; alt=&#34;R script Window&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click OK. If you see any permission error or message like that, follow the prompts and allow the R codes to execute. Once you successfully pass all the prompts (if any), you will get the screen that looks like this&amp;ndash;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_trans_step1.png&#34; alt=&#34;R script Window&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Make sure to click on the &lt;code&gt;Table&lt;/code&gt; field shown with the arrow in the figure. That will create the new step named &lt;code&gt;newcalc&lt;/code&gt; and the table as shown in figure below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_trans_step2.png&#34; alt=&#34;R script Window&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now you click on the &lt;strong&gt;Home&lt;/strong&gt; menu and hit the icon that says &lt;strong&gt;Close &amp;amp; Apply&lt;/strong&gt; as shown in the figure below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_script_trans_step3.png&#34; alt=&#34;R script Window&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now the &lt;code&gt;sex&lt;/code&gt; variable in the table should be a character variable with values &lt;code&gt;Male&lt;/code&gt; and &lt;code&gt;Female&lt;/code&gt; instead of &lt;code&gt;1&lt;/code&gt;s and &lt;code&gt;2&lt;/code&gt;s.&lt;/p&gt;
+&lt;p&gt;And you are done!&lt;/p&gt;
+&lt;h1 id=&#34;application-3-creating-visuals-with-r-script&#34;&gt;Application 3: Creating visuals with R script&lt;/h1&gt;
+&lt;p&gt;One of the best applications of R with Power BI is that you can harness the power of R to create high quality graphs and display them within your report/dashboard in Power BI. All the filters/slicers will work as usual and the graphs will the dynamically updated when you slice your data.&lt;/p&gt;
+&lt;p&gt;You can bring R visual into Power BI in two ways&amp;ndash;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Importing an R visual from [Microsoft AppSource] (&lt;a href=&#34;https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals&#34;&gt;https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;You can wirte you own code to create the visuals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this article, I&amp;rsquo;ve demonstrated how to use your own code to create visuals with R and display them in Power BI.&lt;/p&gt;
+&lt;h2 id=&#34;example-with-mtcars-data&#34;&gt;Example with mtcars data&lt;/h2&gt;
+&lt;p&gt;This assumes that we already have a dataset in Power BI. For the sake of reproducibility of this example, I will create the data. This time, I will just load a car data set called &lt;code&gt;mtcars&lt;/code&gt; available within R.&lt;/p&gt;
+&lt;p&gt;Simply follow the steps in Application 1, using the code entered in the R script window:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;df &amp;lt;- mtcars
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This loads the data in Power BI as shown in the figure below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/load_mtcars.png&#34; alt=&#34;mtcars Data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now, we would like to create a boxplot of gas mileage (miles per gallon) by cylinder type. We call the&lt;/p&gt;
+&lt;p&gt;To creat a R visual, click on the R icon from &lt;strong&gt;VISUALIZATIONS&lt;/strong&gt; pane as seen in the above image (the icon is pointed with a red arrow).This should create a placeholder for a visual in the canvas and an &lt;strong&gt;R script editor&lt;/strong&gt; will show up at the bottom of the screen.&lt;/p&gt;
+&lt;p&gt;Select the variables you want to use for the visual. In our case, we would need &lt;code&gt;cyl&lt;/code&gt; and &lt;code&gt;mpg&lt;/code&gt;. Once you select them, the R script editor will update with some basic codes (uneditable).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_visual_script_editor.png&#34; alt=&#34;R visual script editor&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now you are ready to enter the following code in the area where it says &amp;ldquo;Type or paste your R-script code here&amp;rdquo;. Enter the code below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;boxplot(mpg ~ cyl, data = dataset, 
+        xlab = &amp;quot;Number of Cylinders&amp;quot;,
+        ylab = &amp;quot;Miles Per Gallon&amp;quot;, 
+        main = &amp;quot;Gas Mileage&amp;quot;,
+        notch = FALSE, 
+        varwidth = TRUE, 
+        col = c(&amp;quot;blue&amp;quot;,&amp;quot;green&amp;quot;,&amp;quot;red&amp;quot;),
+        names = c(&amp;quot;High&amp;quot;,&amp;quot;Medium&amp;quot;,&amp;quot;Low&amp;quot;)
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then click on the little play button near the top of the script-editor to display the plot on canvas.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/r_visual_script_editor_with_code.png&#34; alt=&#34;R visual editor with code&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The key is that you have to use &lt;code&gt;dataset&lt;/code&gt; as your data object name in R-script visual.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;And it&amp;rsquo;s that easy.&lt;/p&gt;
+&lt;p&gt;Hope this tutorial was useful for you. If you have any question or have some tips, please leave them as a comment.&lt;/p&gt;
+&lt;p&gt;I appreciate if you share this via social media. Thank you for reading.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Frequently used git commands</title>
+      <link>/post/frequently-used-git-commands/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/post/frequently-used-git-commands/</guid>
+      <description>&lt;p&gt;Thinking of using github? Great!&lt;/p&gt;
+&lt;p&gt;Github needs no introduction. If you are unfamiliar with git, its a version control system for tracking changes in computer (programming) codes. &amp;ldquo;GitHub Inc. is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management functionality of Git as well as adding its own features.&amp;quot;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;&lt;/nav&gt;
+&lt;h1 id=&#34;copying-a-remote-repository-to-local&#34;&gt;Copying a remote repository to local&lt;/h1&gt;
+&lt;p&gt;To bring a remote repository to your local host (computer where you are working), use the &lt;code&gt;git clone&lt;/code&gt; command.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{git}&#34;&gt;git clone https://github.com/username/repository_name.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;publishing-the-changes&#34;&gt;Publishing the changes&lt;/h1&gt;
+&lt;p&gt;After you update your code or add or remove anything from the repository, you want to publish to the remote repository.&lt;/p&gt;
+&lt;p&gt;Publishing the changes is called &lt;code&gt;push&lt;/code&gt; in git jargon. For that you need to write the following codes.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{git}&#34;&gt;git add -A 
+git commit -m &amp;quot;Message/notes of what the changes are&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will update the local repository. Now you want to publish the changes using the following command&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{git}&#34;&gt;git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You may want to be more specific about which &lt;em&gt;remote&lt;/em&gt; to update. The default &lt;em&gt;remote&lt;/em&gt; is &lt;strong&gt;origin&lt;/strong&gt;. The command would be&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{git}&#34;&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;syncing-a-remote-repository-on-two-local-hosts&#34;&gt;Syncing a remote repository on two local hosts&lt;/h1&gt;
+&lt;p&gt;Sometime I work on two or three different computers for the same remote project. I want my codes to be synced accross multiple computers. I sometime work from office using a PC. Sommetime I work from home where I use a Mac. So keeyping the repositories in sycned is essential.&lt;/p&gt;
+&lt;p&gt;For that I follow these simple steps.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Pull the remote repository in your new workstation
+- Make changes to your code
+- Push (publish) the updates
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The key is to pull and update the local repository assuming the remote has the latest updates.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{git}&#34;&gt;git pull
+git add -A
+git comit -m &amp;quot;Update message&amp;quot;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.wikipedia.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Chikungunya outbreak (2017) in Bangladesh: Clinical profile, economic impact and quality of life during the acute phase of the disease</title>
+      <link>/publication/chikungunya-outbreak-dhaka-bangladesh-2017/</link>
+      <pubDate>Wed, 06 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/chikungunya-outbreak-dhaka-bangladesh-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Managing autism spectrum disorder in developing countries by utilizing existing resources: A perspective from Bangladesh</title>
+      <link>/publication/managing-autism-developing-countries/</link>
+      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/managing-autism-developing-countries/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pattern of hematological malignancies in adolescents and young adults in Bangladesh</title>
+      <link>/publication/pattern-hematological-malignancy/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/pattern-hematological-malignancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>To the Aspiring Data Scientists</title>
+      <link>/post/to-the-aspiring-data-scientists/</link>
+      <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/post/to-the-aspiring-data-scientists/</guid>
+      <description>&lt;p&gt;A lot of times interested folks contact me with a question like this: ‘I want to be a data scientist; can you help?’&lt;/p&gt;
+&lt;p&gt;Well, I wish I could. The reality is, I won’t be able to unless I really understand what you want and why you want it.&lt;/p&gt;
+&lt;p&gt;Firstly because guiding someone is next to impossible in this time and era when everything is so convoluted. People come to learn with preconceived ideas and notions. I am not saying you have to come with a blank slate, what I am saying is you need to show real motivation. I repeat, you must have a motivation and you must be able to articulate why you are motivated.&lt;/p&gt;
+&lt;p&gt;There is no shortage of tutorials, courses, documents, websites, articles today on how to become a data scientist. Sadly, most of the times there is a business mind lurking behind such documents and campaigns. They will tell you only partial truth. They will tell you that you can become a data scientist in 4 months, or in 6 months, or by completing a boot camp and so on and so forth.&lt;/p&gt;
+&lt;p&gt;In my opinion, if you already have the background of a typical data scientist (have worked with data, have knowledge of scientific process, programming skills in R, Python, SAS, or any relevant language), then yes, you can acquire the knowledge and become familiar with the tools that data science utilizes within a short period of time.&lt;/p&gt;
+&lt;p&gt;On the other hand, if you are a complete novice, you will not only be deceived by these campaigns but also become frustrated quickly. This is because you were drawn to something for which you were not prepared for. And you did not anticipate the challenges you would face to become a data scientist.&lt;/p&gt;
+&lt;p&gt;Now let’s come to the main point.&lt;/p&gt;
+&lt;h1 id=&#34;why-do-you-want-to-become-one&#34;&gt;Why do you want to become one&lt;/h1&gt;
+&lt;p&gt;Ask yourself the “why” question and give an honest answer. What is your response?&lt;/p&gt;
+&lt;p&gt;It is perfectly okay to say that you want to be a data scientist because the market is hot.&lt;/p&gt;
+&lt;p&gt;But the best approach would be to write a few points on a piece of paper as to why do you want to become a data scientist.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Point 1&lt;/li&gt;
+&lt;li&gt;Point 2&lt;/li&gt;
+&lt;li&gt;Point 3&lt;/li&gt;
+&lt;li&gt;Point 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You could list that you are passionate about working with data; you want to make an impact by helping the management or team leaders making the right decision based on data, or you just enjoy solving other’s problems with data.&lt;/p&gt;
+&lt;p&gt;Whatever may be your reasons, it is important to list them down. Listening makes you look at it by yourself. That helps you to assess whether this is really something you want to do.&lt;/p&gt;
+&lt;p&gt;Motivation is the key.&lt;/p&gt;
+&lt;h1 id=&#34;know-what-is-data-science-and-who-are-data-scientists&#34;&gt;Know what is data science and who are data scientists&lt;/h1&gt;
+&lt;p&gt;Before you jump into this field, do some research about the field. Google it, find some blogs to follow, read some whitepapers from reputed analytic organizations and software companies such as SAS, IBM, Google, Microsoft and many others. Spend some time reading. Not just skimming through; actual reading. To me, reading is the best way to broaden knowledge. In this era of YouTube and video lectures, I still find reading somewhat superior, especially for beginners. Once you have acquired a general understanding of the field, listening to lectures or watching short video clips would boost your knowledge quickly.&lt;/p&gt;
+&lt;h1 id=&#34;what-do-data-scientists-do&#34;&gt;What do data scientists do&lt;/h1&gt;
+&lt;p&gt;I will write briefly. I am working work on a separate article on it.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data scientists solve problems with the help of data. That’s what they do.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On paper, Data Scientists do so many things that someone with a title of data scientist in one industry cannot possibly list what another data scientist might be doing in a different industry. That is to give you an idea of how variable the type of works data scientists is involved with.&lt;/p&gt;
+&lt;p&gt;Simply put, data scientists work with data to bring actionable insight that helps to solve a problem. If the data scientist is working in a financial organization, the problems would be related to, say, banking industry, the stock market, etc. If the data scientist works in healthcare, the problem would be related to healthcare service provider such as hospitals, health units.&lt;/p&gt;
+&lt;p&gt;Data scientists do not necessarily get involved with building the data architecture such as data warehousing or setting up or maintaining cloud infrastructure for an organization. Those who work in this type of work are called ‘Data Engineers’. You may want to read a little more about this in my earlier post (in Bengali).&lt;/p&gt;
+&lt;p&gt;Let me clarify one thing–data scientists do not necessarily design the databases. It is the data engineers who do that. Data scientists analyze the data to drive business whereas data engineers develop and maintain the architecture that stores data. Data scientists or statisticians do not build or maintain databases in most of the cases. However, there is often a need to create smaller databases for a specific purpose or a project. A data scientist may need to design, develop and maintain project-specific databases, which are largely different from enterprise-level data warehouse.&lt;/p&gt;
+&lt;p&gt;Most large organizations have their separate team of engineers who develop and maintain the data-science platforms (DBs, Hadoop, etc.).&lt;/p&gt;
+&lt;h1 id=&#34;how-to-become-a-data-scientist&#34;&gt;How to become a data scientist&lt;/h1&gt;
+&lt;p&gt;Everyone wants to be a data scientist but only some will be successful. The reason is in part, your preparation, in part your effort. If you are not from a quantitative background with some math, and computer programming experience, I would say it would be a daunting task for you to learn what it takes to be a data scientist. I am completely being honest.&lt;/p&gt;
+&lt;p&gt;At some point in time, you are going to read and write computer programs.&lt;/p&gt;
+&lt;p&gt;If you’ve never written a computer program, I am not sure how long it will take for you to pick up a language. But I personally feel that it takes at least 6 months to get some basics of any programming language. Another year or so to know a bit more. If you engage yourself full time to learn a language, you might be able to write simple programs and carry out simple data science tasks within 4-6 months.&lt;/p&gt;
+&lt;h1 id=&#34;two-approaches-to-be-a-data-scientist&#34;&gt;Two approaches to be a Data Scientist&lt;/h1&gt;
+&lt;p&gt;Learn the tools to become data scientist, or
+Find the problems you want to solve, and then learn what it takes to solve them&lt;/p&gt;
+&lt;p&gt;The first approach is the typical approach and I call it bottom-up approach. I will not discuss the first approach because it has been the mainstream approach thus far. This has brought so many discussions, lot of training offerings, online courses, articles in the media, blogs, and vlogs, and much more.&lt;/p&gt;
+&lt;p&gt;I will focus on the second approach to becoming a data scientist. I call it top-down approach.&lt;/p&gt;
+&lt;h1 id=&#34;find-problems-that-you-want-to-solve&#34;&gt;Find problems that you want to solve&lt;/h1&gt;
+&lt;p&gt;This is perhaps the easiest way to find out if you really want to be a data scientist. If so, keep reading.&lt;/p&gt;
+&lt;p&gt;I call this approach a top-down approach, you first find a problem and then solve it.&lt;/p&gt;
+&lt;p&gt;As I wrote earlier in this article, data scientists solve problems with the help of data. In other words, they have a problem to solve in front of them and they would provide a solution using data.&lt;/p&gt;
+&lt;p&gt;Now this may sound like, well, problem is there, the data is there, so what’s the big deal?&lt;/p&gt;
+&lt;p&gt;It’s not a big deal, but its a huge deal.&lt;/p&gt;
+&lt;p&gt;Having the data is only one step to solving the problem. What if you do not have the data in the right form, or you do not have the data in the first place. If you have the data, it often takes 80% of your time to prepare it for your analysis.&lt;/p&gt;
+&lt;p&gt;If you do not have the data, then you first need to get the data in the first place.&lt;/p&gt;
+&lt;h1 id=&#34;where-do-i-find-problem&#34;&gt;Where do I find problem?&lt;/h1&gt;
+&lt;p&gt;Well, problems are everywhere, you just have to look around.&lt;/p&gt;
+&lt;p&gt;I am going to give you some ideas which should give you enough clues to find a problem on your own and discover what it takes to solve those problems. Here goes the list with brief descriptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 1:&lt;/strong&gt; Building a list of most important news of the day&lt;/p&gt;
+&lt;p&gt;This may sound like an unattractive problem. But think about how you might want to use the information. First, you need to think about a focus area. If you are interested in politics, the possibilities are endless. If you build a list exclusively on “North Korea”, you would find at the end of the year how the things unfolded and you can present the information on a timescale. The importance of such a list is to be able to find temporal relationship between different events which may affect some other event/outcome of interest.&lt;/p&gt;
+&lt;p&gt;You might be aware that news or sometimes a tweet from an influential person can affect the stock price of a particular company in the US stock market.  But this could be useful beyond US market. You will find many potential use cases if you think a bit deep.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 2:&lt;/strong&gt; Tracking accident statistics&lt;/p&gt;
+&lt;p&gt;This problem is particularly suitable for resource-limited countries where government record keeping is inadequate. Every day newspapers report accidental deaths due to road crashes. You could select one or two major newspapers and scan their pages to retrieve news about road accidents. This could be done as part of a research project at your institution where you pursue a Bachelors or Masters degree.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 3:&lt;/strong&gt; Calculating impact of  faculty research&lt;/p&gt;
+&lt;p&gt;This is something you can do for your department, or institution or country. Start with your department first where you have only a handful of faculties who are presumably doing some kind of research and publishing their findings in journals. Think of developing an automated system that would find articles (in Google Scholar, for example) and calculate impacts (from the journal impact factors). You can present the results by department, by type of research, or by institution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 4:&lt;/strong&gt; Build an economic performance dashboard&lt;/p&gt;
+&lt;p&gt;You can use Google’s Data Studio to build a dashboard of economic performance of your country on some key performance metrics. The data could be found on the central bank’s website or government data repositories. For Bangladesh, many economic data sets are available online free of charge. Just visit &lt;a href=&#34;https://www.bb.org.bd/econdata/&#34;&gt;https://www.bb.org.bd/econdata/&lt;/a&gt; and find your data there.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;In conclusion, you can take the easier route to be a data scientist. In this route, you first need to find a problem and you will point your learning path towards solving that problem. The path is not smooth. But you can always ask questions to someone who knows or someone more experienced. It is a good practice to find someone who would be your mentor and will guide you through your learning path. Since you are learning on your own, you have to take the responsibility on your own. If you do not want to learn, nobody is going to push. If you are really interested and motivated, I hope this article has given you some direction.&lt;/p&gt;
+&lt;p&gt;Happy learning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statisticians in the Data Science Era</title>
+      <link>/post/statisticians-in-the-data-science-era/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/post/statisticians-in-the-data-science-era/</guid>
+      <description>&lt;p&gt;If you are exploring the hot field of Data Science today, you probably know by now that there is no unique way to define data science. Everyone’s perspective comes from their respective backgrounds. Statisticians think they are data scientists while CS folks think they are.&lt;/p&gt;
+&lt;p&gt;I would not go into the debate.&lt;/p&gt;
+&lt;p&gt;Both have truth in their arguments as the typical problems they solve are quite different. There are some exceptions where their workflows overlap. Let me provide some thoughts from my perspective.&lt;/p&gt;
+&lt;p&gt;I am a statistician by training and I have been in the analytic world for over 15 years. This includes time spent at universities teaching graduate level statistics courses as well as working in the healthcare industry as a data scientist.&lt;/p&gt;
+&lt;h1 id=&#34;three-types-of-statisticians&#34;&gt;Three types of Statisticians&lt;/h1&gt;
+&lt;p&gt;Like many scientific disciplines, statisticians contribute to the science in two different ways.&lt;/p&gt;
+&lt;p&gt;First, through theoretical contribution to the scientific literature to advance the knowledge. In this type of work, statisticians focus on developing new methods to solve new problems or improving existing methods. In statistical science, any new theoretical development takes several years, sometimes decades, to gain popularity among the mainstream practitioners. Part of it is due to the availability of software packages or lack thereof that the practitioners are most familiar with. And there are some other reasons too.&lt;/p&gt;
+&lt;p&gt;Secondly, the works of applied statisticians and applied researchers including epidemiologists who focus on solving problems that need an immediate solution. Most of the time they utilize already developed statistical methods in their workflow. Here’s where most of the overlap happens between the works of applied statisticians and practitioners of statistics.&lt;/p&gt;
+&lt;p&gt;However, there is no strict boundary between applied and theoretical statisticians. Often, applied statisticians develop new methods to solve an existing problem. Thus, the third kind of statisticians are those who fall somewhere in between theoretical statisticians and applied statisticians.&lt;/p&gt;
+&lt;h1 id=&#34;towards-data-science&#34;&gt;Towards Data Science&lt;/h1&gt;
+&lt;p&gt;There are, however, some philosophical differences between these two types of statisticians. Theoretical researchers often think they are superior to their counterpart, while the applied folks think they are the ones whose contributions have a real impact. Both are wrong, in my honest opinion.&lt;/p&gt;
+&lt;p&gt;Compared to their peers, Applied Statisticians find their views better aligned with the theme of today’s data science. This is perhaps because of the way they were trained during their academic years.&lt;/p&gt;
+&lt;p&gt;Applied statisticians are taught and trained to use data to bring insights out of it. They are trained not only to fit a model and know how it works but also to communicate with their customers in non-technical terms. Intuition is all that takes priority over theoretical derivations. As Jo Hardin points &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;.. when teaching, for example, the Neyman-Pearson lemma, the intuition behind how we know what we know (and why it matters) is vastly more fundamental for the students’ future research capabilities than the detailed steps of the proof.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I think it is vital for a student of statistics to learn and think this way to become successful in today’s job market.&lt;/p&gt;
+&lt;h1 id=&#34;data-scientist-vs-data-engineers&#34;&gt;Data Scientist Vs Data Engineers&lt;/h1&gt;
+&lt;p&gt;The difference between many types of data scientists is often confusing even to the statisticians. Sometimes, data scientists and data engineers are considered equally. In fact, the type of work they do is quite different.&lt;/p&gt;
+&lt;p&gt;Let me clarify one thing–data scientists do not necessarily design the databases. It is the data engineers who do that. Data scientists analyze the data to drive business whereas data engineers develop and maintain that architecture.  Data scientists or statisticians do not build or maintain databases. Most large organizations have their separate team of engineers who develop and maintain the data-science platforms (DBs, Hadoop, etc.).&lt;/p&gt;
+&lt;p&gt;Do the statisticians need to know a bit of database? Yes, a basic understanding is good enough. Most of the time all you will do is pull some tables from different sources and join them to create a working data set. For that, you need to understand basics and you do not have to be a data architect for that. If you are working in a startup company, then you may be required to understand in greater depth, though as they have less manpower.&lt;/p&gt;
+&lt;p&gt;How big of a deal knowing how to efficiently join tables? Not so big. Anyone with a decent knowledge of data and SQL can learn to do it with some reading and practice. But you have to have the mindset of learning in the first place.&lt;/p&gt;
+&lt;h1 id=&#34;use-of-statistics&#34;&gt;Use of Statistics&lt;/h1&gt;
+&lt;p&gt;In my work, I find statistics invaluable although most of the time we do not use many advanced techniques. And this is by far true for most organizations who utilize data for decision-making. High-level analysis such as modeling and machine learning stay at the very top level of the application pyramid. You still need to lay the foundation using basic analysis and visualizations.&lt;/p&gt;
+&lt;p&gt;How media is portraying data science today (such as deep learning and AI) is what perhaps 1% of all the analytics an organization needs. Many large organizations do not hire people for that. They purchase a solution instead as that is more cost-effective. For many problems where deep learning is not applicable, they need analytic people with decent statistical literacy.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Data Science as it’s being understood today solves problems that are, for the most part, quite different than the problems that would need statisticians’ help to solve. Being on both sides of the aisle I can see how they complement each other and how they both are relevant.&lt;/p&gt;
+&lt;p&gt;Let me know what’s your thoughts are. And please share this article if you find it useful.&lt;/p&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Jo Harding (2017). Expectations and Skills for Undergraduate Students Doing Research in Statistics and Data Science, AMSTAT Newsletter &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>/post/cv/</link>
+      <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/post/cv/</guid>
+      <description>&lt;p&gt;Enayetur Raheem, PhD &lt;br&gt;
+Data Scientist (Neurosciences)&lt;br&gt;
+Carolinas HealthCare System &lt;br&gt;
+720 E Morehead St.&lt;br&gt;
+Charlotte, NC 28202, USA&lt;/p&gt;
+&lt;h1 id=&#34;employments&#34;&gt;Employments&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Years&lt;/th&gt;
+&lt;th&gt;Institution&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Jun 2016 ~&lt;/td&gt;
+&lt;td&gt;Data Scientist, Carolinas HealthCare System, Charlotte, NC, USA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Aug 2013 ~ May 2016&lt;/td&gt;
+&lt;td&gt;Assistant Professor of Applied Statistics, University of Northern Colorado, Greeley, CO, USA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Aug 2012 ~ May 2013&lt;/td&gt;
+&lt;td&gt;Assistant Professor of Statistics, University of Wisconsin-Green Bay, Green Bay, WI, USA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jan 2010 ~ Aug 2012&lt;/td&gt;
+&lt;td&gt;Data Analyst, Windsor-Essex County Health Unit, Windsor, Ontario, Canada&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;PhD in Statistics, 2012, University of Windsor, Windsor, Ontario, Canada&lt;/li&gt;
+&lt;li&gt;Masters in Statistics, 2005, McMaster University, Hamilton, Ontario, Canada&lt;/li&gt;
+&lt;li&gt;Masters in Applied Statistics, 2000, University of Dhaka, Bangladesh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
+&lt;p&gt;2018&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mohammad Sorowar Hossain, Md. Mahbub Hasan, Muhammad Sougatul Islam, Salequl Islam, Miliva Mozaffor, Md. Abdullah Saeed Khan, Nova Ahmed, Waheed Akhtar, Shahanaz Chowdhury, S. M. Yasir Arafat, Md. Abdul Khaleque, Zohora Jameela Khan, Tashmim Farhana Dipta, Shah Md. Zahurul Haque Asna, Md. Akram Hossain, KM Sultanul Aziz, Abdullah Al Mosabbir, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt; (2018). Chikungunya outbreak (2017) in Bangladesh: Clinical profile, economic impact and quality of life during the acute phase of the disease. 
+&lt;a href=&#34;https://doi.org/10.1371/journal.pntd.0006561&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;PLOS: Neglected Tropical Diseases&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nova Ahmed, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, Nusrat Rahman, Zillur Rahman Khan, Abdullah Mosabbir, Mohammad Sorowar Hossain (2018). Managing autism spectrum disorder in developing countries by utilizing existing resources: A perspective from Bangladesh. 
+&lt;a href=&#34;https://doi.org/10.1177/1362361318773981&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Autism&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2017&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Md. Mahbub Hasan, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, Tanvira Afroze Sultana, Mohammad Sorowar Hossain (2017). Pattern of hematological malignancies in adolescents and young adults in Bangladesh. 
+&lt;a href=&#34;https://doi.org/10.1016/j.canep.2017.11.001&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Orphanet Journal of Rare Diseases&lt;/em&gt;&lt;/a&gt;, 51, 109-112.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hossain, M. S., &lt;strong&gt;Raheem, E.&lt;/strong&gt;, Sultana, T. A., Ferdous, S., Nahar, N., Islam, S., &amp;hellip; &amp;amp; Khatun, H. (2017). Thalassemias in South Asia: clinical lessons learnt from Bangladesh. 
+&lt;a href=&#34;https://ojrd.biomedcentral.com/articles/10.1186/s13023-017-0643-z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Orphanet Journal of Rare Diseases&lt;/em&gt;&lt;/a&gt;, 12(1), 93.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Islam, M, Khan JR, &lt;strong&gt;Raheem, E.&lt;/strong&gt; (2017). Bradley-Terry model for assessing the performance of ten ODI cricket teams adjusting for home ground effect. 
+&lt;a href=&#34;http://www.jds-online.com/file_download/628/221-OK.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Data Science&lt;/em&gt;&lt;/a&gt;, 16, 657-668.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2016&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dey, S., &amp;amp; &lt;strong&gt;Raheem, E.&lt;/strong&gt; (2016). Multilevel multinomial logistic regression model for identifying factors associated with anemia in children 6–59 months in northeastern states of India. 
+&lt;a href=&#34;http://www.tandfonline.com/doi/full/10.1080/23311835.2016.1159798&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Cogent Mathematics&lt;/em&gt;&lt;/a&gt;, 3(1), 1159798.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2015&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Jahan Y, &lt;strong&gt;Raheem E&lt;/strong&gt;, Akhteruzzaman M, Hussain MA, Kazal RK, et al. (2015) Association of TSH Level with First Trimester Pregnancy Loss in Anti-TPO Antibody Negative Women in Bangladesh. 
+&lt;a href=&#34;http://www.jscimedcentral.com/Obstetrics/obstetrics-3-1061.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Med J Obstet Gynecol&lt;/em&gt;&lt;/a&gt; 3(3): 1061&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sanku Dey, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, and Preenan Sarkar (2014). Identifying the Factors Influencing Institutional and Non-Institutional Delivery Practices in Slums of Shillong City. 
+&lt;a href=&#34;http://medind.nic.in/hab/t14/i3/habt14i3p76.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Health and Population – Perspectives and Issues&lt;/em&gt;&lt;/a&gt; 37 (3 &amp;amp; 4), 76-87, 2014 (Published in June 2015)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sanku Dey, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt; (2015). Socio-Economic Determinants of Family Planning Acceptance among Slum Dwellers of Shillong City, Meghalaya–A Multivariate Analysis using Logistic Regression Model, 
+&lt;a href=&#34;https://www.researchgate.net/profile/Enayetur_Raheem/publication/283273293_Socio-Economic_Determinants_of_Family_Planning_Acceptance_among_Slum_Dwellers_of_Shillong_City_Meghalaya-A_Multivariate_Analysis_Using_Logistic_Regression_Model/links/563003f908ae76226de004ff/Socio-Economic-Determinants-of-Family-Planning-Acceptance-among-Slum-Dwellers-of-Shillong-City-Meghalaya-A-Multivariate-Analysis-Using-Logistic-Regression-Model.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Demography India&lt;/em&gt;&lt;/a&gt;, 41, 1&amp;amp;2, pp. 65-74.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2014&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Dey, S., &lt;strong&gt;Raheem, E.&lt;/strong&gt;, &amp;amp; Sarkar, P. (2014). Identifying the factors influencing institutional and non-institutional delivery practices in slums of Shillong city. 
+&lt;a href=&#34;http://medind.nic.in/hab/t14/i3/habt14i3p76.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Health and Population: Perspectives and Issues&lt;/em&gt;&lt;/a&gt;, 37(3-4), 76-87.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Yusuf Ali, Shah AL-Emran, M. B. Islam, and &lt;strong&gt;E. Raheem&lt;/strong&gt; (2014). Adaptation to climate change in coastal saline area of south-western region of Bangladesh. &lt;em&gt;Int. J. Sustain. Agril. Tech.&lt;/em&gt; 10(4): 09-16.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2012&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;S. Ejaz Ahmed, and &lt;strong&gt;S. E. Raheem&lt;/strong&gt;, (2012). Shrinkage and absolute penalty estimation in linear models, 
+&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1002/wics.1232/full&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;WIREs Computational Statistics&lt;/em&gt;&lt;/a&gt;. Volume 4, Issue 6, pages 541–553, November/December 2012.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Raheem, E&lt;/strong&gt;, Ahmed S. E., Doksum K. A. (2012). Absolute penalty and shrinkage estimation in partially linear models. 
+&lt;a href=&#34;http://dx.doi.org/10.1016/j.csda.2011.09.021&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Computational Statistics and Data Analysis&lt;/em&gt;&lt;/a&gt;. 56(4):874-891.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2011&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Raheem, E.&lt;/strong&gt; and Ahmed, S. E. (2011). Positive-shrinkage and Pretest Estimation in Multiple Regression: A Monte Carlo study with Applications. 
+&lt;a href=&#34;http://jirss.irstat.ir/browse.php?a_id=166&amp;amp;sid=1&amp;amp;slc_lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Iranian Statistical Society&lt;/em&gt;&lt;/a&gt;. 10(2):267-289.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2010 and before&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ahmed, S E, &lt;strong&gt;Raheem E&lt;/strong&gt;, Hossain M. S. (2010). Absolute Penalty Estimation. International Encyclopedia of Statistical Science.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Raheem, S. E.&lt;/strong&gt;, Syeda Shamema Sultana and Mohammad Shahed Masud (2006). Factors contributing to Bangladesh’s GDP: A principal component factor analysis approach. BRAC Univeristy Journal, Vol III, No.1, pp. 27-33.
+2005&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hossain, A and &lt;strong&gt;Raheem, S. E.&lt;/strong&gt; (2005). A comparison of nonparametric and parametric approaches for estimating survivor function. AIUB Journal of Science and Engineering, Vol 4, No. 1, pp. 19-24.
+2004&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Raheem, E.&lt;/strong&gt; and J. A. Syeda (2004). Intergenerational Mobility in Landholding among the Santal Tribe: A Markov Chain Model Approach. Social Science Review, Dhaka University Studies (Part D), Vol 20, No. 2, pp. 67-77.
+2002&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Raheem, S.&lt;/strong&gt; and Sekander Hayat Khan (2002). Combining Probability of Emptiness and Mean First Overflow Time of a Dam to Determine its Capacity. 
+&lt;a href=&#34;http://www.spatialhydrology.net/index.php/JOSH/article/view/12/12&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Spatial Hydrology&lt;/em&gt;&lt;/a&gt;, Vol. 2, No.2.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;courses-taught&#34;&gt;Courses Taught&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introductory Statistics (undergrad level)&lt;/li&gt;
+&lt;li&gt;Mathematical Statistics (undergrad level)&lt;/li&gt;
+&lt;li&gt;Experimental Design (grad level)&lt;/li&gt;
+&lt;li&gt;Introduction to Statistical Computing (with SAS) (grad)&lt;/li&gt;
+&lt;li&gt;Advanced Statistical Programming	with SAS (grad)&lt;/li&gt;
+&lt;li&gt;Multivariate Analysis (Theory and Applications)	(grad)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;professional-membership&#34;&gt;Professional Membership&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Member, American Statistical Association (ASA) (2010 ~)&lt;/li&gt;
+&lt;li&gt;Member, Statistical Society of Canada (SSC)&lt;/li&gt;
+&lt;li&gt;Life member, Bangladesh Statistical Society&lt;/li&gt;
+&lt;li&gt;Life member, Bangladesh Association for the Advancement of Science&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ফলিত পরিসংখ্যান ও ডেটা সায়েন্স</title>
+      <link>/project/asds/</link>
+      <pubDate>Fri, 30 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/project/asds/</guid>
+      <description>&lt;p&gt;ফলিত পরিসংখ্যানের বাংলা বই লেখার কাজ চলছে। সব আপডেট এখানে দেয়া হবে।&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thalassemias in South Asia: clinical lessons learnt from Bangladesh</title>
+      <link>/publication/thalassemia-south-asia/</link>
+      <pubDate>Sat, 27 May 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/thalassemia-south-asia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statisticians in the Data Science Era</title>
+      <link>/talk/statisticians-data-science-era-isrt-dhaka/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <guid>/talk/statisticians-data-science-era-isrt-dhaka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>গবেষণা পদ্ধতি ও কোলাবরেটিভ কাজের ধারা</title>
+      <link>/post/collaborative-research-workflow/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/post/collaborative-research-workflow/</guid>
+      <description>&lt;p&gt;সবকিছুই এখন দ্রুত চলছে — প্রযুক্তির উন্নয়ন হচ্ছে দ্রুত, সামাজিক পরিবর্তন হচ্ছে অনেকটা চোখের সামনেই, বাড়ছে মানুষ, আর সেইসাথে বাড়ছে ডেটা!&lt;/p&gt;
+&lt;p&gt;সময়ের প্রয়োজনে গবেষণা এখন হয়ে উঠেছে কোলাবরেটিভ বা সহযোগিতামূলক। এতে সুবিধা অনেক। একসাথে অনেক ফিল্ডের এক্সপার্টরা কাজ করছে যার ফলে প্রোডাক্টিভিটি বেড়েছে। অর্থাৎ অল্প সময়ে দ্রুত প্রোডাক্ট (রিসার্চ পেপার) বের করা সম্ভব হচ্ছে। নব্বইয়ের দশক থেকে শুরু করে তার পরবর্তী সময়কালে কোলাবরেটিভ কাজের সুযোগ ও আগ্রহ দুইই বেড়েছে।&lt;/p&gt;
+&lt;p&gt;তরুণ গবেষকদের কোলাবরেটিভ কাজ শুরু করার প্রাথমিক ধাপ হলো রিসার্চ কীভাবে করে সে সম্পর্কে ধারণা থাকা। আমাদের দেশের বিশ্ববিদ্যালয়গুলোতে রিসার্চ মেথডলজি নামে একটি বিষয় পড়ানো হয়। গবেষণা পদ্ধতি জানতে এবং তার ব্যবহারিক রূপ দেখতে এই কোর্সের কোন বিকল্প নেই। কাজ করে করে কাজ শেখা যায় তবে সেটি আরো এফিসিয়েন্ট হয় যদি তাত্ত্বিক জ্ঞান অর্জন করা থাকে। যেটি সম্ভব হয় এরকম কোর্স করার মাধ্যমে।&lt;/p&gt;
+&lt;p&gt;প্রথাগত কোর্স করলেই যে সবাই সবকিছু শিখে নেবে এমনটি নয়। তবে কোন কিছু সম্পর্কে একেবারে অন্ধকারে থাকার চেয়ে কিছুটা জানা ভালো যদি সেই জানাকে পরবর্তীতে জ্ঞান আহরণের প্রাথমিক ধাপ হিসেবে বিবেচনা করা হয় এবং সেরকম প্রচেষ্টা থাকে।&lt;/p&gt;
+&lt;p&gt;দু:খজনক হলেও সত্যি যে আমাদের দেশে পড়াশুনা ও গবেষণার জন্য সত্যিকার কোন মোটিভেশন না থাকায় এই কোর্সটিও কাগুজে কোর্সে পরিণত হয়। এরকম কোর্স থেকে শিক্ষার্থীরা সামান্য কিছুই পেয়ে থাকে যেগুলোকে তারা পরবর্তীতে নিজেদের গবেষণায় কাজে লাগাতে পারে। এর কারণ বহুবিদ। অন্যতম কারণটি হলো শিক্ষার সাথে ব্যবহারিক কাজের কোনো সম্পর্ক না থাকা।&lt;/p&gt;
+&lt;p&gt;এই সমস্যার উত্তরণের একটি পথ আছে যেটি হলো গবেষণায় নেমে পড়া। বাংলাদেশের তরুণ শিক্ষার্থীরা অনেকেই গবেষণা করতে চায় কিন্তু কীভাবে করবে সেটি অনেক সময় খুঁজে পায়না। এর কারণ মুলত শিক্ষা প্রতিষ্ঠানগুলোতে গবেষণার পরিবেশ না থাকা কিংবা আনপ্রোডাক্টিভ খাতে সময়ের অপচয় করা। এছাড়া আগেই যেমনটা বলেছি– শিক্ষার্থীদের মোটিভেশনের অভাব আরেকটি বড় কারণ। অনেক সময় শিক্ষক গবেষণায় আগ্রহী কিন্তু শিক্ষার্থী সিস্টেমের ফাঁক ফোকর ব্যবহার করে দায়সারা কাজ করে পার পেয়ে যেতে চায়।&lt;/p&gt;
+&lt;h1 id=&#34;গবষণ-পদধত&#34;&gt;গবেষণা পদ্ধতি&lt;/h1&gt;
+&lt;p&gt;এই লেখায় গবেষণার বিস্তারিত আলোচনা করবো না। গবেষণার পুরো বৃত্তান্তের স্টেপ বাই স্টেপ বর্ণনা করেছেন রাগিব হাসান তার 
+&lt;a href=&#34;http://elochinta.com/gobeshona/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;গবেষণায় হাতেখড়ি&lt;/a&gt; বইটিতে। আমি সেখানকার চুম্বক অংশ তুলে দিচ্ছি।&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;বইটা ভাগ করা হয়েছে কয়েকটি অংশে। প্রথমে আলোচনা করা হয়েছে গবেষণা কাকে বলে, এর প্রয়োজনীয়তা এবং মূলনীতি নিয়ে। এর পরে আস্তে আস্তে বলা হয়েছে, কীভাবে গবেষণা শুরু করবেন, বিষয় নির্বাচন ও লিটারেচার রিভিউ করবেন। তার পরে ধাপে ধাপে দেখানো হয়েছে, রিসার্চ পেপার পড়া, বোঝা, এবং নিজের গবেষণাপত্র কীভাবে লিখবেন। গবেষণার সমস্যা সমাধানের জন্য নতুন আইডিয়া কীভাবে চিন্তা করবেন ও যাচাই করবেন। এছাড়া গবেষণার ফলাফলকে প্রেজেন্টেশন বা বক্তৃতার মাধ্যমে উপস্থাপন করার নানা কৌশল সম্পর্কে লিখেছি। এবং সবশেষে আলোচনা করেছি গবেষণার অর্থায়ন কীভাবে করবেন, এবং গবেষণার সাথে আনুসঙ্গিক অনেক বিষয় যেমন গবেষকদের অভ্যাস, গবেষণার জন্য সময় জোগাড় করা, এসব কিছু।&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;আমি নতুন করে চাকা আবিষ্কার না করে বরং সংক্ষেপে ধাপগুলো তুলে ধরছি। এটি বিশেষ করে যারা আমার সাথে কাজ করতে চান তাদের জন্য অবশ্যপাঠ্য। তাছাড়া নিজেদের গবেষণাতেও এই ধাপগুলো অনুসরণ করা যাবে। হয়তো কাজের ধারা কিছুটা বদলাতে হতে পারে। সেটি নির্ভর করবে কী ধরনের গবেষণা হচ্ছে তার উপর।&lt;/p&gt;
+&lt;h1 id=&#34;সমসয-কথয়-পবন&#34;&gt;সমস্যা কোথায় পাবেন?&lt;/h1&gt;
+&lt;p&gt;সমস্যা অনেক ভাবে পাওয়া যেতে পারে। যারা কোন বিষয়ের অভিজ্ঞ বা অথরিটি তারা খুব সহজেই একটা গবেষণা করার মতো সমস্যা বের করতে পারেন। কিন্তু নতুন গবেষকদের জন্য এটি অনেক কঠিন একটি বিষয়। তাই তাদের জন্য গবেষণা করার মতো সমস্যা খুঁজে পেতে সংশ্লিষ্ট বিষয়ের জার্নাল থেকে আর্টিকেল পড়ার পরামর্শ দিচ্ছি। এটি সবচেয়ে কম সময়ে ভালো একটি সমস্যা খুঁজে পাওয়ার সবচেয়ে সহজ উপায়। আর দ্বিতীয়টি হলো চোখ কান খোলা রাখা এবং নিজের চিন্তা ভাবনা থেকেই সম্ভাব্য সমস্যা বের করা।&lt;/p&gt;
+&lt;p&gt;মনে রাখতে হবে সব সমস্যাই গবেষণা করার মতো নয়। অনেক সময় দূরদর্শীতা এবং অভিজ্ঞতার অভাবে একটি কাজ শুরু করে সেটি নানা কারণে শেষ করা হয়ে ওঠে না। প্রথম দিকে তাই অভিজ্ঞ কারো সাথে কাজ করলে কাজটি ভালো ভালোয় শেষ করার সম্ভবনা বাড়ে।&lt;/p&gt;
+&lt;p&gt;গবেষণার সমস্যা খুঁজতে গিয়ে আপনি প্রথমেই ব্রড একটা সমস্যা নিয়ে চিন্তা করবেন। তার পর সেখান থেকে ছোট ছোট বা স্পেসিফিক একাধিক সমস্যা বের করুন। সেগুলোকে লিপিবদ্ধ করুন। তারপর সেখান থেকে একটি বা দুটি সমস্যাকে বাছাই করুন। একটি গবেষণায় একটি প্রধান সমস্যাকে লক্ষ্য করে এগুবার পরামর্শ দেবো। এতে করে গবেষণা সেই লক্ষ্যেই স্থির থাকে এবং সকল কর্মকান্ডও ওই লক্ষ্যকে ঘিরে হয় বলে গবেষণাটি ভালো মানের হওয়ার সম্ভবনা থাকে।&lt;/p&gt;
+&lt;p&gt;যেমন ধরুন আপনি বাংলাদেশের কলেজ ও বিশ্ববিদ্যালয়ের শিক্ষার্থীদের মধ্যে ক্যানসার সচেতনতা নিয়ে কাজ করবেন বলে স্থির করছেন । ক্যান্সারের অনেক ধরন আছে। এক্ষেত্রে ভালো হবে একটি মাত্র ক্যান্সার (ধরা যাক স্তন ক্যান্সার) নিয়ে কাজ করা। সেই সাথে টার্গেট পপুলেশনে কলেজ শিক্ষার্থীদের না অন্তুর্ভুক্ত করে শুধু বিশ্ববিদ্যালয়ের শিক্ষার্থীদের অন্তর্ভুক্ত করলে আপনার গবেষণাটি আরো ফোকাসড হবে।&lt;/p&gt;
+&lt;h1 id=&#34;গবষণর-লকষয-ও-উদদশয-নরধরণ-কর&#34;&gt;গবেষণার লক্ষ্য ও উদ্দেশ্য নির্ধারণ করা&lt;/h1&gt;
+&lt;p&gt;গবেষণার মূল লক্ষ্যই হলো কোন সমস্যাকে তুলে ধরা বা সেটির সমাধানের পথে কী কী করা যায় সে সম্পর্কে রেকমেন্ডেশন দেয়া। সেজন্য গবেষণার মাধ্যমে যে যে প্রশ্নের উত্তর জানা প্রয়োজন সেগুলোকে লিপিবদ্ধ করা দরকার। এতে করে গবেষণাটি সিস্টেমেটিক হবে এবং গবেষণার শেষে লক্ষ্য ও উদ্দেশ্য পূরণ হলো কী না সেটিও পরিমাপ করা যাবে।&lt;/p&gt;
+&lt;p&gt;এজন্য গবেষণার প্রশ্ন বা Research Questions (RQs) গুলোকে লিখে রাখতে হবে। অনেকগুলো প্রশ্ন একসাথে লেখা যেতে পারে তবে কয়েকটি স্পেসিফিক প্রশ্নের উত্তর গবেষণায় খোঁজা হবে। এই প্রশ্নগুলোকেই একে একে উত্তর দেয়া হবে কনক্লুসন বা ডিসকাসন সেকশনে।&lt;/p&gt;
+&lt;h1 id=&#34;লটরচর-রভউ&#34;&gt;লিটারেচার রিভিউ&lt;/h1&gt;
+&lt;p&gt;সমস্যা বের করার পর আপনাকে দেখাতে হবে আপনার গবেষণাটি কেন দরকার। অর্থাৎ আপনাকে বোঝাতে হবে আপনার কাজের মোটিভেশন কী? সেজন্য এই সমস্যার উপর ইতোপূর্বে কে কী করেছে এবং তাদের কাজগুলোকে আপনার রিভিউ করতে হবে। লিটারেচার রিভিউ লেখা সহজ নয়। মানে এটিকে খুব সহজ ভাবে নেয়া উচিত নয়। লিটারেচার রিভিউ কেবলমাত্র পূর্বে সম্পাদিত কাজের তালিকা নয় বরং সেই কাজগুলো কীভাবে একটির সাথে আরেকটি সম্পর্কযুক্ত সেটি বুঝে আপনাকে পাঠকউপযোগী করে উপস্থাপন করতে হবে। এরকম উপস্থাপনার উদ্দেশ্য হলো আপনার গবেষণার কনটেক্সট বা প্রাসঙ্গিকতা তৈরী করা। আপনার রিভিউ পড়ে যেন সবাই বুঝতে পারে আপনার অবদান কতটুকু এবং কীভাবে।&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your work must be put into proper context and argued what you’ve done and why…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;খুব ভালো মানে কাজও কিন্তু ভাল লিটারেচার রিভিউ না থাকার কারণে রিভিউয়াররা বাতিল করে দিতে পারে। এক্ষেত্রে আপনাকেই কাজের নতুনত্ব ও অবদান লেখার মাধ্যমে তুলে ধরতে হবে।&lt;/p&gt;
+&lt;h1 id=&#34;মথড-অব-এনলসস-ব-মথডলজ&#34;&gt;মেথড অব এনালিসিস বা মেথডলজি&lt;/h1&gt;
+&lt;p&gt;এই অংশে মূলত পরিসংখ্যানিক এনালিসিস করা হয়। একজন গবেষক নানা ভাবে তার গবেষণা করতে পারেন। তবে এপিডেমিওলজিকাল এবং সামাজিক-বিজ্ঞানের গবেষণাগুলোকে মোটা দাগে তিনভাগে ভাগ করা যায়।&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ক্রস-সেকসনাল স্টাডি (Cross-sectional study)&lt;/li&gt;
+&lt;li&gt;অবজারভেশনাল স্টাডি (Observational study)&lt;/li&gt;
+&lt;li&gt;এক্সপেরিমেন্টাল স্টাডি (Experimental study)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ক্রস-সেকসনাল স্টাডি পরিচালনা করা হয় একটি পপুলেশনের বৈশিষ্ট্যগুলোর স্ন্যাপশট দেখার জন্য। যেকোন সময়েই এরকম স্টাডি করা যায়। লক্ষ্য রাখতে হবে সময়টি যেন এমন না হয় যে এটি গবেষণার প্রশ্নের সাথে সম্পর্কযুক্ত। ধরুন আপনি জানতে চাইছেন ঢাকা শহরে প্রতিদিন কত সংখ্যক মানুষ বাইরের জেলাগুলো থেকে আসে। সেজন্য আপনাকে একটি টিপিক্যাল দিন বাছাই করতে হবে যেটার সাথে ঢাকা শহরে মানুষ আসার বিশেষ কোন সম্পর্ক না থাকে। যেমন ইজতেমার মওশুমে অনেক মানুষ ঢাকায় আসে। আপনি যদি সেরকম কোন একটি সময়ে গবেষণার জন্য উপাত্ত সংগ্রহ করেন তাহলে আপনি প্রকৃত চিত্র পাবেন না। এক্ষেত্রে আপনার গবেষণার ফল বায়াসড হবে।&lt;/p&gt;
+&lt;p&gt;অবজারভেশনাল স্টাডিতে আপনি শুধু অবজার্ভ করবেন বা দেখবেন। সেটি হতে পারে স্টাডি শুরু থেকে ভবিষ্যতের দিকে আপনার স্টাডি সাবজেক্টকে ফলো করা। আবার হতে পারে স্টাডি শুরুর সময় থেকে পিছনের দিকে অরজার্ভ করা। উদাহরণস্বরূপ আপনি দেখতে চাইছেন নেশাদ্রব্য গ্রহণের সাথে স্ট্রোকের সম্পর্ক আছে কিনা বা নেশাদ্রব্য গ্রহণ স্ট্রোকের সম্ভাবনা বাড়িয়ে দেয় কিনা। এজন্য আপনি টার্গেট পপুলেশনের একটি অংশকে আজ থেকে ফলো করা (অবজার্ভ) করা শুরু করলেন এবং আগামী ৫ বছর তাদের অবজার্ভ করবেন। ৫ বছর শেষে আপনি দেখবেন এদের মধ্যে যাদের স্ট্রোক হয়েছে তাদের কেউ কেউ নেশাকারী এবং কেউ কেউ নয়। এভাবে স্টাডি করে দেখা যাবে নেশাদ্রব্য গ্রহণের সাথে স্ট্রোকের এসোসিয়েসন আছে কিনা। এ ধরনের স্টাডিকে বলে প্রসপেকটিভ স্টাডি।&lt;/p&gt;
+&lt;p&gt;আবার অন্য ধরনের অবজারভেশনাল স্টাডিতে প্রথমেই তাদেরকে বেছে নেয়া যাদের স্ট্রোক হয়েছে। অর্থাৎ ইভেন্ট যাদের মধ্যে ঘটেছে তাদের বাছাই করে তাদের ইন্টারভিউয়ের মাধ্যমে জানা যে তারা অতীতে কোন নেশাদ্রব্য নিয়মিত গ্রহণ করতো কিনা। এধরনের স্টাডিকে বলে রেট্রোস্পেক্টিভ স্টাডি যা বর্তমানের ইভেন্ট দেখে অতীতকে পর্যবেক্ষণ করা যে ইভেন্টটি ঘটার সাথে অতীতের কার্যকলাপের (নেশাদ্রব্য গ্রহণ) এসোসিয়েশন আছে কিনা।&lt;/p&gt;
+&lt;p&gt;অবজারভেশনাল স্টাডিতে শুধুই অবজার্ভ করা হয়, কোন ইন্টারভেনশন দেয়া হয়না।&lt;/p&gt;
+&lt;p&gt;এক্সপেরিমেন্টাল স্টাডি অনেকটা ফলোআপ বা প্রসপেক্টিভ অবজারভেশনাল স্টাডির মতো। এখানে মূল পার্থক্য হলো এ ধরনের গবেষণায় নতুন ইন্টারভেনশন দেয়া হয় এটা দেখতে যে ইন্টারভেনশনটির কোন এফেক্ট আছে কিনা। ধরা যাক স্ট্রোক কমাতে নতুন একটি ড্রাগ বা লাইফস্টাইলের এফেক্ট আপনি যাচাই করতে চাইছেন। এক্ষেত্রে আপনি দৈব চয়নের মাধ্যমে আপনার গবেষণায় অংশগ্রহণকারিদের একটি অংশকে এই নতুন ড্রাগ বা লাইফস্টাইল দিবেন আর অন্য অংশকে প্লাসিবো দিবেন। 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Placebo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;প্লাসিবো&lt;/a&gt; হলো ঔষধের মতো যেটির আসলে কোন ঔষধি গুন নেই। বিস্তারিত জানতে উইকিতে দেখুন।&lt;/p&gt;
+&lt;h1 id=&#34;এনলসস&#34;&gt;এনালিসিস&lt;/h1&gt;
+&lt;p&gt;এই ধাপে স্ট্যাটিসটিক্যাল এনালিসিস করা হবে। ডেটা সংগ্রহের পর সেটিকে ক্লিন করে সামারি রেজাল্ট এবং পরিসংখ্যানের মডেল (যদি দরকার হয়) ব্যবহার করে সিদ্ধান্ত গ্রহণ করা হবে। গবেষণার জন্য নেয়া নমুনা যদি জনগোষ্ঠীর প্রতিনিধিত্বমূলক হয় তাহলে গবেষণার ফলকে সেই টার্গেট পপুলেশনের উপর জেনারেলাইজ করা যাবে অর্থাৎ গবেষণার ফলটি ওই জনগোষ্ঠীর জন্য প্রযোজ্য এমনটি বলা যাবে।&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;আর যদি প্রতিনিধিত্বমূলক নমুনা না হয়ে থাকে তাহলে গবেষণার ফলাফল কেবল ওই গবেষণায় অংশগ্রহণকারিদের জন্যই প্রযোজ্য হবে। কোনভাবেই সেটি মূল জনগোষ্ঠীর জন্য সত্যি এমনটি বলা যাবে না। গবেষণার ফল প্রকাশের সময় এই ব্যাপারটি  তাই খুব সতর্কতার সাথে লিখতে হবে যাতে কোন ভুল বোঝাবুঝি না নয়। অনেক সময় সংবাদপত্রে গবেষণার ফলকে পুরো জনগোষ্ঠীর ফল হিসেবে দেখিয়ে খবর প্রকাশিত হয় যা সত্যের অপলাপ মাত্র।&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;ডসকশন&#34;&gt;ডিসকাশন&lt;/h1&gt;
+&lt;p&gt;কোন গবেষণার এটি হলো সার অংশ। ব্যবহারকারিরা এবং যারা পলিসি তৈরি করেন তাদের কাছে এই সেকশনটি গুরুত্বপূর্ণ। তারা এটিই পড়বেন এবং সে মোতাবেক সিদ্ধান্ত গ্রহণ বা পরিবর্তন করবেন যাতে জনগোষ্ঠীতে পরিবর্তন আসে।&lt;/p&gt;
+&lt;p&gt;এজন্য এই অংশটি খুব সতর্কতার সাথে এবং অল্পকথায় লিখতে পারলে ভালো। এই অংশে গবেষণার প্রাপ্ত ফলগুলোকে প্রেজেন্ট করা হয় এবং তা পূর্ববর্তী গবেষণার ফলের সাথে তুলনা করে দেখানো হয়। শুধু নিজের গবেষণার ফল আলোচনা করলেই হবে না, একই ধরনের অন্য গবেষণার ফলের সাথে আপনার গবেষণার ফলের তুলনামুলক আলোচনা করতে হবে। এই অংশে গবেষণার উদ্দেশ্য এবং RQ গুলোকে পুনর্ব্যক্ত করে দেখাতে হয় আপনি গবেষণা শুরুর আগে যা জানতে চেয়েছিলেন সেগুলোর উত্তর পেয়েছেন কী না।&lt;/p&gt;
+&lt;p&gt;এই অংশটি আপনার গবেষণাকে পুনরায় জাস্টিফাই করবে। সেটি সম্ভব হবে ভালো করে সেকশনটি উপস্থাপন করার মাধ্যমে। এরকম উপস্থাপনা করতে পারা সহজ নয়। অভিজ্ঞতার মাধ্যমে এটি অর্জন করা যায়। শেখার জন্য ভালো জার্নালের আর্টিকেল থেকে আপনার গবেষণার সাথে মিল আছে সেরকম আর্টিকেলের ডিসকাশন সেকশন পড়ার পরামর্শ দিব। পড়ার মাধ্যমে জানা হবে আর সেটি নিজের গবেষণাপত্রে লেখার মাধ্যমে চর্চা হবে।&lt;/p&gt;
+&lt;h1 id=&#34;কনকলশন-ব-উপসহর&#34;&gt;কনক্লুশন বা উপসংহার&lt;/h1&gt;
+&lt;p&gt;পরিশেষে উপসংহারে আপনি আপনার গবেষণার ফলাফল সংক্ষেপে আবারো লিখবেন। অনেক জার্নালে কনক্লুশন এবং ডিসকাশন সেকশন দুটি একত্রে লেখা হয়। সেক্ষেত্রে উপসংহারটিকে আপনার ডিসকাশন সেকশনের শেষ প্যারা হিসেবে লিখতে পারেন। এই সেকশনে পলিসি রেকমেন্ডেশন দিতে পারেন। সেই সাথে আপনার কাজের সীমাবদ্ধতাগুলোও তুলে ধরতে পারেন। সবশেষে ভবিষ্যতে আরও কী কী করা যেতে পারে সেগুলোর একটি আউটলাইন দেয়া যেতে পারে। এ থেকে বোঝা যাবে এই গবেষণায় আপনার অবদান কতটুকু এবং আরও কী কী কাজের সুযোগ আছে যা আপনি কিংবা আগ্রহী গবেষকগণ চিন্তা করতে পারেন।&lt;/p&gt;
+&lt;h1 id=&#34;কজর-ধর&#34;&gt;কাজের ধারা&lt;/h1&gt;
+&lt;p&gt;অনেকেই অনেক ভাবে কাজ করতে পারে তবে আমি আমার মতো করে একটি ওয়ার্কফ্লো দিচ্ছি। আমি প্রথম এবং শেষ থেকে শুরু করে আস্তে আস্তে ভিতরের দিকে কাজ করি। লক্ষ্য, উদ্দেশ্য ও লিটারেচার রিভিউ নিয়ে যুগপদ কাজ করি। লক্ষ্য ও উদ্দেশ্য লেখা হয়ে গেলে এবং রিটারেচার রিভিউ শেষ হলে RQ গুলো কী ভাবে উত্তর করবো সে লক্ষ্যে ডিসকাশন সেকশনে কাজ করি। ডিসকাশন পুরো লেখা হয়না কিন্তু টেমপ্লেট তৈরী করা হয় যেখানে এনালিসিস (ধাপ ৪) থেকে প্রাপ্ত তথ্যগুলো দিয়ে পরবর্তীতে সম্পূর্ণ করা হয়।&lt;/p&gt;
+&lt;p&gt;তবে এই ওয়ার্কফ্লো নির্ভর করে কী ধরনের গবেষণা হচ্ছে তার উপর। সাধারণত ধাপগুলো এরকম হতে পারে&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;সমস্যা &amp;gt; প্রশ্ন &amp;gt; লিটারেচার রিভিউ &amp;gt; ডিসকাশন টেমপ্লেট &amp;gt; এনালিসিস + মেথডলজি &amp;gt; ডিসকাশন &amp;gt; উপসংহার&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;কিংবা হতে পারে&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;সমস্যা &amp;gt; প্রশ্ন &amp;gt; লিটারেচার রিভিউ &amp;gt; মেথডলজি&amp;gt; ডিসকাশন টেমপ্লেট + এনালিসিস &amp;gt; ডিসকাশন &amp;gt; উপসংহার&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;শষ-কথ&#34;&gt;শেষ কথা&lt;/h1&gt;
+&lt;p&gt;আশা করি লেখাটি পড়ে আপনার গবেষণা পদ্ধতি সম্পর্কে একটি রিভিউ হলো। আপনি কোন পদ্ধতি অনুসরণ করে সেটি মন্তব্যে জানালে খুশি হবো। সেই সাথে কোন পরামর্শ যদি থাকে সেটাও জানাতে পারেন।।&lt;/p&gt;
+&lt;p&gt;পড়ার জন্য ধন্যবাদ।&lt;/p&gt;
+&lt;p&gt;কোলাবরেশন চলুক!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multilevel multinomial logistic regression model for identifying factors associated with anemia in children 6-59 months in northeastern states of India</title>
+      <link>/publication/multinomial_logistic_anemia/</link>
+      <pubDate>Mon, 14 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/multinomial_logistic_anemia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identifying the factors influencing institutional and non-institutional delivery practices in slums of Shillong city</title>
+      <link>/publication/factors_institutional_non-institutional_delivery_practices/</link>
+      <pubDate>Sat, 19 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/factors_institutional_non-institutional_delivery_practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Association of TSH level with first trimester pregnancy loss in anti-TPO antibody negative women in Bangladesh</title>
+      <link>/publication/tsh_pregnancy_loss/</link>
+      <pubDate>Thu, 10 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/tsh_pregnancy_loss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptation to climate change in coastal saline area of south-western region of Bangladesh</title>
+      <link>/publication/adaptation_climate_change/</link>
+      <pubDate>Wed, 24 Sep 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/adaptation_climate_change/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
