@@ -1,14 +1,15 @@
 ---
 title: গবেষণার ট্র্যাক রেকর্ড
-author: ''
+authors: []
 date: '2020-03-01'
+
 slug: 'building-research-track-record-bn'
 subtitle: 'স্পেশালটি এরিয়া ডেভলপ করা গবেষক হিসেবে প্রতিষ্ঠিত হওয়ার অন্যতম ধাপ যা নতুনরা প্রায়ই বুঝতে পারে না'
 summary: 'নতুন গবেষকরা তাদের ক্যারিয়ারের শুরুতে একটি ব্যাপার পুরোপুরি অনুধাবন করতে পারে না। সেটি হলো ট্র্যাক রেকর্ড। ট্র্যাক রেকর্ড বলতে বোঝায় record of performance — অর্থাৎ কর্মদক্ষতার প্রমাণ। গবেষণার ট্র্যাক রেকর্ড ও সেরকমই।'
-categories: ["Research"]
+categories: ["Mentoring"]
 tags: ["গবেষণা", "বাংলা"]
-authors: []
 lastmod: '2020-03-01'
+
 featured: no
 image:
   placement: 1
