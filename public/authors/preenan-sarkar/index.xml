@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Preenan Sarkar | Enayetur Raheem</title>
+    <link>/authors/preenan-sarkar/</link>
+      <atom:link href="/authors/preenan-sarkar/index.xml" rel="self" type="application/rss+xml" />
+    <description>Preenan Sarkar</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Sat, 19 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/portrait.jpg</url>
+      <title>Preenan Sarkar</title>
+      <link>/authors/preenan-sarkar/</link>
+    </image>
+    
+    <item>
+      <title>Identifying the factors influencing institutional and non-institutional delivery practices in slums of Shillong city</title>
+      <link>/publication/factors_institutional_non-institutional_delivery_practices/</link>
+      <pubDate>Sat, 19 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/factors_institutional_non-institutional_delivery_practices/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

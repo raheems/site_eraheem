@@ -3,7 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/authors/enayet/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/abdullah-al-mosabbir/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/enayetur-raheem/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,12 +38,47 @@
   </url>
   
   <url>
+    <loc>/authors/mahbubul-h.-siddiqee/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/mary-petrou/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/md.-mahbub-hasan/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/mentoring/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/authors/mohammad-sorowar-hossain/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/muhammad-sougatul-islam/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/paul-telfer/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,7 +128,32 @@
   </url>
   
   <url>
+    <loc>/authors/anthony-d.-okely/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/perception_childhood_obesity_2019/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/marzia-faruki/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/rifat-jahan/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/shah-md.-shahik/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/shameema-ferdous/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,12 +203,97 @@
   </url>
   
   <url>
+    <loc>/authors/km-sultanul-aziz/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/md.-abdul-khaleque/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/md.-abdullah-saeed-khan/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/md.-akram-hossain/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/miliva-mozaffor/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nova-ahmed/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/s.-m.-yasir-arafat/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/salequl-islam/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/shah-md.-zahurul-haque-asna/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/shahanaz-chowdhury/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/tashmim-farhana-dipta/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/waheed-akhtar/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/zohora-jameela-khan/</loc>
+    <lastmod>2018-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/abdullah-mosabbir/</loc>
+    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/managing-autism-developing-countries/</loc>
     <lastmod>2018-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/authors/nusrat-rahman/</loc>
+    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/zillur-rahman-khan/</loc>
+    <lastmod>2018-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/pattern-hematological-malignancy/</loc>
+    <lastmod>2017-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/tanvira-afroze-sultana/</loc>
     <lastmod>2017-11-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,6 +343,61 @@
   </url>
   
   <url>
+    <loc>/authors/alam-r/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/arifuzzaman-m/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/aziz-s/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/ferdous-s/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/hossain-ms/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/islam-s/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/khatun-h./</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/nahar-n/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/raheem-e/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/razzaque-ma/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/sultana-ta/</loc>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/thalassemia-south-asia/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
@@ -203,7 +428,7 @@
   </url>
   
   <url>
-    <loc>/tags/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%B8/</loc>
+    <loc>/tags/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A6%AF%E0%A7%87%E0%A6%A8%E0%A6%B8/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -223,7 +448,17 @@
   </url>
   
   <url>
+    <loc>/authors/sanku-dey/</loc>
+    <lastmod>2016-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/factors_institutional_non-institutional_delivery_practices/</loc>
+    <lastmod>2015-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/preenan-sarkar/</loc>
     <lastmod>2015-09-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -233,16 +468,48 @@
   </url>
   
   <url>
+    <loc>/authors/m-akhteruzzaman/</loc>
+    <lastmod>2015-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/ma-hussain/</loc>
+    <lastmod>2015-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/rk-kazal/</loc>
+    <lastmod>2015-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/yisrat-jahan/</loc>
+    <lastmod>2015-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/adaptation_climate_change/</loc>
     <lastmod>2014-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/enayet/</loc>
+    <loc>/authors/e.-raheem/</loc>
+    <lastmod>2014-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>/authors/m.-b.-islam/</loc>
+    <lastmod>2014-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/shah-al-emran/</loc>
+    <lastmod>2014-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/yusuf-ali/</loc>
+    <lastmod>2014-09-24T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

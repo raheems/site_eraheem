@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science | </title>
+    <title>Data Science | Enayetur Raheem</title>
     <link>/categories/data-science/</link>
       <atom:link href="/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Science</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Sat, 10 Dec 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/portrait.jpg</url>
       <title>Data Science</title>
@@ -186,10 +186,10 @@
 &lt;figure&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/understanding-data-science-job-market/featured_hua002c6c73f163860c09bdce7b1741c74_24852_2000x2000_fit_box_2.png&#34; data-caption=&#34;র ডেটা -&amp;gt; এক্সট্র্যাক্ট, ট্রান্সফরম, লোড -&amp;gt; স্ট্যাটিসটিক্যাল মডেলিং&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/understanding-data-science-job-market/featured_hua002c6c73f163860c09bdce7b1741c74_24852_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;র ডেটা -&amp;gt; এক্সট্র্যাক্ট, ট্রান্সফরম, লোড -&amp;gt; স্ট্যাটিসটিক্যাল মডেলিং&#34;&gt;
 
 
-  &lt;img data-src=&#34;/post/understanding-data-science-job-market/featured_hua002c6c73f163860c09bdce7b1741c74_24852_2000x2000_fit_box_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;893&#34; height=&#34;463&#34;&gt;
+  &lt;img data-src=&#34;/post/understanding-data-science-job-market/featured_hua002c6c73f163860c09bdce7b1741c74_24852_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;893&#34; height=&#34;463&#34;&gt;
 &lt;/a&gt;
 
 
@@ -243,7 +243,8 @@
 &lt;p&gt;ডেটা সায়েন্স নতুন এবং দ্রুত জনপ্রিয় হচ্ছে এমন একটি ফিল্ড। অনেকেই ইদানীং ডেটা সায়েন্সের প্রতি আগ্রহী হয়ে উঠছে। অথচ তাদের অনেকেই পরিষ্কারভাবে জানে না ডেটা সায়েন্স বলতে কী বোঝায়।&lt;/p&gt;
 &lt;p&gt;ডেটা সায়েন্স ইজ লুজলি ডিফাইন্ড। অর্থাৎ ডেটা সায়েন্স বলতে অনেক কিছুই বোঝানো সম্ভব এবং অনেক কিছুই বোঝানো হচ্ছে। কোন্ ডিসিপ্লিনের মানুষ শব্দটি ব্যবহার করছে তার উপর নির্ভর করে তারা ডেটা সায়েন্স বলতে কী বোঝাচ্ছে। এর কারণ হলো ডেটা নিয়ে যে বা যারা কাজ করে তারাই নিজেদেরকে ডেটা সায়েন্টিস্ট হিসেবে দাবী করতে পারে।&lt;/p&gt;
 &lt;p&gt;সহজ করে বলতে গেলে ডেটা সায়েন্স এমন একটি শাখা যেখানে নানা বিষয়ের লোকজন একসাথে ডেটা নিয়ে কাজ করে সেই ডেটাকে অর্থবহ করে ব্যবহারোপযোগী করে তোলে যা থেকে সিদ্ধান্ত গ্রহণ করা সম্ভব হয়। অর্থাৎ কোন প্রতিষ্ঠানের কাছে যে ডেটা আছে সেই ডেটা প্রতিষ্ঠানটির কী কাজে লাগবে সেভাবে ডেটাকে কাজে লাগানোর বিজ্ঞানকেই ডেটা সায়েন্স বলা যাবে।&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;A data scientist is a statistician who lives in San Fransisco&amp;quot; &lt;a href=&#34;https://twitter.com/hashtag/monkigras?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#monkigras&lt;/a&gt; &lt;a href=&#34;http://t.co/HypLL3Cnye&#34;&gt;pic.twitter.com/HypLL3Cnye&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jeremy Jarvis (@jeremyjarvis) &lt;a href=&#34;https://twitter.com/jeremyjarvis/status/428848527226437632?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;h1 id=&#34;ডট-সয়নস-কথয়-বযবহত-হচছ&#34;&gt;ডেটা সায়েন্স কোথায় ব্যবহৃত হচ্ছে?&lt;/h1&gt;
 &lt;p&gt;অতি পরিচিত উদাহরণ হলো গুগল। আপনি গুগলের সার্ভিসে লগিন থাকা অবস্থায় সার্চ করেন “cricket” তাহলে যা পাবেন আপনি গুগলে লগিন না করে যদি একই কী-ওয়ার্ড সার্চ করেন দেখবেন ফলাফল একটু হলেও ভিন্ন হবে। কেন এমনটা হয় সেটা ভেবে দেখেছেন কখনো? কারণ হলো গুগল আপনার পছন্দ অপছন্দ অনেক কিছুই জানে। আর সে মোতাবেক আপনার জন্য personalized search result তৈরী করে আপনার সামনে পেশ করে। গুগল এমনটি করে থাকে আর্টিফিশিয়াল ইন্টেলিজেন্সের মাধ্যমে যেটি ডেটা সায়েন্সের একটি অংশ বলা যায়।&lt;/p&gt;
 &lt;p&gt;আপনি কী করেন, কোথায় ঘুরতে যান, কোথায় খান, কোন দোকানে শপিং করেন, কী ধরনের শপিং করেন সেসবের অনেককিছুই এখন ট্রাক করা সম্ভব এবং করা হচ্ছেও। লোকেশনের কথাই ধরা যাক। আপনার হাতের স্মার্ট ফোনটি আপনার গতিবিধি সবকিছুই রেকর্ড করছে। আপনি হয়তো জানেন না অথবা জেনেও কিছু বাড়তি সুবিধা দিয়ে গুগল আপনার কাছ থেকে এই তথ্যগুলো যোগাড় করে নিচ্ছে। এতে গুগলের ব্যবসায়িক উদ্দেশ্য তো অবশ্যই আছে সেই সাথে আপনাকেও অনেক কিছু সহজে করে দিচ্ছে। এসব তথ্য নিয়ে গুগলের মেশিন আপনার সম্পর্কে লার্ণ করছে বা শিখছে। আপনাকে চিনছে।&lt;/p&gt;

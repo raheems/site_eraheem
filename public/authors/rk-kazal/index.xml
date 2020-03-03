@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RK Kazal | Enayetur Raheem</title>
+    <link>/authors/rk-kazal/</link>
+      <atom:link href="/authors/rk-kazal/index.xml" rel="self" type="application/rss+xml" />
+    <description>RK Kazal</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Thu, 10 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/portrait.jpg</url>
+      <title>RK Kazal</title>
+      <link>/authors/rk-kazal/</link>
+    </image>
+    
+    <item>
+      <title>Association of TSH level with first trimester pregnancy loss in anti-TPO antibody negative women in Bangladesh</title>
+      <link>/publication/tsh_pregnancy_loss/</link>
+      <pubDate>Thu, 10 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/tsh_pregnancy_loss/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

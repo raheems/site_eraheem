@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Razzaque MA | Enayetur Raheem</title>
+    <link>/authors/razzaque-ma/</link>
+      <atom:link href="/authors/razzaque-ma/index.xml" rel="self" type="application/rss+xml" />
+    <description>Razzaque MA</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Sat, 27 May 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/portrait.jpg</url>
+      <title>Razzaque MA</title>
+      <link>/authors/razzaque-ma/</link>
+    </image>
+    
+    <item>
+      <title>Thalassemias in South Asia: clinical lessons learnt from Bangladesh</title>
+      <link>/publication/thalassemia-south-asia/</link>
+      <pubDate>Sat, 27 May 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/thalassemia-south-asia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

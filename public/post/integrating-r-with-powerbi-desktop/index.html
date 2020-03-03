@@ -248,8 +248,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_box_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_box_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/post/integrating-r-with-powerbi-desktop/">
 
@@ -266,9 +266,9 @@
   <meta property="twitter:site" content="@eraheem">
   <meta property="twitter:creator" content="@eraheem">
   
-  <meta property="og:site_name" content="">
+  <meta property="og:site_name" content="Enayetur Raheem">
   <meta property="og:url" content="/post/integrating-r-with-powerbi-desktop/">
-  <meta property="og:title" content="Integrating R with Power BI | ">
+  <meta property="og:title" content="Integrating R with Power BI | Enayetur Raheem">
   <meta property="og:description" content="Microsoft Power BI Desktop version nicely integrates with R. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. Power BI is Microsoft&rsquo;s flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for Power BI Desktop, you can do many cool things, which can be categorized into three broad applications&ndash;"><meta property="og:image" content="/img/portrait.jpg">
   <meta property="twitter:image" content="/img/portrait.jpg"><meta property="og:locale" content="en-us">
   
@@ -313,10 +313,10 @@
   
   "publisher": {
     "@type": "Organization",
-    "name": "",
+    "name": "Enayetur Raheem",
     "logo": {
       "@type": "ImageObject",
-      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_box_center_2.png"
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Microsoft Power BI Desktop version nicely integrates with R. R is an open source software for statistical computing and graphics. R has become popular among the data scientists because of its powerful data analytics and visualization capabilities. Power BI is Microsoft\u0026rsquo;s flagship BI tool for creating dashboards and interactive reports. With R as a backend engine for Power BI Desktop, you can do many cool things, which can be categorized into three broad applications\u0026ndash;"
@@ -367,7 +367,7 @@
 
 
 
-  <title>Integrating R with Power BI | </title>
+  <title>Integrating R with Power BI | Enayetur Raheem</title>
 
 </head>
 
@@ -418,7 +418,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"></a>
+      <a class="navbar-brand" href="/">Enayetur Raheem</a>
     </div>
     
 
@@ -431,7 +431,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"></a>
+      <a class="navbar-brand" href="/">Enayetur Raheem</a>
     </div>
     
 
@@ -713,7 +713,25 @@
 <li>creating visuals with R script</li>
 </ul>
 <p>In this article, I have demonstrated how to use R with Power BI to perform these applications.</p>
-<!-- raw HTML omitted -->
+<h2>Table of Contents</h2>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparing-the-r-script-in-r-studio">Preparing the R script in R Studio</a></li>
+    <li><a href="#run-your-r-script-and-import-data">Run your R script and import data</a></li>
+    <li><a href="#error-message">Error message</a></li>
+    <li><a href="#loading-the-data">Loading the data</a></li>
+    <li><a href="#updating-the-r-script">Updating the R script</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#example-to-demonstrate-re-coding">Example to demonstrate re-coding</a></li>
+    <li><a href="#entering-r-script-to-transform-data">Entering R script to transform data</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#example-with-mtcars-data">Example with mtcars data</a></li>
+  </ul>
+</nav>
 <h1 id="application-1-using-r-to-import-data-sets-into-power-bi">Application 1: Using R to import data sets into Power BI</h1>
 <p>Power BI can import data from a variety of sources. For a complete list, please see 
 <a href="https://docs.microsoft.com/en-us/power-bi/desktop-data-sources" target="_blank" rel="noopener">here.</a></p>
@@ -723,15 +741,16 @@
 <h2 id="preparing-the-r-script-in-r-studio">Preparing the R script in R Studio</h2>
 <p>This is the stage you would write your R script to load your data. I use R studio for that. RStudio is a popular Integrated Development Environment (IDE) for R. If you are not familiar with RStudio, you can use the default R editor or wherever you write your R codes. You do not need any special preparation. Just use the editor to test your code before using in Power BI.</p>
 <p>I am going to create a smiple data set with two columns using the R codes below. This data is being created for demonstration purposes only so that you can reproduce it when you are learning.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e"># Sample data frame object</span>
+<pre><code class="language-r"># Sample data frame object
 
-df <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">data.frame</span>(
-  x<span style="color:#f92672">=</span> <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">100</span>),
-  y<span style="color:#f92672">=</span> <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">100</span>) <span style="color:#f92672">+</span> <span style="color:#a6e22e">rnorm</span>(<span style="color:#ae81ff">100</span>)
+df &lt;- data.frame(
+  x= rnorm(100),
+  y= rnorm(100) + rnorm(100)
 )
 
-<span style="color:#a6e22e">head</span>(df)
-</code></pre></div><p>This code creates an R <code>data.frame</code> and saves in an object <code>df</code>. This will be the name of the data when you import into Power BI. You can give the data object any valid R-name you want.</p>
+head(df)
+</code></pre>
+<p>This code creates an R <code>data.frame</code> and saves in an object <code>df</code>. This will be the name of the data when you import into Power BI. You can give the data object any valid R-name you want.</p>
 <p>The above code also shows <code>head(df)</code>, but Power BI only imports <code>data.frame</code>. In this case, it will only import the <code>df</code> object and ignore the rest. So you don&rsquo;t have to worry about other codes in the script. Just make sure all codes run without error and without any dependencies.</p>
 <h2 id="run-your-r-script-and-import-data">Run your R script and import data</h2>
 <p>In Power BI Desktop, the R Script data connector is found in Get Data menu. Click on <strong>Get Data &gt; More&hellip;</strong>, then select <strong>Other &gt; R script</strong> as shown in the following image:</p>
@@ -768,7 +787,8 @@ I am giving an example to demonstrate how it works.</p>
   sex = c(1, 1, 2),
   gpa = c(4, 3.9, 3.95)
 )
-</code></pre><p>We will import this data using the R (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the <code>sex</code> variable to indicate <code>Male</code> for <code>1</code> and <code>Female</code> for <code>2</code>. For that, we use the following codes which we would enter in the R script:</p>
+</code></pre>
+<p>We will import this data using the R (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the <code>sex</code> variable to indicate <code>Male</code> for <code>1</code> and <code>Female</code> for <code>2</code>. For that, we use the following codes which we would enter in the R script:</p>
 <pre><code># 'dataset' holds the input data for this script
 library(dplyr)
 
@@ -776,7 +796,12 @@ newcalc &lt;- dataset %&gt;%
   mutate(
     sex = ifelse(sex == 1, &quot;Male&quot;, &quot;Female&quot;)
   )
-</code></pre><!-- raw HTML omitted -->
+</code></pre>
+<div class="alert alert-note">
+  <div>
+    Note that the name of the source data in R  is: <code>dataset</code>
+  </div>
+</div>
 <h2 id="entering-r-script-to-transform-data">Entering R script to transform data</h2>
 <ul>
 <li>Click on the <strong>Edit Queries</strong> button in Power BI Desktop to open the query editor.</li>
@@ -807,7 +832,8 @@ newcalc &lt;- dataset %&gt;%
 <p>This assumes that we already have a dataset in Power BI. For the sake of reproducibility of this example, I will create the data. This time, I will just load a car data set called <code>mtcars</code> available within R.</p>
 <p>Simply follow the steps in Application 1, using the code entered in the R script window:</p>
 <pre><code>df &lt;- mtcars
-</code></pre><p>This loads the data in Power BI as shown in the figure below.</p>
+</code></pre>
+<p>This loads the data in Power BI as shown in the figure below.</p>
 <p><img src="/img/load_mtcars.png" alt="mtcars Data"></p>
 <p>Now, we would like to create a boxplot of gas mileage (miles per gallon) by cylinder type. We call the</p>
 <p>To creat a R visual, click on the R icon from <strong>VISUALIZATIONS</strong> pane as seen in the above image (the icon is pointed with a red arrow).This should create a placeholder for a visual in the canvas and an <strong>R script editor</strong> will show up at the bottom of the screen.</p>
@@ -823,9 +849,14 @@ newcalc &lt;- dataset %&gt;%
         col = c(&quot;blue&quot;,&quot;green&quot;,&quot;red&quot;),
         names = c(&quot;High&quot;,&quot;Medium&quot;,&quot;Low&quot;)
 )
-</code></pre><p>Then click on the little play button near the top of the script-editor to display the plot on canvas.</p>
+</code></pre>
+<p>Then click on the little play button near the top of the script-editor to display the plot on canvas.</p>
 <p><img src="/img/r_visual_script_editor_with_code.png" alt="R visual editor with code"></p>
-<!-- raw HTML omitted -->
+<div class="alert alert-note">
+  <div>
+    The key is that you have to use <code>dataset</code> as your data object name in R-script visual.
+  </div>
+</div>
 <p>And it&rsquo;s that easy.</p>
 <p>Hope this tutorial was useful for you. If you have any question or have some tips, please leave them as a comment.</p>
 <p>I appreciate if you share this via social media. Thank you for reading.</p>
@@ -960,7 +991,7 @@ newcalc &lt;- dataset %&gt;%
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/enayet/avatar_hudec5ec601b983a15f3545d9621140a08_28707_270x270_fill_q75_box_center.jpg" alt="Avatar">
+      <img class="avatar mr-3 avatar-circle" src="/authors/enayet/avatar_hudec5ec601b983a15f3545d9621140a08_28707_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
     
 
     <div class="media-body">
@@ -1244,7 +1275,7 @@ newcalc &lt;- dataset %&gt;%
   
 
   <p class="powered-by">
-    
+    Enayetur Raheem &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
