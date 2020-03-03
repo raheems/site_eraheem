@@ -33,8 +33,7 @@ toc: true
 
 সহজ করে বলতে গেলে ডেটা সায়েন্স এমন একটি শাখা যেখানে নানা বিষয়ের লোকজন একসাথে ডেটা নিয়ে কাজ করে সেই ডেটাকে অর্থবহ করে ব্যবহারোপযোগী করে তোলে যা থেকে সিদ্ধান্ত গ্রহণ করা সম্ভব হয়। অর্থাৎ কোন প্রতিষ্ঠানের কাছে যে ডেটা আছে সেই ডেটা প্রতিষ্ঠানটির কী কাজে লাগবে সেভাবে ডেটাকে কাজে লাগানোর বিজ্ঞানকেই ডেটা সায়েন্স বলা যাবে।
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;A data scientist is a statistician who lives in San Fransisco&quot; <a href="https://twitter.com/hashtag/monkigras?src=hash&amp;ref_src=twsrc%5Etfw">#monkigras</a> <a href="http://t.co/HypLL3Cnye">pic.twitter.com/HypLL3Cnye</a></p>&mdash; Jeremy Jarvis (@jeremyjarvis) <a href="https://twitter.com/jeremyjarvis/status/428848527226437632?ref_src=twsrc%5Etfw">January 30, 2014</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 428848527226437632 >}}
 
 # ডেটা সায়েন্স কোথায় ব্যবহৃত হচ্ছে?
 
