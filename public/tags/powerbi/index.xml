@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PowerBI | Enayetur Raheem</title>
+    <title>PowerBI | </title>
     <link>/tags/powerbi/</link>
       <atom:link href="/tags/powerbi/index.xml" rel="self" type="application/rss+xml" />
     <description>PowerBI</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Aug 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/portrait.jpg</url>
       <title>PowerBI</title>
@@ -24,25 +24,7 @@
 &lt;li&gt;creating visuals with R script&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In this article, I have demonstrated how to use R with Power BI to perform these applications.&lt;/p&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#preparing-the-r-script-in-r-studio&#34;&gt;Preparing the R script in R Studio&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#run-your-r-script-and-import-data&#34;&gt;Run your R script and import data&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#error-message&#34;&gt;Error message&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#loading-the-data&#34;&gt;Loading the data&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#updating-the-r-script&#34;&gt;Updating the R script&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#example-to-demonstrate-re-coding&#34;&gt;Example to demonstrate re-coding&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#entering-r-script-to-transform-data&#34;&gt;Entering R script to transform data&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#example-with-mtcars-data&#34;&gt;Example with mtcars data&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;application-1-using-r-to-import-data-sets-into-power-bi&#34;&gt;Application 1: Using R to import data sets into Power BI&lt;/h1&gt;
 &lt;p&gt;Power BI can import data from a variety of sources. For a complete list, please see 
 &lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-data-sources&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
@@ -52,16 +34,15 @@
 &lt;h2 id=&#34;preparing-the-r-script-in-r-studio&#34;&gt;Preparing the R script in R Studio&lt;/h2&gt;
 &lt;p&gt;This is the stage you would write your R script to load your data. I use R studio for that. RStudio is a popular Integrated Development Environment (IDE) for R. If you are not familiar with RStudio, you can use the default R editor or wherever you write your R codes. You do not need any special preparation. Just use the editor to test your code before using in Power BI.&lt;/p&gt;
 &lt;p&gt;I am going to create a smiple data set with two columns using the R codes below. This data is being created for demonstration purposes only so that you can reproduce it when you are learning.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Sample data frame object
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Sample data frame object&lt;/span&gt;
 
-df &amp;lt;- data.frame(
-  x= rnorm(100),
-  y= rnorm(100) + rnorm(100)
+df &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data.frame&lt;/span&gt;(
+  x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rnorm&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;),
+  y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rnorm&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rnorm&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
 )
 
-head(df)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This code creates an R &lt;code&gt;data.frame&lt;/code&gt; and saves in an object &lt;code&gt;df&lt;/code&gt;. This will be the name of the data when you import into Power BI. You can give the data object any valid R-name you want.&lt;/p&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;head&lt;/span&gt;(df)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This code creates an R &lt;code&gt;data.frame&lt;/code&gt; and saves in an object &lt;code&gt;df&lt;/code&gt;. This will be the name of the data when you import into Power BI. You can give the data object any valid R-name you want.&lt;/p&gt;
 &lt;p&gt;The above code also shows &lt;code&gt;head(df)&lt;/code&gt;, but Power BI only imports &lt;code&gt;data.frame&lt;/code&gt;. In this case, it will only import the &lt;code&gt;df&lt;/code&gt; object and ignore the rest. So you don&amp;rsquo;t have to worry about other codes in the script. Just make sure all codes run without error and without any dependencies.&lt;/p&gt;
 &lt;h2 id=&#34;run-your-r-script-and-import-data&#34;&gt;Run your R script and import data&lt;/h2&gt;
 &lt;p&gt;In Power BI Desktop, the R Script data connector is found in Get Data menu. Click on &lt;strong&gt;Get Data &amp;gt; More&amp;hellip;&lt;/strong&gt;, then select &lt;strong&gt;Other &amp;gt; R script&lt;/strong&gt; as shown in the following image:&lt;/p&gt;
@@ -98,8 +79,7 @@ I am giving an example to demonstrate how it works.&lt;/p&gt;
   sex = c(1, 1, 2),
   gpa = c(4, 3.9, 3.95)
 )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We will import this data using the R (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the &lt;code&gt;sex&lt;/code&gt; variable to indicate &lt;code&gt;Male&lt;/code&gt; for &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;Female&lt;/code&gt; for &lt;code&gt;2&lt;/code&gt;. For that, we use the following codes which we would enter in the R script:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We will import this data using the R (discussed in Application 1). Once loaded, we will then do some transformations. To keep it simple, we will just recode the &lt;code&gt;sex&lt;/code&gt; variable to indicate &lt;code&gt;Male&lt;/code&gt; for &lt;code&gt;1&lt;/code&gt; and &lt;code&gt;Female&lt;/code&gt; for &lt;code&gt;2&lt;/code&gt;. For that, we use the following codes which we would enter in the R script:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;# &#39;dataset&#39; holds the input data for this script
 library(dplyr)
 
@@ -107,12 +87,7 @@ newcalc &amp;lt;- dataset %&amp;gt;%
   mutate(
     sex = ifelse(sex == 1, &amp;quot;Male&amp;quot;, &amp;quot;Female&amp;quot;)
   )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Note that the name of the source data in R  is: &lt;code&gt;dataset&lt;/code&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
 &lt;h2 id=&#34;entering-r-script-to-transform-data&#34;&gt;Entering R script to transform data&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Click on the &lt;strong&gt;Edit Queries&lt;/strong&gt; button in Power BI Desktop to open the query editor.&lt;/li&gt;
@@ -143,8 +118,7 @@ newcalc &amp;lt;- dataset %&amp;gt;%
 &lt;p&gt;This assumes that we already have a dataset in Power BI. For the sake of reproducibility of this example, I will create the data. This time, I will just load a car data set called &lt;code&gt;mtcars&lt;/code&gt; available within R.&lt;/p&gt;
 &lt;p&gt;Simply follow the steps in Application 1, using the code entered in the R script window:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;df &amp;lt;- mtcars
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This loads the data in Power BI as shown in the figure below.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This loads the data in Power BI as shown in the figure below.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/load_mtcars.png&#34; alt=&#34;mtcars Data&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now, we would like to create a boxplot of gas mileage (miles per gallon) by cylinder type. We call the&lt;/p&gt;
 &lt;p&gt;To creat a R visual, click on the R icon from &lt;strong&gt;VISUALIZATIONS&lt;/strong&gt; pane as seen in the above image (the icon is pointed with a red arrow).This should create a placeholder for a visual in the canvas and an &lt;strong&gt;R script editor&lt;/strong&gt; will show up at the bottom of the screen.&lt;/p&gt;
@@ -160,14 +134,9 @@ newcalc &amp;lt;- dataset %&amp;gt;%
         col = c(&amp;quot;blue&amp;quot;,&amp;quot;green&amp;quot;,&amp;quot;red&amp;quot;),
         names = c(&amp;quot;High&amp;quot;,&amp;quot;Medium&amp;quot;,&amp;quot;Low&amp;quot;)
 )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then click on the little play button near the top of the script-editor to display the plot on canvas.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then click on the little play button near the top of the script-editor to display the plot on canvas.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/r_visual_script_editor_with_code.png&#34; alt=&#34;R visual editor with code&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    The key is that you have to use &lt;code&gt;dataset&lt;/code&gt; as your data object name in R-script visual.
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;And it&amp;rsquo;s that easy.&lt;/p&gt;
 &lt;p&gt;Hope this tutorial was useful for you. If you have any question or have some tips, please leave them as a comment.&lt;/p&gt;
 &lt;p&gt;I appreciate if you share this via social media. Thank you for reading.&lt;/p&gt;

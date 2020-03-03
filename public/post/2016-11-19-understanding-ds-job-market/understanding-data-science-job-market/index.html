@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Enayetur Raheem">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।
+হার্ভার্ড বিজনেস রিভিউ ২০১২ সনে লিখেছিল একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। আগের লেখায় বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-684495-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-684495-5', { 'anonymize_ip': true });
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@eraheem">
+  <meta property="twitter:creator" content="@eraheem">
+  
+  <meta property="og:site_name" content="Enayetur Raheem">
+  <meta property="og:url" content="/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/">
+  <meta property="og:title" content="ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি? | Enayetur Raheem">
+  <meta property="og:description" content="ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।
+হার্ভার্ড বিজনেস রিভিউ ২০১২ সনে লিখেছিল একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। আগের লেখায় বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।"><meta property="og:image" content="/img/portrait.jpg">
+  <meta property="twitter:image" content="/img/portrait.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2016-11-19T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2018-08-19T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/"
+  },
+  "headline": "ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি?",
+  
+  "datePublished": "2016-11-19T00:00:00Z",
+  "dateModified": "2018-08-19T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Enayetur Raheem"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Enayetur Raheem",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।\nহার্ভার্ড বিজনেস রিভিউ ২০১২ সনে লিখেছিল একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। আগের লেখায় বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।"
+}
+</script>
+
+  
+
+  
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#2962ff",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#2962ff"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/privacy/"
+      }
+    })});
+  </script>
+
+
+
+  
+
+
+
+
+
+  <title>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি? | Enayetur Raheem</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Enayetur Raheem</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Enayetur Raheem</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি?</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/enayet/">Enayetur Raheem</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Aug 19, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/data-science/">Data Science</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।</p>
+<p>হার্ভার্ড বিজনেস রিভিউ 
+<a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century" target="_blank" rel="noopener">২০১২ সনে লিখেছিল</a> একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। 
+<a href="">আগের লেখায়</a> বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।</p>
+<p>বাংলাদেশে এখনো সেভাবে ডেটা সায়েন্স-এর প্রচার কিংবা ডেটা সায়েন্টিস্টদের প্রয়োজনীয়তা অনুভূত হয়নি। তবে অন্যান্য দেশের মতো বাংলাদেশেও ব্যাপকভাবে ডেটা ভিত্তিক সিদ্ধান্তগ্রহণের কাজ দ্রুত শুরু হয়ে যাবে। এখন একটু একটু করে ঢেউ বাংলাদেশে এসে লাগছে। আমার ধারণা আগামী ১ থেকে ২ বছরের মধ্যেই এই ঢেউ সুনামির রূপ ধারণ করবে। যার মানে হলো আমেরিকার মতো বাংলাদেশেও ডেটা ব্যবহার করে ব্যবসায়িক সিদ্ধান্তগ্রহণ করা শুরু হবে। আর তখনই ডেটা সায়েন্স জব মার্কেটে দক্ষ ডেটা সায়েন্টিস্ট ও এনালিস্টদের শুন্যতা অনুভূত হবে।</p>
+<p>বিদেশে বিশেষ করে আমেরিকাতে গত এক বছরে ডেটা সায়েন্স ফিল্ডে চাকুরির বাজার ব্যাপক প্রসার লাভ করেছে। যার ফলে এই ফিল্ডের সাথে যে-কোনভাবে সম্পর্কযুক্ত সবাই এই মার্কেটে ঢুকতে চাইছে। ফলে প্রতিযোগিতা বাড়ছে তবে এখনো দক্ষ জনবলের অভাব রয়ে গিয়েছে। ফলে যত বেশী জবের সুযোগ আছে তত বেশী প্রার্থী পাওয়া যাচ্ছে না। কিছুদিন আগেও চাকুরি প্রার্থী এবং চাকুরি দাতা কেউই ঠিকমতো জানতো না ডেটা সায়েন্স এবং ডেটা সায়েন্টিস্টদের আসলে কোথায় কাজে লাগানো হবে। কিংবা কী ধরনের দক্ষতা সম্পন্ন লোকদের হায়ার করতে হবে। সে পরিস্থিতি এখনও খুব একটা পরিবর্তিত হয়েছে তা বলা যাবে না তবে আগের চেয়ে পরিশোধিত হয়েছে এবং চাকুরিদাতারা এখন ডেটা সায়েন্টিস্টদের কাজের পরিধি এবং কাজের ধরণ আগের চেয়ে ভালো বুঝতে পারছে এবং সে মোতাবেক দক্ষ ব্যক্তিদের হায়ার করছে। বলা যায় আগামী দিনে কাজের পরিধিগুলো আরো সুনির্দিষ্ট হবে এবং চাকুরি প্রার্থীরা জব মার্কেটে তাদের জায়গা খুঁজে পাবে।</p>
+<h1 id="পরসখযনবদর-কভব-এই-বজর-নজদর-উপযগ-জব-খজব">পরিসংখ্যানবিদরা কীভাবে এই বাজারে নিজেদের উপযোগী জব খুঁজবে?</h1>
+<p>নতুন প্রজন্মের পরিসংখ্যানবিদ বা অন্য কোয়ান্টিটেটিভ ডিসিপ্লিনের গ্রাজুয়েটরা এই বাজারে প্রবেশের জন্য উদগ্রীব। কিন্তু তাদের বেশীরভাগই ডেটা সায়েন্সে প্রাতিষ্ঠানিকভাবে প্রশিক্ষিত নয়। যে কারণে চাকুরীর বাজারে গিয়ে তারা বুঝতে পারছে না কোন পদের জন্য আবেদন করবে কিংবা কোন পদের সাথে তাদের দক্ষতা সামঞ্জস্যপূর্ণ।</p>
+<blockquote>
+<p>কিন্তু তাদের বেশীরভাগই ডেটা সায়েন্সে প্রাতিষ্ঠানিকভাবে প্রশিক্ষিত নয়। যে কারণে চাকুরীর বাজারে গিয়ে তারা বুঝতে পারছে না কোন পদের জন্য তারা আবেদন করবে কিংবা কোন পদের সাথে তাদের দক্ষতা সামঞ্জস্যপূর্ণ।</p>
+</blockquote>
+<p>জব ডেসক্রিপশনের সাথে প্রার্থীর অভিজ্ঞতা ও দক্ষতার মিল না হলে একদিকে যেমন চাকুরী প্রাপ্তিতে দেরী হবে অন্যদিকে চাকুরী কোনভাবে পেয়ে গেলেও কর্মক্ষেত্রে গিয়ে সেই মিসম্যাচ প্রকাশিত হবে। এটা প্রার্থী এবং কোম্পানী — দুয়ের জন্যই ব্যয়বহুল।</p>
+<h1 id="ডট-সয়নস-চকরর-বজর-য-চওয়-হচছ">ডেটা সায়েন্সে চাকুরীর বাজারে যা চাওয়া হচ্ছে</h1>
+<p>এটি অনস্বীকার্য যে সংশ্লিষ্ট সবাই এই ফিল্ডে কাজ করতে চাইছে এবং আরো অনেকেই উঁকি মেরে দেখছে যে ডেটা সায়েন্টিস্টরা আসলে কী ধরনের কাজ  করে। আমি এখানে এটা হাই-লেভেল ওভারভিউ দিচ্ছি যাতে ডেটা সায়েন্স ফিল্ডে কাজের প্রবাহচিত্রটি বোঝা যায়। প্রথমেই দেখে নেয়া যাক ডেটা সায়েন্টিস্ট পদের জবে কী ধরনের অভিজ্ঞতা চাওয়া হয়।</p>
+<p>জেনারেল ইলেক্ট্রিক তাদের ক্যালিফোর্নিয়া বেইজে ডেটা সায়েন্টিস্ট চাইছে। সেখানে যা যা চাওয়া হচ্ছে তার সারসংক্ষেপ</p>
+<p><strong>Data Scientist at GE</strong></p>
+<ul>
+<li>Gather and analyze data, devise innovative data science solutions and build prototypes</li>
+<li>Enable development of high-performance algorithms for solutions in scalable, product-ready code</li>
+<li>Guide data science teams to develop, verify, and validate analytics leveraging the latest data science techniques</li>
+<li>Contribute to the exploration and creation of new scientific understanding</li>
+<li>Initiate and propose unique and promising modeling projects, develop new and innovative algorithms and technologies, pursuing patents where appropriate</li>
+<li>Stay current on published state-of-the-art algorithms and competing technologies</li>
+<li>Maintain world-class academic credentials through publications, presentations, external collaborations and service to the research community</li>
+<li>Participate in academic conferences and publish research papers</li>
+<li>Communicate methods, findings, and hypotheses with stakeholders.</li>
+</ul>
+<p>এরপর দেখা যাক ক্লিভল্যান্ড ক্লিনিকে ডেটা সায়েন্টিস্টদের জন্য কী কী চাওয়া হচ্ছে —</p>
+<p><strong>Data Scientist at Cleveland Clinic</strong></p>
+<ul>
+<li>Generates routine reports and ad hoc reports on patient, prospects, conversion, ROI and CM for campaigns of all marketing channels, including paid media (Paid search, Banner Ads), earned media (PR), owned media (website , mobile apps) shared media (social media) through various systems such as SAS, SQL, SPSS or R or Python.</li>
+<li>Performs basic data analysis to include data validation, investigation, and trending analysis.</li>
+<li>Assists Data Scientist II and III with transforming data into actionable insights and useful information by conducting analysis pertaining to patient profiling, segmentation, path analysis, cluster analysis and cohort analysis to support decision making.</li>
+<li>Assists with testing hypotheses.</li>
+<li>Builds basic predictive models, market mix models, attribution models and other statistical models as needed by using modeling tools.</li>
+<li>Utilizes process enhancement opportunities to improve the efficiency of data pulling, reporting, programming, etc.</li>
+<li>Works with DBA/Developer on standardizing and improving data pulling, cleansing and loading processes.</li>
+<li>Assists in communicating and presenting business issues and analytical findings to marketing team and clients.</li>
+<li>Installs and maintains analytic program(s). Updates existing analytics software as necessary.</li>
+<li>Identifies technical issues and manages resolution for analytics programs.</li>
+</ul>
+<p>আপনি উপরের উদাহরণগুলোতে পুরো জব ডেসক্রিপশন নাও পড়ে থাকেন শুধু আন্ডারলাইন করা অংশুটুকু পড়লেও বুঝতে পারবেন কী ধরনের দক্ষতা এরা চাইছে। পরিসংখ্যানের ছাত্র হয়ে থাকলে এর অধিকাংশই আপনার জানাশোনার মধ্যে হবে। শুধু ডেটাবেইজ, বিগডেটা আর্কিটেকচার, হাডুপ, এইচবেইজ, মাহাউট, এসব আপনার কাছে নতুন লাগবে।</p>
+<blockquote>
+<p>আপনি উপরের উদাহরণগুলোতে পুরো জব ডেসক্রিপশন নাও পড়ে থাকেন শুধু আন্ডারলাইন করা অংশুটুকু পড়লেও বুঝতে পারবেন কী ধরনের দক্ষতা এরা চাইছে। পরিসংখ্যানের ছাত্র হয়ে থাকলে এর অধিকাংশই আপনার জানাশোনার মধ্যে হবে।</p>
+</blockquote>
+<h1 id="ডট-সয়নস-ফলড-কজর-পরবহচতর">ডেটা সায়েন্স ফিল্ডে কাজের প্রবাহচিত্র</h1>
+<p>এবারে প্রবাহচিত্রটি তুলে ধরছি যাতে করে সবাই সহজে বুঝতে পারেন। পোস্টের একদম শুরুতে আমি একটি প্রবাহচিত্র দিয়েছি। সেটিকেই বাংলায় করে দিলাম যাতে পাঠক আকৃষ্টবোধ করেন।</p>
+<p><img src="/images/etl-bangla.png" alt="র ডেটা -> এক্সট্র্যাক্ট, ট্রান্সফরম, লোড -> স্ট্যাটিসটিক্যাল মডেলিং" title="র ডেটা -&gt; এক্সট্র্যাক্ট, ট্রান্সফরম, লোড -&gt; স্ট্যাটিসটিক্যাল মডেলিং"></p>
+<p>ডেটা সায়েন্স এর জব মূলত ইটিএল (ETL – Extract, Transform, Load) এবং এনালিটিক্স — এই দুই ধাপে সীমাবদ্ধ। আরেকটি ধাপ চিন্তা করা যেতে পারে যেটিকে আমি তথ্য সংগ্রহ ধাপ বলেছি। এগুলো সংক্ষেপে ব্যাখ্যা করছি।</p>
+<h2 id="সরস">সোর্সিং</h2>
+<p>প্রথম ধাপটি সাধারণত ডেটা সাইন্টিস্টদের কাছে উহ্য থাকে। যেটিকে আমরা সোর্স বলতে পারি। সোর্স পর্যায়ে আসলে তথ্য সংগ্রহ করা হয়। কোন একটি ইন্ডাস্ট্রির কথা চিন্তা করুন। তারা কোন না কোন ভাবে তথ্য সংগ্রহ করছে। এসব সিস্টেমে ফ্রন্টএন্ডে ইউজার ফ্রেন্ডলি ইন্টারফেসের মাধ্যমে তথ্য ইনপুট করা হয়। যেটি কোন এক ডেটাবেইজে গিয়ে জমা হয়। মোটা দাগে এই অংশটি সফটওয়্যার ডেভলপারদের কাজ। তারা ইউজার ইন্টারফেইস ডিজাইন থেকে শুরু করে বেসিক ডেটা স্টোরেজ সলুশন তৈরী করে। এই ধাপে সাধারণত কোন এনালিটিক কাজ করা হয়না। হয়তো বেসিক ডেটা সামারি টাইপের কিছু করা হয়ে থাকে। সেটা নির্ভর করে সফটওয়্যারে সেরকম সুবিধাদি আছে কিনা তার উপর।</p>
+<h2 id="ইটএল">ইটিএল</h2>
+<p>দ্বিতীয় ধাপটি অনেক বড়। এটিকে জব ডেসক্রিপশনে বলবে ETL। এই ধাপটিকে আইটি ধাপও বলা যায় কেননা পরিসংখ্যানবিদরা সাধারণত এই ধাপে কাজ করেনা বা তারা এখন পর্যন্ত ততটা অবগত নয়। তবে পরিস্থিতি বদলাচ্ছে। এখন সবাইকেই সবকিছু সম্পর্কে মোটামুটি ধারণা রাখতে হচ্ছে।</p>
+<p>সহজ কথায় বলতে গেলে এই ধাপে ITর লোকজন নানা সোর্স সিস্টেম থেকে ডেটাকে এনালিস্টদের কাছে পৌঁছানোর জন্য যা করা দরকার সেগুলো সম্পন্ন করে। এই ধাপে যে কাজ গুলো করা হয় সেগুলোকে সংক্ষেপে ETL বা extract, transform, load বলে। এখানে বিভিন্ন সোর্স সিস্টেমের র ডেটাকে এক্সট্রাক্ট করে, সেগুলোকে প্রয়োজন মতো একটার সাথে একটা জুড়ে দিয়ে (merging/linking/joining), পরিশোধন, পরিবর্তন, পরিবর্ধন করে ডেটা ওয়্যারহাউজে এনে জমা করে। ডেটা ওয়্যারহাইজ হলো অনেক বড় ডেটা স্টোরেজ যেখান থেকে প্রয়োজনীয় ডেটা সহজে কোয়েরি করা যায়। বলা যায় ডেটা ওয়্যারহাউজ হলো সব ডেটাবেজের ডেটাবেজ।</p>
+<h2 id="ইটএল--এর-সহজ-পঠ">ইটিএল -এর সহজ পাঠ</h2>
+<p>আমি জানি বাইরে থেকে এই প্রসেসটি সহজে বোঝা সহজ নয়। তাই বাংলাভাষীরা বুঝতে পারবে এমন একটি উদাহরণের মাধ্যমে বোঝানোর চেষ্টা করবো।</p>
+<p>ইটিএল প্রসেসটিকে তুলনা করা যায় জমি থেকে ফসল তুলে খাবার টেবিলে পৌঁছানোর আগ পর্যন্ত যা করা হয় তার সাথে। ফসলের জমি থেকে নানা ধরনের ফসল (ধান, আলু, গম) তুলে এনে, গাড়িতে বা অন্য কোনভাবে বহন করে মধ্যবর্তী কোন স্থানে এনে পরিস্কার করে বিভিন্ন শস্য আলাদা করে  হোলসেল মার্কেটে বা স্টোরেজে পাঠানো। সেখান থেকে গ্রাহক পর্যায়ে পৌঁছানোর জন্য কাঁচা ফসল বিক্রয় কেন্দ্রে পাঠানো হবে। এই ধাপটিই ইটিএল। অর্থাৎ</p>
+<ul>
+<li>এক্সট্র্যাক্ট-  জমি থেকে নানা শস্য তুলে আনা (সব ধরনের সোর্স থেকে ডেটা সংগ্রহ করা)</li>
+<li>ট্রান্সফরম – শস্যগুলোকে বাছাই করা,  আলাদা আলাদা করে শস্যের ধরন অনুযায়ি বস্তায় ভরা (ডেটা ক্লিনিং, মার্জিং)</li>
+<li>লোড – গ্রহকের কাছে পৌঁছানোর জন্য বাজারে পাঠানোর উপযোগি করা (ডেটা ওয়্যারহাউজিং)</li>
+</ul>
+<p>কোন ব্যক্তি যেমন নিজে বীজ বুনে জমিতে লাগিয়ে, চাষ করে, ফসল ফলিয়ে সেই ফসল পরিচর্যা করে তারপর টেবিলে বসে খাওয়ার জন্য যা যা করা দরকার তার সবগুলো নিজে করে না, বরং প্রত্যেকটি ধাপে দক্ষতা অনুযায়ি ব্যক্তিবর্গ তাদের অংশটুকু সম্পন্ন করে বলেই ভোক্তাদের টেবিলে খাবার পৌঁছে যায়।</p>
+<h2 id="এনলটকসইনসইট">এনালিটিক্স/ইনসাইট</h2>
+<p>তৃতীয় ধাপটি হলো এনালিটিক ধাপ — যেখানে ডেটা থেকে ইনসাইট বের করে সেটা ব্যবসায়িক সিদ্ধান্ত গ্রহণে কাজে লাগানো হবে। এই ধাপটিকে তুলনা করা যায় বাজার থেকে (জমি থেকে নয়) চাল, ডাল, লবণ, মরিচ, সবজি, গোশত কিনে এনে সেগুলো প্রসেস করে খাবার তৈরী করার সাথে। ডেটা সাইন্টিস্ট, পরিসংখ্যানবিদ, এবং কোয়ান্টিটেটিভ ডিসিপ্লিনের লোকজন এখানে কাজ করে।</p>
+<h1 id="আপন-কথয়-ফট-করন">আপনি কোথায় ফিট করেন?</h1>
+<p>প্রশ্ন হলো আপনি এই প্রবাহচিত্রের কোথায় ফিট করেন।</p>
+<p>প্রথম ধাপটি বাদ দিলে দ্বিতীয় ও তৃতীয় ধাপের কোনটি আপনার জন্য সুবিধাজনক সেটি নির্ভর করবে আপনি কোনটির জন্য বেশী দক্ষ। আপনি যদি ডেটাবেইজ প্রফেশনাল হন তাহলে ETL আপনার জন্য ভালো হতে পারে। এই ধাপের প্রফেশনালদের অনেক সময় ডেটা ইঞ্জিনিয়ার (Data Engineer or Data Scientist – Big Data Architect) বলা হয়।</p>
+<p>আপনি যদি পরিসংখ্যানবিদ বা অন্য কোয়ান্টিটেটিভ ডিসিপ্লিনের ছাত্র/ছাত্রী হল তাহলে আপনার জন্য শেষ ধাপটি সুইটেবল হবে।</p>
+<p>আপনার যদি কোনটির অভিজ্ঞতাই না থাকে তাহলেও পরিশ্রমের মাধ্যমে যেকোনটিতে কাজ করার জন্য নিজেকে প্রস্তত করতে পারবেন। সাফল্য নির্ভর করবে আপনার আগ্রহ ও কতটা পরিশ্রম করতে পারেন তার উপর।</p>
+<p>(শেষ)</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/career/">career</a>
+  
+  <a class="badge badge-light" href="/tags/data-science/">data science</a>
+  
+  <a class="badge badge-light" href="">ডেটা সায়েন্স</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/&amp;text=%e0%a6%a1%e0%a7%87%e0%a6%9f%e0%a6%be%20%e0%a6%b8%e0%a6%be%e0%a7%9f%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%b8-%20%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0%20%e0%a6%89%e0%a6%aa%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a6%ac%20%e0%a6%95%e0%a7%8b%e0%a6%a8%e0%a6%9f%e0%a6%bf?" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/&amp;t=%e0%a6%a1%e0%a7%87%e0%a6%9f%e0%a6%be%20%e0%a6%b8%e0%a6%be%e0%a7%9f%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%b8-%20%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0%20%e0%a6%89%e0%a6%aa%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a6%ac%20%e0%a6%95%e0%a7%8b%e0%a6%a8%e0%a6%9f%e0%a6%bf?" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e0%a6%a1%e0%a7%87%e0%a6%9f%e0%a6%be%20%e0%a6%b8%e0%a6%be%e0%a7%9f%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%b8-%20%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0%20%e0%a6%89%e0%a6%aa%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a6%ac%20%e0%a6%95%e0%a7%8b%e0%a6%a8%e0%a6%9f%e0%a6%bf?&amp;body=/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/&amp;title=%e0%a6%a1%e0%a7%87%e0%a6%9f%e0%a6%be%20%e0%a6%b8%e0%a6%be%e0%a7%9f%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%b8-%20%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0%20%e0%a6%89%e0%a6%aa%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a6%ac%20%e0%a6%95%e0%a7%8b%e0%a6%a8%e0%a6%9f%e0%a6%bf?" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e0%a6%a1%e0%a7%87%e0%a6%9f%e0%a6%be%20%e0%a6%b8%e0%a6%be%e0%a7%9f%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%b8-%20%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0%20%e0%a6%89%e0%a6%aa%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a6%ac%20%e0%a6%95%e0%a7%8b%e0%a6%a8%e0%a6%9f%e0%a6%bf?%20/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/2016-11-19-understanding-ds-job-market/understanding-data-science-job-market/&amp;title=%e0%a6%a1%e0%a7%87%e0%a6%9f%e0%a6%be%20%e0%a6%b8%e0%a6%be%e0%a7%9f%e0%a7%87%e0%a6%a8%e0%a7%8d%e0%a6%b8-%20%e0%a6%86%e0%a6%aa%e0%a6%a8%e0%a6%be%e0%a6%b0%20%e0%a6%89%e0%a6%aa%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%20%e0%a6%9c%e0%a6%ac%20%e0%a6%95%e0%a7%8b%e0%a6%a8%e0%a6%9f%e0%a6%bf?" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/enayet/avatar_hudec5ec601b983a15f3545d9621140a08_28707_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Enayetur Raheem</a></h5>
+      <h6 class="card-subtitle">Senior Data Scientist/Statistician</h6>
+      <p class="card-text">I am currently working as a Senior Data Scientist at a health service company in the USA. The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/eraheem" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=_7juYKUAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/raheems" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Enayetur_Raheem" target="_blank" rel="noopener">
+        <i class="ai ai-researchgate"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "eraheem" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/post/how-to-become-a-data-scientist/" rel="next">ডেটা সায়েন্টিস্ট হওয়ার প্রস্ততি</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/post/what-is-datascience-and-who-are-datascientists/" rel="prev">ডেটা সায়েন্স কী এবং ডেটা সায়েন্টিস্ট কারা?</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/what-is-datascience-and-who-are-datascientists/">ডেটা সায়েন্স কী এবং ডেটা সায়েন্টিস্ট কারা?</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    Enayetur Raheem &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
