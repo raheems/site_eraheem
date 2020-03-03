@@ -14,6 +14,13 @@
   weight = 20
 
 [[main]]
+  name = "Categories"
+  identifier = "Categories"
+  #parent= "Posts"
+  url = "/categories"
+  weight = 21
+
+[[main]]
   name = "Projects"
   url = "#projects"
   weight = 30
