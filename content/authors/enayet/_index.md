@@ -18,12 +18,12 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a statistician and data scientist working in the healthcare space.
+bio: I am currently working as a Senior Data Scientist at a health service company in the USA. The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
 
 interests:
 - Statistical Inference
 - Machine Learning
-- Data Analysis
+- Public Health Research
 
 education:
   courses:
@@ -52,6 +52,11 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/raheems
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Enayetur_Raheem
+  
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -70,4 +75,4 @@ user_groups:
 
 I am a Data Scientist and Statistician with more than 18 years of experience in academia and industry combined. Currently, as a healthcare data scientist, I provide strategic guidance for the development, validation, and use of algorithms for data based decision making.
 
-I have been using __R__ for over 18 years for statistical analysis and research. At my current work, I use __Python__ and __PySpark__. In the past I've used __SAS__ for management of structured data and for standard statistical analysis. 
+I have been using __R__ for over 18 years for statistical analysis and research. Currently, I mostly use __Python__ and __PySpark__. In the past I've used __SAS__ for management of structured data and for standard statistical analysis. 
