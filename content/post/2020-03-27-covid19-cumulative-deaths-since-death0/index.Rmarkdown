@@ -15,7 +15,7 @@ image:
   placement: 1
   caption: "Photo by CDC on Unsplash"
   focal_point: "Center"
-  preview_only: false
+  preview_only: true
 projects: []
 
 ---
@@ -112,7 +112,7 @@ dead <- df %>%
 
 last_reported_date =  mdy("3/26/2020")
 
-ggplot(dead, aes(x = id, y = cum_dead, color=country)) +
+p <- ggplot(dead, aes(x = id, y = cum_dead, color=country)) +
   geom_line() +
   geom_point(data = dead[dead$country == 'Bangladesh' & mdy(dead$Date)==last_reported_date, ], aes(x=id, y=cum_dead), color='red', size=5) +
   geom_text_repel(aes(label=country),
@@ -125,6 +125,9 @@ ggplot(dead, aes(x = id, y = cum_dead, color=country)) +
   xlab("Days since first death") +
   ylab("Cumulative deaths")
 
+p
+
+ggsave("featured.jpg", width=8, height=6)
 ```
 
 ## সারাংশ

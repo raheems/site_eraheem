@@ -15,7 +15,7 @@ image:
   placement: 1
   caption: "Photo by CDC on Unsplash"
   focal_point: "Center"
-  preview_only: false
+  preview_only: true
 projects: []
 
 ---
