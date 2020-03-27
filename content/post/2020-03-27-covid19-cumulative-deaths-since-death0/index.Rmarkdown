@@ -108,7 +108,6 @@ dead <- df %>%
 
 
 ```{r, death-comparison, echo = FALSE}
-
 last_reported_date =  mdy("3/26/2020")
 
 p <- ggplot(dead, aes(x = id, y = cum_dead, color=country)) +
