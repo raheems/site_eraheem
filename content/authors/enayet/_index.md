@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am currently working as a Senior Data Scientist at a health service company in the USA. The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
+bio: I am currently working in a health service company in the USA. The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
 
 interests:
 - Statistical Inference
