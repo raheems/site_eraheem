@@ -1,0 +1,138 @@
+---
+title: করোনা ভাইরাসে প্রথম মৃত্যু থেকে ক্রমযোজিত মৃত্যু ও বাংলাদেশের তুলনামূলক অবস্হান
+authors: ["enayet"]
+date: '2020-03-27'
+
+slug: 'covid19-cumulative-deaths-since-first-death-bn'
+subtitle: ''
+summary: ''
+categories: ["Data Science"]
+tags: ["COVID19", "বাংলা"]
+lastmod: '2020-03-27'
+
+featured: no
+image:
+  placement: 1
+  caption: "Photo by CDC on Unsplash"
+  focal_point: "Center"
+  preview_only: false
+projects: []
+
+---
+
+করোনা ভাইরাস নিয়ে আমি এই ছোট্ট একটি চিত্রের মাধ্যমে বাংলাদেশের করোনাভাইরাস সম্পর্কিত মৃত্যু ট্র্যাক করছি। সেইসাথে অন্য কয়েকটি দেশের প্রথম মৃত্যু থেকে আজ পর্যন্ত কী অবস্থা তার একটি তুলনামূলক চিত্র তুলে ধরছি।
+
+করোনাভাইরাস এ কতজন আক্রান্ত হয়েছে এই নম্বরটি নির্ভর করে কতজনকে পরীক্ষা করছে তার ওপর। 
+
+আর বিভিন্ন দেশে যেহেতু আক্রান্ত হওয়ার পর থেকে মৃত্যুর সংখ্যার মধ্যে বেশ পার্থক্য দেখা দিয়েছে সে কারণে নির্দিষ্ট করে বলা সম্ভব নয় বাংলাদেশে আক্রান্ত হলেই তিনি মারা যাবেন কি যাবেন না। 
+
+নিচে দেখা যাচ্ছে প্রথম রিপোর্টেড মৃত্যু থেকে বর্তমান অবস্থায় পৌঁছতে কতদিন লেগেছে তার একটি তুলনামূলক চিত্র।
+
+এটি প্রতিদিন আপডেট করব। 
+
+```{r, load-packages, echo=FALSE, message=FALSE, }
+
+require(ggplot2)
+require(ggrepel)
+require(tidyverse)
+require(lubridate)
+
+```
+
+```{r, get-data, echo=FALSE, message=FALSE, cache=TRUE}
+jhu_url <- paste("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv", sep = "")
+
+us_confirmed_long_jhu <- read_csv(jhu_url)
+
+```
+
+```{r, echo=FALSE}
+df <- us_confirmed_long_jhu %>%
+  rename(province = "Province/State", 
+         country = "Country/Region") %>% 
+  # Exclude China
+  filter(
+    country != "China"
+  ) %>%
+  pivot_longer(-c(province, country, Lat, Long), 
+               names_to = "Date", values_to = "cum_dead") %>%
+  select(country, Date, cum_dead) %>%
+  group_by(country, Date) %>%
+  summarize(
+    cum_dead = sum(cum_dead)
+  )
+
+df_bd <- us_confirmed_long_jhu %>%
+  rename(province = "Province/State", 
+         country = "Country/Region") %>% 
+  # Exclude China
+  filter(
+    country == "Bangladesh"
+  ) %>%
+  pivot_longer(-c(province, country, Lat, Long), 
+               names_to = "Date", values_to = "cum_dead") %>%
+  select(country, Date, cum_dead) %>%
+  group_by(country, Date) %>%
+  summarize(
+    cum_dead = sum(cum_dead)
+  )
+
+
+n_world <- df %>%
+  group_by(country) %>%
+  summarise(
+    max_n_dead = max(cum_dead)
+  ) %>%
+  arrange(desc(max_n_dead)) %>%
+  top_n(5, max_n_dead)
+
+# n for Bangladesh
+n_bd <- df_bd %>% group_by(country) %>%
+  summarise(
+    max_n_dead = max(cum_dead)
+  )
+
+# Combined n countries
+n <- rbind(n_world, n_bd)
+
+
+dead <- df %>%
+  filter(country %in% n$country, cum_dead >0) %>%
+  arrange(country, cum_dead) %>%
+  group_by(country) %>%
+  mutate(
+    id = row_number()
+  )
+
+
+```
+
+
+```{r, death-comparison, echo = FALSE}
+
+last_reported_date =  mdy("3/26/2020")
+
+ggplot(dead, aes(x = id, y = cum_dead, color=country)) +
+  geom_line() +
+  geom_point(data = dead[dead$country == 'Bangladesh' & mdy(dead$Date)==last_reported_date, ], aes(x=id, y=cum_dead), color='red', size=5) +
+  geom_text_repel(aes(label=country),
+                  function(df) df[mdy(df$Date) == last_reported_date, ])+
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "none") +
+  # theme_void() + 
+  theme(legend.position="none") +
+  ggtitle("COVID19 cumulative deaths since first death \n(top 5 countries)", as.Date(last_reported_date) ) +
+  xlab("Days since first death") +
+  ylab("Cumulative deaths")
+
+```
+
+## সারাংশ
+
+অন্য দেশের সাথে তুলনা করলে আমরা দেখব যে বিপদ এখনো কাটেনি। বরং সামনের দিনগুলোতে পরিস্হিতি বদলে যেতে পারে। এক্ষেত্রে এসাম্পসন হচ্ছে বাংলাদেশের ডেটা রিপোর্টিং ঠিকমত হচ্ছে এবং তা বজায় থাকবে। 
+
+## ডেটার সূত্র
+
+2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE
+
+https://github.com/CSSEGISandData/COVID-19

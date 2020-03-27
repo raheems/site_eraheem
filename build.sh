@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-blogdown:::serve_site()
+Rscript -e "blogdown:::serve_site()"

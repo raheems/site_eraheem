@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COVID19 | Enayetur Raheem</title>
+    <link>/tags/covid19/</link>
+      <atom:link href="/tags/covid19/index.xml" rel="self" type="application/rss+xml" />
+    <description>COVID19</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/portrait.jpg</url>
+      <title>COVID19</title>
+      <link>/tags/covid19/</link>
+    </image>
+    
+    <item>
+      <title>করোনা ভাইরাসে প্রথম মৃত্যু থেকে ক্রমযোজিত মৃত্যু ও বাংলাদেশের তুলনামূলক অবস্হান</title>
+      <link>/post/covid19-cumulative-deaths-since-first-death-bn/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/covid19-cumulative-deaths-since-first-death-bn/</guid>
+      <description>&lt;p&gt;করোনা ভাইরাস নিয়ে আমি এই ছোট্ট একটি চিত্রের মাধ্যমে বাংলাদেশের করোনাভাইরাস সম্পর্কিত মৃত্যু ট্র্যাক করছি। সেইসাথে অন্য কয়েকটি দেশের প্রথম মৃত্যু থেকে আজ পর্যন্ত কী অবস্থা তার একটি তুলনামূলক চিত্র তুলে ধরছি।&lt;/p&gt;
+&lt;p&gt;করোনাভাইরাস এ কতজন আক্রান্ত হয়েছে এই নম্বরটি নির্ভর করে কতজনকে পরীক্ষা করছে তার ওপর।&lt;/p&gt;
+&lt;p&gt;আর বিভিন্ন দেশে যেহেতু আক্রান্ত হওয়ার পর থেকে মৃত্যুর সংখ্যার মধ্যে বেশ পার্থক্য দেখা দিয়েছে সে কারণে নির্দিষ্ট করে বলা সম্ভব নয় বাংলাদেশে আক্রান্ত হলেই তিনি মারা যাবেন কি যাবেন না।&lt;/p&gt;
+&lt;p&gt;নিচে দেখা যাচ্ছে প্রথম রিপোর্টেড মৃত্যু থেকে বর্তমান অবস্থায় পৌঁছতে কতদিন লেগেছে তার একটি তুলনামূলক চিত্র।&lt;/p&gt;
+&lt;p&gt;এটি প্রতিদিন আপডেট করব।&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/death-comparison-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;সরশ&#34;&gt;সারাংশ&lt;/h2&gt;
+&lt;p&gt;অন্য দেশের সাথে তুলনা করলে আমরা দেখব যে বিপদ এখনো কাটেনি। বরং সামনের দিনগুলোতে পরিস্হিতি বদলে যেতে পারে। এক্ষেত্রে এসাম্পসন হচ্ছে বাংলাদেশের ডেটা রিপোর্টিং ঠিকমত হচ্ছে এবং তা বজায় থাকবে।&lt;/p&gt;
+&lt;h2 id=&#34;ডটর-সতর&#34;&gt;ডেটার সূত্র&lt;/h2&gt;
+&lt;p&gt;2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34;&gt;https://github.com/CSSEGISandData/COVID-19&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
