@@ -1,6 +1,6 @@
 ---
 title: করোনা ভাইরাসে প্রথম মৃত্যু থেকে ক্রমযোজিত মৃত্যু ও বাংলাদেশের তুলনামূলক অবস্হান
-authors: ["enayet"]
+authors: []
 date: '2020-03-27'
 
 slug: 'covid19-cumulative-deaths-since-first-death-bn'

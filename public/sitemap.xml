@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/authors/enayet/</loc>
-    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
@@ -48,12 +38,22 @@
   </url>
   
   <url>
+    <loc>/authors/enayet/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication_types/2/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/abdullah-al-mosabbir/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
