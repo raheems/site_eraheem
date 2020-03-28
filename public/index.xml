@@ -108,8 +108,14 @@
 &lt;h2 id=&#34;সরশ&#34;&gt;সারাংশ&lt;/h2&gt;
 &lt;p&gt;অন্য দেশের সাথে তুলনা করলে আমরা দেখব যে বিপদ এখনো কাটেনি। বরং সামনের দিনগুলোতে পরিস্হিতি বদলে যেতে পারে। এক্ষেত্রে এসাম্পসন হচ্ছে বাংলাদেশের ডেটা রিপোর্টিং ঠিকমত হচ্ছে এবং তা বজায় থাকবে।&lt;/p&gt;
 &lt;h2 id=&#34;ডটর-সতর&#34;&gt;ডেটার সূত্র&lt;/h2&gt;
-&lt;p&gt;2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34;&gt;https://github.com/CSSEGISandData/COVID-19&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE &lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34;&gt;https://github.com/CSSEGISandData/COVID-19&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;নিউ ইয়র্ক টাইমস গিটহাব রিপজিটরি &lt;a href=&#34;https://github.com/nytimes/covid-19-data&#34;&gt;https://github.com/nytimes/covid-19-data&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
