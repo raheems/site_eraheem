@@ -38,6 +38,46 @@ projects: []
 
 <img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png" width="672" />
 
+Data last refreshed: 2020-03-27
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>Table 1: Total number of deaths till 2020-03-27</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> country </th>
+   <th style="text-align:right;"> TotalDeath </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Italy </td>
+   <td style="text-align:right;"> 9134 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Spain </td>
+   <td style="text-align:right;"> 5138 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Iran </td>
+   <td style="text-align:right;"> 2378 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> France </td>
+   <td style="text-align:right;"> 1997 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> US </td>
+   <td style="text-align:right;"> 1581 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Bangladesh </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+</tbody>
+</table>
+
+
+
 ## দক্ষিণ এশিয়ায় বাংলাদেশের অবস্হান
 
 
@@ -47,7 +87,7 @@ projects: []
 বাংলাদেশের সাথে তুলনীয় কয়েকটি দেশের মৃতের সংখ্যা। 
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
-<caption>Table 1: Total number of deaths till date.</caption>
+<caption>Table 2: Total number of deaths till 2020-03-27</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> country </th>
@@ -57,11 +97,11 @@ projects: []
 <tbody>
   <tr>
    <td style="text-align:left;"> Indonesia </td>
-   <td style="text-align:right;"> 78 </td>
+   <td style="text-align:right;"> 87 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Malaysia </td>
-   <td style="text-align:right;"> 23 </td>
+   <td style="text-align:right;"> 26 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> India </td>
@@ -69,7 +109,7 @@ projects: []
   </tr>
   <tr>
    <td style="text-align:left;"> Pakistan </td>
-   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 11 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Bangladesh </td>

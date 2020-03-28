@@ -37,9 +37,10 @@ require(tidyverse)
 require(lubridate)
 require(knitr)
 require(kableExtra)
+opts_knit$set(eval.after = "fig.cap")
 ```
 
-```{r, get-data, echo=FALSE, message=FALSE, cache=TRUE}
+```{r, get-data, echo=FALSE, message=FALSE, cache=F}
 jhu_url <- paste("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv", sep = "")
 
 us_confirmed_long_jhu <- read_csv(jhu_url)
@@ -109,7 +110,7 @@ dead <- df %>%
 
 
 ```{r, covid19-death-world, echo = FALSE}
-last_reported_date =  mdy("3/26/2020")
+last_reported_date =  mdy("3/27/2020")
 
 p <- ggplot(dead, aes(x = id, y = cum_dead, color=country)) +
   geom_line() +
@@ -128,6 +129,27 @@ p
 
 ggsave("featured.jpg", width=8, height=6)
 ```
+
+Data last refreshed: `r last_reported_date`
+
+```{r, echo=FALSE}
+
+# Summary of deaths till date by country
+world_summary <- dead %>%
+  filter(mdy(Date) == last_reported_date) %>%
+  group_by(country) %>%
+  summarise(
+    TotalDeath = max(cum_dead)
+  ) %>%
+  arrange(desc(TotalDeath))
+
+
+world_summary %>%
+  kable(format = "html", caption=paste("Total number of deaths till", last_reported_date)) %>%
+  kable_styling(position = "center")
+```
+
+
 
 ## দক্ষিণ এশিয়ায় বাংলাদেশের অবস্হান
 
@@ -204,7 +226,7 @@ sa_summary <- dead_south_asia %>%
   arrange(desc(TotalDeath))
 
 sa_summary %>%
-  kable(format = "html", caption = "Total number of deaths till date.") %>%
+  kable(format = "html", caption=paste("Total number of deaths till", last_reported_date)) %>%
   kable_styling(position = "center")
 
 ```
