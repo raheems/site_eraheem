@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
+    <loc>/tags/covid19/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/covid19/</loc>
+    <loc>/project/covid19/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sars-cov2/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -19,11 +39,6 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -120,11 +135,6 @@
   <url>
     <loc>/post/building-research-track-record-bn/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>

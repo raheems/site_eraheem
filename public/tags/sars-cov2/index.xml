@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SARS-CoV2 | Enayetur Raheem</title>
+    <link>/tags/sars-cov2/</link>
+      <atom:link href="/tags/sars-cov2/index.xml" rel="self" type="application/rss+xml" />
+    <description>SARS-CoV2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/portrait.jpg</url>
+      <title>SARS-CoV2</title>
+      <link>/tags/sars-cov2/</link>
+    </image>
+    
+    <item>
+      <title>COVID19: Bangladesh Perspective</title>
+      <link>/project/covid19/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/covid19/</guid>
+      <description>&lt;p&gt;TO be updated: Concretely, how Bangladesh is handling, and coping with the COVID19 pandemic.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
