@@ -29,6 +29,7 @@ projects: []
 
 এই চিত্র থেকে একটি জিনিস বুঝতে পারছি যে বাংলাদেশের পরিস্থিতি আগামী একমাস পর্যবেক্ষণ করতে হবে।
 
+## বিশ্বে বাংলাদেশের অবস্হান
 
 
 
@@ -36,7 +37,52 @@ projects: []
 
 
 
-<img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/death-comparison-1.png" width="672" />
+
+<img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png" width="672" />
+
+## দক্ষিণ এশিয়ায় বাংলাদেশের অবস্হান
+
+
+
+বাংলাদেশের সাথে তুলনীয় কয়েকটি দেশের মৃত্যুর চিত্র। 
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>Table 1: Total number of deaths till date.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> country </th>
+   <th style="text-align:right;"> TotalDeath </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Indonesia </td>
+   <td style="text-align:right;"> 78 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Malaysia </td>
+   <td style="text-align:right;"> 23 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> India </td>
+   <td style="text-align:right;"> 20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Pakistan </td>
+   <td style="text-align:right;"> 9 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Bangladesh </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Singapore </td>
+   <td style="text-align:right;"> 2 </td>
+  </tr>
+</tbody>
+</table>
+
+<img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-south-asia-1.png" width="672" />
 
 ## সারাংশ
 
