@@ -38,8 +38,6 @@ projects: []
 
 <img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png" width="672" />
 
-Data last refreshed: 2020-03-27
-
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>Table 1: Total number of deaths till 2020-03-27</caption>
  <thead>

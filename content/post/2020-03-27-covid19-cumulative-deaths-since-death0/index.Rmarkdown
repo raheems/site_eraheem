@@ -130,8 +130,6 @@ p
 ggsave("featured.jpg", width=8, height=6)
 ```
 
-Data last refreshed: `r last_reported_date`
-
 ```{r, echo=FALSE}
 
 # Summary of deaths till date by country
