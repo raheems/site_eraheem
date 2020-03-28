@@ -130,7 +130,7 @@ p <- ggplot(dead, aes(x = id, y = cum_dead, color=country)) +
   theme(legend.position = "none") +
   # theme_void() + 
   theme(legend.position="none") +
-  ggtitle("COVID19 cumulative deaths since first death \n(top 5 countries)", as.Date(last_reported_date) ) +
+  ggtitle("COVID19 cumulative deaths since first death \n(top 5 countries excluding China)", as.Date(last_reported_date) ) +
   xlab("Days since first death") +
   ylab("Cumulative deaths")
 
