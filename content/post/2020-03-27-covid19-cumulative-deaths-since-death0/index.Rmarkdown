@@ -17,11 +17,11 @@ image:
   focal_point: "Center"
   preview_only: true
 projects: []
-
 ---
-করোনাভাইরাস-এ কতজন আক্রান্ত হয়েছে এই নম্বরটি নির্ভর করে কতজনকে পরীক্ষা করা হয়েছে তার ওপর।
 
-তাই নতুন করে কতজন আক্রান্ত হয়েছে সেটি দেশ-ভেদে পার্থক্য হবে কেননা সেটি নির্ভর করে সেই দেশ কী পরিমাণ টেস্ট করছে তার উপর। তাই আমার কাছে কতজন নতুন করে আক্রান্ত হয়েছে সেটির চেয়ে বরং দেশ-প্রতি কতজন মারা গিয়েছে সেটি এককভাবে অনেক বেশি গুরুত্বপূর্ণ একটি মেট্রিক।
+করোনাভাইরাস-এ কতজন আক্রান্ত হয়েছে এই সংখ্যাটি নির্ভর করে কতজনকে করোনাভাইরাসের পরীক্ষা করা হয়েছে তার ওপর।
+
+তাই নতুন করে কতজন আক্রান্ত হয়েছে সেটি দেশ-ভেদে পার্থক্য হবে কেননা সেটি নির্ভর করে সেই দেশ কী পরিমাণ টেস্ট করছে তার উপর। তাই আমার কাছে কতজন নতুন করে আক্রান্ত হয়েছে সেটির চেয়ে বরং দেশ-প্রতি কতজন মারা গিয়েছে সেটি এককভাবে বেশি গুরুত্বপূর্ণ একটি মেট্রিক।
 
 নিচে প্রথম রিপোর্টেড মৃত্যু থেকে বর্তমান অবস্থায় পৌঁছুতে কতদিন লেগেছে তার তুলনামূলক চিত্র দেখানো হয়েছে। সেই সাথে বাংলাদেশের অবস্হান কোথায় তা দেখানো হয়েছে। করোনাভাইরােসর কারণে মৃত্যুর হার যদি একই থাকে, এ চিত্র থেকে বাংলাদেশের পরিস্হতি আগামি ৩০ দিনে কীভাবে পরিবর্তিত হতে পারে সে সম্পর্কে ধারণা পাওয়া যাবে।
 
@@ -173,7 +173,24 @@ dead_south_asia <- df_south_asia %>%
 
 ```
 
-বাংলাদেশের সাথে তুলনীয় কয়েকটি দেশের মৃত্যুর চিত্র। 
+```{r, covid19-death-south-asia, echo=FALSE}
+
+# Plot
+ggplot(dead_south_asia, aes(x = id, y = cum_dead, color=country)) +
+  geom_line() +
+  geom_point(data = dead[dead$country == 'Bangladesh' & mdy(dead$Date)==last_reported_date, ], aes(x=id, y=cum_dead), color='red', size=5) +
+  geom_text_repel(aes(label=country),
+                  function(df) df[mdy(df$Date) == last_reported_date, ])+
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "none") +
+  # theme_void() + 
+  theme(legend.position="none") +
+  ggtitle("COVID19 cumulative deaths since first death \n(Bangladesh's peers)", as.Date(last_reported_date) ) +
+  xlab("Days since first death") +
+  ylab("Cumulative deaths")
+```
+
+বাংলাদেশের সাথে তুলনীয় কয়েকটি দেশের মৃতের সংখ্যা। 
 
 ```{r, echo=FALSE}
 
@@ -192,22 +209,6 @@ sa_summary %>%
 
 ```
 
-```{r, covid19-death-south-asia, echo=FALSE}
-
-# Plot
-ggplot(dead_south_asia, aes(x = id, y = cum_dead, color=country)) +
-  geom_line() +
-  geom_point(data = dead[dead$country == 'Bangladesh' & mdy(dead$Date)==last_reported_date, ], aes(x=id, y=cum_dead), color='red', size=5) +
-  geom_text_repel(aes(label=country),
-                  function(df) df[mdy(df$Date) == last_reported_date, ])+
-  theme_minimal(base_size = 14) +
-  theme(legend.position = "none") +
-  # theme_void() + 
-  theme(legend.position="none") +
-  ggtitle("COVID19 cumulative deaths since first death \n(Bangladesh's peers)", as.Date(last_reported_date) ) +
-  xlab("Days since first death") +
-  ylab("Cumulative deaths")
-```
 
 ## সারাংশ
 
