@@ -82,7 +82,6 @@ projects: []
 
 <img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-south-asia-1.png" width="672" />
 
-বাংলাদেশের সাথে তুলনীয় কয়েকটি দেশের মৃতের সংখ্যা। 
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>Table 2: Total number of deaths till 2020-03-27</caption>

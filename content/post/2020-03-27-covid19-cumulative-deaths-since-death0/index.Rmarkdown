@@ -210,7 +210,6 @@ ggplot(dead_south_asia, aes(x = id, y = cum_dead, color=country)) +
   ylab("Cumulative deaths")
 ```
 
-বাংলাদেশের সাথে তুলনীয় কয়েকটি দেশের মৃতের সংখ্যা। 
 
 ```{r, echo=FALSE}
 
