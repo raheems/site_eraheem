@@ -27,7 +27,7 @@ projects: []
 
 # আপডেট
 
-চিত্র ও টেবিল আপডেট করা হয়েছে 2020-03-27 তারিখের ডেটা অনুযায়ী। 
+চিত্র ও টেবিল আপডেট করা হয়েছে 2020-03-28 তারিখের ডেটা অনুযায়ী। 
 
 দুটি সেকশনে সামারি আছে। __দেখতে স্ক্রল করে নিচে নামুন__
 - বিশ্বের সাথে বাংলাদেশের তুলনা
@@ -48,7 +48,7 @@ projects: []
 <img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png" width="672" />
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
-<caption>Table 1: Total number of deaths till 2020-03-27</caption>
+<caption>Table 1: Total number of deaths till 2020-03-28</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> country </th>
@@ -58,23 +58,23 @@ projects: []
 <tbody>
   <tr>
    <td style="text-align:left;"> Italy </td>
-   <td style="text-align:right;"> 9134 </td>
+   <td style="text-align:right;"> 10023 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Spain </td>
-   <td style="text-align:right;"> 5138 </td>
+   <td style="text-align:right;"> 5982 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Iran </td>
-   <td style="text-align:right;"> 2378 </td>
+   <td style="text-align:right;"> 2517 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> France </td>
-   <td style="text-align:right;"> 1997 </td>
+   <td style="text-align:right;"> 2317 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> US </td>
-   <td style="text-align:right;"> 1581 </td>
+   <td style="text-align:right;"> 2026 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Bangladesh </td>
@@ -93,7 +93,7 @@ projects: []
 
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
-<caption>Table 2: Total number of deaths till 2020-03-27</caption>
+<caption>Table 2: Total number of deaths till 2020-03-28</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> country </th>
@@ -103,19 +103,19 @@ projects: []
 <tbody>
   <tr>
    <td style="text-align:left;"> Indonesia </td>
-   <td style="text-align:right;"> 87 </td>
+   <td style="text-align:right;"> 102 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Malaysia </td>
-   <td style="text-align:right;"> 26 </td>
+   <td style="text-align:right;"> 27 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> India </td>
-   <td style="text-align:right;"> 20 </td>
+   <td style="text-align:right;"> 24 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Pakistan </td>
-   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 12 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Bangladesh </td>
@@ -124,6 +124,10 @@ projects: []
   <tr>
    <td style="text-align:left;"> Singapore </td>
    <td style="text-align:right;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Sri Lanka </td>
+   <td style="text-align:right;"> 1 </td>
   </tr>
 </tbody>
 </table>

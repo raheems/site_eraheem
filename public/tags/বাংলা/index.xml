@@ -5,7 +5,7 @@
     <link>/tags/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE/</link>
       <atom:link href="/tags/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE/index.xml" rel="self" type="application/rss+xml" />
     <description>বাংলা</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/portrait.jpg</url>
       <title>বাংলা</title>
@@ -13,12 +13,31 @@
     </image>
     
     <item>
+      <title>চিত্রের মাধ্যমে করোনা ভাইরাসের বিস্তার ও বর্তমান অবস্থা</title>
+      <link>/post/covid19/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/covid19/</guid>
+      <description>&lt;h2 id=&#34;সরশ&#34;&gt;সারাংশ&lt;/h2&gt;
+&lt;p&gt;অন্য দেশের সাথে তুলনা করলে আমরা দেখব যে বিপদ এখনো কাটেনি। বরং সামনের দিনগুলোতে পরিস্হিতি বদলে যেতে পারে। এক্ষেত্রে এসাম্পসন হচ্ছে বাংলাদেশের ডেটা রিপোর্টিং ঠিকমত হচ্ছে এবং তা বজায় থাকবে।&lt;/p&gt;
+&lt;h2 id=&#34;ডটর-সতর&#34;&gt;ডেটার সূত্র&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE &lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34;&gt;https://github.com/CSSEGISandData/COVID-19&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;নিউ ইয়র্ক টাইমস গিটহাব রিপজিটরি &lt;a href=&#34;https://github.com/nytimes/covid-19-data&#34;&gt;https://github.com/nytimes/covid-19-data&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>করোনা ভাইরাসে প্রথম মৃত্যু থেকে ক্রমযোজিত মৃতের সংখ্যা ও বাংলাদেশের তুলনামূলক অবস্হান</title>
       <link>/post/covid19-cumulative-deaths-since-first-death-bn/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/covid19-cumulative-deaths-since-first-death-bn/</guid>
       <description>&lt;h1 id=&#34;আপডট&#34;&gt;আপডেট&lt;/h1&gt;
-&lt;p&gt;চিত্র ও টেবিল আপডেট করা হয়েছে 2020-03-27 তারিখের ডেটা অনুযায়ী।&lt;/p&gt;
+&lt;p&gt;চিত্র ও টেবিল আপডেট করা হয়েছে 2020-03-28 তারিখের ডেটা অনুযায়ী।&lt;/p&gt;
 &lt;p&gt;দুটি সেকশনে সামারি আছে। &lt;strong&gt;দেখতে স্ক্রল করে নিচে নামুন&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;বিশ্বের সাথে বাংলাদেশের তুলনা&lt;/li&gt;
@@ -32,7 +51,7 @@
 &lt;h2 id=&#34;বশব-বলদশর-অবসহন&#34;&gt;বিশ্বে বাংলাদেশের অবস্হান&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
-&lt;caption&gt;Table 1: Total number of deaths till 2020-03-27&lt;/caption&gt;
+&lt;caption&gt;Table 1: Total number of deaths till 2020-03-28&lt;/caption&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style=&#34;text-align:left;&#34;&gt; country &lt;/th&gt;
@@ -42,23 +61,23 @@
 &lt;tbody&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Italy &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 9134 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 10023 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Spain &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 5138 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 5982 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Iran &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 2378 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2517 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; France &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1997 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2317 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; US &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1581 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 2026 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Bangladesh &lt;/td&gt;
@@ -69,7 +88,7 @@
 &lt;h2 id=&#34;দকষণ-এশয়য়-বলদশর-অবসহন&#34;&gt;দক্ষিণ এশিয়ায় বাংলাদেশের অবস্হান&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-south-asia-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
-&lt;caption&gt;Table 2: Total number of deaths till 2020-03-27&lt;/caption&gt;
+&lt;caption&gt;Table 2: Total number of deaths till 2020-03-28&lt;/caption&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style=&#34;text-align:left;&#34;&gt; country &lt;/th&gt;
@@ -79,19 +98,19 @@
 &lt;tbody&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Indonesia &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 87 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 102 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Malaysia &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 26 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 27 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; India &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 20 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 24 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Pakistan &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 11 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 12 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Bangladesh &lt;/td&gt;
@@ -100,6 +119,10 @@
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Singapore &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Sri Lanka &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 1 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
