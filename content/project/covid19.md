@@ -17,7 +17,7 @@ image_preview = "cdc-covid19-unsplash.jpg"
 tags = ["COVID19", "SARS-CoV2"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_link = "https://covid19.eraheem.com"
 
 # Does the project detail page use math formatting?
 math = false

@@ -11,11 +11,15 @@ require(knitr)
 require(kableExtra)
 
 
-jhu_deaths_global <- paste("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv", sep = "")
-jhu_deaths_global_long <- read_csv(jhu_deaths_global)
+jhu_deaths_global_src <- paste("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv", sep = "")
+jhu_confirmed_global_src <- paste("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv", sep = "")
+
+jhu_deaths_global <- read_csv(jhu_deaths_global_src)
+jhu_confirmed_global <- read_csv(jhu_confirmed_global_src)
+
 
 # Create working data set
-df <- us_confirmed_long_jhu %>%
+df_confirmed <- jhu_confirmed_global %>%
   rename(province = "Province/State",
          country = "Country/Region") %>%
   # Exclude China
@@ -30,7 +34,9 @@ df <- us_confirmed_long_jhu %>%
     cum_dead = sum(cum_dead)
   )
 
-df_bd <- us_confirmed_long_jhu %>%
+
+
+df_bd <- jhu_confirmed_global %>%
   rename(province = "Province/State",
          country = "Country/Region") %>%
   # Exclude China
@@ -38,11 +44,14 @@ df_bd <- us_confirmed_long_jhu %>%
     country == "Bangladesh"
   ) %>%
   pivot_longer(-c(province, country, Lat, Long),
-               names_to = "Date", values_to = "cum_dead") %>%
-  select(country, Date, cum_dead) %>%
-  group_by(country, Date) %>%
-  summarize(
-    cum_dead = sum(cum_dead)
+               names_to = "Date", values_to = "cum_cases") %>%
+  select(country, Date, cum_cases) %>%
+  mutate(
+    Date = mdy(Date ),
+    daily_cases = c(0, diff(cum_cases)),
+    daily_cases_rand = ifelse(daily_cases==0, daily_cases+0.001, daily_cases),
+    pct_rand = daily_cases_rand/lag(daily_cases_rand) * 100,
+    pct = daily_cases/lag(daily_cases) * 100
   )
 
 
