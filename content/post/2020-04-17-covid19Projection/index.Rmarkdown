@@ -4,7 +4,7 @@ authors: []
 date: '2020-04-17'
 slug: 'covid19-projection-bangladesh-run1'
 subtitle: ''
-summary: 'An SEIR model was fitted to Bangladesh COVID19 incidence data with 5-day and 100-day initial projection'
+summary: 'An SEIR model was fitted to Bangladesh COVID19 incidence data with 5-day and 100-day initial projection. This initial model suggets the peak will occur in early to mid June. The pandemic will likely tapper off by early August.'
 categories: ["COVID19"]
 tags: ["COVID19"]
 lastmod: '2020-04-18'
