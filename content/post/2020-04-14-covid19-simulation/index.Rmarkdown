@@ -1,0 +1,793 @@
+---
+title: করোনাভাইরাস ইনফেকশাস ডিজিজ মডেলিং সিমুলেশন
+authors: []
+date: '2020-04-14'
+output: html_document
+
+slug: 'covid19-evaluation-of-non-ppi-intervention-using-simulation'
+subtitle: ''
+summary: 'কম্পিউটার সিমুলসনের মাধ্যমে বাংলাদেশে করোনাভাইরাসের গতিপ্রকৃতি পর্যবেক্ষণ এবং বিভিন্ন ইন্টেরভেনশনের কার্যকারিতা পরীক্ষণ'
+categories: ["COVID19"]
+tags: ["COVID19", "বাংলা"]
+lastmod: '2020-04-14'
+draft: true
+featured: yes
+diagram: true
+image:
+  placement: 1
+  caption: ""
+  focal_point: "Center"
+  preview_only: true
+projects: ["covid19"]
+---
+
+# সিমুলেশন {#simulation}
+
+সিমুলেশনকে আমি যেভাবে সংজ্ঞায়িত করি সেটি হল--
+
+> Observing a real system without really observing it. 
+
+অর্থাৎ সিমুলেশন হল একটি সিস্টেম কী রকম আচরণ করবে তা কম্পিউটারের মাধ্যমে কৃত্রিম পরিবেশ সৃষ্টি করে সেখানে বিভিন্ন প্যারামিটার পরিবর্তন করে পর্যবেক্ষণ করা। 
+
+একটি উদাহরণ দিলে ভাল বোঝা যাবে। 
+
+বাংলাদশে এখন লকডাউন চলছে। অর্থনীতির উপর এর প্রভাব অনেক। তাই অনেকেই বলছেন দীর্ঘ মেয়াদে লকডাউন কোনও সমাধান নয়। কিন্তু লকডাউন যদি উঠিয়ে নেয়া হয় তাহলে এর প্রভাব কী হতে পারে সেটি আমরা বাস্তবে পরীক্ষা করে দেখতে পারবনা। আর সেখানেই কম্পিউটার সিমুলেশন সহায়তা করতে পারে। সিমুলেশনের মাধ্যমে আমরা এই পরীক্ষাটি করতে পারি এবং সেটি সিদ্ধান্ত গ্রহণে সহায়তা করতে পারে।  
+
+```{r setup, include=FALSE, eval=TRUE}
+version_date <- lubridate::ymd("2020-04-13")
+
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, eval=TRUE,
+                      tidy.opts=list(width.cutoff=60),
+                      tidy=TRUE)
+```
+
+
+# ভূমিকা {#introduction}
+
+লেখা হচ্ছে।
+
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+library(tidyverse)
+library(magrittr)
+library(lubridate)
+library(stringr)
+library(tibble)
+library(broom)
+library(ggplot2)
+library(gt)
+library(knitr)
+library(devtools)
+library(parallel)
+library(foreach)
+library(tictoc)
+suppressMessages(library(EpiModel))
+library(incidence)
+library(earlyR)
+
+tic("Time to complete")
+```
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE}
+source_files <- c("_icm.mod.init.seiqhrf.R",
+                  "_icm.mod.status.seiqhrf.R",
+                  "_icm.mod.vital.seiqhrf.R",
+                  "_icm.control.seiqhrf.R",
+                  "_icm.utils.seiqhrf.R",
+                  "_icm.saveout.seiqhrf.R",
+                  "_icm.icm.seiqhrf.R")
+
+src_path <- paste0("./_posts/2020-03-18-modelling-the-effects-of-public-health-",
+            "interventions-on-covid-19-transmission-part-2/")
+
+gist_url <- "https://gist.github.com/timchurches/92073d0ea75cfbd387f91f7c6e624bd7"
+
+local_source <- FALSE
+
+for (source_file in source_files) {
+  if (local_source) {
+    source(paste(src_path, source_file, sep=""))
+  } else {
+    source_gist(gist_url, filename=source_file)
+  }
+}
+```
+
+## কম্পারটমেন্ট
+
+সংক্রামক রোগের মডেলিং এর জন্য কম্পারটমেন্টাল মডেল বহুল ব্যবহৃত। SIR, SEIR, SIS ইত্যাদি মডেলগুলো ইতোপূর্বে সংক্রামক রোগের মডেলিঙে ব্যবহৃত হয়েছে। সেরকম কিন্তু আরেকটু জটিল একটি মডেল নিয়ে আমরা সিমুলেসন করব। 
+
+কম্পারটমেন্ট গুলোর সংক্ষেপে বর্ণনা দেয়া হল। 
+
+
+| কম্পারটমেন্ট    |           সংজ্ঞা                                                                     |
+|-------------|-----------------------------------------------------------------------------------|
+| S           | Susceptible বা আক্রান্ত হতে পারে এমন ব্যক্তি                                               |
+| E           | এক্সপোসড **এবং** সংক্রামিত, এখনো সিম্পটম প্রকাশ করছেনা কিন্তু সম্ভাব্য সঙ্ক্রামক        |
+| I           | আক্রান্ত, সিম্পটমাটিক **এবং** সংক্রামক                                          |
+| Q           | সংক্রামক, কিন্তু নিজে থেকেই কয়ারেন্টাইনে                                                |
+| H           | হাসপাতালে নেয়া প্রয়োজন (স্বাভাবিক সময়ে ক্যাপাসিটি থাকলে হাসপাতালে নেয়া হত)                 |
+| R           | রিকভার করেছে, নতুন করে আক্রান্ত হবে না                                                     |
+| F           | কেইস ফ্যাটালিটি (কোভিড ১৯ এ মারা গেছে, অন্য কারণে নয়)                           |
+
+এই মডেল অনুযায়ী একজন ব্যক্তি এক স্টেজ থেকে আরেক স্টেজে কীভাবে যাচ্ছে তা নিচের ডায়াগ্রাম থেকে বোঝা যাবে। 
+
+
+```{r, seiqhrf-diagram, eval=TRUE, message=FALSE, layout="l-page"}
+DiagrammeR::grViz("
+digraph SEIQHRF {
+
+  # a 'graph' statement
+  graph [overlap = false, fontsize = 10] #, rankdir = LR]
+
+  # several 'node' statements
+  node [shape = box,
+        fontname = Helvetica]
+  S[label='S=আক্রান্ত হতে পারে এমন'];
+  E[label='E=এক্সপোসড এবং সংক্রামিত,\nসিম্পটম দেখাচ্ছে না,\nসম্ভাব্য সংক্রামক'];
+  I[label='I=সংক্রামিত এবং সংক্রামক'];
+  Q[label='Q=(নিজে-)আইসোলেটেড\n(সংক্রামক)'];
+  H[label='H=হাসপাতাল\nনিতে হবে'];
+  R[label='R=রিকভারি/ইমিউন'];
+  F[label='F=কেইস ফেটালিটি']
+
+  # several 'edge' statements
+  S->E[label='a']
+  I->S[style='dashed', label='x']
+  E->I[label='b']
+  E->S[style='dashed', label='y']
+  I->Q[label='c']
+  Q->S[style='dashed', label='z']
+  I->R[label='d']
+  I->H[label='e']
+  H->F[label='f']
+  H->R[label='g']
+  Q->R[label='h']
+  Q->H[label='i']
+}
+")
+```
+
+## সিমুলেশন প্যরামিটার {#simulation-parameter}
+সিমুলেসন ব্যাপারটি নির্ভর করে এর প্যারামিটারগুলো কীভাবে ধরা হচ্ছে। এই পরীক্ষায় যেভাবে আমি প্যরামিটারগুলো ধরেছি তা দেয়া হল। পসিমুলেসনের প্রয়োজনে এগুলো টিউন করা হবে। উদ্দেশ্য হল বাংলাদেশের জন্য প্রযোজ্য মান দিয়ে মডেল শুরু করা। 
+
+```{r, echo=FALSE, eval=TRUE, message=FALSE, layout="l-page"}
+param_docs <- tribble(~DiagramRef, ~Parameter, ~Default, ~Explanation,
+  "", "type", "SEIQHRF", " নানা ধরণের মডেল আছে, যেমন SI, SIR, SIS, SEIR, SEIQHR এবং SEIQHRF, এখানে SEIQHRF মডেল নিয়ে সিমুলেসন করা হবে",
+
+"", "nsteps", "366", "সিমুলেসন যত দিনের জন্য করা হচ্ছে। ৩৬৬ মানে এক বছর।",
+
+"", "nsims", "10", "গড়ে যতগুলো রিপিটশন করে হবে।",
+
+  "", "ncores", "4", "সিপিইঊ কোর।",
+
+  "b", "prog.rand", "FALSE", "যেভাবে **E** কম্পারটমেন্ট থেকে **I** কম্পারটমেন্টে যাবে তার মেথড। TRUE হলে করে দ্বিপদ বিন্যাস থেকে `prog.rate` অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে Weibull ডিস্ট্রিবিউশন থেকে ডেটা জেনারেট করা হবে যার প্যারামিটার হবে `prog.dist.scale` এবং `prog.dist.shape`",
+
+  "d,g,h", "rec.rand", "FALSE", "I, Q, H থেকে রিকভারি কম্পারটমেন্টে ট্রাঞ্জিশন মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে `prog.rate` অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে Weibull ডিস্ট্রিবিউশন থেকে ডেটা জেনারেট করা হবে যার প্যারামিটার হবে `prog.dist.scale` এবং `prog.dist.shape`",
+
+  "f", "fat.rand", "FALSE", " H থেকে F কম্পারটমেন্টে ট্রাঞ্জিশনের মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে `fat.rate.base` অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে স্যাম্পল ফ্রাকশন নেয়া হবে `fat.rate.base` অনুযায়ী। কিন্তু, H কম্পারটমেন্টে বর্তমান রোগীর সংখ্যা যদি হাসপাতালের ক্যাপাসিটির (`hosp.cap`) চেয়ে বেশি হয় তাহলে বেইজ ফেটালিটিকে হাসপাতালের ক্যাপাসিটির ওয়েটেড এভারেজ দিয়ে স্থির করা হবে। ঊপরন্ত আরেকটু বেশি রেট যোগ করা হবে যা `fat.rate.overcap` দিয়ে নির্দিষ্ট করা।  `fat.rate.overcap` বেশি করে ধরার মাধ্যমে ক্যাপাসিটি ছাড়িয়ে গেলে স্বাস্থ্য ব্যবস্থার উপর কিরকম প্রভাব পরবে তা সিমুলেট করা যাবে। `fat.tcoeff` কোফিসিয়েন্ট একজন রোগী H কম্পারটমেন্টে যতদিন আছে তার সাথে মারা যাওয়ার সম্ভাবনার লিনিয়ার সম্পর্ক নির্দেশক। `fat.tcoeff` আইসিইঊ রোগীদের সারভাইভাল সময়ের ডিস্ট্রিবিউশনেকে ভালভাবে এপ্রক্সিমেট করতে পারে।",
+
+  "c", "quar.rand", "FALSE", " I থেকে Q কম্পারটমেন্টে ট্রানজিশনের মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে `quar.tate` অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে `quar.rate অনুসারে দৈব চয়নের মাধ্যমে আংশিক স্যাম্পল নেয়া হবে।",
+
+  "e,i", "hosp.rand", "FALSE", "I থেকে H বা Q থেকে H এ স্থানান্তরের মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে `hosp.rate` অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে `hosp.rate` অনুসারে দৈব চয়নের মাধ্যমে আংশিক স্যাম্পল নেয়া হবে।",
+
+  "e,i", "disch.rand", "FALSE", "হাসপাতালে নেয়ার প্রয়োজন ছিল সেরকম অবস্থা থেকে রিকভারি স্টেজে যাওয়ার মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে `disch.rate` অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে `disch.rate` অনুসারে দৈব চয়নের মাধ্যমে আংশিক স্যাম্পল নেয়া হবে। স্মরণ করা যেতে পারে যে H স্টেজ থেকে বের হওয়ার একমাত্র উপায় হল রিকভারি অথবা মৃত্যু।",
+
+  "", "s.num", "9997", "**S** কম্পারটমেন্টে মানুষের প্রাথমিক সংখ্যা।",
+
+  "", "e.num", "0", "**E** কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।",
+
+  "", "i.num", "3", "**I** কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।",
+
+  "", "q.num", "0", "**Q** কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।",
+
+  "", "h.num", "0", "**H** কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।",
+
+  "", "r.num", "0", "**R** কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।",
+
+  "", "f.num", "0", "**F**কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।",
+
+  "x", "act.rate.i", "8", "**I** এবং **S** কম্পারটমেন্টের ব্যক্তির মধ্যে দিনে গড়ে যতবার সংস্পর্শ হবে। প্রতিটি সংস্পর্শ মানেই আক্রান্ত হওয়া নয়। আক্রান্ত হওয়ার সম্ভাবনা `inf.prob.i` নির্ধারিত হবে। যেমন, সোশাল ডিস্টান্সিং এর এফেক্ট দেখতে চাইলে `act.rate.i` মান কমিয়ে দিতে হবে।",
+
+  "x", "inf.prob.i", "0.03", "**I** এবং **S** কম্পারটমেন্টের ব্যক্তির মধ্যে প্রতি সংস্পর্শে রোগ সঙ্ক্রমণের সম্ভাবনা। `inf.prob.i` কমিয়ে দেয়া অনেকটা হাইজিন চর্চা বাড়ানোর মত।",
+
+  "y", "act.rate.e", "10", "**E** এবং **S** কম্পারটমেন্টের ব্যক্তির মধ্যে দিনে গড়ে যতবার সংস্পর্শ হবে।",
+
+  "y", "inf.prob.e", "0.02", "**E** এবং **S** কম্পারটমেন্টের ব্যক্তির মধ্যে প্রতি সংস্পর্শে রোগ সঙ্ক্রমণের সম্ভাবনা। অন্যথায় `inf.exp.i`.",
+
+  "z", "act.rate.q", "2", "**Q** (কয়ারেন্টিন্ড) ব্যক্তির সাথে **S** কম্পারটমেন্টের ব্যক্তির মধ্যে দিনে গড়ে যতবার সংস্পর্শ হবে। অন্যথায় `act.rate.i`.",
+
+  "z", "inf.prob.q", "0.02", "**Q** এবং **S** কম্পারটমেন্টের ব্যক্তির মধ্যে প্রতি সংস্পর্শে রোগ সঙ্ক্রমণের সম্ভাবনা। অন্যথায়`inf.exp.i`.",
+
+  "c", "quar.rate", "1/100", "প্রতদিন গড়ে **I** গ্রুপের আক্রান্ত মানুষেরা যে হারে **Q** কম্পারটমেন্টে নিজে থেকে কোয়ারেন্টিনে যায়। যারা লক্ষণ দেখায়না, অর্থাৎ **E** কম্পারটমেন্টে আছে, তারা আইসলেসনে যায় না কারণ তারা জানেনা যে তারা সঙ্ক্রামক কিনা।",
+
+  "e,i", "hosp.rate", "1/100", " প্রতিদিন গড়ে লক্ষণ ওয়ালা এবং পজিটিভ ব্যক্তি (**I**) এবং (**Q**) কম্পারটমেন্টের ব্যক্তি এমন অবস্থায় পৌঁছে যে হাসপাতালে নেয়ার প্রয়োজন হয়। অর্থাৎ তারা ক্রিটিকাল অবস্থায় চলে যায়। ডিফল্ট হল 1% প্রতি দিন।",
+
+  "g", "disch.rate", "6/100", "হাসপাতালের প্রয়োজন হয়েছিল এমনদের মধ্যে দৈনিক গড়ে যতজন রিকভার করে।",
+
+  "b", "prog.rate", "10/100", "**E** থেকে গড়ে দৈনিক **I** কম্পারটমেন্টে যাওয়ার হার। `prog.rand` দেখুন।",
+
+  "b", "prog.dist.scale", "5", "Weibull  ডিস্ট্রিবিউশনের স্কেল প্যরামিটার। `prog.rand` দেখুন।",
+
+  "b", "prog.dist.shape", "1.5", "Weibull  ডিস্ট্রিবিউশনের  সেইপ প্যরামিটার। `prog.rand` দেখুন।",
+
+  "d", "rec.rate", "1/20", "দৈনিক রিকভারি রেইট অর্থাৎ **I** থেকে **R** এ যাওয়ার রেইট। `rec.rand` দেখুন।",
+
+  "d", "rec.dist.scale", "35", "রিকভারির Weibull ডিস্ট্রিবিউশনের স্কেল প্যরামিটার। `rec.rand` দেখুন।",
+
+  "d", "rec.dist.shape", "1.5", "রিকভারির Weibull ডিস্ট্রিবিউশনের সেইপ প্যরামিটার। `rec.rand` দেখুন।",
+
+  "f", "fat.rate.base", "1/50", "যাদের হাসপাতালের দরকার তাদের বেজলাইন  দৈনিক মরটালিটি রেইট। `fat.rand` দেখুন",
+
+  "f", "hosp.cap", "40", "সিমুলেটেড পপুলেশনের জন্য হাসপাতালের বেডের সংখ্যা। `fat.rand` দেখুন।",
+
+  "f", "fat.rate.overcap", "2/100", "দৈনিক মরটালিট রেইট তাদের মধ্যে যাদের হাসপাতালে নেয়ার দরকার ছিল কিন্তু যায়গা না থাকায় দেয়া যায়নি। (`hosp.cap` এবং `fat.rand` দ্রষ্টব্য).",
+
+  "f", "fat.tcoeff", "0.5", "**H** কম্পারটমেন্টে থাকার দিনের সংখ্যার সাথে মরটালিটি রেইট যতটুকু অরিতিক্ত বাড়বে তার কোফিশিয়েন্ট। `fat.rand` দেখুন।",
+
+  "", "vital", "TRUE", "স্বাভাবিক জন্ম এবং মৃত্যু আমলে নেয়া হচ্ছে।",
+
+  "", "a.rate", "(10.5/365)/1000", "দৈনিক জন্মহার। যারা জন্মাবে তারা সবাই **S** কম্পারটমেন্টে ঢুকবে।",
+
+  "", "ds.rate, de.rate, de.rate, dq.rate, dh.rate, dr.rate", "various rates", "করোনা ব্যতীত অন্য কারণে মৃত্যুর হার।",
+
+  "", "out", "mean", "n সিমুলেশন রান গুলকে যেভাবে সামারাইজ করা হবে। median এবং percentile ও হতে পারে। `EpiModel` ডকুমেন্টেশন দেখুন।"
+
+  )
+
+param_docs %>%
+  gt() %>%
+  fmt_markdown(columns = TRUE) %>%
+  tab_options(table.width=pct(90))
+```
+
+<!-- ### Time-variant parameters -->
+
+<!-- Several of the simulation parameters can also be varied over time. That is, as well as accepting a single value, they also accept a vector of values with length equal to `nsteps`, the number of days over which the simulation runs. Assuming `nsteps=366`, we can, for example, set `quar.rate = c(rep(1/10,30), rep(1/3, 335))`. That defines a step function in which the transition-to-isolation rate for the **I** compartment is 0.1 for the first 30 days, then steps up to 0.33 thereafter, reflecting, say, a campaign or government edict to self-isolate. Of course, the vector of values can be a smooth function, or can go up then down again, or whatever you wish to model. This is an extremely powerful feature of computational models such as this, and one very hard to incorporate into purely mathematical models. -->
+
+<!-- Most of the parameters for which time-variation is useful support it. If they don't, you will receive an error message (the table above will be updated to include this information later). -->
+
+<!-- ## `simulate()` wrapper function -->
+
+```{r, echo=FALSE, eval=TRUE}
+# function to set-up and run the baseline simulations
+simulate <- function(# control.icm params
+                     type = "SEIQHRF", 
+                     nsteps = 366, 
+                     nsims = 10,
+                     ncores = 4,
+                     prog.rand = FALSE,
+                     rec.rand = FALSE,
+                     fat.rand = TRUE,
+                     quar.rand = FALSE,
+                     hosp.rand = FALSE,
+                     disch.rand = TRUE,
+                     infection.FUN = infection.seiqhrf.icm,
+                     recovery.FUN = progress.seiqhrf.icm,
+                     departures.FUN = departures.seiqhrf.icm,
+                     arrivals.FUN = arrivals.icm,
+                     get_prev.FUN = get_prev.seiqhrf.icm,
+                     # init.icm params
+                     s.num = 16997,
+                     e.num=0,
+                     i.num = 3,
+                     q.num=0,
+                     h.num=0,
+                     r.num = 0,
+                     f.num = 0,
+                     # param.icm params
+                     inf.prob.i = 0.05,
+                     inf.prob.e = 0.02, 
+                     act.rate.e = 10,
+                     act.rate.i = 2,
+                     inf.prob.q = 0.03, 
+                     act.rate.q = 5,                    
+                     quar.rate = 20/100, 
+                     hosp.rate = 10/100,
+                     disch.rate = 6/100,
+                     prog.rate = 10/100,
+                     prog.dist.scale = 5,
+                     prog.dist.shape = 1.5,
+                     rec.rate = 5/100,
+                     rec.dist.scale = 35,
+                     rec.dist.shape = 1.5,
+                     fat.rate.base = 3/100,
+                     hosp.cap = 200,
+                     fat.rate.overcap = 2/100,
+                     fat.tcoeff = 0.5,
+                     vital = TRUE,
+                     a.rate = (19/365)/1000, 
+                     a.prop.e = 0.01,
+                     a.prop.i = 0.001,
+                     a.prop.q = 0.01,
+                     ds.rate = (6/365)/1000, 
+                     de.rate = (6/365)/1000, 
+                     di.rate = (6/365)/1000,
+                     dq.rate = (6/365)/1000,
+                     dh.rate = (20/365)/1000,
+                     dr.rate = (6/365)/1000,
+                     out="mean"
+                    ) {
+
+  control <- control.icm(type = type, 
+                         nsteps = nsteps, 
+                         nsims = nsims,
+                         ncores = ncores,
+                         prog.rand = prog.rand,
+                         rec.rand = rec.rand,
+                         infection.FUN = infection.FUN,
+                         recovery.FUN = recovery.FUN,
+                         arrivals.FUN = arrivals.FUN,
+                         departures.FUN = departures.FUN,
+                         get_prev.FUN = get_prev.FUN)
+
+  init <- init.icm(s.num = s.num,
+                   e.num = e.num,
+                   i.num = i.num,
+                   q.num = q.num,
+                   h.num = h.num,
+                   r.num = r.num,
+                   f.num = f.num)
+
+  param <-  param.icm(inf.prob.e = inf.prob.e, 
+                      act.rate.e = act.rate.e,
+                      inf.prob.i = inf.prob.i, 
+                      act.rate.i = act.rate.i,
+                      inf.prob.q = inf.prob.q, 
+                      act.rate.q = act.rate.q,                    
+                      quar.rate = quar.rate,
+                      hosp.rate = hosp.rate,
+                      disch.rate = disch.rate,
+                      prog.rate = prog.rate,
+                      prog.dist.scale = prog.dist.scale,
+                      prog.dist.shape = prog.dist.shape,
+                      rec.rate = rec.rate,
+                      rec.dist.scale = rec.dist.scale,
+                      rec.dist.shape = rec.dist.shape,
+                      fat.rate.base = fat.rate.base,
+                      hosp.cap = hosp.cap,
+                      fat.rate.overcap = fat.rate.overcap,
+                      fat.tcoeff = fat.tcoeff,
+                      vital = vital,
+                      a.rate = a.rate, 
+                      a.prop.e = a.prop.e,
+                      a.prop.i = a.prop.i,
+                      a.prop.q = a.prop.q,
+                      ds.rate = ds.rate, 
+                      de.rate = de.rate, 
+                      di.rate = di.rate,
+                      dq.rate = dq.rate,
+                      dh.rate = dh.rate,
+                      dr.rate = dr.rate)
+
+  sim <- icm.seiqhrf(param, init, control)
+  sim_df <- as.data.frame(sim, out=out)
+
+  return(list(sim=sim, df=sim_df))
+}
+
+```
+
+## বেইজলাইন সিমুলেসন
+
+```{r, echo=FALSE, eval=TRUE}
+baseline_sim <- simulate(nsims = 10, ncores=4)
+```
+
+ডিস্ট্রিবিউশন দেখে নেই। 
+
+```{r, echo=FALSE, eval=TRUE}
+# define a function to extract timings and assemble a data frame
+get_times <- function(simulate_results) {
+
+  sim <- simulate_results$sim
+  
+  for (s in 1:sim$control$nsims) {
+    if (s == 1) {
+      times <- sim$times[[paste("sim",s,sep="")]]
+      times <- times %>% mutate(s=s)
+    } else {
+      times <- times %>%
+        bind_rows(sim$times[[paste("sim",s,sep="")]] %>%
+                    mutate(s=s))
+    }
+  }
+  
+  times <- times %>%
+            mutate(infTime=ifelse(infTime <0, -5, infTime),
+                   expTime=ifelse(expTime <0, -5, expTime)) %>%
+            mutate(incubation_period = infTime - expTime,
+                   illness_duration = recovTime - expTime,
+                   illness_duration_hosp = dischTime - expTime,
+                   hosp_los = dischTime - hospTime,
+                   quarantine_delay = quarTime - infTime,
+                   survival_time = fatTime - infTime) %>%
+            select(s, 
+                   incubation_period,
+                   quarantine_delay,
+                   illness_duration,
+                   illness_duration_hosp,
+                   hosp_los,
+                   survival_time) %>%
+            pivot_longer(-s, names_to="period_type",
+                             values_to="duration") %>%
+            mutate(period_type = factor(period_type,
+                                        levels=c("incubation_period", 
+                                        "quarantine_delay", 
+                                        "illness_duration",
+                                        "illness_duration_hosp",
+                                        "hosp_los",
+                                        "survival_time"),
+                                   labels=c("Incubation period",
+                                            "Delay starting quarantine",
+                                            "Illness duration",
+                                            "Illness duration (hosp)",
+                                            "Hospital care req. duration",
+                                            "Survival time (case fatalities)"),
+                                   ordered = TRUE))
+  return(times)
+}
+```
+
+Now get the timing data.
+
+```{r, echo=FALSE, eval=TRUE}
+times <- get_times(baseline_sim)
+```
+
+And visualise it.
+
+```{r, echo=FALSE, eval=TRUE, fig.height=16, fig.width=8}
+times %>%
+  filter(duration <= 30) %>%
+  ggplot(aes(x=duration)) +
+    geom_bar() +
+    facet_grid(period_type~., scales="free_y") +
+    labs(title="Distrubution of time spent in various compartments",
+         subtitle="Baseline simulation")
+```
+
+<!-- OK, all of those distributions of the time spent in the various states (compartments) look reasonable, with the exception of _Hospital care required duration_. For quite a few individuals, that duration is zero. You could argue that these are day-only admissions, but really, hospital care should be required for at least one day. It's something that can be fixed later, but it makes little difference for now. -->
+
+<!-- Strictly, you should check these duration distributions for every model you run. In practice, I have used them to check the baseline model, and for spot checks on intervention "experiment" models. But if you change the Weibull distribution parameters for the progression and recovery rates, please do check the duration distributions to ensure they are still sensible. -->
+
+## Visualise prevalence 
+
+Prevalence is the number of individuals in each compartment at each point in time (each day). That's the usual way disease models are presented.
+
+
+```{r, eval=TRUE, layout="l-body-outset"}
+baseline_plot_df <- baseline_sim$df %>%
+  # use only the prevalence columns
+  select(time, s.num, e.num, i.num, q.num, 
+         h.num, r.num, f.num) %>%
+  # examine only the first 100 days since it
+  # is all over by then using the default parameters
+  filter(time <= 365) %>%
+  pivot_longer(-c(time),
+               names_to="compartment",
+               values_to="count")
+
+# define a standard set of colours to represent compartments
+compcols <- c("s.num" = "white", "e.num" = "yellow", "i.num" = "orange",
+              "q.num" = "cyan", "h.num" = "blue", "r.num" = "lightgreen",
+              "f.num" = "red")
+complabels <- c("s.num" = "Susceptible", "e.num" = "Infected but asymptomatic", 
+                "i.num" = "Infected and infectious", "q.num" = "Quarantined",
+                "h.num" = "Requires hospitalisation", "r.num" = "Recovered",
+                "f.num" = "Case fatality")
+
+baseline_plot_df %>%
+  ggplot(aes(x=time, y=count, colour=compartment)) +
+  geom_line(size=2, alpha=0.8) +
+  scale_colour_manual(values = compcols, labels=complabels) +
+  theme_dark() +
+  # scale_y_continuous(labels=function(x)scales::comma(x*10000)) +
+  labs(title="Baseline simulation",
+         x="Days since beginning of epidemic",
+         y="Prevalence (persons)")
+```
+
+OK, that looks very reasonable. Note that almost the entire population ends up being infected. However, the **S** and **R** compartments dominate the plot (good, humanity survives!). Let's re-plot leaving out those compartments.
+
+```{r eval=TRUE, layout="l-body-outset"}
+baseline_plot_df %>%
+  filter(compartment %in% c("e.num","i.num",
+                            "q.num","h.num",
+                            "f.num")) %>%
+  ggplot(aes(x=time, y=count, colour=compartment)) +
+    geom_line(size=2, alpha=0.7) +
+    scale_colour_manual(values = compcols, labels=complabels) +
+    theme_dark() +
+  # scale_y_continuous(labels=function(x)scales::comma(x*10000)) +
+    labs(title="Baseline simulation",
+         x="Days since beginning of epidemic",
+         y="Prevalence (persons)")
+```
+
+What can we see in this plot of our simulation of our hypothetical world of 10,000 people (meaning the results may be indicative of virus behaviour in the real world, but not necessarily the same timings or values)?
+
+* The epidemic is all over in two months.
+* We see typical exponential behaviour, although these are prevalence numbers, not incidence (we can extract incidence from our simulation, as we will see later). We expect incidence to rise exponentially, prevalence tends to start with exponential growth then tapers off. That's what we are seeing here, so that's good.
+* The prevalence in the **I** and **Q** compartments mirrors but lags behind the **E** compartment, as expected.
+* The number requiring hospitalisation seems reasonable.
+* The number in the case fatality compartment is monotonically increasing, as expected.
+
+## Checking the basic reproduction number $R_{0}$
+
+<!-- In the [previous post on simulation](https://timchurches.github.io/blog/posts/2020-03-10-modelling-the-effects-of-public-health-interventions-on-covid-19-transmission-part-1/), we saw how we could check the $R_{0}$ for our simulated outbreak. Let's repeat that for our baseline simulation. Refer to the [previous post](https://timchurches.github.io/blog/posts/2020-03-10-modelling-the-effects-of-public-health-interventions-on-covid-19-transmission-part-1/) for explanation of what's being done here. -->
+
+```{r, message=FALSE, warning=FALSE}
+# get the S-> E compartment flow, which is
+# our daily incidence rate
+incidence_counts <- baseline_sim$df %>%
+  select(time, se.flow)
+# uncount them
+incident_case_dates <- incidence_counts %>%
+                        uncount(se.flow) %>%
+                        pull(time) 
+# convert to an incidence object
+incidence_all <- incident_case_dates %>%
+                    incidence(.)
+
+# plot the incidence curve
+plot(incidence_all)
+```
+
+```{r, message=FALSE, warning=FALSE}
+# find the peak of the epidemic curve
+peak_of_epidemic_curve <- find_peak(incidence_all)
+
+# repeat with just the growth part of the epidemic curve
+incident_case_dates_growth_phase <- incidence_counts %>%
+                            filter(time <= peak_of_epidemic_curve) %>%
+                            select(time, se.flow) %>%
+                            uncount(se.flow) %>%
+                            pull(time)
+
+incidence_growth_phase <- incident_case_dates_growth_phase %>%
+                            incidence(., last_date=peak_of_epidemic_curve)
+# specify serial interval mean and SD
+# since the last blog post new studies have appeared
+# suggesting 4.5 is a better mean for the SI
+si_mean <- 7.5
+si_sd <- 2.5
+
+# get a set of MLE estimates for R0 and plot
+res <- get_R(incidence_growth_phase, si_mean =si_mean, si_sd = si_sd)
+plot(res, "R")
+```
+
+That $R_{0}$ might seem s bit low - values of around 2 or 2.5 were being quoted in January 2020, but remember our value has been calculated using new estimates of the _serial interval_ that are much shorter than previously assumed. We also have some people going into self-isolation even in our baseline model, but at a desultory rate.
+
+# Running an intervention experiment
+
+Now we are in a position to run an experiment, by altering some parameters of our baseline model.
+
+Thus we ramp up the isolation rate (`quar.rate`) from it's low level of 0.033 (as in the baseline simulation), starting at day 15, up to 0.5 at day 30. We'll write a little function to do that.
+
+```{r, eval=TRUE}
+quar_rate_ramp <- function(t) {
+  ifelse(t < 15, 0.0333, ifelse(t <= 30, 0.0333 + (t-15)*(0.5 - 0.0333)/15, 0.5))
+}
+
+ramp_quar_rate_sim <- simulate(quar.rate = quar_rate_ramp(1:366))  
+```
+
+Let's examine the result. The code used is similar to that used above for the baseline model and won't be shown here.
+
+```{r, echo=FALSE, eval=TRUE, layout="l-body-outset"}
+ramp_quar_rate_sim_plot_df <- ramp_quar_rate_sim$df %>%
+  # use only the prevalence columns
+  select(time, s.num, e.num, i.num, q.num, 
+         h.num, r.num, f.num) %>%
+  # examine only the first 100 days since it
+  # is all over by then using the default parameters
+  filter(time <= 365) %>%
+  pivot_longer(-c(time),
+               names_to="compartment",
+               values_to="count")
+
+ramp_quar_rate_sim_plot_df %>%
+  filter(compartment %in% c("e.num","i.num",
+                            "q.num","h.num",
+                            "f.num")) %>%
+  ggplot(aes(x=time, y=count, colour=compartment)) +
+    geom_line(size=2, alpha=0.7) +
+    scale_colour_manual(values = compcols, labels=complabels) +
+    theme_dark() +
+    labs(title="Ramp up isolation rates from day 15 to day 30",
+         x="Days since beginning of epidemic",
+         y="Prevalence (persons)")
+```
+
+Let's see that with the baseline again for comparison:
+ 
+```{r, eval=TRUE, layout="l-body-outset", preview=TRUE}
+baseline_plot_df %>%
+  mutate(experiment="Baseline") %>%
+  bind_rows(ramp_quar_rate_sim_plot_df %>%
+              mutate(experiment="Ramp up isolation")) %>%
+  filter(compartment %in% c("e.num","i.num",
+                            "q.num","h.num",
+                            "f.num")) %>%
+  ggplot(aes(x=time, y=count, colour=compartment)) +
+    geom_line(size=2, alpha=0.7) +
+    facet_grid(experiment ~ .) +
+    scale_colour_manual(values = compcols, labels=complabels) +
+    theme_dark() +
+    labs(title="Baseline vs ramping up isolation simulations",
+         x="Days since beginning of epidemic",
+         y="Prevalence (persons)")
+```
+
+These figures need to be carefully reviwed to set the initial parameters. 
+
+```{r, echo=FALSE, eval=TRUE, layout="l-body-outset"}
+baseline_plot_df %>%
+  mutate(experiment="Baseline") %>%
+  bind_rows(ramp_quar_rate_sim_plot_df %>%
+              mutate(experiment="Ramp up isolation")) %>%
+  filter(compartment %in% c("h.num",
+                            "f.num")) %>%
+  ggplot(aes(x=time, y=count, colour=compartment)) +
+    geom_line(size=2, alpha=0.7) +
+    geom_hline(yintercept = 40, colour="red", alpha=0.5) + 
+    facet_grid(experiment ~ .) +
+    scale_colour_manual(values = compcols, labels=complabels) +
+    theme_dark() +
+    labs(title="Baseline vs ramping up isolation simulations",
+         x="Days since beginning of epidemic",
+         y="Prevalence (persons)")
+```
+
+
+<!-- # Running lots of intervention experiments -->
+
+<!-- OK, the _interventionome_ is a large (and scary) space, we need to start taking a more industrial approach to comparing experiments.  -->
+
+<!-- Let's run a whole lot of experiments with various interventions, described  below. -->
+
+<!-- ## Experiment 2 - more hospital beds -->
+
+<!-- Over a four week period, let's ramp up hospital capacity to triple the baseline level, starting at day 15. Hey, China built a 1000+ bed COVID-19 hospital in Wuhan in just 10 days... -->
+
+<!-- ```{r, echo=TRUE, eval=TRUE} -->
+<!-- hosp_cap_ramp <- function(t) { -->
+<!--   ifelse(t < 15, 40, ifelse(t <= 45, 40 + (t-15)*(120 - 40)/30, 120)) -->
+<!-- } -->
+
+<!-- raise_hosp_cap_sim <- simulate(hosp.cap = hosp_cap_ramp(1:366)) -->
+<!-- ``` -->
+
+<!-- ## Experiment 3 - more social distancing starting at day 15 -->
+
+<!-- Let's step up social distancing (decrease exposure opportunities), starting at day 15, in everyone except the self-isolated, who are already practising it. But we'll leave the self-isolation rate at the baseline desultory rate. The increase in social distancing will, when full ramped up by day 30, halve the number of exposure events between the infected and the susceptible each day. -->
+
+<!-- ```{r, echo=TRUE, eval=TRUE} -->
+<!-- social_distancing_day15_ramp <- function(t) { -->
+<!--   ifelse(t < 15, 10, ifelse(t <= 30, 10 - (t-15)*(10 - 5)/15, 5)) -->
+<!-- } -->
+
+<!-- t15_social_distancing_sim <- simulate(act.rate.i = social_distancing_day15_ramp(1:366), -->
+<!--                                       act.rate.e = social_distancing_day15_ramp(1:366)) -->
+<!-- ``` -->
+
+<!-- ## Experiment 4 - more social distancing but starting at day 30 -->
+
+<!-- Let's repeat that, but we'll delay starting the social distancing ramp-up until day 30. -->
+
+<!-- ```{r, echo=TRUE, eval=TRUE} -->
+<!-- social_distancing_day30_ramp <- function(t) { -->
+<!--   ifelse(t < 30, 10, ifelse(t <= 45, 10 - (t-30)*(10 - 5)/15, 5)) -->
+<!-- } -->
+
+<!-- t30_social_distancing_sim <- simulate(act.rate.i = social_distancing_day30_ramp(1:366), -->
+<!--                                       act.rate.e = social_distancing_day30_ramp(1:366)) -->
+<!-- ``` -->
+
+<!-- ## Experiment 5 - increase both social distancing and increased self-isolation rates starting day 15 -->
+
+<!-- ```{r, echo=TRUE, eval=FALSE} -->
+<!-- quar_rate_ramp <- function(t) { -->
+<!--   ifelse(t < 15, 0.0333, ifelse(t <= 30, 0.0333 + (t-15)*(0.5 - 0.0333)/15, 0.5)) -->
+<!-- } -->
+
+<!-- ramp_quar_rate_sim <- simulate(quar.rate = quar_rate_ramp(1:366))   -->
+<!-- ``` -->
+
+<!-- ```{r, echo=TRUE, eval=TRUE} -->
+<!-- t15_soc_dist_quar_sim <- simulate(act.rate.i = social_distancing_day15_ramp(1:366), -->
+<!--                                   act.rate.e = social_distancing_day15_ramp(1:366), -->
+<!--                                   quar.rate = quar_rate_ramp(1:366)) -->
+<!-- ``` -->
+
+<!-- ## Comparing experiments -->
+
+<!-- Let's visualise all those experiments in one plot. -->
+
+<!-- ```{r, echo=TRUE, eval=TRUE, fig.height=12, fig.width=6, layout="l-body-outset"} -->
+<!-- baseline_sim$df %>% -->
+<!--   select(time, s.num, e.num, i.num, q.num,  -->
+<!--                      h.num, r.num, f.num) %>% -->
+<!--               mutate(experiment = "0. Baseline") %>% -->
+<!--   bind_rows(ramp_quar_rate_sim$df %>% -->
+<!--               select(time, s.num, e.num, i.num, q.num,  -->
+<!--                      h.num, r.num, f.num) %>% -->
+<!--               mutate(experiment = "1. incr quar @ t=15")) %>% -->
+<!--   bind_rows(raise_hosp_cap_sim$df %>% -->
+<!--               select(time, s.num, e.num, i.num, q.num,  -->
+<!--                      h.num, r.num, f.num) %>% -->
+<!--               mutate(experiment = "2. incr hos cap @ t=15")) %>% -->
+<!--   bind_rows(t15_social_distancing_sim$df %>% -->
+<!--               select(time, s.num, e.num, i.num, q.num,  -->
+<!--                      h.num, r.num, f.num) %>% -->
+<!--               mutate(experiment = "3. incr soc dist @ t=15")) %>% -->
+<!--   bind_rows(t30_social_distancing_sim$df %>% -->
+<!--               select(time, s.num, e.num, i.num, q.num,  -->
+<!--                      h.num, r.num, f.num) %>% -->
+<!--               mutate(experiment = "4. incr soc dist @ t=30")) %>% -->
+<!--   bind_rows(t15_soc_dist_quar_sim$df %>% -->
+<!--               select(time, s.num, e.num, i.num, q.num,  -->
+<!--                      h.num, r.num, f.num) %>% -->
+<!--               mutate(experiment = "5. incr soc dist & quar @ t=15")) %>% -->
+<!--   filter(time <= 150) %>% -->
+<!--   pivot_longer(-c(time, experiment), -->
+<!--                names_to="compartment", -->
+<!--                values_to="count") %>% -->
+<!--   filter(compartment %in% c("e.num","i.num", -->
+<!--                             "q.num","h.num", -->
+<!--                             "f.num")) -> plot_df -->
+
+<!-- plot_df %>% -->
+<!--   ggplot(aes(x=time, y=count, colour=compartment)) + -->
+<!--     geom_line(size=1.5, alpha=0.7) + -->
+<!--     facet_grid(experiment ~ .) + -->
+<!--     scale_colour_manual(values = compcols, labels=complabels) + -->
+<!--     theme_dark() + -->
+<!--     labs(title="Baseline vs experiments", -->
+<!--          x="Days since beginning of epidemic", -->
+<!--          y="Prevalence (persons)") -->
+<!-- ``` -->
+
+<!-- Let's see that again showing just the _requiring hospitalisation_ and _case fatality_ prevalence numbers. -->
+
+<!-- ```{r, echo=TRUE, eval=TRUE, fig.height=12, fig.width=6, layout="l-body-outset"} -->
+<!-- plot_df %>% -->
+<!--   filter(compartment %in% c("h.num", -->
+<!--                             "f.num")) %>% -->
+<!--   ggplot(aes(x=time, y=count, colour=compartment)) + -->
+<!--     geom_line(size=1.5, alpha=0.7) + -->
+<!--     facet_grid(experiment ~ .) + -->
+<!--     scale_colour_manual(values = compcols, labels=complabels) + -->
+<!--     theme_dark() + -->
+<!--     labs(title="Baseline vs experiments", -->
+<!--          x="Days since beginning of epidemic", -->
+<!--          y="Prevalence (persons)") -->
+<!-- ``` -->
+
+<!-- I won't laboriously comment on each experiment, but there are a few things worth remarking upon. -->
+
+<!-- Firstly, increasing hospital capacity is probably sensible, but may have little effect on fatalities if the numbers swamp available capacity by an order of magnitude. And increasing hospital capcity is not easy, nor can it be done swiftly, except perhaps in China. -->
+
+<!-- Secondly, rigorous and swift self-isolation in those who are symptomatic is very effective, especially if done early, even in teh presence of infectivity in the asymptomatic infected.  -->
+
+<!-- Thirdly, increasing social distancing also works, but works much better if done early, possibly before there is an obvious need for it based on numbers infected or deaths. Implement early, implement hard! -->
+
+<!-- Fourthly, a combination of prompt self-isolation plus moderate social distancing is also very effective, without necessarily killing the entire economy. This combination warrants further simulations. It is also the combination recommended by the Imperial College London group (see below). -->
+
+<!-- # Conclusions -->
+
+<!-- At this point, it looks like these extensions to `EpiModel` provide a potentially useful tool for exploring the effects of various public health interventions, in a somewhat realistic manner. It is not nearly as sophisticated as the individual contact model used by the WHO Collaborating Centre for Infectious Disease Modelling at Imperial College London (ICL) for their [latest report on the impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/). Nevertheless, even the very preliminary insights provided by the experiments above are consistent with those contained in the ICL report.  -->
+
+<!-- The next steps are: a) to move the code used here into a package to make deployment easier; b) implement modelling of infected arrivals, as discussed; c) improve the default parameterisation of the simulation; and d) validate the simulation results against some real-world data. Assistance from the `R` community in any or all of these tasks would be gratefully received. -->
+
+<!-- ```{r, eval=TRUE} -->
+<!-- toc() -->
+<!-- ``` -->
+
+## ডেটার সূত্র
+
+- 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE https://github.com/CSSEGISandData/COVID-19
+
+- নিউ ইয়র্ক টাইমস গিটহাব রিপজিটরি https://github.com/nytimes/covid-19-data
