@@ -817,7 +817,8 @@ library(gridExtra)
 # I = Initial infected population
 # R = Recovered population
 
-fit_seir &lt;- function(country_name='Bangladesh(unoff)', N=170000000, af=0.5, npast=2, nfuture=10){
+fit_seir &lt;- function(country_name='Bangladesh(unoff)', 
+                     N=170000000, af=0.5, npast=2, nfuture=10){
   # country = Country name
   # N = population size of the country
   # af = ascertainment factor, default = 0.5
@@ -854,8 +855,10 @@ fit_seir &lt;- function(country_name='Bangladesh(unoff)', N=170000000, af=0.5, n
   
   country = enquo(country_name)
   run0_date = ymd(&quot;2020-04-17&quot;)
-  df &lt;- bd_unoff %&gt;% filter(country == !!country, cum_cases&gt;0, date &lt;= run0_date)
-  infected &lt;- df %&gt;% filter(date &gt;= min(date), date &lt;= today() - 1 - npast) %&gt;% 
+  df &lt;- bd_unoff %&gt;% filter(country == !!country, 
+                            cum_cases&gt;0, date &lt;= run0_date)
+  infected &lt;- df %&gt;% filter(date &gt;= min(date), 
+                            date &lt;= today() - 1 - npast) %&gt;% 
     pull(cum_cases)
   
   R = 0; E=0; I = infected[1]; S = N - E - I - R
