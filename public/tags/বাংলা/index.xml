@@ -878,6 +878,8 @@ font-size: 65%;
 &lt;!-- Most of the parameters for which time-variation is useful support it. If they don&#39;t, you will receive an error message (the table above will be updated to include this information later). --&gt;
 &lt;!-- ## `simulate()` wrapper function --&gt;
 &lt;h2 id=&#34;বইজলইন-সমলসন&#34;&gt;বেইজলাইন সিমুলেসন&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;## 54.089 sec elapsed
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;ডিস্ট্রিবিউশন দেখে নেই।&lt;/p&gt;
 &lt;p&gt;Now get the timing data.&lt;/p&gt;
 &lt;p&gt;And visualise it.&lt;/p&gt;

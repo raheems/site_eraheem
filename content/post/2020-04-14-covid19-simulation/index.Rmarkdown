@@ -260,7 +260,7 @@ simulate <- function(# control.icm params
                      rec.rand = FALSE,
                      fat.rand = TRUE,
                      quar.rand = FALSE,
-                     hosp.rand = FALSE,
+                     hosp.rand = TRUE,
                      disch.rand = TRUE,
                      infection.FUN = infection.seiqhrf.icm,
                      recovery.FUN = progress.seiqhrf.icm,
@@ -268,7 +268,7 @@ simulate <- function(# control.icm params
                      arrivals.FUN = arrivals.icm,
                      get_prev.FUN = get_prev.seiqhrf.icm,
                      # init.icm params
-                     s.num = 16997,
+                     s.num = 4997,
                      e.num=0,
                      i.num = 3,
                      q.num=0,
@@ -276,11 +276,11 @@ simulate <- function(# control.icm params
                      r.num = 0,
                      f.num = 0,
                      # param.icm params
-                     inf.prob.i = 0.05,
-                     inf.prob.e = 0.02, 
+                     inf.prob.i = 0.10,
+                     inf.prob.e = 0.05, 
                      act.rate.e = 10,
                      act.rate.i = 2,
-                     inf.prob.q = 0.03, 
+                     inf.prob.q = 0.07, 
                      act.rate.q = 5,                    
                      quar.rate = 20/100, 
                      hosp.rate = 10/100,
@@ -371,7 +371,10 @@ simulate <- function(# control.icm params
 ## বেইজলাইন সিমুলেসন
 
 ```{r, echo=FALSE, eval=TRUE}
-baseline_sim <- simulate(nsims = 10, ncores=4)
+tic()
+baseline_sim <- simulate(nsims = 10, s.num = 10000, ncores=4)
+toc()
+
 ```
 
 ডিস্ট্রিবিউশন দেখে নেই। 
@@ -463,7 +466,7 @@ baseline_plot_df <- baseline_sim$df %>%
          h.num, r.num, f.num) %>%
   # examine only the first 100 days since it
   # is all over by then using the default parameters
-  filter(time <= 365) %>%
+  filter(time <= 100) %>%
   pivot_longer(-c(time),
                names_to="compartment",
                values_to="count")
