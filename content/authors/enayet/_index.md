@@ -76,4 +76,4 @@ user_groups:
 
 I am a Data Scientist and Statistician with more than 18 years of experience in academia and industry combined. Currently, as a Principal Data Scientist at a CRO, I provide strategic guidance for the use of real world data, their validations, and use of algorithms to derive real world evidence (RWE) for evaluation of drugs and biologics.
 
-I am proficient with __R__, __Python__, and __SAS__. For standard statistical analysis and reporting, I mostly use R and SAS. For distributed computing with big data, I prefer __PySpark__. 
+I use __R__ and __SAS__ for standard statistical analysis and reporting. For machine learning and distributed cloud computing, I prefer __Python__ and __PySpark__. 
