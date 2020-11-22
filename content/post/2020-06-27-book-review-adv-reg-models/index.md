@@ -33,6 +33,17 @@ The theory is not detailed, but anyone with some mathematical statistics backgro
 
 Then a real data use case is presented and solved with SAS and R.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6844136270310089"
+     data-ad-slot="7220073377"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 The SAS portion is covered with discussion while the same is implemented in R without further discussion. That is to say, anyone wanting to follow the R portion only would still be benefited to review the SAS implementations for added discussions.
 
 At the end of each chapter, there are exercise problems that interested readers and students would find useful.
@@ -43,11 +54,33 @@ The book starts with an introduction to the general and generalized linear regre
 
 Then regression models for binary response are discussed in chapter 3. The binary response models discussed include logistic regression, probit regression, and complementary log log model. Particularly useful discussion includes the situations where these models can be applied. The discussions are to the point with useful details. Then the regression models for categorical responses are presented. Also presented are the regression models for count responses, including Poisson models, zero-inflated, zero-truncated, and Hurdle Poisson models, a generalized linear regression model for repeated measures data, and hierarchical regression models.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6844136270310089"
+     data-ad-slot="7220073377"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 In summary, the book is a useful reference for practitioners who frequently apply regression techniques to their data. Even for seasoned statisticians, this book is convenient. It can serve as a quick reference on how to do a particular regression model along with SAS and R codes. It is especially useful for R users who will find all the various packages needed for these regression models.
 
 Although the book covers model fitting and interpretation of estimated regression parameters, model building and variable selection are not covered due to space constraints. Also, not covered are model diagnostics.
 
 This book is unique in the sense that it provides recipes for almost all types of regression models. The author intelligently avoided much about the theory but did not ignore them altogether. The theory is presented at a minimum level and in an amount that is necessary for those interested. However, they can be totally skipped, and someone interested only in the implementations would find this book a convenient reference.
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6844136270310089"
+     data-ad-slot="7220073377"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 __Acknowledgements__
 
