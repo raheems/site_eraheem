@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/category/career/</loc>
+    <loc>/tag/blackwell/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,7 +13,22 @@
   </url>
   
   <url>
+    <loc>/category/contemporary/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/fisher/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/change-fisher-lecture-after-david-blackwell/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,6 +39,11 @@
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/career/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
