@@ -22,17 +22,18 @@ bio: Supporting pharmaceutical clients generating real world evidence (RWE) from
 
 interests:
 - Statistical Inference
-- Machine Learning
-- Public Health Research
+- Machine Learning and Artificial Intelligence in healthcare
+- Big data analysis
+- Public health research 
 
-education:
-  courses:
-  - course: PhD in Statistics
-    institution: University of Windsor
-    year: 2012
-  - course: MSc in Statistics
-    institution: McMaster University
-    year: 2005
+# education:
+#   courses:
+#   - course: PhD in Statistics
+#     institution: University of Windsor
+#     year: 2012
+#   - course: MSc in Statistics
+#     institution: McMaster University
+#     year: 2005
 
 
 # Social/Academic Networking
