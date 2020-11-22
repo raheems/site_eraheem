@@ -18,7 +18,7 @@ organizations:
   url: "https://www.phastar.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Principal Data Scientist (RWE) working at a CRO serving pharmaceutical clients mining real world data. The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
+bio: Supporting pharmaceutical clients generating real world evidence (RWE) from real world data (RWD). The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
 
 interests:
 - Statistical Inference
