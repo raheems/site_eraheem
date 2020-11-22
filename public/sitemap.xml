@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tag/blackwell/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+    <loc>/post/advanced-regression-models-with-sas-and-r/</loc>
+    <lastmod>2020-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/book-review/</loc>
+    <lastmod>2020-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -13,12 +18,37 @@
   </url>
   
   <url>
-    <loc>/category/contemporary/</loc>
+    <loc>/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/post/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/r/</loc>
+    <lastmod>2020-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/sas/</loc>
+    <lastmod>2020-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/blackwell/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/contemporary/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -29,16 +59,6 @@
   
   <url>
     <loc>/post/change-fisher-lecture-after-david-blackwell/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -185,11 +205,6 @@
   <url>
     <loc>/post/building-research-track-record-bn/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r/</loc>
-    <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
