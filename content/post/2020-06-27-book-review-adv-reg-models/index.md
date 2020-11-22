@@ -20,11 +20,8 @@ projects: []
 ---
 
 Title: [Advanced Regression Models with SAS and R](https://www.routledge.com/Advanced-Regression-Models-with-SAS-and-R/Korosteleva/p/book/9781138049017)
-
 By Olga Korosteleva
-
 CRC Press, 2019
-
 Pages: xiii + 310
 
 This book can be summarized as a cookbook of various types of regression models and their implementations with SAS and R statistical software. The chapters follow a specific pattern on the presentation starting with a brief introduction to the theory behind the technique, followed by the SAS and R implementations.
