@@ -30,17 +30,6 @@ projects: []
 
 ফিরে আসি ২০২০ এ।
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6844136270310089"
-     data-ad-slot="7220073377"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 আজ থেকে বেশকয়েক বছর আগে ফেসবুকে লিখেছিলাম– আমি চল্লিশ বছর বয়সে এসে যা বুঝতে পেরেছি সেটি যদি ২৫শে বুঝতাম তাহলে ১৫ বছর এগিয়ে থাকতাম।
 
 সেখানে আহ্বান জানিয়েছিলাম তরুণ প্রজন্মকে যারা পঁচিশে বা তার কাছাকাছি বয়সে, তারা যেন এখন থেকেই ক্যারিয়ার এবং ভবিষ্যৎ নিয়ে ভাবনা চিন্তা শুরু করে।
@@ -56,17 +45,6 @@ projects: []
 আমার পর্যবেক্ষণ যদি ভুল না হয় এই পরিস্থিতি আগের মতই রয়েছে।
 
 অর্থাৎ ক্যারিয়ার নিয়ে সচেতনতা আগের মতই একমুখী এবং বলা যায় কপি-পেস্ট টাইপের; সমাজের বা পরিবারের কেউ একজন কিছু একটা করেছে আর সবাই তেমনটি করার জন্য লাইনে ‌দাঁড়িয়েছে।
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6844136270310089"
-     data-ad-slot="7220073377"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 বলতে চাইছি– কেউ একজন যেভাবে ভেবেছিলেন সেই একইভাবে এখনও ভাবছি– যে কোন উপায়ে একটি চাকরি পেলেই সবকিছু সার্থক হবে।‌
 
@@ -84,17 +62,6 @@ projects: []
 
 তারপর সেই সারাংশের সাথে নিজের প্রস্ততি মিলিয়ে নিন।
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6844136270310089"
-     data-ad-slot="7220073377"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 # এভাবে চিন্তা করার উপকারিতা কী?
 
 ব্যক্তিগত উদাহরণ দিচ্ছি।
@@ -109,17 +76,6 @@ projects: []
 
 দেড় বছর আগে এপ্লাই করা একটি জব থেকে নেগেটিভ রেসপন্স এসেছে যা উপরে উল্লেখ করেছি। এই দেড় বছরে আমি দুইবার জব পরিবর্তন করেছি। যা ছিল সময়ের প্রয়োজনে এবং নিজের দাম বাড়ানোর তাগিদে। উল্লেখ্য প্রথমবার জব পরিবর্তন করেছি একই অর্গানাইজেশনের ভিতরে। অর্থাৎ প্রমোশন নিয়ে নতুন একটি ডিপার্টমেন্টে চলে গিয়েছিলাম। আর দ্বিতীয়বার পরিবর্তন করে নতুন শহরে নতুন কোম্পানিতে গিয়েছি।
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6844136270310089"
-     data-ad-slot="7220073377"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 আমি মনে করি দ্রুত সময়ে এই ছোট দুটি পরিবর্তন আমাকে কয়েক ধাপ এগিয়ে দিয়েছে। আর সাফল্যের সাথে অগ্রসর হওয়ার পেছনে জব মার্কেট সম্পর্কে আমার আপটুডেট থাকার বিযয়টি গুরুত্বপূর্ণ ছিল বলে মনে করি।
 
 # তরুণ চাকরিপ্রার্থীরা যেভাবে ক্যারিয়ার নিয়ে ভাবতে পারে
@@ -131,17 +87,6 @@ projects: []
 - অর্থাৎ মাথার ভেতরে যে চিন্তাভাবনা করছেন সেটিকে ট্রান্সলেট করে কাগজে লিখলে তখন আইডিয়ার সীমাবদ্ধতাগুলো বের হয়ে আসবে
 - এরপরে সেই সীমাবদ্ধতাগুলো কীভাবে কাটানো যায় সেটি নিয়ে চিন্তা করতে হবে
 - একসাথে একটি মাত্র আইডিয়া নয় বরং একাধিক আইডিয়া নিয়ে খেলা করা যেতে পারে
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6844136270310089"
-     data-ad-slot="7220073377"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 আইডিয়া নিয়ে খেলা করার পরে যে আইডিয়া গুলো আপনার পছন্দের সাথে যায় এবং বর্তমান ও ভবিষ্যতে বাস্তবায়ন করলে সফল হওয়ার সম্ভাবনা থাকে সেই আইডিয়াগুলো বাস্তবায়নের রূপরেখা কাগজে-কলমে তৈরি করতে হবে। মনে রাখতে হবে কোন কিছুই অসম্ভব নয়।
 
@@ -161,17 +106,6 @@ projects: []
 এটি সত্যি যে সব ধরনের জবের জন্য প্রস্তুতি নেয়া কারো পক্ষেই সম্ভব নয়। সেজন্য আপনি যে বিষয়ে পড়াশুনা করছেন সেই বিষয় ও তার সাথে সম্পর্কযুক্ত চাকুরীগুলোর কথা টার্গেট করে প্রস্তুতি নিতে পারেন।
 
 এ লক্ষে স্কিল ডেভেলপমেন্ট বা দক্ষতা অর্জনের জন্য বাড়তি কোর্সওয়ার্ক বা ওয়ার্কশপ করার প্রয়োজন হলে সেগুলো আপনার পরিকল্পনার অংশ করে নিন।
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6844136270310089"
-     data-ad-slot="7220073377"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 শেষ করতে চাই একটি মেসেজ দিয়ে– পাঁচ বছর পরে যে প্রশ্ন নিজেকে করবেন– আহারে কেন পাঁচ বছর আগে এভাবে প্রস্তুত নেইনি– সেই চিত্রটি কল্পনা করে আজ থেকেই নিজেকে তৈরি করা শুরু করুন।
 
