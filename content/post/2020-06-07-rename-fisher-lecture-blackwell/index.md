@@ -35,6 +35,17 @@ As of June 6, 2020 the petition has gained over 3500 signatures at the time of c
 
 Pictured above, David Blackwell is one of the most revered mathematicians. “He earned his Bachelor of Arts in Mathematics in 1938, Master of Arts in Mathematics in 1939, and his Ph.D. in 1941 (at the age of 22), from the University of Illinois. He is the seventh African American to receive a Ph.D. in Mathematics. He is the first and only African American to be any one of: a member of the National Academy of Sciences, a President of the American Statistical Society, and a Vice President of the America Mathematics Society.”[^2]
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6844136270310089"
+     data-ad-slot="7220073377"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Some highlights about David Blackwell and his works
 
 - Significant contributions to game theory, probability theory, information theory, and Bayesian statistics
@@ -61,6 +72,17 @@ In other words
 >Eugenics is the philosophy and social movement that argues it is possible to improve the human race and society by encouraging reproduction by people or populations with “desirable” traits (termed “positive” eugenics) and discouraging reproduction by people with “undesirable” qualities (termed “negative” eugenics). The eugenics movement began in the United States in the early part of the 20th century; the United States was the first country to have a systematic program for performing sterilizations on individuals without their knowledge or against their will. It was supported and encouraged by a wide swath of people, including politicians, scientists, social reformers, prominent business leaders and other influential individuals who shared a goal of reducing the “burden” on society. The majority of people targeted for sterilization were deemed of inferior intelligence, particularly poor people and eventually people of color.[^5]
 
 The petition wrote, “by honoring Fisher we dishonor the entire field of Statistics.”
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6844136270310089"
+     data-ad-slot="7220073377"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Referecnes
 
