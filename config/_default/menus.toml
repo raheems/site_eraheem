@@ -14,20 +14,13 @@
   weight = 20
 
 [[main]]
-  name = "Categories"
-  identifier = "Categories"
-  #parent= "Posts"
-  url = "/categories"
-  weight = 21
-
-[[main]]
   name = "Projects"
   url = "#projects"
   weight = 30
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "#publications"
   weight = 40
 
 [[main]]
@@ -36,8 +29,8 @@
   weight = 60
 
 # Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# To enable, copy your resume/CV to `static/media/cv.pdf` and uncomment the lines below.
 # [[main]]
 #    name = "CV"
-#    url = "files/cv.pdf"
+#    url = "media/cv.pdf"
 #    weight = 70

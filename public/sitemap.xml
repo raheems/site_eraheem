@@ -8,17 +8,22 @@
   </url>
   
   <url>
-    <loc>/tags/covid19/</loc>
+    <loc>/tag/covid19/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/covid19/</loc>
+    <loc>/category/covid19/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/covid19-projection-bangladesh-run1/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,7 +43,7 @@
   </url>
   
   <url>
-    <loc>/tags/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE/</loc>
+    <loc>/tag/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,12 +63,12 @@
   </url>
   
   <url>
-    <loc>/tags/sars-cov2/</loc>
+    <loc>/tag/sars-cov2/</loc>
     <lastmod>2020-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/data-science/</loc>
+    <loc>/category/data-science/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -73,17 +78,12 @@
   </url>
   
   <url>
-    <loc>/authors/enayet/</loc>
+    <loc>/publication-type/2/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/abdullah-al-mosabbir/</loc>
+    <loc>/author/abdullah-al-mosabbir/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,7 +93,7 @@
   </url>
   
   <url>
-    <loc>/authors/enayetur-raheem/</loc>
+    <loc>/author/enayetur-raheem/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,37 +103,37 @@
   </url>
   
   <url>
-    <loc>/authors/mahbubul-h.-siddiqee/</loc>
+    <loc>/author/mahbubul-h.-siddiqee/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/mary-petrou/</loc>
+    <loc>/author/mary-petrou/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/md.-mahbub-hasan/</loc>
+    <loc>/author/md.-mahbub-hasan/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/mentoring/</loc>
+    <loc>/category/mentoring/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/mohammad-sorowar-hossain/</loc>
+    <loc>/author/mohammad-sorowar-hossain/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/muhammad-sougatul-islam/</loc>
+    <loc>/author/muhammad-sougatul-islam/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/paul-telfer/</loc>
+    <loc>/author/paul-telfer/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -148,7 +148,7 @@
   </url>
   
   <url>
-    <loc>/tags/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/</loc>
+    <loc>/tag/%E0%A6%97%E0%A6%AC%E0%A7%87%E0%A6%B7%E0%A6%A3%E0%A6%BE/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -158,7 +158,7 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/tag/r/</loc>
     <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>/tags/etiquette/</loc>
+    <loc>/tag/etiquette/</loc>
     <lastmod>2019-07-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -183,12 +183,12 @@
   </url>
   
   <url>
-    <loc>/tags/%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A7%8B%E0%A6%97/</loc>
+    <loc>/tag/%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A7%8B%E0%A6%97/</loc>
     <lastmod>2019-07-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/anthony-d.-okely/</loc>
+    <loc>/author/anthony-d.-okely/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -198,22 +198,22 @@
   </url>
   
   <url>
-    <loc>/authors/marzia-faruki/</loc>
+    <loc>/author/marzia-faruki/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/rifat-jahan/</loc>
+    <loc>/author/rifat-jahan/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/shah-md.-shahik/</loc>
+    <loc>/author/shah-md.-shahik/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/shameema-ferdous/</loc>
+    <loc>/author/shameema-ferdous/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -223,12 +223,12 @@
   </url>
   
   <url>
-    <loc>/tags/powerbi/</loc>
+    <loc>/tag/powerbi/</loc>
     <lastmod>2018-08-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/tutorials/</loc>
+    <loc>/category/tutorials/</loc>
     <lastmod>2018-08-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -238,13 +238,8 @@
   </url>
   
   <url>
-    <loc>/categories/notes/</loc>
+    <loc>/category/notes/</loc>
     <lastmod>2018-07-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -263,72 +258,72 @@
   </url>
   
   <url>
-    <loc>/authors/km-sultanul-aziz/</loc>
+    <loc>/author/km-sultanul-aziz/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/md.-abdul-khaleque/</loc>
+    <loc>/author/md.-abdul-khaleque/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/md.-abdullah-saeed-khan/</loc>
+    <loc>/author/md.-abdullah-saeed-khan/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/md.-akram-hossain/</loc>
+    <loc>/author/md.-akram-hossain/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/miliva-mozaffor/</loc>
+    <loc>/author/miliva-mozaffor/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/nova-ahmed/</loc>
+    <loc>/author/nova-ahmed/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/s.-m.-yasir-arafat/</loc>
+    <loc>/author/s.-m.-yasir-arafat/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/salequl-islam/</loc>
+    <loc>/author/salequl-islam/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/shah-md.-zahurul-haque-asna/</loc>
+    <loc>/author/shah-md.-zahurul-haque-asna/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/shahanaz-chowdhury/</loc>
+    <loc>/author/shahanaz-chowdhury/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/tashmim-farhana-dipta/</loc>
+    <loc>/author/tashmim-farhana-dipta/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/waheed-akhtar/</loc>
+    <loc>/author/waheed-akhtar/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/zohora-jameela-khan/</loc>
+    <loc>/author/zohora-jameela-khan/</loc>
     <lastmod>2018-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/abdullah-mosabbir/</loc>
+    <loc>/author/abdullah-mosabbir/</loc>
     <lastmod>2018-05-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -338,12 +333,12 @@
   </url>
   
   <url>
-    <loc>/authors/nusrat-rahman/</loc>
+    <loc>/author/nusrat-rahman/</loc>
     <lastmod>2018-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/zillur-rahman-khan/</loc>
+    <loc>/author/zillur-rahman-khan/</loc>
     <lastmod>2018-05-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -353,17 +348,17 @@
   </url>
   
   <url>
-    <loc>/authors/tanvira-afroze-sultana/</loc>
+    <loc>/author/tanvira-afroze-sultana/</loc>
     <lastmod>2017-11-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/career/</loc>
+    <loc>/category/career/</loc>
     <lastmod>2017-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-science/</loc>
+    <loc>/tag/data-science/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -373,7 +368,7 @@
   </url>
   
   <url>
-    <loc>/tags/career/</loc>
+    <loc>/tag/career/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -383,7 +378,7 @@
   </url>
   
   <url>
-    <loc>/tags/statjobs/</loc>
+    <loc>/tag/statjobs/</loc>
     <lastmod>2017-09-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -393,7 +388,7 @@
   </url>
   
   <url>
-    <loc>/tags/applied-statistics/</loc>
+    <loc>/tag/applied-statistics/</loc>
     <lastmod>2017-06-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -403,57 +398,52 @@
   </url>
   
   <url>
-    <loc>/authors/alam-r/</loc>
+    <loc>/author/alam-r/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/arifuzzaman-m/</loc>
+    <loc>/author/arifuzzaman-m/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/aziz-s/</loc>
+    <loc>/author/aziz-s/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/ferdous-s/</loc>
+    <loc>/author/ferdous-s/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/hossain-ms/</loc>
+    <loc>/author/hossain-ms/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/islam-s/</loc>
+    <loc>/author/islam-s/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/khatun-h./</loc>
+    <loc>/author/nahar-n/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/nahar-n/</loc>
+    <loc>/author/raheem-e/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/raheem-e/</loc>
+    <loc>/author/razzaque-ma/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/razzaque-ma/</loc>
-    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/sultana-ta/</loc>
+    <loc>/author/sultana-ta/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -478,12 +468,17 @@
   </url>
   
   <url>
+    <loc>/author/</loc>
+    <lastmod>2018-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/how-to-become-a-data-scientist/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A6%AF%E0%A7%87%E0%A6%A8%E0%A6%B8/</loc>
+    <loc>/tag/%E0%A6%A1%E0%A7%87%E0%A6%9F%E0%A6%BE-%E0%A6%B8%E0%A6%BE%E0%A6%AF%E0%A7%87%E0%A6%A8%E0%A6%B8/</loc>
     <lastmod>2018-08-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -503,7 +498,7 @@
   </url>
   
   <url>
-    <loc>/authors/sanku-dey/</loc>
+    <loc>/author/sanku-dey/</loc>
     <lastmod>2016-03-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -513,7 +508,7 @@
   </url>
   
   <url>
-    <loc>/authors/preenan-sarkar/</loc>
+    <loc>/author/preenan-sarkar/</loc>
     <lastmod>2015-09-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -523,22 +518,22 @@
   </url>
   
   <url>
-    <loc>/authors/m-akhteruzzaman/</loc>
+    <loc>/author/m-akhteruzzaman/</loc>
     <lastmod>2015-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/ma-hussain/</loc>
+    <loc>/author/ma-hussain/</loc>
     <lastmod>2015-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/rk-kazal/</loc>
+    <loc>/author/rk-kazal/</loc>
     <lastmod>2015-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/yisrat-jahan/</loc>
+    <loc>/author/yisrat-jahan/</loc>
     <lastmod>2015-09-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -548,23 +543,27 @@
   </url>
   
   <url>
-    <loc>/authors/e.-raheem/</loc>
+    <loc>/author/e.-raheem/</loc>
     <lastmod>2014-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/m.-b.-islam/</loc>
+    <loc>/author/m.-b.-islam/</loc>
     <lastmod>2014-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/shah-al-emran/</loc>
+    <loc>/author/shah-al-emran/</loc>
     <lastmod>2014-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/yusuf-ali/</loc>
+    <loc>/author/yusuf-ali/</loc>
     <lastmod>2014-09-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/khatun-h./</loc>
   </url>
   
 </urlset>

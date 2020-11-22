@@ -15,7 +15,6 @@ gt
 knitr
 usethis
 devtools
-DiagrammeR
 foreach
 tictoc
 deSolve
@@ -26,5 +25,3 @@ tergm
 EpiModel
 incidence
 earlyR
-DiagrammeRsvg
-rsvg

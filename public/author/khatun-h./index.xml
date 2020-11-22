@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Khatun H. | Enayetur Raheem</title>
+    <link>/author/khatun-h./</link>
+      <atom:link href="/author/khatun-h./index.xml" rel="self" type="application/rss+xml" />
+    <description>Khatun H.</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>/media/eraheem_socialcard.png</url>
+      <title>Khatun H.</title>
+      <link>/author/khatun-h./</link>
+    </image>
+    
+    <item>
+      <title>Thalassemias in South Asia: clinical lessons learnt from Bangladesh</title>
+      <link>/publication/thalassemia-south-asia/</link>
+      <pubDate>Sat, 27 May 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/thalassemia-south-asia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -42,6 +42,9 @@ projects: ["covid19"]
 
 
 
+```
+## Warning: package 'tibble' was built under R version 3.6.2
+```
 
 
 
@@ -65,8 +68,8 @@ projects: ["covid19"]
 এই মডেল অনুযায়ী একজন ব্যক্তি এক স্টেজ থেকে আরেক স্টেজে কীভাবে যাচ্ছে তা নিচের ডায়াগ্রাম থেকে বোঝা যাবে। 
 
 
-<!--html_preserve--><div id="htmlwidget-df0da70002c083408615" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-df0da70002c083408615">{"x":{"diagram":"\ndigraph SEIQHRF {\n\n  # a \"graph\" statement\n  graph [overlap = false, fontsize = 10] #, rankdir = LR]\n\n  # several \"node\" statements\n  node [shape = box,\n        fontname = Helvetica]\n  S[label=\"S=আক্রান্ত হতে পারে এমন\"];\n  E[label=\"E=এক্সপোসড এবং সংক্রামিত,\nসিম্পটম দেখাচ্ছে না,\nসম্ভাব্য সংক্রামক\"];\n  I[label=\"I=সংক্রামিত এবং সংক্রামক\"];\n  Q[label=\"Q=(নিজে-)আইসোলেটেড\n(সংক্রামক)\"];\n  H[label=\"H=হাসপাতাল\nনিতে হবে\"];\n  R[label=\"R=রিকভারি/ইমিউন\"];\n  F[label=\"F=কেইস ফেটালিটি\"]\n\n  # several \"edge\" statements\n  S->E[label=\"a\"]\n  I->S[style=\"dashed\", label=\"x\"]\n  E->I[label=\"b\"]\n  E->S[style=\"dashed\", label=\"y\"]\n  I->Q[label=\"c\"]\n  Q->S[style=\"dashed\", label=\"z\"]\n  I->R[label=\"d\"]\n  I->H[label=\"e\"]\n  H->F[label=\"f\"]\n  H->R[label=\"g\"]\n  Q->R[label=\"h\"]\n  Q->H[label=\"i\"]\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-2c2708cc2811291ed56a" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2c2708cc2811291ed56a">{"x":{"diagram":"\ndigraph SEIQHRF {\n\n  # a \"graph\" statement\n  graph [overlap = false, fontsize = 10] #, rankdir = LR]\n\n  # several \"node\" statements\n  node [shape = box,\n        fontname = Helvetica]\n  S[label=\"S=আক্রান্ত হতে পারে এমন\"];\n  E[label=\"E=এক্সপোসড এবং সংক্রামিত,\nসিম্পটম দেখাচ্ছে না,\nসম্ভাব্য সংক্রামক\"];\n  I[label=\"I=সংক্রামিত এবং সংক্রামক\"];\n  Q[label=\"Q=(নিজে-)আইসোলেটেড\n(সংক্রামক)\"];\n  H[label=\"H=হাসপাতাল\nনিতে হবে\"];\n  R[label=\"R=রিকভারি/ইমিউন\"];\n  F[label=\"F=কেইস ফেটালিটি\"]\n\n  # several \"edge\" statements\n  S->E[label=\"a\"]\n  I->S[style=\"dashed\", label=\"x\"]\n  E->I[label=\"b\"]\n  E->S[style=\"dashed\", label=\"y\"]\n  I->Q[label=\"c\"]\n  Q->S[style=\"dashed\", label=\"z\"]\n  I->R[label=\"d\"]\n  I->H[label=\"e\"]\n  H->F[label=\"f\"]\n  H->R[label=\"g\"]\n  Q->R[label=\"h\"]\n  Q->H[label=\"i\"]\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 ## সিমুলেশন প্যরামিটার {#simulation-parameter}
 সিমুলেসন ব্যাপারটি নির্ভর করে এর প্যারামিটারগুলো কীভাবে ধরা হচ্ছে। এই পরীক্ষায় যেভাবে আমি প্যরামিটারগুলো ধরেছি তা দেয়া হল। পসিমুলেসনের প্রয়োজনে এগুলো টিউন করা হবে। উদ্দেশ্য হল বাংলাদেশের জন্য প্রযোজ্য মান দিয়ে মডেল শুরু করা। 
@@ -75,7 +78,7 @@ projects: ["covid19"]
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nhacadagvv .gt_table {
+#mhimirjvkh .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -103,7 +106,7 @@ projects: ["covid19"]
   /* table.border.bottom.color */
 }
 
-#nhacadagvv .gt_heading {
+#mhimirjvkh .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -122,7 +125,7 @@ projects: ["covid19"]
   /* heading.border.lr.color */
 }
 
-#nhacadagvv .gt_title {
+#mhimirjvkh .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -136,7 +139,7 @@ projects: ["covid19"]
   border-bottom-width: 0;
 }
 
-#nhacadagvv .gt_subtitle {
+#mhimirjvkh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -150,7 +153,7 @@ projects: ["covid19"]
   border-top-width: 0;
 }
 
-#nhacadagvv .gt_bottom_border {
+#mhimirjvkh .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -159,7 +162,7 @@ projects: ["covid19"]
   /* heading.border.bottom.color */
 }
 
-#nhacadagvv .gt_column_spanner {
+#mhimirjvkh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -167,7 +170,7 @@ projects: ["covid19"]
   padding-bottom: 4px;
 }
 
-#nhacadagvv .gt_col_headings {
+#mhimirjvkh .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -194,7 +197,7 @@ projects: ["covid19"]
   /* column_labels.border.lr.color */
 }
 
-#nhacadagvv .gt_col_heading {
+#mhimirjvkh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -210,11 +213,11 @@ projects: ["covid19"]
   overflow-x: hidden;
 }
 
-#nhacadagvv .gt_sep_right {
+#mhimirjvkh .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#nhacadagvv .gt_group_heading {
+#mhimirjvkh .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -253,7 +256,7 @@ projects: ["covid19"]
   vertical-align: middle;
 }
 
-#nhacadagvv .gt_empty_group_heading {
+#mhimirjvkh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -277,20 +280,20 @@ projects: ["covid19"]
   vertical-align: middle;
 }
 
-#nhacadagvv .gt_striped {
+#mhimirjvkh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#nhacadagvv .gt_from_md > :first-child {
+#mhimirjvkh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nhacadagvv .gt_from_md > :last-child {
+#mhimirjvkh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nhacadagvv .gt_row {
+#mhimirjvkh .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -320,7 +323,7 @@ projects: ["covid19"]
   overflow-x: hidden;
 }
 
-#nhacadagvv .gt_stub {
+#mhimirjvkh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -337,7 +340,7 @@ projects: ["covid19"]
   padding-left: 12px;
 }
 
-#nhacadagvv .gt_summary_row {
+#mhimirjvkh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -351,7 +354,7 @@ projects: ["covid19"]
   padding-right: 5px;
 }
 
-#nhacadagvv .gt_first_summary_row {
+#mhimirjvkh .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -366,7 +369,7 @@ projects: ["covid19"]
   /* summary_row.border.color */
 }
 
-#nhacadagvv .gt_grand_summary_row {
+#mhimirjvkh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -380,7 +383,7 @@ projects: ["covid19"]
   padding-right: 5px;
 }
 
-#nhacadagvv .gt_first_grand_summary_row {
+#mhimirjvkh .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -395,7 +398,7 @@ projects: ["covid19"]
   /* grand_summary_row.border.color */
 }
 
-#nhacadagvv .gt_table_body {
+#mhimirjvkh .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -410,7 +413,7 @@ projects: ["covid19"]
   /* table_body.border.bottom.color */
 }
 
-#nhacadagvv .gt_footnotes {
+#mhimirjvkh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -434,7 +437,7 @@ projects: ["covid19"]
   /* footnotes.border.lr.color */
 }
 
-#nhacadagvv .gt_footnote {
+#mhimirjvkh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -442,7 +445,7 @@ projects: ["covid19"]
   /* footnotes.padding */
 }
 
-#nhacadagvv .gt_sourcenotes {
+#mhimirjvkh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -466,48 +469,48 @@ projects: ["covid19"]
   /* source_notes.border.lr.style */
 }
 
-#nhacadagvv .gt_sourcenote {
+#mhimirjvkh .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#nhacadagvv .gt_left {
+#mhimirjvkh .gt_left {
   text-align: left;
 }
 
-#nhacadagvv .gt_center {
+#mhimirjvkh .gt_center {
   text-align: center;
 }
 
-#nhacadagvv .gt_right {
+#mhimirjvkh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nhacadagvv .gt_font_normal {
+#mhimirjvkh .gt_font_normal {
   font-weight: normal;
 }
 
-#nhacadagvv .gt_font_bold {
+#mhimirjvkh .gt_font_bold {
   font-weight: bold;
 }
 
-#nhacadagvv .gt_font_italic {
+#mhimirjvkh .gt_font_italic {
   font-style: italic;
 }
 
-#nhacadagvv .gt_super {
+#mhimirjvkh .gt_super {
   font-size: 65%;
 }
 
-#nhacadagvv .gt_footnote_marks {
+#mhimirjvkh .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="nhacadagvv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="mhimirjvkh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
@@ -922,7 +925,7 @@ projects: ["covid19"]
 
 
 ```
-## 54.089 sec elapsed
+## Time to complete: 65.126 sec elapsed
 ```
 
 ডিস্ট্রিবিউশন দেখে নেই। 

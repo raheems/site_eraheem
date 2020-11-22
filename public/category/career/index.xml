@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Career | Enayetur Raheem</title>
+    <link>/category/career/</link>
+      <atom:link href="/category/career/index.xml" rel="self" type="application/rss+xml" />
+    <description>Career</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 03 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/eraheem_socialcard.png</url>
+      <title>Career</title>
+      <link>/category/career/</link>
+    </image>
+    
+    <item>
+      <title>To the Aspiring Data Scientists</title>
+      <link>/post/to-the-aspiring-data-scientists/</link>
+      <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/post/to-the-aspiring-data-scientists/</guid>
+      <description>&lt;p&gt;A lot of times interested folks contact me with a question like this: ‘I want to be a data scientist; can you help?’&lt;/p&gt;
+&lt;p&gt;Well, I wish I could. The reality is, I won’t be able to unless I really understand what you want and why you want it.&lt;/p&gt;
+&lt;p&gt;Firstly because guiding someone is next to impossible in this time and era when everything is so convoluted. People come to learn with preconceived ideas and notions. I am not saying you have to come with a blank slate, what I am saying is you need to show real motivation. I repeat, you must have a motivation and you must be able to articulate why you are motivated.&lt;/p&gt;
+&lt;p&gt;There is no shortage of tutorials, courses, documents, websites, articles today on how to become a data scientist. Sadly, most of the times there is a business mind lurking behind such documents and campaigns. They will tell you only partial truth. They will tell you that you can become a data scientist in 4 months, or in 6 months, or by completing a boot camp and so on and so forth.&lt;/p&gt;
+&lt;p&gt;In my opinion, if you already have the background of a typical data scientist (have worked with data, have knowledge of scientific process, programming skills in R, Python, SAS, or any relevant language), then yes, you can acquire the knowledge and become familiar with the tools that data science utilizes within a short period of time.&lt;/p&gt;
+&lt;p&gt;On the other hand, if you are a complete novice, you will not only be deceived by these campaigns but also become frustrated quickly. This is because you were drawn to something for which you were not prepared for. And you did not anticipate the challenges you would face to become a data scientist.&lt;/p&gt;
+&lt;p&gt;Now let’s come to the main point.&lt;/p&gt;
+&lt;h1 id=&#34;why-do-you-want-to-become-one&#34;&gt;Why do you want to become one&lt;/h1&gt;
+&lt;p&gt;Ask yourself the “why” question and give an honest answer. What is your response?&lt;/p&gt;
+&lt;p&gt;It is perfectly okay to say that you want to be a data scientist because the market is hot.&lt;/p&gt;
+&lt;p&gt;But the best approach would be to write a few points on a piece of paper as to why do you want to become a data scientist.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Point 1&lt;/li&gt;
+&lt;li&gt;Point 2&lt;/li&gt;
+&lt;li&gt;Point 3&lt;/li&gt;
+&lt;li&gt;Point 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You could list that you are passionate about working with data; you want to make an impact by helping the management or team leaders making the right decision based on data, or you just enjoy solving other’s problems with data.&lt;/p&gt;
+&lt;p&gt;Whatever may be your reasons, it is important to list them down. Listening makes you look at it by yourself. That helps you to assess whether this is really something you want to do.&lt;/p&gt;
+&lt;p&gt;Motivation is the key.&lt;/p&gt;
+&lt;h1 id=&#34;know-what-is-data-science-and-who-are-data-scientists&#34;&gt;Know what is data science and who are data scientists&lt;/h1&gt;
+&lt;p&gt;Before you jump into this field, do some research about the field. Google it, find some blogs to follow, read some whitepapers from reputed analytic organizations and software companies such as SAS, IBM, Google, Microsoft and many others. Spend some time reading. Not just skimming through; actual reading. To me, reading is the best way to broaden knowledge. In this era of YouTube and video lectures, I still find reading somewhat superior, especially for beginners. Once you have acquired a general understanding of the field, listening to lectures or watching short video clips would boost your knowledge quickly.&lt;/p&gt;
+&lt;h1 id=&#34;what-do-data-scientists-do&#34;&gt;What do data scientists do&lt;/h1&gt;
+&lt;p&gt;I will write briefly. I am working work on a separate article on it.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Data scientists solve problems with the help of data. That’s what they do.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On paper, Data Scientists do so many things that someone with a title of data scientist in one industry cannot possibly list what another data scientist might be doing in a different industry. That is to give you an idea of how variable the type of works data scientists is involved with.&lt;/p&gt;
+&lt;p&gt;Simply put, data scientists work with data to bring actionable insight that helps to solve a problem. If the data scientist is working in a financial organization, the problems would be related to, say, banking industry, the stock market, etc. If the data scientist works in healthcare, the problem would be related to healthcare service provider such as hospitals, health units.&lt;/p&gt;
+&lt;p&gt;Data scientists do not necessarily get involved with building the data architecture such as data warehousing or setting up or maintaining cloud infrastructure for an organization. Those who work in this type of work are called ‘Data Engineers’. You may want to read a little more about this in my earlier post (in Bengali).&lt;/p&gt;
+&lt;p&gt;Let me clarify one thing–data scientists do not necessarily design the databases. It is the data engineers who do that. Data scientists analyze the data to drive business whereas data engineers develop and maintain the architecture that stores data. Data scientists or statisticians do not build or maintain databases in most of the cases. However, there is often a need to create smaller databases for a specific purpose or a project. A data scientist may need to design, develop and maintain project-specific databases, which are largely different from enterprise-level data warehouse.&lt;/p&gt;
+&lt;p&gt;Most large organizations have their separate team of engineers who develop and maintain the data-science platforms (DBs, Hadoop, etc.).&lt;/p&gt;
+&lt;h1 id=&#34;how-to-become-a-data-scientist&#34;&gt;How to become a data scientist&lt;/h1&gt;
+&lt;p&gt;Everyone wants to be a data scientist but only some will be successful. The reason is in part, your preparation, in part your effort. If you are not from a quantitative background with some math, and computer programming experience, I would say it would be a daunting task for you to learn what it takes to be a data scientist. I am completely being honest.&lt;/p&gt;
+&lt;p&gt;At some point in time, you are going to read and write computer programs.&lt;/p&gt;
+&lt;p&gt;If you’ve never written a computer program, I am not sure how long it will take for you to pick up a language. But I personally feel that it takes at least 6 months to get some basics of any programming language. Another year or so to know a bit more. If you engage yourself full time to learn a language, you might be able to write simple programs and carry out simple data science tasks within 4-6 months.&lt;/p&gt;
+&lt;h1 id=&#34;two-approaches-to-be-a-data-scientist&#34;&gt;Two approaches to be a Data Scientist&lt;/h1&gt;
+&lt;p&gt;Learn the tools to become data scientist, or
+Find the problems you want to solve, and then learn what it takes to solve them&lt;/p&gt;
+&lt;p&gt;The first approach is the typical approach and I call it bottom-up approach. I will not discuss the first approach because it has been the mainstream approach thus far. This has brought so many discussions, lot of training offerings, online courses, articles in the media, blogs, and vlogs, and much more.&lt;/p&gt;
+&lt;p&gt;I will focus on the second approach to becoming a data scientist. I call it top-down approach.&lt;/p&gt;
+&lt;h1 id=&#34;find-problems-that-you-want-to-solve&#34;&gt;Find problems that you want to solve&lt;/h1&gt;
+&lt;p&gt;This is perhaps the easiest way to find out if you really want to be a data scientist. If so, keep reading.&lt;/p&gt;
+&lt;p&gt;I call this approach a top-down approach, you first find a problem and then solve it.&lt;/p&gt;
+&lt;p&gt;As I wrote earlier in this article, data scientists solve problems with the help of data. In other words, they have a problem to solve in front of them and they would provide a solution using data.&lt;/p&gt;
+&lt;p&gt;Now this may sound like, well, problem is there, the data is there, so what’s the big deal?&lt;/p&gt;
+&lt;p&gt;It’s not a big deal, but its a huge deal.&lt;/p&gt;
+&lt;p&gt;Having the data is only one step to solving the problem. What if you do not have the data in the right form, or you do not have the data in the first place. If you have the data, it often takes 80% of your time to prepare it for your analysis.&lt;/p&gt;
+&lt;p&gt;If you do not have the data, then you first need to get the data in the first place.&lt;/p&gt;
+&lt;h1 id=&#34;where-do-i-find-problem&#34;&gt;Where do I find problem?&lt;/h1&gt;
+&lt;p&gt;Well, problems are everywhere, you just have to look around.&lt;/p&gt;
+&lt;p&gt;I am going to give you some ideas which should give you enough clues to find a problem on your own and discover what it takes to solve those problems. Here goes the list with brief descriptions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 1:&lt;/strong&gt; Building a list of most important news of the day&lt;/p&gt;
+&lt;p&gt;This may sound like an unattractive problem. But think about how you might want to use the information. First, you need to think about a focus area. If you are interested in politics, the possibilities are endless. If you build a list exclusively on “North Korea”, you would find at the end of the year how the things unfolded and you can present the information on a timescale. The importance of such a list is to be able to find temporal relationship between different events which may affect some other event/outcome of interest.&lt;/p&gt;
+&lt;p&gt;You might be aware that news or sometimes a tweet from an influential person can affect the stock price of a particular company in the US stock market.  But this could be useful beyond US market. You will find many potential use cases if you think a bit deep.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 2:&lt;/strong&gt; Tracking accident statistics&lt;/p&gt;
+&lt;p&gt;This problem is particularly suitable for resource-limited countries where government record keeping is inadequate. Every day newspapers report accidental deaths due to road crashes. You could select one or two major newspapers and scan their pages to retrieve news about road accidents. This could be done as part of a research project at your institution where you pursue a Bachelors or Masters degree.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 3:&lt;/strong&gt; Calculating impact of  faculty research&lt;/p&gt;
+&lt;p&gt;This is something you can do for your department, or institution or country. Start with your department first where you have only a handful of faculties who are presumably doing some kind of research and publishing their findings in journals. Think of developing an automated system that would find articles (in Google Scholar, for example) and calculate impacts (from the journal impact factors). You can present the results by department, by type of research, or by institution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem 4:&lt;/strong&gt; Build an economic performance dashboard&lt;/p&gt;
+&lt;p&gt;You can use Google’s Data Studio to build a dashboard of economic performance of your country on some key performance metrics. The data could be found on the central bank’s website or government data repositories. For Bangladesh, many economic data sets are available online free of charge. Just visit &lt;a href=&#34;https://www.bb.org.bd/econdata/&#34;&gt;https://www.bb.org.bd/econdata/&lt;/a&gt; and find your data there.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;In conclusion, you can take the easier route to be a data scientist. In this route, you first need to find a problem and you will point your learning path towards solving that problem. The path is not smooth. But you can always ask questions to someone who knows or someone more experienced. It is a good practice to find someone who would be your mentor and will guide you through your learning path. Since you are learning on your own, you have to take the responsibility on your own. If you do not want to learn, nobody is going to push. If you are really interested and motivated, I hope this article has given you some direction.&lt;/p&gt;
+&lt;p&gt;Happy learning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statisticians in the Data Science Era</title>
+      <link>/post/statisticians-in-the-data-science-era/</link>
+      <pubDate>Mon, 04 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/post/statisticians-in-the-data-science-era/</guid>
+      <description>&lt;p&gt;If you are exploring the hot field of Data Science today, you probably know by now that there is no unique way to define data science. Everyone’s perspective comes from their respective backgrounds. Statisticians think they are data scientists while CS folks think they are.&lt;/p&gt;
+&lt;p&gt;I would not go into the debate.&lt;/p&gt;
+&lt;p&gt;Both have truth in their arguments as the typical problems they solve are quite different. There are some exceptions where their workflows overlap. Let me provide some thoughts from my perspective.&lt;/p&gt;
+&lt;p&gt;I am a statistician by training and I have been in the analytic world for over 15 years. This includes time spent at universities teaching graduate level statistics courses as well as working in the healthcare industry as a data scientist.&lt;/p&gt;
+&lt;h1 id=&#34;three-types-of-statisticians&#34;&gt;Three types of Statisticians&lt;/h1&gt;
+&lt;p&gt;Like many scientific disciplines, statisticians contribute to the science in two different ways.&lt;/p&gt;
+&lt;p&gt;First, through theoretical contribution to the scientific literature to advance the knowledge. In this type of work, statisticians focus on developing new methods to solve new problems or improving existing methods. In statistical science, any new theoretical development takes several years, sometimes decades, to gain popularity among the mainstream practitioners. Part of it is due to the availability of software packages or lack thereof that the practitioners are most familiar with. And there are some other reasons too.&lt;/p&gt;
+&lt;p&gt;Secondly, the works of applied statisticians and applied researchers including epidemiologists who focus on solving problems that need an immediate solution. Most of the time they utilize already developed statistical methods in their workflow. Here’s where most of the overlap happens between the works of applied statisticians and practitioners of statistics.&lt;/p&gt;
+&lt;p&gt;However, there is no strict boundary between applied and theoretical statisticians. Often, applied statisticians develop new methods to solve an existing problem. Thus, the third kind of statisticians are those who fall somewhere in between theoretical statisticians and applied statisticians.&lt;/p&gt;
+&lt;h1 id=&#34;towards-data-science&#34;&gt;Towards Data Science&lt;/h1&gt;
+&lt;p&gt;There are, however, some philosophical differences between these two types of statisticians. Theoretical researchers often think they are superior to their counterpart, while the applied folks think they are the ones whose contributions have a real impact. Both are wrong, in my honest opinion.&lt;/p&gt;
+&lt;p&gt;Compared to their peers, Applied Statisticians find their views better aligned with the theme of today’s data science. This is perhaps because of the way they were trained during their academic years.&lt;/p&gt;
+&lt;p&gt;Applied statisticians are taught and trained to use data to bring insights out of it. They are trained not only to fit a model and know how it works but also to communicate with their customers in non-technical terms. Intuition is all that takes priority over theoretical derivations. As Jo Hardin points &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;.. when teaching, for example, the Neyman-Pearson lemma, the intuition behind how we know what we know (and why it matters) is vastly more fundamental for the students’ future research capabilities than the detailed steps of the proof.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I think it is vital for a student of statistics to learn and think this way to become successful in today’s job market.&lt;/p&gt;
+&lt;h1 id=&#34;data-scientist-vs-data-engineers&#34;&gt;Data Scientist Vs Data Engineers&lt;/h1&gt;
+&lt;p&gt;The difference between many types of data scientists is often confusing even to the statisticians. Sometimes, data scientists and data engineers are considered equally. In fact, the type of work they do is quite different.&lt;/p&gt;
+&lt;p&gt;Let me clarify one thing–data scientists do not necessarily design the databases. It is the data engineers who do that. Data scientists analyze the data to drive business whereas data engineers develop and maintain that architecture.  Data scientists or statisticians do not build or maintain databases. Most large organizations have their separate team of engineers who develop and maintain the data-science platforms (DBs, Hadoop, etc.).&lt;/p&gt;
+&lt;p&gt;Do the statisticians need to know a bit of database? Yes, a basic understanding is good enough. Most of the time all you will do is pull some tables from different sources and join them to create a working data set. For that, you need to understand basics and you do not have to be a data architect for that. If you are working in a startup company, then you may be required to understand in greater depth, though as they have less manpower.&lt;/p&gt;
+&lt;p&gt;How big of a deal knowing how to efficiently join tables? Not so big. Anyone with a decent knowledge of data and SQL can learn to do it with some reading and practice. But you have to have the mindset of learning in the first place.&lt;/p&gt;
+&lt;h1 id=&#34;use-of-statistics&#34;&gt;Use of Statistics&lt;/h1&gt;
+&lt;p&gt;In my work, I find statistics invaluable although most of the time we do not use many advanced techniques. And this is by far true for most organizations who utilize data for decision-making. High-level analysis such as modeling and machine learning stay at the very top level of the application pyramid. You still need to lay the foundation using basic analysis and visualizations.&lt;/p&gt;
+&lt;p&gt;How media is portraying data science today (such as deep learning and AI) is what perhaps 1% of all the analytics an organization needs. Many large organizations do not hire people for that. They purchase a solution instead as that is more cost-effective. For many problems where deep learning is not applicable, they need analytic people with decent statistical literacy.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Data Science as it’s being understood today solves problems that are, for the most part, quite different than the problems that would need statisticians’ help to solve. Being on both sides of the aisle I can see how they complement each other and how they both are relevant.&lt;/p&gt;
+&lt;p&gt;Let me know what’s your thoughts are. And please share this article if you find it useful.&lt;/p&gt;
+&lt;p&gt;Thank you!&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Jo Harding (2017). Expectations and Skills for Undergraduate Students Doing Research in Statistics and Data Science, AMSTAT Newsletter &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

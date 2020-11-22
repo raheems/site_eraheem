@@ -1,0 +1,1345 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>বাংলা | Enayetur Raheem</title>
+    <link>/tag/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE/</link>
+      <atom:link href="/tag/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE/index.xml" rel="self" type="application/rss+xml" />
+    <description>বাংলা</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/eraheem_socialcard.png</url>
+      <title>বাংলা</title>
+      <link>/tag/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE/</link>
+    </image>
+    
+    <item>
+      <title>করোনাভাইরাস ইনফেকশাস ডিজিজ মডেলিং সিমুলেশন</title>
+      <link>/post/covid19-evaluation-of-non-ppi-intervention-using-simulation/</link>
+      <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/covid19-evaluation-of-non-ppi-intervention-using-simulation/</guid>
+      <description>&lt;h1 id=&#34;simulation&#34;&gt;সিমুলেশন&lt;/h1&gt;
+&lt;p&gt;সিমুলেশনকে আমি যেভাবে সংজ্ঞায়িত করি সেটি হল&amp;ndash;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Observing a real system without really observing it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;অর্থাৎ সিমুলেশন হল একটি সিস্টেম কী রকম আচরণ করবে তা কম্পিউটারের মাধ্যমে কৃত্রিম পরিবেশ সৃষ্টি করে সেখানে বিভিন্ন প্যারামিটার পরিবর্তন করে পর্যবেক্ষণ করা।&lt;/p&gt;
+&lt;p&gt;একটি উদাহরণ দিলে ভাল বোঝা যাবে।&lt;/p&gt;
+&lt;p&gt;বাংলাদশে এখন লকডাউন চলছে। অর্থনীতির উপর এর প্রভাব অনেক। তাই অনেকেই বলছেন দীর্ঘ মেয়াদে লকডাউন কোনও সমাধান নয়। কিন্তু লকডাউন যদি উঠিয়ে নেয়া হয় তাহলে এর প্রভাব কী হতে পারে সেটি আমরা বাস্তবে পরীক্ষা করে দেখতে পারবনা। আর সেখানেই কম্পিউটার সিমুলেশন সহায়তা করতে পারে। সিমুলেশনের মাধ্যমে আমরা এই পরীক্ষাটি করতে পারি এবং সেটি সিদ্ধান্ত গ্রহণে সহায়তা করতে পারে।&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;ভূমিকা&lt;/h1&gt;
+&lt;p&gt;লেখা হচ্ছে।&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: package &#39;tibble&#39; was built under R version 3.6.2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;কমপরটমনট&#34;&gt;কম্পারটমেন্ট&lt;/h2&gt;
+&lt;p&gt;সংক্রামক রোগের মডেলিং এর জন্য কম্পারটমেন্টাল মডেল বহুল ব্যবহৃত। SIR, SEIR, SIS ইত্যাদি মডেলগুলো ইতোপূর্বে সংক্রামক রোগের মডেলিঙে ব্যবহৃত হয়েছে। সেরকম কিন্তু আরেকটু জটিল একটি মডেল নিয়ে আমরা সিমুলেসন করব।&lt;/p&gt;
+&lt;p&gt;কম্পারটমেন্ট গুলোর সংক্ষেপে বর্ণনা দেয়া হল।&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;কম্পারটমেন্ট&lt;/th&gt;
+&lt;th&gt;সংজ্ঞা&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;S&lt;/td&gt;
+&lt;td&gt;Susceptible বা আক্রান্ত হতে পারে এমন ব্যক্তি&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;E&lt;/td&gt;
+&lt;td&gt;এক্সপোসড &lt;strong&gt;এবং&lt;/strong&gt; সংক্রামিত, এখনো সিম্পটম প্রকাশ করছেনা কিন্তু সম্ভাব্য সঙ্ক্রামক&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;I&lt;/td&gt;
+&lt;td&gt;আক্রান্ত, সিম্পটমাটিক &lt;strong&gt;এবং&lt;/strong&gt; সংক্রামক&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Q&lt;/td&gt;
+&lt;td&gt;সংক্রামক, কিন্তু নিজে থেকেই কয়ারেন্টাইনে&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;H&lt;/td&gt;
+&lt;td&gt;হাসপাতালে নেয়া প্রয়োজন (স্বাভাবিক সময়ে ক্যাপাসিটি থাকলে হাসপাতালে নেয়া হত)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;R&lt;/td&gt;
+&lt;td&gt;রিকভার করেছে, নতুন করে আক্রান্ত হবে না&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;F&lt;/td&gt;
+&lt;td&gt;কেইস ফ্যাটালিটি (কোভিড ১৯ এ মারা গেছে, অন্য কারণে নয়)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;এই মডেল অনুযায়ী একজন ব্যক্তি এক স্টেজ থেকে আরেক স্টেজে কীভাবে যাচ্ছে তা নিচের ডায়াগ্রাম থেকে বোঝা যাবে।&lt;/p&gt;
+&lt;!--html_preserve--&gt;&lt;div id=&#34;htmlwidget-2c2708cc2811291ed56a&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-2c2708cc2811291ed56a&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph SEIQHRF {\n\n  # a \&#34;graph\&#34; statement\n  graph [overlap = false, fontsize = 10] #, rankdir = LR]\n\n  # several \&#34;node\&#34; statements\n  node [shape = box,\n        fontname = Helvetica]\n  S[label=\&#34;S=আক্রান্ত হতে পারে এমন\&#34;];\n  E[label=\&#34;E=এক্সপোসড এবং সংক্রামিত,\nসিম্পটম দেখাচ্ছে না,\nসম্ভাব্য সংক্রামক\&#34;];\n  I[label=\&#34;I=সংক্রামিত এবং সংক্রামক\&#34;];\n  Q[label=\&#34;Q=(নিজে-)আইসোলেটেড\n(সংক্রামক)\&#34;];\n  H[label=\&#34;H=হাসপাতাল\nনিতে হবে\&#34;];\n  R[label=\&#34;R=রিকভারি/ইমিউন\&#34;];\n  F[label=\&#34;F=কেইস ফেটালিটি\&#34;]\n\n  # several \&#34;edge\&#34; statements\n  S-&gt;E[label=\&#34;a\&#34;]\n  I-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;x\&#34;]\n  E-&gt;I[label=\&#34;b\&#34;]\n  E-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;y\&#34;]\n  I-&gt;Q[label=\&#34;c\&#34;]\n  Q-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;z\&#34;]\n  I-&gt;R[label=\&#34;d\&#34;]\n  I-&gt;H[label=\&#34;e\&#34;]\n  H-&gt;F[label=\&#34;f\&#34;]\n  H-&gt;R[label=\&#34;g\&#34;]\n  Q-&gt;R[label=\&#34;h\&#34;]\n  Q-&gt;H[label=\&#34;i\&#34;]\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;&lt;!--/html_preserve--&gt;
+&lt;h2 id=&#34;simulation-parameter&#34;&gt;সিমুলেশন প্যরামিটার&lt;/h2&gt;
+&lt;p&gt;সিমুলেসন ব্যাপারটি নির্ভর করে এর প্যারামিটারগুলো কীভাবে ধরা হচ্ছে। এই পরীক্ষায় যেভাবে আমি প্যরামিটারগুলো ধরেছি তা দেয়া হল। পসিমুলেসনের প্রয়োজনে এগুলো টিউন করা হবে। উদ্দেশ্য হল বাংলাদেশের জন্য প্রযোজ্য মান দিয়ে মডেল শুরু করা।&lt;/p&gt;
+&lt;!--html_preserve--&gt;&lt;style&gt;html {
+&lt;p&gt;font-family: -apple-system, BlinkMacSystemFont, &amp;lsquo;Segoe UI&amp;rsquo;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;lsquo;Helvetica Neue&amp;rsquo;, &amp;lsquo;Fira Sans&amp;rsquo;, &amp;lsquo;Droid Sans&amp;rsquo;, Arial, sans-serif;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_table {
+display: table;
+border-collapse: collapse;
+margin-left: auto;
+/* table.margin.left */
+margin-right: auto;
+/* table.margin.right */
+color: #333333;
+font-size: 16px;
+/* table.font.size */
+background-color: #FFFFFF;
+/* table.background.color */
+width: 90%;
+/* table.width */
+border-top-style: solid;
+/* table.border.top.style */
+border-top-width: 2px;
+/* table.border.top.width */
+border-top-color: #A8A8A8;
+/* table.border.top.color */
+border-bottom-style: solid;
+/* table.border.bottom.style */
+border-bottom-width: 2px;
+/* table.border.bottom.width */
+border-bottom-color: #A8A8A8;
+/* table.border.bottom.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_heading {
+background-color: #FFFFFF;
+/* heading.background.color */
+border-bottom-color: #FFFFFF;
+/* table.background.color */
+border-left-style: hidden;
+/* heading.border.lr.style */
+border-left-width: 1px;
+/* heading.border.lr.width */
+border-left-color: #D3D3D3;
+/* heading.border.lr.color */
+border-right-style: hidden;
+/* heading.border.lr.style */
+border-right-width: 1px;
+/* heading.border.lr.width */
+border-right-color: #D3D3D3;
+/* heading.border.lr.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_title {
+color: #333333;
+font-size: 125%;
+/* heading.title.font.size */
+font-weight: initial;
+/* heading.title.font.weight */
+padding-top: 4px;
+/* heading.top.padding - not yet used */
+padding-bottom: 4px;
+border-bottom-color: #FFFFFF;
+/* table.background.color */
+border-bottom-width: 0;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_subtitle {
+color: #333333;
+font-size: 85%;
+/* heading.subtitle.font.size */
+font-weight: initial;
+/* heading.subtitle.font.weight */
+padding-top: 0;
+padding-bottom: 4px;
+/* heading.bottom.padding - not yet used */
+border-top-color: #FFFFFF;
+/* table.background.color */
+border-top-width: 0;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_bottom_border {
+border-bottom-style: solid;
+/* heading.border.bottom.style */
+border-bottom-width: 2px;
+/* heading.border.bottom.width */
+border-bottom-color: #D3D3D3;
+/* heading.border.bottom.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_column_spanner {
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-bottom-color: #D3D3D3;
+padding-top: 4px;
+padding-bottom: 4px;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_col_headings {
+border-top-style: solid;
+/* column_labels.border.top.style */
+border-top-width: 2px;
+/* column_labels.border.top.width */
+border-top-color: #D3D3D3;
+/* column_labels.border.top.color */
+border-bottom-style: solid;
+/* column_labels.border.bottom.style */
+border-bottom-width: 2px;
+/* column_labels.border.bottom.width */
+border-bottom-color: #D3D3D3;
+/* column_labels.border.bottom.color */
+border-left-style: none;
+/* column_labels.border.lr.style */
+border-left-width: 1px;
+/* column_labels.border.lr.width */
+border-left-color: #D3D3D3;
+/* column_labels.border.lr.color */
+border-right-style: none;
+/* column_labels.border.lr.style */
+border-right-width: 1px;
+/* column_labels.border.lr.width */
+border-right-color: #D3D3D3;
+/* column_labels.border.lr.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_col_heading {
+color: #333333;
+background-color: #FFFFFF;
+/* column_labels.background.color */
+font-size: 100%;
+/* column_labels.font.size */
+font-weight: normal;
+/* column_labels.font.weight */
+text-transform: inherit;
+/* column_labels.text_transform */
+vertical-align: middle;
+padding: 5px;
+margin: 10px;
+overflow-x: hidden;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_sep_right {
+border-right: 5px solid #FFFFFF;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_group_heading {
+padding: 8px;
+/* row_group.padding */
+color: #333333;
+background-color: #FFFFFF;
+/* row_group.background.color */
+font-size: 100%;
+/* row_group.font.size */
+font-weight: initial;
+/* row_group.font.weight */
+text-transform: inherit;
+/* row_group.text_transform */
+border-top-style: solid;
+/* row_group.border.top.style */
+border-top-width: 2px;
+/* row_group.border.top.width */
+border-top-color: #D3D3D3;
+/* row_group.border.top.color */
+border-bottom-style: solid;
+/* row_group.border.bottom.style */
+border-bottom-width: 2px;
+/* row_group.border.bottom.width */
+border-bottom-color: #D3D3D3;
+/* row_group.border.bottom.color */
+border-left-style: none;
+/* row_group.border.left.style */
+border-left-width: 1px;
+/* row_group.border.left.width */
+border-left-color: #D3D3D3;
+/* row_group.border.left.color */
+border-right-style: none;
+/* row_group.border.right.style */
+border-right-width: 1px;
+/* row_group.border.right.width */
+border-right-color: #D3D3D3;
+/* row_group.border.right.color */
+vertical-align: middle;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_empty_group_heading {
+padding: 0.5px;
+color: #333333;
+background-color: #FFFFFF;
+/* row_group.background.color */
+font-size: 100%;
+/* row_group.font.size */
+font-weight: initial;
+/* row_group.font.weight */
+border-top-style: solid;
+/* row_group.border.top.style */
+border-top-width: 2px;
+/* row_group.border.top.width */
+border-top-color: #D3D3D3;
+/* row_group.border.top.color */
+border-bottom-style: solid;
+/* row_group.border.bottom.style */
+border-bottom-width: 2px;
+/* row_group.border.bottom.width */
+border-bottom-color: #D3D3D3;
+/* row_group.border.bottom.color */
+vertical-align: middle;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_striped {
+background-color: rgba(128, 128, 128, 0.05);
+/* row.striping.background_color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_from_md &amp;gt; :first-child {
+margin-top: 0;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_from_md &amp;gt; :last-child {
+margin-bottom: 0;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_row {
+padding-top: 8px;
+/* data_row.padding */
+padding-bottom: 8px;
+/* data_row.padding */
+padding-left: 5px;
+padding-right: 5px;
+margin: 10px;
+border-top-style: solid;
+/* table_body.hlines.style */
+border-top-width: 1px;
+/* table_body.hlines.width */
+border-top-color: #D3D3D3;
+/* table_body.hlines.color */
+border-left-style: none;
+/* table_body.vlines.style */
+border-left-width: 1px;
+/* table_body.vlines.width */
+border-left-color: #D3D3D3;
+/* table_body.vlines.color */
+border-right-style: none;
+/* table_body.vlines.style */
+border-right-width: 1px;
+/* table_body.vlines.width */
+border-right-color: #D3D3D3;
+/* table_body.vlines.color */
+vertical-align: middle;
+overflow-x: hidden;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_stub {
+color: #333333;
+background-color: #FFFFFF;
+/* stub.background.color */
+font-weight: initial;
+/* stub.font.weight */
+text-transform: inherit;
+/* stub.text_transform */
+border-right-style: solid;
+/* stub.border.style */
+border-right-width: 2px;
+/* stub.border.width */
+border-right-color: #D3D3D3;
+/* stub.border.color */
+padding-left: 12px;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_summary_row {
+color: #333333;
+background-color: #FFFFFF;
+/* summary_row.background.color */
+text-transform: inherit;
+/* summary_row.text_transform */
+padding-top: 8px;
+/* summary_row.padding */
+padding-bottom: 8px;
+/* summary_row.padding */
+padding-left: 5px;
+padding-right: 5px;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_first_summary_row {
+padding-top: 8px;
+/* summary_row.padding */
+padding-bottom: 8px;
+/* summary_row.padding */
+padding-left: 5px;
+padding-right: 5px;
+border-top-style: solid;
+/* summary_row.border.style */
+border-top-width: 2px;
+/* summary_row.border.width */
+border-top-color: #D3D3D3;
+/* summary_row.border.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_grand_summary_row {
+color: #333333;
+background-color: #FFFFFF;
+/* grand_summary_row.background.color */
+text-transform: inherit;
+/* grand_summary_row.text_transform */
+padding-top: 8px;
+/* grand_summary_row.padding */
+padding-bottom: 8px;
+/* grand_summary_row.padding */
+padding-left: 5px;
+padding-right: 5px;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_first_grand_summary_row {
+padding-top: 8px;
+/* grand_summary_row.padding */
+padding-bottom: 8px;
+/* grand_summary_row.padding */
+padding-left: 5px;
+padding-right: 5px;
+border-top-style: double;
+/* grand_summary_row.border.style */
+border-top-width: 6px;
+/* grand_summary_row.border.width */
+border-top-color: #D3D3D3;
+/* grand_summary_row.border.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_table_body {
+border-top-style: solid;
+/* table_body.border.top.style */
+border-top-width: 2px;
+/* table_body.border.top.width */
+border-top-color: #D3D3D3;
+/* table_body.border.top.color */
+border-bottom-style: solid;
+/* table_body.border.bottom.style */
+border-bottom-width: 2px;
+/* table_body.border.bottom.width */
+border-bottom-color: #D3D3D3;
+/* table_body.border.bottom.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_footnotes {
+color: #333333;
+background-color: #FFFFFF;
+/* footnotes.background.color */
+border-bottom-style: none;
+/* footnotes.border.bottom.style */
+border-bottom-width: 2px;
+/* footnotes.border.bottom.width */
+border-bottom-color: #D3D3D3;
+/* footnotes.border.bottom.color */
+border-left-style: none;
+/* footnotes.border.lr.color */
+border-left-width: 2px;
+/* footnotes.border.lr.color */
+border-left-color: #D3D3D3;
+/* footnotes.border.lr.color */
+border-right-style: none;
+/* footnotes.border.lr.color */
+border-right-width: 2px;
+/* footnotes.border.lr.color */
+border-right-color: #D3D3D3;
+/* footnotes.border.lr.color */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_footnote {
+margin: 0px;
+font-size: 90%;
+/* footnotes.font.size */
+padding: 4px;
+/* footnotes.padding */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_sourcenotes {
+color: #333333;
+background-color: #FFFFFF;
+/* source_notes.background.color */
+border-bottom-style: none;
+/* source_notes.border.bottom.style */
+border-bottom-width: 2px;
+/* source_notes.border.bottom.width */
+border-bottom-color: #D3D3D3;
+/* source_notes.border.bottom.color */
+border-left-style: none;
+/* source_notes.border.lr.style */
+border-left-width: 2px;
+/* source_notes.border.lr.style */
+border-left-color: #D3D3D3;
+/* source_notes.border.lr.style */
+border-right-style: none;
+/* source_notes.border.lr.style */
+border-right-width: 2px;
+/* source_notes.border.lr.style */
+border-right-color: #D3D3D3;
+/* source_notes.border.lr.style */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_sourcenote {
+font-size: 90%;
+/* source_notes.font.size */
+padding: 4px;
+/* source_notes.padding */
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_left {
+text-align: left;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_center {
+text-align: center;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_right {
+text-align: right;
+font-variant-numeric: tabular-nums;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_font_normal {
+font-weight: normal;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_font_bold {
+font-weight: bold;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_font_italic {
+font-style: italic;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_super {
+font-size: 65%;
+}&lt;/p&gt;
+&lt;p&gt;#mhimirjvkh .gt_footnote_marks {
+font-style: italic;
+font-size: 65%;
+}
+&lt;/style&gt;&lt;/p&gt;
+&lt;div id=&#34;mhimirjvkh&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;&lt;table class=&#34;gt_table&#34;&gt;
+  &lt;thead class=&#34;gt_col_headings&#34;&gt;
+    &lt;tr&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34;&gt;DiagramRef&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34;&gt;Parameter&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34;&gt;Default&lt;/th&gt;
+      &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34;&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&#34;gt_table_body&#34;&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;type&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;SEIQHRF&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;নানা ধরণের মডেল আছে, যেমন SI, SIR, SIS, SEIR, SEIQHR এবং SEIQHRF, এখানে SEIQHRF মডেল নিয়ে সিমুলেসন করা হবে&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;nsteps&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;366&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;সিমুলেসন যত দিনের জন্য করা হচ্ছে। ৩৬৬ মানে এক বছর।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;nsims&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;10&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;গড়ে যতগুলো রিপিটশন করে হবে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;ncores&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;4&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;সিপিইঊ কোর।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;b&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;prog.rand&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;FALSE&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;যেভাবে &lt;strong&gt;E&lt;/strong&gt; কম্পারটমেন্ট থেকে &lt;strong&gt;I&lt;/strong&gt; কম্পারটমেন্টে যাবে তার মেথড। TRUE হলে করে দ্বিপদ বিন্যাস থেকে &lt;code&gt;prog.rate&lt;/code&gt; অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে Weibull ডিস্ট্রিবিউশন থেকে ডেটা জেনারেট করা হবে যার প্যারামিটার হবে &lt;code&gt;prog.dist.scale&lt;/code&gt; এবং &lt;code&gt;prog.dist.shape&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;d,g,h&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;rec.rand&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;FALSE&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;I, Q, H থেকে রিকভারি কম্পারটমেন্টে ট্রাঞ্জিশন মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে &lt;code&gt;prog.rate&lt;/code&gt; অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে Weibull ডিস্ট্রিবিউশন থেকে ডেটা জেনারেট করা হবে যার প্যারামিটার হবে &lt;code&gt;prog.dist.scale&lt;/code&gt; এবং &lt;code&gt;prog.dist.shape&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;f&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;fat.rand&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;FALSE&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;H থেকে F কম্পারটমেন্টে ট্রাঞ্জিশনের মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে &lt;code&gt;fat.rate.base&lt;/code&gt; অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে স্যাম্পল ফ্রাকশন নেয়া হবে &lt;code&gt;fat.rate.base&lt;/code&gt; অনুযায়ী। কিন্তু, H কম্পারটমেন্টে বর্তমান রোগীর সংখ্যা যদি হাসপাতালের ক্যাপাসিটির (&lt;code&gt;hosp.cap&lt;/code&gt;) চেয়ে বেশি হয় তাহলে বেইজ ফেটালিটিকে হাসপাতালের ক্যাপাসিটির ওয়েটেড এভারেজ দিয়ে স্থির করা হবে। ঊপরন্ত আরেকটু বেশি রেট যোগ করা হবে যা &lt;code&gt;fat.rate.overcap&lt;/code&gt; দিয়ে নির্দিষ্ট করা।  &lt;code&gt;fat.rate.overcap&lt;/code&gt; বেশি করে ধরার মাধ্যমে ক্যাপাসিটি ছাড়িয়ে গেলে স্বাস্থ্য ব্যবস্থার উপর কিরকম প্রভাব পরবে তা সিমুলেট করা যাবে। &lt;code&gt;fat.tcoeff&lt;/code&gt; কোফিসিয়েন্ট একজন রোগী H কম্পারটমেন্টে যতদিন আছে তার সাথে মারা যাওয়ার সম্ভাবনার লিনিয়ার সম্পর্ক নির্দেশক। &lt;code&gt;fat.tcoeff&lt;/code&gt; আইসিইঊ রোগীদের সারভাইভাল সময়ের ডিস্ট্রিবিউশনেকে ভালভাবে এপ্রক্সিমেট করতে পারে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;c&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;quar.rand&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;FALSE&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;I থেকে Q কম্পারটমেন্টে ট্রানজিশনের মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে &lt;code&gt;quar.tate&lt;/code&gt; অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে `quar.rate অনুসারে দৈব চয়নের মাধ্যমে আংশিক স্যাম্পল নেয়া হবে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;e,i&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;hosp.rand&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;FALSE&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;I থেকে H বা Q থেকে H এ স্থানান্তরের মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে &lt;code&gt;hosp.rate&lt;/code&gt; অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে &lt;code&gt;hosp.rate&lt;/code&gt; অনুসারে দৈব চয়নের মাধ্যমে আংশিক স্যাম্পল নেয়া হবে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;e,i&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;disch.rand&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;FALSE&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;হাসপাতালে নেয়ার প্রয়োজন ছিল সেরকম অবস্থা থেকে রিকভারি স্টেজে যাওয়ার মেথড। TRUE হলে দ্বিপদ বিন্যাস থেকে &lt;code&gt;disch.rate&lt;/code&gt; অনুযায়ী দৈব চয়ন করে বেছে নেয়া হবে। FALSE হলে &lt;code&gt;disch.rate&lt;/code&gt; অনুসারে দৈব চয়নের মাধ্যমে আংশিক স্যাম্পল নেয়া হবে। স্মরণ করা যেতে পারে যে H স্টেজ থেকে বের হওয়ার একমাত্র উপায় হল রিকভারি অথবা মৃত্যু।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;s.num&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;9997&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টে মানুষের প্রাথমিক সংখ্যা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;e.num&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;E&lt;/strong&gt; কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;i.num&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;3&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;I&lt;/strong&gt; কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;q.num&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt; কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;h.num&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;H&lt;/strong&gt; কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;r.num&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;R&lt;/strong&gt; কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;f.num&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;F&lt;/strong&gt;কম্পারটমেন্টে মানুষের প্রাথমিক  সংখ্যা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;x&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;act.rate.i&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;8&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;I&lt;/strong&gt; এবং &lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টের ব্যক্তির মধ্যে দিনে গড়ে যতবার সংস্পর্শ হবে। প্রতিটি সংস্পর্শ মানেই আক্রান্ত হওয়া নয়। আক্রান্ত হওয়ার সম্ভাবনা &lt;code&gt;inf.prob.i&lt;/code&gt; নির্ধারিত হবে। যেমন, সোশাল ডিস্টান্সিং এর এফেক্ট দেখতে চাইলে &lt;code&gt;act.rate.i&lt;/code&gt; মান কমিয়ে দিতে হবে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;x&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;inf.prob.i&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0.03&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;I&lt;/strong&gt; এবং &lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টের ব্যক্তির মধ্যে প্রতি সংস্পর্শে রোগ সঙ্ক্রমণের সম্ভাবনা। &lt;code&gt;inf.prob.i&lt;/code&gt; কমিয়ে দেয়া অনেকটা হাইজিন চর্চা বাড়ানোর মত।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;y&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;act.rate.e&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;10&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;E&lt;/strong&gt; এবং &lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টের ব্যক্তির মধ্যে দিনে গড়ে যতবার সংস্পর্শ হবে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;y&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;inf.prob.e&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0.02&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;E&lt;/strong&gt; এবং &lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টের ব্যক্তির মধ্যে প্রতি সংস্পর্শে রোগ সঙ্ক্রমণের সম্ভাবনা। অন্যথায় &lt;code&gt;inf.exp.i&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;z&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;act.rate.q&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;2&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt; (কয়ারেন্টিন্ড) ব্যক্তির সাথে &lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টের ব্যক্তির মধ্যে দিনে গড়ে যতবার সংস্পর্শ হবে। অন্যথায় &lt;code&gt;act.rate.i&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;z&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;inf.prob.q&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0.02&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;Q&lt;/strong&gt; এবং &lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টের ব্যক্তির মধ্যে প্রতি সংস্পর্শে রোগ সঙ্ক্রমণের সম্ভাবনা। অন্যথায়&lt;code&gt;inf.exp.i&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;c&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;quar.rate&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;1/100&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;প্রতদিন গড়ে &lt;strong&gt;I&lt;/strong&gt; গ্রুপের আক্রান্ত মানুষেরা যে হারে &lt;strong&gt;Q&lt;/strong&gt; কম্পারটমেন্টে নিজে থেকে কোয়ারেন্টিনে যায়। যারা লক্ষণ দেখায়না, অর্থাৎ &lt;strong&gt;E&lt;/strong&gt; কম্পারটমেন্টে আছে, তারা আইসলেসনে যায় না কারণ তারা জানেনা যে তারা সঙ্ক্রামক কিনা।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;e,i&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;hosp.rate&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;1/100&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;প্রতিদিন গড়ে লক্ষণ ওয়ালা এবং পজিটিভ ব্যক্তি (&lt;strong&gt;I&lt;/strong&gt;) এবং (&lt;strong&gt;Q&lt;/strong&gt;) কম্পারটমেন্টের ব্যক্তি এমন অবস্থায় পৌঁছে যে হাসপাতালে নেয়ার প্রয়োজন হয়। অর্থাৎ তারা ক্রিটিকাল অবস্থায় চলে যায়। ডিফল্ট হল 1% প্রতি দিন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;g&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;disch.rate&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;6/100&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;হাসপাতালের প্রয়োজন হয়েছিল এমনদের মধ্যে দৈনিক গড়ে যতজন রিকভার করে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;b&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;prog.rate&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;10/100&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;E&lt;/strong&gt; থেকে গড়ে দৈনিক &lt;strong&gt;I&lt;/strong&gt; কম্পারটমেন্টে যাওয়ার হার। &lt;code&gt;prog.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;b&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;prog.dist.scale&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;5&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;Weibull  ডিস্ট্রিবিউশনের স্কেল প্যরামিটার। &lt;code&gt;prog.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;b&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;prog.dist.shape&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;1.5&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;Weibull  ডিস্ট্রিবিউশনের  সেইপ প্যরামিটার। &lt;code&gt;prog.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;d&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;rec.rate&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;1/20&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;দৈনিক রিকভারি রেইট অর্থাৎ &lt;strong&gt;I&lt;/strong&gt; থেকে &lt;strong&gt;R&lt;/strong&gt; এ যাওয়ার রেইট। &lt;code&gt;rec.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;d&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;rec.dist.scale&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;35&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;রিকভারির Weibull ডিস্ট্রিবিউশনের স্কেল প্যরামিটার। &lt;code&gt;rec.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;d&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;rec.dist.shape&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;1.5&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;রিকভারির Weibull ডিস্ট্রিবিউশনের সেইপ প্যরামিটার। &lt;code&gt;rec.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;f&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;fat.rate.base&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;1/50&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;যাদের হাসপাতালের দরকার তাদের বেজলাইন  দৈনিক মরটালিটি রেইট। &lt;code&gt;fat.rand&lt;/code&gt; দেখুন&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;f&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;hosp.cap&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;40&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;সিমুলেটেড পপুলেশনের জন্য হাসপাতালের বেডের সংখ্যা। &lt;code&gt;fat.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;f&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;fat.rate.overcap&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;2/100&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;দৈনিক মরটালিট রেইট তাদের মধ্যে যাদের হাসপাতালে নেয়ার দরকার ছিল কিন্তু যায়গা না থাকায় দেয়া যায়নি। (&lt;code&gt;hosp.cap&lt;/code&gt; এবং &lt;code&gt;fat.rand&lt;/code&gt; দ্রষ্টব্য).&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;f&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;fat.tcoeff&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;0.5&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;&lt;strong&gt;H&lt;/strong&gt; কম্পারটমেন্টে থাকার দিনের সংখ্যার সাথে মরটালিটি রেইট যতটুকু অরিতিক্ত বাড়বে তার কোফিশিয়েন্ট। &lt;code&gt;fat.rand&lt;/code&gt; দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;vital&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;TRUE&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;স্বাভাবিক জন্ম এবং মৃত্যু আমলে নেয়া হচ্ছে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;a.rate&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;(10.5/365)/1000&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;দৈনিক জন্মহার। যারা জন্মাবে তারা সবাই &lt;strong&gt;S&lt;/strong&gt; কম্পারটমেন্টে ঢুকবে।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;ds.rate, de.rate, de.rate, dq.rate, dh.rate, dr.rate&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;various rates&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;করোনা ব্যতীত অন্য কারণে মৃত্যুর হার।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;out&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;mean&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+      &lt;td class=&#34;gt_row gt_left gt_striped&#34;&gt;&lt;div class=&#39;gt_from_md&#39;&gt;&lt;p&gt;n সিমুলেশন রান গুলকে যেভাবে সামারাইজ করা হবে। median এবং percentile ও হতে পারে। &lt;code&gt;EpiModel&lt;/code&gt; ডকুমেন্টেশন দেখুন।&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;&lt;!--/html_preserve--&gt;
+&lt;!-- ### Time-variant parameters --&gt;
+&lt;!-- Several of the simulation parameters can also be varied over time. That is, as well as accepting a single value, they also accept a vector of values with length equal to `nsteps`, the number of days over which the simulation runs. Assuming `nsteps=366`, we can, for example, set `quar.rate = c(rep(1/10,30), rep(1/3, 335))`. That defines a step function in which the transition-to-isolation rate for the **I** compartment is 0.1 for the first 30 days, then steps up to 0.33 thereafter, reflecting, say, a campaign or government edict to self-isolate. Of course, the vector of values can be a smooth function, or can go up then down again, or whatever you wish to model. This is an extremely powerful feature of computational models such as this, and one very hard to incorporate into purely mathematical models. --&gt;
+&lt;!-- Most of the parameters for which time-variation is useful support it. If they don&#39;t, you will receive an error message (the table above will be updated to include this information later). --&gt;
+&lt;!-- ## `simulate()` wrapper function --&gt;
+&lt;h2 id=&#34;বইজলইন-সমলসন&#34;&gt;বেইজলাইন সিমুলেসন&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;## Time to complete: 65.126 sec elapsed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ডিস্ট্রিবিউশন দেখে নেই।&lt;/p&gt;
+&lt;p&gt;Now get the timing data.&lt;/p&gt;
+&lt;p&gt;And visualise it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;!-- OK, all of those distributions of the time spent in the various states (compartments) look reasonable, with the exception of _Hospital care required duration_. For quite a few individuals, that duration is zero. You could argue that these are day-only admissions, but really, hospital care should be required for at least one day. It&#39;s something that can be fixed later, but it makes little difference for now. --&gt;
+&lt;!-- Strictly, you should check these duration distributions for every model you run. In practice, I have used them to check the baseline model, and for spot checks on intervention &#34;experiment&#34; models. But if you change the Weibull distribution parameters for the progression and recovery rates, please do check the duration distributions to ensure they are still sensible. --&gt;
+&lt;h2 id=&#34;visualise-prevalence&#34;&gt;Visualise prevalence&lt;/h2&gt;
+&lt;p&gt;Prevalence is the number of individuals in each compartment at each point in time (each day). That&amp;rsquo;s the usual way disease models are presented.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 5 row(s) containing missing values (geom_path).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;OK, that looks very reasonable. Note that almost the entire population ends up being infected. However, the &lt;strong&gt;S&lt;/strong&gt; and &lt;strong&gt;R&lt;/strong&gt; compartments dominate the plot (good, humanity survives!). Let&amp;rsquo;s re-plot leaving out those compartments.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 4 row(s) containing missing values (geom_path).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;What can we see in this plot of our simulation of our hypothetical world of 10,000 people (meaning the results may be indicative of virus behaviour in the real world, but not necessarily the same timings or values)?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The epidemic is all over in two months.&lt;/li&gt;
+&lt;li&gt;We see typical exponential behaviour, although these are prevalence numbers, not incidence (we can extract incidence from our simulation, as we will see later). We expect incidence to rise exponentially, prevalence tends to start with exponential growth then tapers off. That&amp;rsquo;s what we are seeing here, so that&amp;rsquo;s good.&lt;/li&gt;
+&lt;li&gt;The prevalence in the &lt;strong&gt;I&lt;/strong&gt; and &lt;strong&gt;Q&lt;/strong&gt; compartments mirrors but lags behind the &lt;strong&gt;E&lt;/strong&gt; compartment, as expected.&lt;/li&gt;
+&lt;li&gt;The number requiring hospitalisation seems reasonable.&lt;/li&gt;
+&lt;li&gt;The number in the case fatality compartment is monotonically increasing, as expected.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;checking-the-basic-reproduction-number-r_0&#34;&gt;Checking the basic reproduction number &lt;code&gt;\(R_{0}\)&lt;/code&gt;&lt;/h2&gt;
+&lt;!-- In the [previous post on simulation](https://timchurches.github.io/blog/posts/2020-03-10-modelling-the-effects-of-public-health-interventions-on-covid-19-transmission-part-1/), we saw how we could check the `\(R_{0}\)` for our simulated outbreak. Let&#39;s repeat that for our baseline simulation. Refer to the [previous post](https://timchurches.github.io/blog/posts/2020-03-10-modelling-the-effects-of-public-health-interventions-on-covid-19-transmission-part-1/) for explanation of what&#39;s being done here. --&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;That &lt;code&gt;\(R_{0}\)&lt;/code&gt; might seem s bit low - values of around 2 or 2.5 were being quoted in January 2020, but remember our value has been calculated using new estimates of the &lt;em&gt;serial interval&lt;/em&gt; that are much shorter than previously assumed. We also have some people going into self-isolation even in our baseline model, but at a desultory rate.&lt;/p&gt;
+&lt;h1 id=&#34;running-an-intervention-experiment&#34;&gt;Running an intervention experiment&lt;/h1&gt;
+&lt;p&gt;Now we are in a position to run an experiment, by altering some parameters of our baseline model.&lt;/p&gt;
+&lt;p&gt;Thus we ramp up the isolation rate (&lt;code&gt;quar.rate&lt;/code&gt;) from it&amp;rsquo;s low level of 0.033 (as in the baseline simulation), starting at day 15, up to 0.5 at day 30. We&amp;rsquo;ll write a little function to do that.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s examine the result. The code used is similar to that used above for the baseline model and won&amp;rsquo;t be shown here.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 4 row(s) containing missing values (geom_path).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s see that with the baseline again for comparison:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 4 row(s) containing missing values (geom_path).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;These figures need to be carefully reviwed to set the initial parameters.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: Removed 2 row(s) containing missing values (geom_path).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-04-14-covid19-simulation/index_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;!-- # Running lots of intervention experiments --&gt;
+&lt;!-- OK, the _interventionome_ is a large (and scary) space, we need to start taking a more industrial approach to comparing experiments.  --&gt;
+&lt;!-- Let&#39;s run a whole lot of experiments with various interventions, described  below. --&gt;
+&lt;!-- ## Experiment 2 - more hospital beds --&gt;
+&lt;!-- Over a four week period, let&#39;s ramp up hospital capacity to triple the baseline level, starting at day 15. Hey, China built a 1000+ bed COVID-19 hospital in Wuhan in just 10 days... --&gt;
+&lt;!-- ```{r, echo=TRUE, eval=TRUE} --&gt;
+&lt;!-- hosp_cap_ramp &lt;- function(t) { --&gt;
+&lt;!--   ifelse(t &lt; 15, 40, ifelse(t &lt;= 45, 40 + (t-15)*(120 - 40)/30, 120)) --&gt;
+&lt;!-- } --&gt;
+&lt;!-- raise_hosp_cap_sim &lt;- simulate(hosp.cap = hosp_cap_ramp(1:366)) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- ## Experiment 3 - more social distancing starting at day 15 --&gt;
+&lt;!-- Let&#39;s step up social distancing (decrease exposure opportunities), starting at day 15, in everyone except the self-isolated, who are already practising it. But we&#39;ll leave the self-isolation rate at the baseline desultory rate. The increase in social distancing will, when full ramped up by day 30, halve the number of exposure events between the infected and the susceptible each day. --&gt;
+&lt;!-- ```{r, echo=TRUE, eval=TRUE} --&gt;
+&lt;!-- social_distancing_day15_ramp &lt;- function(t) { --&gt;
+&lt;!--   ifelse(t &lt; 15, 10, ifelse(t &lt;= 30, 10 - (t-15)*(10 - 5)/15, 5)) --&gt;
+&lt;!-- } --&gt;
+&lt;!-- t15_social_distancing_sim &lt;- simulate(act.rate.i = social_distancing_day15_ramp(1:366), --&gt;
+&lt;!--                                       act.rate.e = social_distancing_day15_ramp(1:366)) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- ## Experiment 4 - more social distancing but starting at day 30 --&gt;
+&lt;!-- Let&#39;s repeat that, but we&#39;ll delay starting the social distancing ramp-up until day 30. --&gt;
+&lt;!-- ```{r, echo=TRUE, eval=TRUE} --&gt;
+&lt;!-- social_distancing_day30_ramp &lt;- function(t) { --&gt;
+&lt;!--   ifelse(t &lt; 30, 10, ifelse(t &lt;= 45, 10 - (t-30)*(10 - 5)/15, 5)) --&gt;
+&lt;!-- } --&gt;
+&lt;!-- t30_social_distancing_sim &lt;- simulate(act.rate.i = social_distancing_day30_ramp(1:366), --&gt;
+&lt;!--                                       act.rate.e = social_distancing_day30_ramp(1:366)) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- ## Experiment 5 - increase both social distancing and increased self-isolation rates starting day 15 --&gt;
+&lt;!-- ```{r, echo=TRUE, eval=FALSE} --&gt;
+&lt;!-- quar_rate_ramp &lt;- function(t) { --&gt;
+&lt;!--   ifelse(t &lt; 15, 0.0333, ifelse(t &lt;= 30, 0.0333 + (t-15)*(0.5 - 0.0333)/15, 0.5)) --&gt;
+&lt;!-- } --&gt;
+&lt;!-- ramp_quar_rate_sim &lt;- simulate(quar.rate = quar_rate_ramp(1:366))   --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- ```{r, echo=TRUE, eval=TRUE} --&gt;
+&lt;!-- t15_soc_dist_quar_sim &lt;- simulate(act.rate.i = social_distancing_day15_ramp(1:366), --&gt;
+&lt;!--                                   act.rate.e = social_distancing_day15_ramp(1:366), --&gt;
+&lt;!--                                   quar.rate = quar_rate_ramp(1:366)) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- ## Comparing experiments --&gt;
+&lt;!-- Let&#39;s visualise all those experiments in one plot. --&gt;
+&lt;!-- ```{r, echo=TRUE, eval=TRUE, fig.height=12, fig.width=6, layout=&#34;l-body-outset&#34;} --&gt;
+&lt;!-- baseline_sim$df %&gt;% --&gt;
+&lt;!--   select(time, s.num, e.num, i.num, q.num,  --&gt;
+&lt;!--                      h.num, r.num, f.num) %&gt;% --&gt;
+&lt;!--               mutate(experiment = &#34;0. Baseline&#34;) %&gt;% --&gt;
+&lt;!--   bind_rows(ramp_quar_rate_sim$df %&gt;% --&gt;
+&lt;!--               select(time, s.num, e.num, i.num, q.num,  --&gt;
+&lt;!--                      h.num, r.num, f.num) %&gt;% --&gt;
+&lt;!--               mutate(experiment = &#34;1. incr quar @ t=15&#34;)) %&gt;% --&gt;
+&lt;!--   bind_rows(raise_hosp_cap_sim$df %&gt;% --&gt;
+&lt;!--               select(time, s.num, e.num, i.num, q.num,  --&gt;
+&lt;!--                      h.num, r.num, f.num) %&gt;% --&gt;
+&lt;!--               mutate(experiment = &#34;2. incr hos cap @ t=15&#34;)) %&gt;% --&gt;
+&lt;!--   bind_rows(t15_social_distancing_sim$df %&gt;% --&gt;
+&lt;!--               select(time, s.num, e.num, i.num, q.num,  --&gt;
+&lt;!--                      h.num, r.num, f.num) %&gt;% --&gt;
+&lt;!--               mutate(experiment = &#34;3. incr soc dist @ t=15&#34;)) %&gt;% --&gt;
+&lt;!--   bind_rows(t30_social_distancing_sim$df %&gt;% --&gt;
+&lt;!--               select(time, s.num, e.num, i.num, q.num,  --&gt;
+&lt;!--                      h.num, r.num, f.num) %&gt;% --&gt;
+&lt;!--               mutate(experiment = &#34;4. incr soc dist @ t=30&#34;)) %&gt;% --&gt;
+&lt;!--   bind_rows(t15_soc_dist_quar_sim$df %&gt;% --&gt;
+&lt;!--               select(time, s.num, e.num, i.num, q.num,  --&gt;
+&lt;!--                      h.num, r.num, f.num) %&gt;% --&gt;
+&lt;!--               mutate(experiment = &#34;5. incr soc dist &amp; quar @ t=15&#34;)) %&gt;% --&gt;
+&lt;!--   filter(time &lt;= 150) %&gt;% --&gt;
+&lt;!--   pivot_longer(-c(time, experiment), --&gt;
+&lt;!--                names_to=&#34;compartment&#34;, --&gt;
+&lt;!--                values_to=&#34;count&#34;) %&gt;% --&gt;
+&lt;!--   filter(compartment %in% c(&#34;e.num&#34;,&#34;i.num&#34;, --&gt;
+&lt;!--                             &#34;q.num&#34;,&#34;h.num&#34;, --&gt;
+&lt;!--                             &#34;f.num&#34;)) -&gt; plot_df --&gt;
+&lt;!-- plot_df %&gt;% --&gt;
+&lt;!--   ggplot(aes(x=time, y=count, colour=compartment)) + --&gt;
+&lt;!--     geom_line(size=1.5, alpha=0.7) + --&gt;
+&lt;!--     facet_grid(experiment ~ .) + --&gt;
+&lt;!--     scale_colour_manual(values = compcols, labels=complabels) + --&gt;
+&lt;!--     theme_dark() + --&gt;
+&lt;!--     labs(title=&#34;Baseline vs experiments&#34;, --&gt;
+&lt;!--          x=&#34;Days since beginning of epidemic&#34;, --&gt;
+&lt;!--          y=&#34;Prevalence (persons)&#34;) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- Let&#39;s see that again showing just the _requiring hospitalisation_ and _case fatality_ prevalence numbers. --&gt;
+&lt;!-- ```{r, echo=TRUE, eval=TRUE, fig.height=12, fig.width=6, layout=&#34;l-body-outset&#34;} --&gt;
+&lt;!-- plot_df %&gt;% --&gt;
+&lt;!--   filter(compartment %in% c(&#34;h.num&#34;, --&gt;
+&lt;!--                             &#34;f.num&#34;)) %&gt;% --&gt;
+&lt;!--   ggplot(aes(x=time, y=count, colour=compartment)) + --&gt;
+&lt;!--     geom_line(size=1.5, alpha=0.7) + --&gt;
+&lt;!--     facet_grid(experiment ~ .) + --&gt;
+&lt;!--     scale_colour_manual(values = compcols, labels=complabels) + --&gt;
+&lt;!--     theme_dark() + --&gt;
+&lt;!--     labs(title=&#34;Baseline vs experiments&#34;, --&gt;
+&lt;!--          x=&#34;Days since beginning of epidemic&#34;, --&gt;
+&lt;!--          y=&#34;Prevalence (persons)&#34;) --&gt;
+&lt;!-- ``` --&gt;
+&lt;!-- I won&#39;t laboriously comment on each experiment, but there are a few things worth remarking upon. --&gt;
+&lt;!-- Firstly, increasing hospital capacity is probably sensible, but may have little effect on fatalities if the numbers swamp available capacity by an order of magnitude. And increasing hospital capcity is not easy, nor can it be done swiftly, except perhaps in China. --&gt;
+&lt;!-- Secondly, rigorous and swift self-isolation in those who are symptomatic is very effective, especially if done early, even in teh presence of infectivity in the asymptomatic infected.  --&gt;
+&lt;!-- Thirdly, increasing social distancing also works, but works much better if done early, possibly before there is an obvious need for it based on numbers infected or deaths. Implement early, implement hard! --&gt;
+&lt;!-- Fourthly, a combination of prompt self-isolation plus moderate social distancing is also very effective, without necessarily killing the entire economy. This combination warrants further simulations. It is also the combination recommended by the Imperial College London group (see below). --&gt;
+&lt;!-- # Conclusions --&gt;
+&lt;!-- At this point, it looks like these extensions to `EpiModel` provide a potentially useful tool for exploring the effects of various public health interventions, in a somewhat realistic manner. It is not nearly as sophisticated as the individual contact model used by the WHO Collaborating Centre for Infectious Disease Modelling at Imperial College London (ICL) for their [latest report on the impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand](https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/news--wuhan-coronavirus/). Nevertheless, even the very preliminary insights provided by the experiments above are consistent with those contained in the ICL report.  --&gt;
+&lt;!-- The next steps are: a) to move the code used here into a package to make deployment easier; b) implement modelling of infected arrivals, as discussed; c) improve the default parameterisation of the simulation; and d) validate the simulation results against some real-world data. Assistance from the `R` community in any or all of these tasks would be gratefully received. --&gt;
+&lt;!-- ```{r, eval=TRUE} --&gt;
+&lt;!-- toc() --&gt;
+&lt;!-- ``` --&gt;
+&lt;h2 id=&#34;ডটর-সতর&#34;&gt;ডেটার সূত্র&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE &lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34;&gt;https://github.com/CSSEGISandData/COVID-19&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;নিউ ইয়র্ক টাইমস গিটহাব রিপজিটরি &lt;a href=&#34;https://github.com/nytimes/covid-19-data&#34;&gt;https://github.com/nytimes/covid-19-data&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>করোনা ভাইরাস টাইমলাইন- বাংলাদেশ ও বিশ্ব</title>
+      <link>/post/covid19-timeline-bd-bn/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/covid19-timeline-bd-bn/</guid>
+      <description>&lt;h3 id=&#34;2020-03-28&#34;&gt;2020-03-28&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;US arranges special flight for its citizens leaving Dhaka &lt;a href=&#34;https://www.thedailystar.net/change-makers/news/us-arranges-special-flight-its-citizens-leaving-dhaka-1887031&#34;&gt;https://www.thedailystar.net/change-makers/news/us-arranges-special-flight-its-citizens-leaving-dhaka-1887031&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>করোনা ভাইরাসে প্রথম মৃত্যু থেকে ক্রমযোজিত মৃতের সংখ্যা ও বাংলাদেশের তুলনামূলক অবস্হান</title>
+      <link>/post/covid19-cumulative-deaths-since-first-death-bn/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/covid19-cumulative-deaths-since-first-death-bn/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;## Warning: package &#39;tibble&#39; was built under R version 3.6.2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;আপডট&#34;&gt;আপডেট&lt;/h1&gt;
+&lt;p&gt;চিত্র ও টেবিল আপডেট করা হয়েছে 2020-11-20 তারিখের ডেটা অনুযায়ী।&lt;/p&gt;
+&lt;p&gt;দুটি সেকশনে সামারি আছে। &lt;strong&gt;দেখতে স্ক্রল করে নিচে নামুন&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;বিশ্বের সাথে বাংলাদেশের তুলনা&lt;/li&gt;
+&lt;li&gt;দক্ষিণ এশিয়ার সাথে বাংলাদেশের তুলনা।&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ভমক&#34;&gt;ভূমিকা&lt;/h2&gt;
+&lt;p&gt;করোনাভাইরাস-এ কতজন আক্রান্ত হয়েছে এই সংখ্যাটি নির্ভর করে কতজনকে করোনাভাইরাসের পরীক্ষা করা হয়েছে তার ওপর।&lt;/p&gt;
+&lt;p&gt;তাই নতুন করে কতজন আক্রান্ত হয়েছে সেটি দেশ-ভেদে পার্থক্য হবে কেননা সেটি নির্ভর করে সেই দেশ কী পরিমাণ টেস্ট করছে তার উপর। তাই আমার কাছে কতজন নতুন করে আক্রান্ত হয়েছে সেটির চেয়ে বরং দেশ-প্রতি কতজন মারা গিয়েছে সেটি এককভাবে বেশি গুরুত্বপূর্ণ একটি মেট্রিক।&lt;/p&gt;
+&lt;p&gt;নিচে প্রথম রিপোর্টেড মৃত্যু থেকে বর্তমান অবস্থায় পৌঁছুতে কতদিন লেগেছে তার তুলনামূলক চিত্র দেখানো হয়েছে। সেই সাথে বাংলাদেশের অবস্হান কোথায় তা দেখানো হয়েছে। করোনাভাইরােসর কারণে মৃত্যুর হার যদি একই থাকে, এ চিত্র থেকে বাংলাদেশের পরিস্হতি আগামি ৩০ দিনে কীভাবে পরিবর্তিত হতে পারে সে সম্পর্কে ধারণা পাওয়া যাবে।&lt;/p&gt;
+&lt;p&gt;এখন পর্যন্ত যা পরিষ্কার তা হল বাংলাদেশের পরিস্থিতি আগামী একমাস পর্যবেক্ষণ করতে হবে।&lt;/p&gt;
+&lt;h2 id=&#34;বশব-বলদশর-অবসহন&#34;&gt;বিশ্বে বাংলাদেশের অবস্হান&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;Table 1: Total number of deaths till 2020-11-20&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; country &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; TotalDeath &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; US &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 254413 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Brazil &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 168613 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; India &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 132726 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mexico &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 100823 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; United Kingdom &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 54381 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Bangladesh &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 6322 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;দকষণ-এশয়য়-বলদশর-অবসহন&#34;&gt;দক্ষিণ এশিয়ায় বাংলাদেশের অবস্হান&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-south-asia-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;Table 2: Total number of deaths till 2020-11-20&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; country &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; TotalDeath &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; India &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 132726 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Indonesia &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 15678 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Pakistan &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 7603 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Bangladesh &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 6322 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Nepal &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 1298 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Malaysia &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 329 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Uganda &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 168 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Sri Lanka &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 74 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Maldives &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 45 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Singapore &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 28 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;সরশ&#34;&gt;সারাংশ&lt;/h2&gt;
+&lt;p&gt;অন্য দেশের সাথে তুলনা করলে আমরা দেখব যে বিপদ এখনো কাটেনি। বরং সামনের দিনগুলোতে পরিস্হিতি বদলে যেতে পারে। এক্ষেত্রে এসাম্পসন হচ্ছে বাংলাদেশের ডেটা রিপোর্টিং ঠিকমত হচ্ছে এবং তা বজায় থাকবে।&lt;/p&gt;
+&lt;h2 id=&#34;ডটর-সতর&#34;&gt;ডেটার সূত্র&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE &lt;a href=&#34;https://github.com/CSSEGISandData/COVID-19&#34;&gt;https://github.com/CSSEGISandData/COVID-19&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;নিউ ইয়র্ক টাইমস গিটহাব রিপজিটরি &lt;a href=&#34;https://github.com/nytimes/covid-19-data&#34;&gt;https://github.com/nytimes/covid-19-data&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>গবেষণার ট্র্যাক রেকর্ড</title>
+      <link>/post/building-research-track-record-bn/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/building-research-track-record-bn/</guid>
+      <description>&lt;p&gt;নতুন গবেষকরা তাদের ক্যারিয়ারের শুরুতে একটি ব্যাপার পুরোপুরি অনুধাবন করতে পারে না। সেটি হলো ট্র্যাক রেকর্ড। ট্র্যাক রেকর্ড বলতে বোঝায় record of performance — অর্থাৎ কর্মদক্ষতার প্রমাণ। গবেষণার ট্র্যাক রেকর্ড ও সেরকমই। রাতারাতি কোন একটি বিষয়ে প্রতিষ্ঠা অর্জন করা সম্ভব নয়। এর জন্য দীর্ঘ সময় ধরে (কমপক্ষে তিন থেকে পাঁচ বছর) নির্দিষ্ট একটি শাখায় সুনির্দিষ্ট টপিক বা সম্পর্কযুক্ত কতগুলো টপিকের উপর ক্রমবর্ধমান অবদান রাখা এবং ফলশ্রুতিতে গবেষণার সেই ক্ষেত্রটিতে পিয়ার রিভিউড (Peer reviewed) কাজের দ্বারা নিজেকে গবেষক হিসেবে প্রতিষ্ঠিত করা সম্ভব।&lt;/p&gt;
+&lt;p&gt;কোন একটি বিষয়ের উপর গবেষণা করতে গিয়ে সাইন্টিফিক লিটারেচার খুঁজলে দেখবেন সেই বিষয়ের উপর কিছু গবেষক আছেন যারা অথরিটি হিসেবে পরিচিত। তাঁরা এই বিষয়টি নিয়ে দীর্ঘদিন ধরে কাজ করেছেন যার মধ্যে বেশ কয়েকটি গুরুত্বপূর্ণ অবদান রয়েছে যেগুলো অগ্রণী গবেষণা (pioneering research) হিসেবে চিহ্নিত।&lt;/p&gt;
+&lt;p&gt;এই গবেষকগণ রাতারাতি এমন পরিচিতি লাভ করেননি। বরং বহু বছর ধরে সেই নির্দিষ্ট ক্ষেত্রে গবেষণায় সাফল্যের স্বাক্ষর রেখে আজকের পর্যায়ে পৌঁছেছেন।&lt;/p&gt;
+&lt;p&gt;তরুণ গবেষকরা প্রায়ই তাদের গবেষণার লক্ষ্য কী হবে সেটি নির্ধারণ করতে ব্যর্থ হয়। এর পিছনে অনেকগুলো কারণ রয়েছে। তাদের অনভিজ্ঞতা একটি কারণ। তবে আমার মতে অন্যতম কারণ হলো গবেষণায় মেন্টরশীপ-এর অভাব। তারা সেরকম অনুসরণীয় গবেষকের সংস্পর্শে আসার সুযোগ পায় না। যে কারণে সহচর্যহীন পথে একা একা চলতে গিয়ে প্রায়ই লক্ষ্যে পৌঁছুতে পারেনা। যারা একটু দূরদর্শী তারা কিছুটা সফল হয়। তবে অধিকাংশ ক্ষেত্রেই লক্ষ্যহীন ভাবে ভিন্ন ভিন্ন ক্ষেত্রে অবদান রাখতে গিয়ে তারা অনেক সময় ব্যয় করে ফেলে।&lt;/p&gt;
+&lt;p&gt;আর গবেষণা যেহেতু কোন না কোন ভাবে শিখতে হয় সেহেতু ভালো গবেষক-শিক্ষকের অভাবে অনেকের সম্ভাবনা বিকশিত হয় না।&lt;/p&gt;
+&lt;h1 id=&#34;কন-গবষণ-করবন&#34;&gt;কেন গবেষণা করবেন&lt;/h1&gt;
+&lt;p&gt;অর্থাৎ গবেষণার ক্ষেত্রে গবেষক হিসেবে নিজেকে প্রতিষ্ঠা লাভের জন্য আপনাকে প্রথমেই আপনার শেষ লক্ষ্য কী সেটি ভাবতে হবে। শুধু গবেষণার ক্ষেত্রে নয় জীবনের অন্য সকল ক্ষেত্রেও আমরা যখন কোন কাজ করি, সেটি করার পরে কী পেতে চাই সেটি লক্ষ্য রেখেই কাজ শুরু করি।&lt;/p&gt;
+&lt;p&gt;তেমনি গবেষণার ক্ষেত্রেও আপনি নিজেকে কোথায় প্রতিষ্ঠিত দেখতে চান সেটি নিয়ে ভাবতে হয়। এমনটি বলছি না যে আপনাকে একটি নির্দিষ্ট লক্ষ্য স্থির করে এগোতে হবে। বরং একাধিক লক্ষ্য শুরুতে থাকতে পারে। তবে সময়ের সাথে নিজের ভালো লাগা না লাগা বিষয়গুলোকে আমলে নিয়ে একটি বা দুটি লক্ষ্যে কাজ করতে হয়।&lt;/p&gt;
+&lt;p&gt;অনেক সময় গবেষকরা তাদের কাজের ক্ষেত্র পরিবর্তন করে ফেলেন। ধরা যাক আজকে আপনি পাবলিক হেলথে বা মানসিক স্বাস্থ্য বিষয়ক, কিংবা ক্যান্সার রোগের উপরে গবেষণা করছেন। এক বছর বা দুই বছর পরে আপনি এখান থেকে ডাইভার্ট করে অথবা ব্রাঞ্চ আউট করে অন্য একটি ক্রনিক ডিজিজ এর উপরে ও গবেষণার কাজ প্রসারিত করতে পারেন। এমনটি প্রায়ই হয়ে থাকে।&lt;/p&gt;
+&lt;p&gt;এরকম পরিবর্তন নানা কারণে হতে পারে যার মধ্যে উল্লেখযোগ্য হল গবেষণায় ফান্ড অ্যাভেইলেবল কিনা এবং কোলাবোরেশন কাদের সাথে আপনি সংস্থাপন করতে পারছেন তার উপরেও অনেকটা নির্ভর করে। আপনি কোথায় বসে গবেষণা করছেন সেটিও অনেক ক্ষেত্রে গুরুত্বপূর্ণ। কারণ গবেষণার জন্য পরিবেশ, সুযোগ সুবিধা, ড্যাটার লভ্যতা, সর্বোপরি স্পনসরশীপ অর্থাৎ ইনস্টিটিউশনাল সাপোর্ট অনেক সময় গবেষণার ক্ষেত্রকে প্রভাবিত করে।&lt;/p&gt;
+&lt;h1 id=&#34;গবষক-হওযর-পরব-পরসতত&#34;&gt;গবেষক হওয়ার পূর্ব প্রস্তুতি&lt;/h1&gt;
+&lt;p&gt;গবেষক হওয়ার জন্য কি উচ্চ শিক্ষিত হওয়া প্রয়োজন কিনা সেটি নিয়ে ইদানিং অনেকেই অনেক রকম কথা বলে থাকেন।&lt;/p&gt;
+&lt;p&gt;গবেষণা করার জন্য অবশ্যই কোন একটি বিষয়ের প্রতি জানাশোনা থাকা দরকার। কেননা গবেষণার উদ্দেশ্য প্রধানত দুটি।&lt;/p&gt;
+&lt;p&gt;প্রথমত নতুন জ্ঞান সৃষ্টি করা অর্থাৎ এ যাবৎ যা জানা হয়েছে তার চেয়ে নতুন কিছু জানার সুযোগ তৈরি করা এবং নতুন কোন তথ্য প্রকাশ করা। কিংবা কোন জানা জ্ঞানকে সংশোধিত করা কিংবা ভুল প্রমাণিত করা।&lt;/p&gt;
+&lt;p&gt;অর্থাৎ নতুন জ্ঞান সৃষ্টি করার জন্য আপনাকে প্রথমে জানতে হবে কতটুকু ইতোমধ্যে জানা হয়েছে। সেই জ্ঞানের আলোকে হবে নতুন জ্ঞান সৃষ্টির প্রণোদনা। তাহলে দেখা যাচ্ছে কোনো একটি বিষয়ে নতুন জ্ঞান সৃষ্টির জন্য সেই বিষয়ের প্রতি ভালো রকম জানা শোনা দরকার আছে। সেই জানাশোনা কি প্রাতিষ্ঠানিক শিক্ষার মাধ্যমে অর্জন করতে হবে? সহজভাবে উত্তর দিলে উত্তর হবে হ্যাঁ। তবে ব্যতিক্রম অবশ্যই থাকতে পারে।&lt;/p&gt;
+&lt;p&gt;দ্বিতীয়ত গবেষণার উদ্দেশ্য হল বাস্তবধর্মী কোন সমস্যার সমাধান করা। অর্থাৎ আপনি কোন একটি সমস্যার সম্মুখীন হয়েছেন এবং সেই সমস্যাটি কিভাবে সমাধান করবেন তার জন্য হলেও গবেষণা হতে পারে। এখানে সমস্যা বলতে আমাদের দৈনন্দিন জীবনের মানব সৃষ্ট কোন সমস্যা — এমনটি হতেও আবার নাও হতে পারে।&lt;/p&gt;
+&lt;p&gt;মানুষের জীবনের মান উন্নয়ন, চিকিৎসা ব্যবস্থার উন্নতি, স্বাস্থ্য সেবার উন্নয়ন ইত্যাদি সমস্যা সমাধানের জন্য গবেষণার মাধ্যমে নতুন পথ ও নতুন উপায় খুঁজে বের করা যেতে পারে।&lt;/p&gt;
+&lt;p&gt;এক্ষেত্রেও বিষয়টি সম্পর্কে সম্যক ধারণা না থাকলে সমস্যা ধরতে পারা গেলেও সেই সমস্যাটি কিভাবে সাসটেইনেবল উপায়ে সমাধান করা যাবে সেটি বের করা সম্ভব নাও হতে পারে। হঠাৎ সমস্যা চিহ্নিতকরণ এবং সেই সমস্যা সমাধানের পথ বাতলে দেয়ার জন্য প্রাতিষ্ঠানিক শিক্ষার প্রয়োজন রয়েছে।&lt;/p&gt;
+&lt;h1 id=&#34;গবষণয-প-বডন&#34;&gt;গবেষণায় পা বাড়ানো&lt;/h1&gt;
+&lt;p&gt;এর আগের লেখায় আলোচনা করেছিলাম গবেষণার এথিক্যাল ব্যাপার নিয়ে। সেখানে উল্লেখ করেছিলাম গবেষণা করার জন্য এথিক্যাল কিছু নিয়ম-রীতি রয়েছে। এরকম নিয়ম জানার জন্য প্রাতিষ্ঠানিক শিক্ষার প্রয়োজন আছে বলে মনে হয় না। কারণ এগুলো যে কেউই অনলাইনে প্রাপ্ত রিসোর্স থেকে পড়ে জেনে নিতে পারেন। ‌&lt;/p&gt;
+&lt;p&gt;কিন্তু গবেষণা পদ্ধতিগুলো সঠিক ভাবে রপ্ত করার জন্য প্রাতিষ্ঠানিক শিক্ষার প্রয়োজন রয়েছে। শুধু বিষয়ভিত্তিক জ্ঞান অর্জনের জন্যই নয়, গবেষণা করার জন্য সুনির্দিষ্ট কারিকুলাম অনুসরণ করে ইউনিভার্সিটিগুলোতে নানা কোর্স অফার করা হয়। এই ধরনের কোর্স গবেষক হিসেবে নিজেকে প্রতিষ্ঠিত করার পথে গুরুত্বপূর্ণ অবদান রাখতে পারে। ‌&lt;/p&gt;
+&lt;p&gt;তবে কোর্স করার মধ্যে গবেষণা করার জ্ঞান অর্জন সীমিত রাখলে হবে না। কারণ হলো গবেষণা একটি ব্যবহারিক বিষয়। ‌ পাঠ্যসূচিতে লিপিবদ্ধ জ্ঞান কোর্সওয়ার্কের মাধ্যমে অর্জন করলেও ব্যবহারিক জ্ঞানের প্রসার ও সমৃদ্ধি ও প্রকৃত ভাবে অনুধাবন করার জন্য বাস্তব কোন প্রজেক্টের সাথে জড়িত হতে হয়। সেজন্যেই ইন্টার্নশীপ নামে একটি বিষয় কারিকুলামের সাথে অন্তর্ভুক্ত থাকে। যেখানে শিক্ষার্থীরা তথ্য জ্ঞান অর্জনের পাশাপাশি ব্যবহারিক জ্ঞান বিশেষ করে ইন্ডাস্ট্রিতে বাস্তব জীবনে অর্জিত জ্ঞান কীভাবে ব্যবহার করা হবে সে সম্পর্কে হাতে-কলমে প্রশিক্ষণ গ্রহণ করেন।&lt;/p&gt;
+&lt;p&gt;উপরিউক্ত বর্ণনার আলোকে এইটুকু বলতে পারি তরুণ শিক্ষার্থীরা নিজেদেরকে গবেষক হিসেবে প্রতিষ্ঠা করতে চাইলে কোন একটি বিষয় সম্পর্কে আগ্রহ সৃষ্টি করতে হবে। সেরকম আগ্রহ শুধু ইচ্ছে করলেই সৃষ্টি হয় না বরং একাডেমিক কোরস। করার সময় কোন একটি বিশেষ বিষয়বস্তু সম্পর্কে আগ্রহ জন্মাতে পারে। কিংবা পাঠ্যবইয়ের বাহিরের কোন একটি বিষয়ের প্রতিও কারো আগ্রহ জন্মাতে পারে। ‌ সে ক্ষেত্রে সেই বিষয়ের তথ্য জ্ঞান নিজে পড়াশোনা করে অর্জন করা যেতে পারে। ‌এভাবে নিজেকে তথ্য জ্ঞানে প্রাথমিকভাবে সমৃদ্ধ করার পর সেই বিষয়ের একজন গবেষকের সাথে ইন্টার্নশিপ করে গবেষণায় হাতে খড়ি হতে পারে।&lt;/p&gt;
+&lt;h1 id=&#34;নজক-গবষণর-জনয-পরসতত-কর&#34;&gt;নিজেকে গবেষণার জন্য প্রস্তুত করা&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;যে বিষয় সম্পর্কে আগ্রহ সৃষ্টি হয়েছে এবং যে বিষয়টি নিয়ে গবেষণার করার ইচ্ছা জেগেছে সেই বিষয় সম্পর্কে তত্ত্বীয় জ্ঞান অর্জন করা ভালো হবে। তত্ত্বীয় জ্ঞান বলতে বিষয়টি সম্পর্কে ভালোমতো ধারণা নিতে হবে।&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;সেই বিষয়ে উল্লেখযোগ্য এবং সুপরিচিত জার্নাল গুলোতে প্রকাশিত গবেষণা পত্রগুলোর শিরোনাম এবং অ্যাবস্ট্রাক্ট বা সারাংশ গুলো পড়তে হবে। এটি নিয়মিত করার অভ্যাস করতে হবে এবং পড়ার সাথে সাথে নোট লিখে রাখার চর্চা করতে হবে।&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;কোন আর্টিকেল বা স্পেসিফিক কোন টপিক পছন্দ হলে সেই গবেষণাপত্রটি ডাউনলোড করে বিস্তারিত পড়ে নেয়া যেতে পারে। ‌এরপর সেই আর্টিকেলটি যদি পুরোটা পড়ার পরে ভালো লাগে তাহলে একটি সারাংশ তৈরি করতে হবে যেখানে কোন জিনিস গুলো ভালো লেগেছে এবং কোন জিনিস গুলোকে আগ্রহোদ্দীপক মনে হয়েছে আর কোন জিনিসগুলো ত্রুটিপূর্ণ মনে হয়েছে তা লিপিবদ্ধ করা যেতে পারে।&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;সেই সাথে আর্টিকেলটি পড়ার পরে এর গুরুত্বপূর্ণ অংশ বিচারে এনে এবং এর সম্ভাব্য ত্রুটিগুলো আমলে নিয়ে এই গবেষণাটি থেকে আর নতুন কী কী করা যেতে পারে সে সম্পর্কে নিজের আইডিয়াগুলোকে সংক্ষেপে লিখে ফেলতে হবে। ‌ যেগুলো পরবর্তীতে আপনার মেন্টর বা সিনিয়র গবেষক এর সাথে আলোচনা করার সময় কাজে দেবে।&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;এভাবে বেশ কিছুদিন পড়ার পর আপনার নিজের মাঝে নতুন আইডিয়ার জন্ম নিতে পারে। ‌ সেই আইডিয়া গুলো কীভাবে বাস্তবায়ন করা যেতে পারে তার একটি আউটলাইন আপনি তৈরি করতে পারেন। ‌ কীভাবে আউটলাইন তৈরি করবেন সে জন্য বিখ্যাত গবেষকদের গবেষণা পত্রের আউট লাইন অনুসরণ করতে পারেন। ‌&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;এরপর সিনিয়র গবেষক বা আপনার মেন্টর এর সাথে এই ব্যাপারটি নিয়ে পরবর্তী পদক্ষেপ কী হতে পারে সে সম্পর্কে মতামত নিবেন ও পরামর্শ করবেন।&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;সিনিয়র গবেষকের তত্ত্বাবধানে গবেষণাপত্রটি সম্পন্ন করার জন্য আর কী কী দরকার সে ধাপগুলো সম্পন্ন করে গবেষণার কাজটি শুরু করবেন। গবেষণা শেষ হলে সে গবেষণার কাজগুলোকে সেকশন আকারে সাজিয়ে ম্যানুস্ক্রিপ্ট তৈরী করবেন।&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;প্রথম ড্রাফ্ট তৈরি হলে নিজে আরও কয়েকবার পড়ে সংশোধন ও পরিবর্ধন করে তারপর সিনিয়র রিসার্চার বা মেন্টর এর কাছে পাঠাতে পারেন তার মতামতের জন্য।&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;শষ-কথ&#34;&gt;শেষ কথা&lt;/h1&gt;
+&lt;p&gt;গবেষণা একটি ধাপে ধাপে সম্পন্ন করার মত সিস্টেমেটিক কাজ। হুট করে গবেষক হওয়া যায় না। এজন্য প্রয়োজন অধ্যবসায় পরিশ্রম এবং লেগে থাকার মানসিকতা। ‌ভালো গবেষককে শিক্ষক হিসেবে পেলে ছাত্র-ছাত্রীরা অনুপ্রাণিত হয়। ভালো গবেষকদের সাথে কাজ করে আস্তে আস্তে কাজ শিখে নেয়া যায়। এভাবে একজন নবীন শিক্ষার্থী সময়ের সাথে গবেষণার ক্ষেত্রে তার নিজের অবদানকে প্রতিষ্ঠা করতে সক্ষম হয়। ফলশ্রুতিতে জন্ম নেয় একজন নতুন গবেষক যিনি কাজের মাধ্যমে নিজেকে সেই বিষয়টিতে প্রতিষ্ঠিত করেছেন।&lt;/p&gt;
+&lt;h2 id=&#34;লইক-ও-শযর-করন&#34;&gt;লাইক ও শেয়ার করুন&lt;/h2&gt;
+&lt;p&gt;এই লেখাটি ভাল লাগলে কিংবা দরকারি মনে হলে লাইক ও শেয়ার করতে ভুলবেন না। ধন্যবাদ।&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ইমেইল ও মেসেঞ্জারে যোগাযোগের এটিকেট বা শিষ্টাচার</title>
+      <link>/post/communication-etiquette-bn/</link>
+      <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/post/communication-etiquette-bn/</guid>
+      <description>&lt;p&gt;ব্যাপারটি নিয়ে অনেকদিন ধরে ভাবছি। লিখবো লিখবো করে লেখা হয়ে উঠছে না। কেন লিখব তার উত্তর আছে। কিন্তু কীভাবে শুরু করব সেটি ভেবে পাচ্ছিলাম না। ‌অবশেষে একটা উপলক্ষ পেলাম।&lt;/p&gt;
+&lt;p&gt;আমাদের দেশের ছেলেপেলেরা যোগাযোগে খুবই দুর্বল। এটি শুনে অনেকের মনটা হয়তো খারাপ হবে। কিন্তু আমি চেষ্টা করব আমার পার্সপেক্টিভ থেকে সহায়তা করতে। যাতে করে কমিউনিকেশন স্কিল উন্নত করতে পারা যায়।&lt;/p&gt;
+&lt;p&gt;এই লেখাটিতে কমিউনিকেশন স্কিল বলতে সুনির্দিষ্টভাবে অনলাইনে কিভাবে একজন প্রফেসর কিংবা টেকনিক্যাল পারসন এর সাথে যোগাযোগ করতে হয় সেটি বোঝাচ্ছি।&lt;/p&gt;
+&lt;p&gt;যদিও অপরিচিত বা স্বল্প পরিচিত কারো সঙ্গে যোগাযোগ করার নির্দিষ্ট কোন প্রটোকল নেই, তথাপি সাধারণ কিছু আদব কায়দা বা পদ্ধতি আছে যেগুলো অনুসরণ করলে যোগাযোগ সহজ হয়ে যায় এবং যে কারণে যোগাযোগ করা হচ্ছে সেটি সফল হওয়ার সম্ভাবনা থাকে।
+ইমেইল এখন যোগাযোগের প্রধানতম মাধ্যম। বিশেষ করে কর্পোরেট জগতে এবং শিক্ষা প্রতিষ্ঠানগুলোতে কারও সঙ্গে যোগাযোগের প্রধান মাধ্যম ইমেইল। ‌&lt;/p&gt;
+&lt;p&gt;ইদানিং ইমেইল এর পাশাপাশি সোশ্যাল মিডিয়ায় মেসেজের মাধ্যমে যোগাযোগ স্থাপন করার সুযোগ সৃষ্টি হয়েছে।&lt;/p&gt;
+&lt;p&gt;সোশ্যাল মিডিয়া মেসেজিং বলতে লিংকডইন এবং ফেইসবুক মেসেঞ্জার বোঝাচ্ছি। যারা টুইটারে অভ্যস্ত তাদের সাথে টুইটারে সরাসরি মেসেজে ও যোগাযোগ করা সম্ভব। ‌ সব ক্ষেত্রে একই নিয়ম ব্যবহার করা যাবে।&lt;/p&gt;
+&lt;p&gt;এবার মূল কথায় আসা যাক।&lt;/p&gt;
+&lt;h1 id=&#34;ইমইল-যগযগ&#34;&gt;ইমেইলে যোগাযোগ&lt;/h1&gt;
+&lt;p&gt;আমেরিকাতে ইউনিভার্সিটি কিংবা কলেজের শিক্ষকদেরকে প্রফেসর বলে। &amp;ldquo;প্রফেসর&amp;rdquo; তার ডেজিগনেশন হতে পারে অথবা নাও হতে পারে। অর্থাৎ উনি পদাধিকার বলে প্রফেসর হতে পারেন, অ্যাসিস্ট্যান্ট প্রফেসর হতে পারেন বা এসোসিয়েট প্রফেসর হতে পারেন। কিন্তু উনারা সবাই প্রফেসর হিসেবে পরিচয় দেন এবং পরিচিত হতে পছন্দ করেন। অর্থাৎ ছাত্ররা তাদেরকে &amp;quot; হ্যালো প্রফেসর অমুক&amp;quot; অথবা &amp;ldquo;হাই প্রফেসর তমুক&amp;rdquo; - এভাবেই সম্বোধন করে।&lt;/p&gt;
+&lt;p&gt;তাহলে ব্যাপারটা এরকম-&lt;/p&gt;
+&lt;p&gt;প্রফেসরদের সাথে যোগাযোগ করার জন্য এভাবে শুরু করতে পারেন&lt;/p&gt;
+&lt;p&gt;Dear Professor Cohen&lt;/p&gt;
+&lt;p&gt;যেখানে Cohen হল এই প্রফেসর এর লাস্ট নেম। ‌ তার নাম যদি হয়ে থাকে John Cohen, তাহলে তাকে এভাবেই অ্যাড্রেস করতে হবে।&lt;/p&gt;
+&lt;p&gt;বিজনেস কমিউনিকেশন এ অপরিচিত কাউকে সাধারনত Dear দিয়ে শুরু করা হয় না। কিন্তু অ্যাক্যাডেমিয়াতে ডিয়ার দিয়ে কথা শুরু করা যায়। আপনি এভাবেও বলতে পারেন&amp;ndash;
+Dear Dr Cohen,&lt;/p&gt;
+&lt;p&gt;তার ডক্টরেট ডিগ্রী আছে কি নাই সেটি আপনাকে না চিন্তা করলেও হবে।&lt;/p&gt;
+&lt;p&gt;অ্যাক্যাডেমিয়া তে ডক্টরেট না থাকলেও অনেক সময় ডক্টর দিয়ে সেলুটেশন লেখা হয়। বিশেষ করে ছাত্রদেরকে।&lt;/p&gt;
+&lt;p&gt;এর পরে প্রথমেই বলতে হবে আপনি কে, সেটি। আপনি লিখতে পারেন&lt;/p&gt;
+&lt;p&gt;I am Abdul Karim from Bangladesh, writing to you about any opportunity to work in your research lab.&lt;/p&gt;
+&lt;p&gt;এখানে মূল ব্যাপারটি হল প্রথমে আপনাকে জানাতে হবে আপনি কে এবং কী বিষয় নিয়ে ইমেইলটি লিখছেন।&lt;/p&gt;
+&lt;p&gt;প্রফেসররা অত্যন্ত ব্যস্ত মানুষ। তাই তাদের কাছে অল্প কথায় মূল বক্তব্য পৌঁছানোর চেষ্টা করতে হবে।&lt;/p&gt;
+&lt;p&gt;লক্ষ্য রাখতে হবে ইমেইল এর সাইজ যেন ছোট ছোট ৩-৪ টি প্যারাগ্রাফ এর বেশি না হয়।
+এর কোনো ধরাবাধা নিয়ম নেই তবে যত কম হয় তত ভালো। ৩ থেকে ৪ টি প্যারাগ্রাফ যথেষ্ট বলে আমি মনে করি।&lt;/p&gt;
+&lt;p&gt;এর পরে আপনি উল্লেখ করতে পারেন কেন এই প্রফেসরের সাথে কাজ করতে আগ্রহী হলেন। সেক্ষেত্রে তার রিসার্চ পাবলিকেশন কিংবা কাজের ধরনের কথা উল্লেখ করতে পারেন।
+এখানে শুধু আপনি যে তার বিশেষ ধরনের গবোষণায় আগ্রহী সেটি বললে যথেষ্ট হবে না। সাথে বলতে হবে কেন আগ্রহী হলেন সেটাও। সেটি হতে পারে রিলেটেড কোন কোর্স ওয়ার্ক আপনি করেছেন যেখান থেকে এই আগ্রহ জন্মেছে। অথবা হতে পারে সাম্প্রতিক কালে কোন ইনটারেস্টিং আর্টিকেল আপনি পড়েছেন এবং সে বিষয়ে উচ্চতর শিক্ষা অর্জন এবং পরবর্তীতে গবেষণা করার আগ্রহ জন্মেছে এবং সে বিষয়ে গুগলে খুঁজতে গিয়ে প্রফেসরকে পেয়েছেন - সেটিও বলতে পারেন। খেয়াল রাখতে হবে যেন তিন থেকে চার লাইনের বেশি বা খুব বেশী লম্বা না হয়।&lt;/p&gt;
+&lt;p&gt;এর পরের প্যারাগ্রাফ-এ সংক্ষেপে আপনার একাডেমিক হাইলাইটস দেবেন। আপনি ব্যবচলরস বা মাস্টার্স শেষ করে থাকলে বা পড়াশোনা করছেন এরকম অবস্থায় থাকলে সেটি জানাবেন। যদি আপনার ডিগ্রী সম্পূর্ণ না হয়ে থাকে তাহলে কবে নাগাদ শেষ হবে সেটির নির্ভরযোগ্য একটি সময়কাল বলা ভাল। তবে আমার পরামর্শ হলো আপনি প্রফেসর এর সঙ্গে যোগাযোগ করবেন সেই পর্যায়ে গিয়ে যখন আপনি নিশ্চিত যে আসছে সেমিস্টারে বা ভবিষ্যতের যে সেমিস্টারে এডমিশন ওপেন হবে সেই সেমিষ্টারে আপনি জয়েন করতে পারবেন এমন অবস্থায়। আপনার জিপিএ উল্লেখ করতে পারেন। সাথে গবেষণার কোন অভিজ্ঞতা থাকলে এমন কি কোন পাবলিকেশন্স থাকলে সেটি উল্লেখ করে দিতে পারেন।&lt;/p&gt;
+&lt;p&gt;এর পরে প্রফেসর কে ধন্যবাদ দিয়ে মেইল শেষ করবেন এভাবে&lt;/p&gt;
+&lt;p&gt;Thank you for your considerations. I look forward to hearing from you.&lt;/p&gt;
+&lt;p&gt;Sincerely,
+Your name
+Your city, your country
+Your website if you have.&lt;/p&gt;
+&lt;p&gt;এ তো গেল প্রফেসরের সাথে প্রথম যোগাযোগের ধাপ।&lt;/p&gt;
+&lt;p&gt;প্রফেসর যদি ই-মেইলের উত্তর দেয় তাহলে যেভাবে সেই উত্তরের উত্তর দিতে হবে সেটি বলে দিচ্ছি।&lt;/p&gt;
+&lt;p&gt;আপনি এভাবেই শুরু করতে পারেন -&lt;/p&gt;
+&lt;p&gt;Dear Professor Cohen,
+Thank you for your response.&lt;/p&gt;
+&lt;p&gt;এর পরে আপনি আর যা যা বলা দরকার সেগুলো খুবই সংক্ষেপে সুন্দর করে লিখবেন। ছোট ছোট প্যারা দিয়ে লিখবেন। বেশি কথা বলার না থাকলে এক প্যারাতেই শেষ করবেন। কিন্তু কোনোভাবেই এক প্যারায় যেন ৪-৫ লাইনের বেশি বাক্য না থাকে।&lt;/p&gt;
+&lt;p&gt;পরিশেষে ধন্যবাদ দিয়ে ইমেইল শেষ করবেন।&lt;/p&gt;
+&lt;p&gt;আর ইমেইল শেষ করার আগে আমি একটা টেকনিক সব সময় করি সেটি হল এমন কিছু একটা বলা যার ফলে প্রফেসর আমার প্রশ্ন বা মন্তব্য নিয়ে চিন্তা করবে এবং সেটির একটি উত্তর দেয়ার কথা ভাববে।&lt;/p&gt;
+&lt;p&gt;এই টেকনিকের মূল উদ্দেশ্য হলো তার সাথে কমিউনিকেশনের চেইনটি বজায় রাখা। এমনকি প্রফেসর যদি এই মুহূর্তে উত্তর নাও দেন তাহলে যেন আপনার একটা অজুহাত থাকে যেটি নিয়ে পরবর্তীতে তার সাথে আবার যোগাযোগ করতে পারেন। অর্থাৎ পরবর্তীতে যোগাযোগের সূত্রটি আপনি প্রফেসরের কোর্টে রেখে দিলেন। আর এই সূত্র ধরেই আপনি তার সঙ্গে আবারও ফলোআপ যোগাযোগ করতে পারবেন।&lt;/p&gt;
+&lt;p&gt;ব্যাপারটি এতটাই সিম্পল ☺&lt;/p&gt;
+&lt;h2 id=&#34;ইমইল-য-য-যকত-করত-পরন&#34;&gt;ইমেইলে যা যা যুক্ত করতে পারেন&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;সিভি এটাচ করতে পারেন তবে অবশ্যই পিডিএফ বা স্ট্যান্ডার্ড ফরম্যাটে&lt;/li&gt;
+&lt;li&gt;ব্যক্তিগত ওয়েব থাকলে দিবেন&lt;/li&gt;
+&lt;li&gt;লিংকডইন থাকলে অবশ্যই দিবেন&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ইমইল-য-য-যকত-করবন-ন&#34;&gt;ইমেইলে যা যা যুক্ত করবেন না&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Your majesty, Your kindness bla bla bla, Your obedient pupil - এসব না লিখতে পরামর্শ দিব। মূল লক্ষ্য থাকবে প্রফেশনাল মেইল লেখার। আপনি কোন জাজের কাছে মাফ চেয়ে আবেদন করছেন না&lt;/li&gt;
+&lt;li&gt;একগাদা পেপার এটাচ করবেন না&lt;/li&gt;
+&lt;li&gt;ট্র্যান্সক্রিপ্ট এটাচ না করাই ভাল, তবে এটা যদি আপনার ফিল্ডে কমন হয় তাহলে দেয়া যেতে পারে&lt;/li&gt;
+&lt;li&gt;কোন ডকুমেন্ট যেখানে আপনার জন্ম তারিখ, বাবা মায়ের নাম ঠিকানা, কিংবা আপনার উচ্চতা বা বংশ পরিচয় আছে সেগুলো ভুলেও দিবেন না&lt;/li&gt;
+&lt;li&gt;এডমিশন সংক্রান্ত এডমিনিস্ট্রেটিভ কিছু প্রফেসরকে জিজ্ঞেস করবেন না। যেমন, জিআরই স্কোর কত লাগবে, ভর্তির রিকোয়ারমেন্ট কি এসব জিজ্ঞস করলে প্রফেসর ভাববেন আপনি হোমওয়ার্ক না করেই তার সাথে যোগাযোগ করছেন&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;মসঞজরর-মধযমযগযগ&#34;&gt;মেসেঞ্জারের মাধ্যমে যোগাযোগ&lt;/h1&gt;
+&lt;p&gt;প্রথমত কোন প্রফেসরকে শুরুতেই ফেসবুক মেসেঞ্জারে যোগাযোগ করবেন না। এর কারণ হলো কোন প্রফেসরের যদি ফেসবুকে একাউন্ট থাকে তাহলে ধরে নিবেন সেটি তার একান্ত ব্যক্তিগত একটি পরিসর। সেখানে হুট করে ফ্রেন্ড রিকোয়েস্ট পাঠানো উচিত নয়। আপনি বরং খুঁজে দেখবেন তার লিংকডইন আছে কিনা। যদি লিংকডইনে তাকে পান তাহলে সেখানে কানেকশন রিকোয়েস্ট দিবেন।&lt;/p&gt;
+&lt;p&gt;তার আগে অবশ্যই নিজের প্রোফাইলটিকে সুন্দর করে সাজাবেন। আপনার প্রোফাইল যদি খালি হয় সেই প্রোফাইল নিয়ে কারো কাছে রিকোয়েস্ট পাঠাবেন না। যদি পাঠান সেটি আপনি যে সিরিয়াস নন সেটি মনে হতে পারে।&lt;/p&gt;
+&lt;p&gt;যাই হোক।&lt;/p&gt;
+&lt;p&gt;ধরুন আপনি ফেসবুকে তার সাথে যুক্ত আছেন। বা লিংকডইনে তার সাথে যুক্ত আছেন। কিভাবে তার সাথে কনভারসেশন শুরু করবেন সেটি আমি বলছি।&lt;/p&gt;
+&lt;p&gt;আপনাকে খুব সতর্কতার সাথে এগোতে হবে। ইমেইলে কারো সঙ্গে যোগাযোগ করলে সেটি অনেকটা প্যাসিভ। অন্যদিকে লিংকডইন বা মেসেঞ্জারে যোগাযোগ করলে সেটি ডিরেক্ট বলে অনুভূত হয়। এর কারণ হলো মেসেজটি ডেলিভার হয়েছে কিনা বা অপরপক্ষ মেসেজটি দেখেছে কিনা সেটি মেসেজ যিনি প্রেরণ করেছেন তিনি দেখতে পারেন। এর ফলে প্রাপকের দিক থেকে এক ধরনের মানসিক অবস্থার সৃষ্টি হয় এমনকি প্রেরকের দিক থেকেও মানসিক অবস্থার সৃষ্টি হয়। কি বলতে চাচ্ছি আশা করি বুঝতে পেরেছেন।&lt;/p&gt;
+&lt;p&gt;না বুঝলে বলছি।&lt;/p&gt;
+&lt;p&gt;প্রাপক মেসেজটা দেখার পরেও যতক্ষণ না উত্তর দিতে পারছে ততক্ষণ তার এক ধরনের মানসিক অবস্থার সৃষ্টি হয়। অন্যদিকে যিনি প্রেরক তিনি দেখেছেন যে প্রাপক তার মেসেজটি পড়েছে কিন্তু এখনও উত্তর দিচ্ছে না ফলে তার মনের মধ্যে এক ধরনের অবস্থার সৃষ্টি হয়।&lt;/p&gt;
+&lt;p&gt;আর এই কারণেই মেসেঞ্জারে যোগাযোগ করার সময় অতিরিক্ত সর্তকতা অবলম্বন করতে হয়।&lt;/p&gt;
+&lt;h2 id=&#34;মসঞজর-য-করবন-ন-এব-য-করবন&#34;&gt;মেসেঞ্জারে যা করবেন না এবং যা করবেন&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;শুধু হাই বা হ্যালো দিয়ে মেসেজ শুরু করবেন না। হাই বা হ্যালো দিতে চাইলে একই সাথে আপনার পরিচয়ও দিন। সাথে কেন মেসেজ দিয়েছেন সেটি ও জানিয়ে দিন তার উত্তরের অপেক্ষায় না থেকে&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;হ্যালো স্যার&amp;rdquo; বলে চুপ করে বসে থাকবেন না। উপরের নির্দেশনা অনুসরন করুন
+হুট করে কোনো প্রশ্ন দিয়ে যোগাযোগ শুরু করবেন না। যেমন &amp;ldquo;আপনি কেমন আছেন&amp;rdquo; বা &amp;ldquo;লাঞ্চ করেছেন কি না&amp;rdquo; এ ধরনের প্রশ্ন দিয়ে মেসেজ শুরু করবেন না। কিভাবে মেসেজ শুরু করবেন সেটি প্রথম বুলেট পয়েন্টে বলেছি&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;সবচেয়ে ভালো হয় এইভাবে মেসেজ শুরু করতে পারলে - &amp;ldquo;দুঃখিত আপনাকে সরাসরি মেসেজ করার জন্য। একটি বিশেষ দরকারে (কি বিষয়ক সেটি সংক্ষেপে বলে দিবেন) আপনার সাথে আলাপ করতে চাইছিলাম। আপনি যদি স্বচ্ছন্দ বোধ করেন এখানে আলোচনা করতে পারি অথবা ইমেইলে ও আপনার সাথে যোগাযোগ করতে পারি। দয়া করে জানালে খুশি হব ☺&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;মেসেঞ্জারে অবশ্যই কোন এটাচমেন্ট পাঠাবেন না। নিতান্ত পাঠাতে চাইলে আগে জিজ্ঞেস করে নিবেন&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;শষ-কথ&#34;&gt;শেষ কথা&lt;/h1&gt;
+&lt;p&gt;প্রফেসররা সিরিয়াস কোন আলোচনা মেসেঞ্জারে করতে নাও চাইতে পারেন। এ কারণে মেসেঞ্জারে শুধু তাদের সাথেই আপনি যোগাযোগ করবেন যারা কোন না কোনভাবে আপনার সাথে কানেক্টেড। এজন্য ব্যক্তিগত পরিচয় থাকলে ভালো, না থাকলেও কোন সমস্যা নেই।
+যে প্রফেসর সোশ্যাল মিডিয়াতে অ্যাক্টিভ, তাকে মেসেজের মাধ্যমে যোগাযোগ করা যেতেই পারে। কিন্তু উপরের সতর্কতাগুলো খেয়াল রাখতে হবে।
+যাই হোক আজকে এ পর্যন্তই থাক। এ বিষয়ে আপনার কোন প্রশ্ন, মন্তব্য বা পরামর্শ থাকলে মন্তব্য আকারে দেয়ার অনুরোধ রইল।&lt;/p&gt;
+&lt;p&gt;থ্যাঙ্ক ইউ।&lt;/p&gt;
+&lt;h2 id=&#34;লইক-ও-শযর-করন&#34;&gt;লাইক ও শেয়ার করুন&lt;/h2&gt;
+&lt;p&gt;এই লেখাটি ভাল লাগলে কিংবা দরকারি মনে হলে লাইক ও শেয়ার করতে ভুলবেন না। ধন্যবাদ।&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

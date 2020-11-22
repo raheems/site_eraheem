@@ -10,15 +10,15 @@ authors:
 superuser: true
 
 # Role/position
-role: Senior Data Scientist/Statistician
+role: Principal Data Scientist/Statistician
 
 # Organizations/Affiliations
 organizations:
-- name: Cigna
-  url: ""
+- name: PHASTAR Inc
+  url: "https://www.phastar.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am currently working in a health service company in the USA. The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
+bio: I am a Principal Data Scientist (RWE) working at a CRO serving pharmaceutical clients mining real world data. The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
 
 interests:
 - Statistical Inference
@@ -73,6 +73,6 @@ user_groups:
 - Visitors
 ---
 
-I am a Data Scientist and Statistician with more than 18 years of experience in academia and industry combined. Currently, as a healthcare data scientist, I provide strategic guidance for the development, validation, and use of algorithms for data based decision making.
+I am a Data Scientist and Statistician with more than 18 years of experience in academia and industry combined. Currently, as a Principal Data Scientist at a CRO, I provide strategic guidance for the use of real world data, their validations, and use of algorithms to derive real world evidence (RWE) for evaluation of drugs and biologics.
 
-I have been using __R__ for over 18 years for statistical analysis and research. Currently, I mostly use __Python__ and __PySpark__. In the past I've used __SAS__ for management of structured data and for standard statistical analysis. 
+I am proficient with __R__, __Python__, and __SAS__. For standard statistical analysis and reporting, I mostly use R and SAS. For distributed computing with big data, I prefer __PySpark__. 

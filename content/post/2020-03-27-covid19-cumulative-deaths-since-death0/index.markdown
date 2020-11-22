@@ -20,6 +20,9 @@ projects: []
 ---
 
 
+```
+## Warning: package 'tibble' was built under R version 3.6.2
+```
 
 
 
@@ -27,7 +30,7 @@ projects: []
 
 # আপডেট
 
-চিত্র ও টেবিল আপডেট করা হয়েছে 2020-03-28 তারিখের ডেটা অনুযায়ী। 
+চিত্র ও টেবিল আপডেট করা হয়েছে 2020-11-20 তারিখের ডেটা অনুযায়ী। 
 
 দুটি সেকশনে সামারি আছে। __দেখতে স্ক্রল করে নিচে নামুন__
 - বিশ্বের সাথে বাংলাদেশের তুলনা
@@ -48,7 +51,7 @@ projects: []
 <img src="/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png" width="672" />
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
-<caption>Table 1: Total number of deaths till 2020-03-28</caption>
+<caption>Table 1: Total number of deaths till 2020-11-20</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> country </th>
@@ -57,28 +60,28 @@ projects: []
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> Italy </td>
-   <td style="text-align:right;"> 10023 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Spain </td>
-   <td style="text-align:right;"> 5982 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Iran </td>
-   <td style="text-align:right;"> 2517 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> France </td>
-   <td style="text-align:right;"> 2317 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> US </td>
-   <td style="text-align:right;"> 2026 </td>
+   <td style="text-align:right;"> 254413 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Brazil </td>
+   <td style="text-align:right;"> 168613 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> India </td>
+   <td style="text-align:right;"> 132726 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mexico </td>
+   <td style="text-align:right;"> 100823 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> United Kingdom </td>
+   <td style="text-align:right;"> 54381 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Bangladesh </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 6322 </td>
   </tr>
 </tbody>
 </table>
@@ -93,7 +96,7 @@ projects: []
 
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
-<caption>Table 2: Total number of deaths till 2020-03-28</caption>
+<caption>Table 2: Total number of deaths till 2020-11-20</caption>
  <thead>
   <tr>
    <th style="text-align:left;"> country </th>
@@ -102,32 +105,44 @@ projects: []
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> Indonesia </td>
-   <td style="text-align:right;"> 102 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Malaysia </td>
-   <td style="text-align:right;"> 27 </td>
-  </tr>
-  <tr>
    <td style="text-align:left;"> India </td>
-   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 132726 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Indonesia </td>
+   <td style="text-align:right;"> 15678 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Pakistan </td>
-   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 7603 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Bangladesh </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 6322 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> Singapore </td>
-   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> Nepal </td>
+   <td style="text-align:right;"> 1298 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Malaysia </td>
+   <td style="text-align:right;"> 329 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Uganda </td>
+   <td style="text-align:right;"> 168 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Sri Lanka </td>
-   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 74 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Maldives </td>
+   <td style="text-align:right;"> 45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Singapore </td>
+   <td style="text-align:right;"> 28 </td>
   </tr>
 </tbody>
 </table>

@@ -123,9 +123,9 @@ newcalc <- dataset %>%
   )
 ```
 
-{{% alert note %}}
+{{% callout note %}}
 Note that the name of the source data in R  is: `dataset`
-{{% /alert %}}
+{{% /callout %}}
 
 ## Entering R script to transform data
 
@@ -208,9 +208,9 @@ Then click on the little play button near the top of the script-editor to displa
 
 ![R visual editor with code](/img/r_visual_script_editor_with_code.png)
 
-{{% alert note %}}
+{{% callout note %}}
 The key is that you have to use `dataset` as your data object name in R-script visual. 
-{{% /alert %}}
+{{% /callout %}}
 
 
 And it's that easy.

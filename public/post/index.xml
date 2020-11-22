@@ -5,9 +5,9 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Enayetur Raheem</copyright><lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/portrait.jpg</url>
+      <url>/media/eraheem_socialcard.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
@@ -182,84 +182,84 @@ fit_seir &amp;lt;- function(country_name=&#39;Bangladesh(unoff)&#39;,
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 36 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-12 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 139 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 142 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 621 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 840 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 37 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-13 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 182 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 172 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 803 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1012 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 38 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-14 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 209 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 206 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1012 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1218 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 39 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-15 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 219 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 248 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1231 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1466 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 40 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-16 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 341 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 298 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1572 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1764 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 41 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-17 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 266 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 359 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1838 &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 2123 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 42 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-18 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 254 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-16 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 433 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 2556 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 43 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-19 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 255 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-17 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 521 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 3077 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 44 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-20 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 256 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-18 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 626 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 3703 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 45 &lt;/td&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-04-21 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 257 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-19 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 754 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
    &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 4457 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 258 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-20 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 259 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-21 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 260 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-22 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 261 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-23 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 262 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-24 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 263 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020-11-25 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 0 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -293,6 +293,8 @@ fit_seir &amp;lt;- function(country_name=&#39;Bangladesh(unoff)&#39;,
 &lt;p&gt;বাংলাদশে এখন লকডাউন চলছে। অর্থনীতির উপর এর প্রভাব অনেক। তাই অনেকেই বলছেন দীর্ঘ মেয়াদে লকডাউন কোনও সমাধান নয়। কিন্তু লকডাউন যদি উঠিয়ে নেয়া হয় তাহলে এর প্রভাব কী হতে পারে সেটি আমরা বাস্তবে পরীক্ষা করে দেখতে পারবনা। আর সেখানেই কম্পিউটার সিমুলেশন সহায়তা করতে পারে। সিমুলেশনের মাধ্যমে আমরা এই পরীক্ষাটি করতে পারি এবং সেটি সিদ্ধান্ত গ্রহণে সহায়তা করতে পারে।&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;ভূমিকা&lt;/h1&gt;
 &lt;p&gt;লেখা হচ্ছে।&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: package &#39;tibble&#39; was built under R version 3.6.2
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;কমপরটমনট&#34;&gt;কম্পারটমেন্ট&lt;/h2&gt;
 &lt;p&gt;সংক্রামক রোগের মডেলিং এর জন্য কম্পারটমেন্টাল মডেল বহুল ব্যবহৃত। SIR, SEIR, SIS ইত্যাদি মডেলগুলো ইতোপূর্বে সংক্রামক রোগের মডেলিঙে ব্যবহৃত হয়েছে। সেরকম কিন্তু আরেকটু জটিল একটি মডেল নিয়ে আমরা সিমুলেসন করব।&lt;/p&gt;
 &lt;p&gt;কম্পারটমেন্ট গুলোর সংক্ষেপে বর্ণনা দেয়া হল।&lt;/p&gt;
@@ -335,14 +337,14 @@ fit_seir &amp;lt;- function(country_name=&#39;Bangladesh(unoff)&#39;,
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;এই মডেল অনুযায়ী একজন ব্যক্তি এক স্টেজ থেকে আরেক স্টেজে কীভাবে যাচ্ছে তা নিচের ডায়াগ্রাম থেকে বোঝা যাবে।&lt;/p&gt;
-&lt;!--html_preserve--&gt;&lt;div id=&#34;htmlwidget-df0da70002c083408615&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
-&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-df0da70002c083408615&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph SEIQHRF {\n\n  # a \&#34;graph\&#34; statement\n  graph [overlap = false, fontsize = 10] #, rankdir = LR]\n\n  # several \&#34;node\&#34; statements\n  node [shape = box,\n        fontname = Helvetica]\n  S[label=\&#34;S=আক্রান্ত হতে পারে এমন\&#34;];\n  E[label=\&#34;E=এক্সপোসড এবং সংক্রামিত,\nসিম্পটম দেখাচ্ছে না,\nসম্ভাব্য সংক্রামক\&#34;];\n  I[label=\&#34;I=সংক্রামিত এবং সংক্রামক\&#34;];\n  Q[label=\&#34;Q=(নিজে-)আইসোলেটেড\n(সংক্রামক)\&#34;];\n  H[label=\&#34;H=হাসপাতাল\nনিতে হবে\&#34;];\n  R[label=\&#34;R=রিকভারি/ইমিউন\&#34;];\n  F[label=\&#34;F=কেইস ফেটালিটি\&#34;]\n\n  # several \&#34;edge\&#34; statements\n  S-&gt;E[label=\&#34;a\&#34;]\n  I-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;x\&#34;]\n  E-&gt;I[label=\&#34;b\&#34;]\n  E-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;y\&#34;]\n  I-&gt;Q[label=\&#34;c\&#34;]\n  Q-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;z\&#34;]\n  I-&gt;R[label=\&#34;d\&#34;]\n  I-&gt;H[label=\&#34;e\&#34;]\n  H-&gt;F[label=\&#34;f\&#34;]\n  H-&gt;R[label=\&#34;g\&#34;]\n  Q-&gt;R[label=\&#34;h\&#34;]\n  Q-&gt;H[label=\&#34;i\&#34;]\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;&lt;!--/html_preserve--&gt;
+&lt;!--html_preserve--&gt;&lt;div id=&#34;htmlwidget-2c2708cc2811291ed56a&#34; style=&#34;width:672px;height:480px;&#34; class=&#34;grViz html-widget&#34;&gt;&lt;/div&gt;
+&lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-2c2708cc2811291ed56a&#34;&gt;{&#34;x&#34;:{&#34;diagram&#34;:&#34;\ndigraph SEIQHRF {\n\n  # a \&#34;graph\&#34; statement\n  graph [overlap = false, fontsize = 10] #, rankdir = LR]\n\n  # several \&#34;node\&#34; statements\n  node [shape = box,\n        fontname = Helvetica]\n  S[label=\&#34;S=আক্রান্ত হতে পারে এমন\&#34;];\n  E[label=\&#34;E=এক্সপোসড এবং সংক্রামিত,\nসিম্পটম দেখাচ্ছে না,\nসম্ভাব্য সংক্রামক\&#34;];\n  I[label=\&#34;I=সংক্রামিত এবং সংক্রামক\&#34;];\n  Q[label=\&#34;Q=(নিজে-)আইসোলেটেড\n(সংক্রামক)\&#34;];\n  H[label=\&#34;H=হাসপাতাল\nনিতে হবে\&#34;];\n  R[label=\&#34;R=রিকভারি/ইমিউন\&#34;];\n  F[label=\&#34;F=কেইস ফেটালিটি\&#34;]\n\n  # several \&#34;edge\&#34; statements\n  S-&gt;E[label=\&#34;a\&#34;]\n  I-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;x\&#34;]\n  E-&gt;I[label=\&#34;b\&#34;]\n  E-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;y\&#34;]\n  I-&gt;Q[label=\&#34;c\&#34;]\n  Q-&gt;S[style=\&#34;dashed\&#34;, label=\&#34;z\&#34;]\n  I-&gt;R[label=\&#34;d\&#34;]\n  I-&gt;H[label=\&#34;e\&#34;]\n  H-&gt;F[label=\&#34;f\&#34;]\n  H-&gt;R[label=\&#34;g\&#34;]\n  Q-&gt;R[label=\&#34;h\&#34;]\n  Q-&gt;H[label=\&#34;i\&#34;]\n}\n&#34;,&#34;config&#34;:{&#34;engine&#34;:&#34;dot&#34;,&#34;options&#34;:null}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&lt;/script&gt;&lt;!--/html_preserve--&gt;
 &lt;h2 id=&#34;simulation-parameter&#34;&gt;সিমুলেশন প্যরামিটার&lt;/h2&gt;
 &lt;p&gt;সিমুলেসন ব্যাপারটি নির্ভর করে এর প্যারামিটারগুলো কীভাবে ধরা হচ্ছে। এই পরীক্ষায় যেভাবে আমি প্যরামিটারগুলো ধরেছি তা দেয়া হল। পসিমুলেসনের প্রয়োজনে এগুলো টিউন করা হবে। উদ্দেশ্য হল বাংলাদেশের জন্য প্রযোজ্য মান দিয়ে মডেল শুরু করা।&lt;/p&gt;
 &lt;!--html_preserve--&gt;&lt;style&gt;html {
 &lt;p&gt;font-family: -apple-system, BlinkMacSystemFont, &amp;lsquo;Segoe UI&amp;rsquo;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;lsquo;Helvetica Neue&amp;rsquo;, &amp;lsquo;Fira Sans&amp;rsquo;, &amp;lsquo;Droid Sans&amp;rsquo;, Arial, sans-serif;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_table {
+&lt;p&gt;#mhimirjvkh .gt_table {
 display: table;
 border-collapse: collapse;
 margin-left: auto;
@@ -369,7 +371,7 @@ border-bottom-width: 2px;
 border-bottom-color: #A8A8A8;
 /* table.border.bottom.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_heading {
+&lt;p&gt;#mhimirjvkh .gt_heading {
 background-color: #FFFFFF;
 /* heading.background.color */
 border-bottom-color: #FFFFFF;
@@ -387,7 +389,7 @@ border-right-width: 1px;
 border-right-color: #D3D3D3;
 /* heading.border.lr.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_title {
+&lt;p&gt;#mhimirjvkh .gt_title {
 color: #333333;
 font-size: 125%;
 /* heading.title.font.size */
@@ -400,7 +402,7 @@ border-bottom-color: #FFFFFF;
 /* table.background.color */
 border-bottom-width: 0;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_subtitle {
+&lt;p&gt;#mhimirjvkh .gt_subtitle {
 color: #333333;
 font-size: 85%;
 /* heading.subtitle.font.size */
@@ -413,7 +415,7 @@ border-top-color: #FFFFFF;
 /* table.background.color */
 border-top-width: 0;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_bottom_border {
+&lt;p&gt;#mhimirjvkh .gt_bottom_border {
 border-bottom-style: solid;
 /* heading.border.bottom.style */
 border-bottom-width: 2px;
@@ -421,14 +423,14 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 /* heading.border.bottom.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_column_spanner {
+&lt;p&gt;#mhimirjvkh .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 padding-top: 4px;
 padding-bottom: 4px;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_col_headings {
+&lt;p&gt;#mhimirjvkh .gt_col_headings {
 border-top-style: solid;
 /* column_labels.border.top.style */
 border-top-width: 2px;
@@ -454,7 +456,7 @@ border-right-width: 1px;
 border-right-color: #D3D3D3;
 /* column_labels.border.lr.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_col_heading {
+&lt;p&gt;#mhimirjvkh .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 /* column_labels.background.color */
@@ -469,10 +471,10 @@ padding: 5px;
 margin: 10px;
 overflow-x: hidden;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_sep_right {
+&lt;p&gt;#mhimirjvkh .gt_sep_right {
 border-right: 5px solid #FFFFFF;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_group_heading {
+&lt;p&gt;#mhimirjvkh .gt_group_heading {
 padding: 8px;
 /* row_group.padding */
 color: #333333;
@@ -510,7 +512,7 @@ border-right-color: #D3D3D3;
 /* row_group.border.right.color */
 vertical-align: middle;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_empty_group_heading {
+&lt;p&gt;#mhimirjvkh .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -533,17 +535,17 @@ border-bottom-color: #D3D3D3;
 /* row_group.border.bottom.color */
 vertical-align: middle;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_striped {
+&lt;p&gt;#mhimirjvkh .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 /* row.striping.background_color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_from_md &amp;gt; :first-child {
+&lt;p&gt;#mhimirjvkh .gt_from_md &amp;gt; :first-child {
 margin-top: 0;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_from_md &amp;gt; :last-child {
+&lt;p&gt;#mhimirjvkh .gt_from_md &amp;gt; :last-child {
 margin-bottom: 0;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_row {
+&lt;p&gt;#mhimirjvkh .gt_row {
 padding-top: 8px;
 /* data_row.padding */
 padding-bottom: 8px;
@@ -572,7 +574,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_stub {
+&lt;p&gt;#mhimirjvkh .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 /* stub.background.color */
@@ -588,7 +590,7 @@ border-right-color: #D3D3D3;
 /* stub.border.color */
 padding-left: 12px;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_summary_row {
+&lt;p&gt;#mhimirjvkh .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 /* summary_row.background.color */
@@ -601,7 +603,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_first_summary_row {
+&lt;p&gt;#mhimirjvkh .gt_first_summary_row {
 padding-top: 8px;
 /* summary_row.padding */
 padding-bottom: 8px;
@@ -615,7 +617,7 @@ border-top-width: 2px;
 border-top-color: #D3D3D3;
 /* summary_row.border.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_grand_summary_row {
+&lt;p&gt;#mhimirjvkh .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 /* grand_summary_row.background.color */
@@ -628,7 +630,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_first_grand_summary_row {
+&lt;p&gt;#mhimirjvkh .gt_first_grand_summary_row {
 padding-top: 8px;
 /* grand_summary_row.padding */
 padding-bottom: 8px;
@@ -642,7 +644,7 @@ border-top-width: 6px;
 border-top-color: #D3D3D3;
 /* grand_summary_row.border.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_table_body {
+&lt;p&gt;#mhimirjvkh .gt_table_body {
 border-top-style: solid;
 /* table_body.border.top.style */
 border-top-width: 2px;
@@ -656,7 +658,7 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 /* table_body.border.bottom.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_footnotes {
+&lt;p&gt;#mhimirjvkh .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 /* footnotes.background.color */
@@ -679,14 +681,14 @@ border-right-width: 2px;
 border-right-color: #D3D3D3;
 /* footnotes.border.lr.color */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_footnote {
+&lt;p&gt;#mhimirjvkh .gt_footnote {
 margin: 0px;
 font-size: 90%;
 /* footnotes.font.size */
 padding: 4px;
 /* footnotes.padding */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_sourcenotes {
+&lt;p&gt;#mhimirjvkh .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 /* source_notes.background.color */
@@ -709,40 +711,40 @@ border-right-width: 2px;
 border-right-color: #D3D3D3;
 /* source_notes.border.lr.style */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_sourcenote {
+&lt;p&gt;#mhimirjvkh .gt_sourcenote {
 font-size: 90%;
 /* source_notes.font.size */
 padding: 4px;
 /* source_notes.padding */
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_left {
+&lt;p&gt;#mhimirjvkh .gt_left {
 text-align: left;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_center {
+&lt;p&gt;#mhimirjvkh .gt_center {
 text-align: center;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_right {
+&lt;p&gt;#mhimirjvkh .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_font_normal {
+&lt;p&gt;#mhimirjvkh .gt_font_normal {
 font-weight: normal;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_font_bold {
+&lt;p&gt;#mhimirjvkh .gt_font_bold {
 font-weight: bold;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_font_italic {
+&lt;p&gt;#mhimirjvkh .gt_font_italic {
 font-style: italic;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_super {
+&lt;p&gt;#mhimirjvkh .gt_super {
 font-size: 65%;
 }&lt;/p&gt;
-&lt;p&gt;#nhacadagvv .gt_footnote_marks {
+&lt;p&gt;#mhimirjvkh .gt_footnote_marks {
 font-style: italic;
 font-size: 65%;
 }
 &lt;/style&gt;&lt;/p&gt;
-&lt;div id=&#34;nhacadagvv&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;&lt;table class=&#34;gt_table&#34;&gt;
+&lt;div id=&#34;mhimirjvkh&#34; style=&#34;overflow-x:auto;overflow-y:auto;width:auto;height:auto;&#34;&gt;&lt;table class=&#34;gt_table&#34;&gt;
   &lt;thead class=&#34;gt_col_headings&#34;&gt;
     &lt;tr&gt;
       &lt;th class=&#34;gt_col_heading gt_columns_bottom_border gt_left&#34; rowspan=&#34;1&#34; colspan=&#34;1&#34;&gt;DiagramRef&lt;/th&gt;
@@ -1144,7 +1146,7 @@ font-size: 65%;
 &lt;!-- Most of the parameters for which time-variation is useful support it. If they don&#39;t, you will receive an error message (the table above will be updated to include this information later). --&gt;
 &lt;!-- ## `simulate()` wrapper function --&gt;
 &lt;h2 id=&#34;বইজলইন-সমলসন&#34;&gt;বেইজলাইন সিমুলেসন&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;## 54.089 sec elapsed
+&lt;pre&gt;&lt;code&gt;## Time to complete: 65.126 sec elapsed
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;ডিস্ট্রিবিউশন দেখে নেই।&lt;/p&gt;
 &lt;p&gt;Now get the timing data.&lt;/p&gt;
@@ -1328,8 +1330,10 @@ font-size: 65%;
       <link>/post/covid19-cumulative-deaths-since-first-death-bn/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/covid19-cumulative-deaths-since-first-death-bn/</guid>
-      <description>&lt;h1 id=&#34;আপডট&#34;&gt;আপডেট&lt;/h1&gt;
-&lt;p&gt;চিত্র ও টেবিল আপডেট করা হয়েছে 2020-03-28 তারিখের ডেটা অনুযায়ী।&lt;/p&gt;
+      <description>&lt;pre&gt;&lt;code&gt;## Warning: package &#39;tibble&#39; was built under R version 3.6.2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;আপডট&#34;&gt;আপডেট&lt;/h1&gt;
+&lt;p&gt;চিত্র ও টেবিল আপডেট করা হয়েছে 2020-11-20 তারিখের ডেটা অনুযায়ী।&lt;/p&gt;
 &lt;p&gt;দুটি সেকশনে সামারি আছে। &lt;strong&gt;দেখতে স্ক্রল করে নিচে নামুন&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;বিশ্বের সাথে বাংলাদেশের তুলনা&lt;/li&gt;
@@ -1343,7 +1347,7 @@ font-size: 65%;
 &lt;h2 id=&#34;বশব-বলদশর-অবসহন&#34;&gt;বিশ্বে বাংলাদেশের অবস্হান&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-world-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
-&lt;caption&gt;Table 1: Total number of deaths till 2020-03-28&lt;/caption&gt;
+&lt;caption&gt;Table 1: Total number of deaths till 2020-11-20&lt;/caption&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style=&#34;text-align:left;&#34;&gt; country &lt;/th&gt;
@@ -1352,35 +1356,35 @@ font-size: 65%;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; Italy &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 10023 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; Spain &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 5982 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; Iran &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 2517 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; France &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 2317 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; US &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 2026 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 254413 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Brazil &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 168613 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; India &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 132726 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mexico &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 100823 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; United Kingdom &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 54381 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Bangladesh &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 5 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 6322 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;দকষণ-এশয়য়-বলদশর-অবসহন&#34;&gt;দক্ষিণ এশিয়ায় বাংলাদেশের অবস্হান&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-03-27-covid19-cumulative-deaths-since-death0/index_files/figure-html/covid19-death-south-asia-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;table class=&#34;table&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
-&lt;caption&gt;Table 2: Total number of deaths till 2020-03-28&lt;/caption&gt;
+&lt;caption&gt;Table 2: Total number of deaths till 2020-11-20&lt;/caption&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style=&#34;text-align:left;&#34;&gt; country &lt;/th&gt;
@@ -1389,32 +1393,44 @@ font-size: 65%;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; Indonesia &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 102 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; Malaysia &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 27 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; India &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 24 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 132726 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Indonesia &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 15678 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Pakistan &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 12 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 7603 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Bangladesh &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 5 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 6322 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style=&#34;text-align:left;&#34;&gt; Singapore &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 2 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Nepal &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 1298 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Malaysia &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 329 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Uganda &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 168 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&#34;text-align:left;&#34;&gt; Sri Lanka &lt;/td&gt;
-   &lt;td style=&#34;text-align:right;&#34;&gt; 1 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 74 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Maldives &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 45 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Singapore &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 28 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1531,7 +1547,7 @@ font-size: 65%;
 &lt;p&gt;সোশ্যাল মিডিয়া মেসেজিং বলতে লিংকডইন এবং ফেইসবুক মেসেঞ্জার বোঝাচ্ছি। যারা টুইটারে অভ্যস্ত তাদের সাথে টুইটারে সরাসরি মেসেজে ও যোগাযোগ করা সম্ভব। ‌ সব ক্ষেত্রে একই নিয়ম ব্যবহার করা যাবে।&lt;/p&gt;
 &lt;p&gt;এবার মূল কথায় আসা যাক।&lt;/p&gt;
 &lt;h1 id=&#34;ইমইল-যগযগ&#34;&gt;ইমেইলে যোগাযোগ&lt;/h1&gt;
-&lt;p&gt;আমেরিকাতে ইউনিভার্সিটি কিংবা কলেজের শিক্ষকদেরকে প্রফেসর বলে। &amp;ldquo;প্রফেসর&amp;rdquo; তার ডেজিগনেশন হতে পারে অথবা নাও হতে পারে। অর্থাৎ উনি পদাধিকার বলে প্রফেসর হতে পারেন, অ্যাসিস্ট্যান্ট প্রফেসর হতে পারেন বা এসোসিয়েট প্রফেসর হতে পারেন। কিন্তু উনারা সবাই প্রফেসর হিসেবে পরিচয় দেন এবং পরিচিত হতে পছন্দ করেন। অর্থাৎ ছাত্ররা তাদেরকে &amp;quot; হ্যালো প্রফেসর অমুক&amp;rdquo; অথবা &amp;ldquo;হাই প্রফেসর তমুক&amp;rdquo; - এভাবেই সম্বোধন করে।&lt;/p&gt;
+&lt;p&gt;আমেরিকাতে ইউনিভার্সিটি কিংবা কলেজের শিক্ষকদেরকে প্রফেসর বলে। &amp;ldquo;প্রফেসর&amp;rdquo; তার ডেজিগনেশন হতে পারে অথবা নাও হতে পারে। অর্থাৎ উনি পদাধিকার বলে প্রফেসর হতে পারেন, অ্যাসিস্ট্যান্ট প্রফেসর হতে পারেন বা এসোসিয়েট প্রফেসর হতে পারেন। কিন্তু উনারা সবাই প্রফেসর হিসেবে পরিচয় দেন এবং পরিচিত হতে পছন্দ করেন। অর্থাৎ ছাত্ররা তাদেরকে &amp;quot; হ্যালো প্রফেসর অমুক&amp;quot; অথবা &amp;ldquo;হাই প্রফেসর তমুক&amp;rdquo; - এভাবেই সম্বোধন করে।&lt;/p&gt;
 &lt;p&gt;তাহলে ব্যাপারটা এরকম-&lt;/p&gt;
 &lt;p&gt;প্রফেসরদের সাথে যোগাযোগ করার জন্য এভাবে শুরু করতে পারেন&lt;/p&gt;
 &lt;p&gt;Dear Professor Cohen&lt;/p&gt;
@@ -1646,11 +1662,9 @@ Thank you for your response.&lt;/p&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;h1 id=&#34;application-1-using-r-to-import-data-sets-into-power-bi&#34;&gt;Application 1: Using R to import data sets into Power BI&lt;/h1&gt;
-&lt;p&gt;Power BI can import data from a variety of sources. For a complete list, please see 
-&lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-data-sources&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Power BI can import data from a variety of sources. For a complete list, please see &lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-data-sources&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Importing Excel &lt;code&gt;.xlsx&lt;/code&gt; or &lt;code&gt;.csv&lt;/code&gt; files into Power BI is perhaps the most common usage. However, I&amp;rsquo;ve personally found it to be problematic. In particular, if your source data is continuously updating including addition or removal of columns, then the changes do not get updated when you simply refresh the data sources from Power BI Desktop. This is a problematic when you are developing your interactive report and also when the dashboard is in production.&lt;/p&gt;
-&lt;p&gt;A more robust solution of importing data is to use R script. This is known as 
-&lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-r-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Running R scripts in Power BI Desktop&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A more robust solution of importing data is to use R script. This is known as &lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-r-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Running R scripts in Power BI Desktop&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;preparing-the-r-script-in-r-studio&#34;&gt;Preparing the R script in R Studio&lt;/h2&gt;
 &lt;p&gt;This is the stage you would write your R script to load your data. I use R studio for that. RStudio is a popular Integrated Development Environment (IDE) for R. If you are not familiar with RStudio, you can use the default R editor or wherever you write your R codes. You do not need any special preparation. Just use the editor to test your code before using in Power BI.&lt;/p&gt;
 &lt;p&gt;I am going to create a smiple data set with two columns using the R codes below. This data is being created for demonstration purposes only so that you can reproduce it when you are learning.&lt;/p&gt;
@@ -1673,8 +1687,7 @@ Notice that at the bottom of the above image, the your R installation path is di
 &lt;h2 id=&#34;error-message&#34;&gt;Error message&lt;/h2&gt;
 &lt;p&gt;After you enter the R script and hit OK, you might see a connection error message as follows:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/unable_to_connect_r_script.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;
-In that case, you need to click on &lt;em&gt;Retry&lt;/em&gt; and that will take to you the following message to enable native database query. Click on Run. If you want to know more about risk involved with this option please see the 
-&lt;a href=&#34;https://support.office.com/en-us/article/import-data-from-database-using-native-database-query-power-query-f4f448ac-70d5-445b-a6ba-302db47a1b00?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official documentation&lt;/a&gt;&lt;/p&gt;
+In that case, you need to click on &lt;em&gt;Retry&lt;/em&gt; and that will take to you the following message to enable native database query. Click on Run. If you want to know more about risk involved with this option please see the &lt;a href=&#34;https://support.office.com/en-us/article/import-data-from-database-using-native-database-query-power-query-f4f448ac-70d5-445b-a6ba-302db47a1b00?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official documentation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/enable_native_data_base_query_r_script.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;
 After that, it should run without any issue and you should see a window like the following:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/r_script_navigator_screen.png&#34; alt=&#34;R script interface in Power BI&#34;&gt;&lt;/p&gt;
@@ -1689,8 +1702,7 @@ Now that you&amp;rsquo;ve successfully imported the data using R script, you can
 &lt;p&gt;&lt;img src=&#34;/img/edit_r_script.png&#34; alt=&#34;Edit R script&#34;&gt;
 Clicking that gear icon should open the R script editor where you can replace the existing code with the updated code. When you are ready, click OK, and then click &lt;strong&gt;Close &amp;amp; Apply&lt;/strong&gt; ([2] in the figure) in the Power Query Editor to apply the changes.&lt;/p&gt;
 &lt;h1 id=&#34;application-2-using-r-to-query-existing-data-in-power-bi&#34;&gt;Application 2: Using R to query existing data in Power BI&lt;/h1&gt;
-&lt;p&gt;This application is useful for manipulating an already imported dataset. That is, data have been imported into Power BI Desktop, and now you want to do some cleaning or perform transformations. Essentially, you could do all of those while importing the data (Application 1). Interested readers may find the detailed document available from Microsoft Power BI on 
-&lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-r-in-query-editor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;using R in Query Editor.&lt;/a&gt;
+&lt;p&gt;This application is useful for manipulating an already imported dataset. That is, data have been imported into Power BI Desktop, and now you want to do some cleaning or perform transformations. Essentially, you could do all of those while importing the data (Application 1). Interested readers may find the detailed document available from Microsoft Power BI on &lt;a href=&#34;https://docs.microsoft.com/en-us/power-bi/desktop-r-in-query-editor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;using R in Query Editor.&lt;/a&gt;
 I am giving an example to demonstrate how it works.&lt;/p&gt;
 &lt;h2 id=&#34;example-to-demonstrate-re-coding&#34;&gt;Example to demonstrate re-coding&lt;/h2&gt;
 &lt;p&gt;Suppose we&amp;rsquo;ve imported a data set with missing vlaues and unusually large numbers in some of the fields. We want to perform some cleaning. Of course this is a fictitious example just to demonstrate the idea.&lt;/p&gt;
@@ -1818,8 +1830,7 @@ git push origin master
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.wikipedia.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.wikipedia.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -1990,54 +2001,44 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 &lt;p&gt;2018&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Mohammad Sorowar Hossain, Md. Mahbub Hasan, Muhammad Sougatul Islam, Salequl Islam, Miliva Mozaffor, Md. Abdullah Saeed Khan, Nova Ahmed, Waheed Akhtar, Shahanaz Chowdhury, S. M. Yasir Arafat, Md. Abdul Khaleque, Zohora Jameela Khan, Tashmim Farhana Dipta, Shah Md. Zahurul Haque Asna, Md. Akram Hossain, KM Sultanul Aziz, Abdullah Al Mosabbir, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt; (2018). Chikungunya outbreak (2017) in Bangladesh: Clinical profile, economic impact and quality of life during the acute phase of the disease. 
-&lt;a href=&#34;https://doi.org/10.1371/journal.pntd.0006561&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;PLOS: Neglected Tropical Diseases&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mohammad Sorowar Hossain, Md. Mahbub Hasan, Muhammad Sougatul Islam, Salequl Islam, Miliva Mozaffor, Md. Abdullah Saeed Khan, Nova Ahmed, Waheed Akhtar, Shahanaz Chowdhury, S. M. Yasir Arafat, Md. Abdul Khaleque, Zohora Jameela Khan, Tashmim Farhana Dipta, Shah Md. Zahurul Haque Asna, Md. Akram Hossain, KM Sultanul Aziz, Abdullah Al Mosabbir, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt; (2018). Chikungunya outbreak (2017) in Bangladesh: Clinical profile, economic impact and quality of life during the acute phase of the disease. &lt;a href=&#34;https://doi.org/10.1371/journal.pntd.0006561&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;PLOS: Neglected Tropical Diseases&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Nova Ahmed, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, Nusrat Rahman, Zillur Rahman Khan, Abdullah Mosabbir, Mohammad Sorowar Hossain (2018). Managing autism spectrum disorder in developing countries by utilizing existing resources: A perspective from Bangladesh. 
-&lt;a href=&#34;https://doi.org/10.1177/1362361318773981&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Autism&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nova Ahmed, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, Nusrat Rahman, Zillur Rahman Khan, Abdullah Mosabbir, Mohammad Sorowar Hossain (2018). Managing autism spectrum disorder in developing countries by utilizing existing resources: A perspective from Bangladesh. &lt;a href=&#34;https://doi.org/10.1177/1362361318773981&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Autism&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2017&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Md. Mahbub Hasan, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, Tanvira Afroze Sultana, Mohammad Sorowar Hossain (2017). Pattern of hematological malignancies in adolescents and young adults in Bangladesh. 
-&lt;a href=&#34;https://doi.org/10.1016/j.canep.2017.11.001&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Orphanet Journal of Rare Diseases&lt;/em&gt;&lt;/a&gt;, 51, 109-112.&lt;/p&gt;
+&lt;p&gt;Md. Mahbub Hasan, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, Tanvira Afroze Sultana, Mohammad Sorowar Hossain (2017). Pattern of hematological malignancies in adolescents and young adults in Bangladesh. &lt;a href=&#34;https://doi.org/10.1016/j.canep.2017.11.001&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Orphanet Journal of Rare Diseases&lt;/em&gt;&lt;/a&gt;, 51, 109-112.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Hossain, M. S., &lt;strong&gt;Raheem, E.&lt;/strong&gt;, Sultana, T. A., Ferdous, S., Nahar, N., Islam, S., &amp;hellip; &amp;amp; Khatun, H. (2017). Thalassemias in South Asia: clinical lessons learnt from Bangladesh. 
-&lt;a href=&#34;https://ojrd.biomedcentral.com/articles/10.1186/s13023-017-0643-z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Orphanet Journal of Rare Diseases&lt;/em&gt;&lt;/a&gt;, 12(1), 93.&lt;/p&gt;
+&lt;p&gt;Hossain, M. S., &lt;strong&gt;Raheem, E.&lt;/strong&gt;, Sultana, T. A., Ferdous, S., Nahar, N., Islam, S., &amp;hellip; &amp;amp; Khatun, H. (2017). Thalassemias in South Asia: clinical lessons learnt from Bangladesh. &lt;a href=&#34;https://ojrd.biomedcentral.com/articles/10.1186/s13023-017-0643-z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Orphanet Journal of Rare Diseases&lt;/em&gt;&lt;/a&gt;, 12(1), 93.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Islam, M, Khan JR, &lt;strong&gt;Raheem, E.&lt;/strong&gt; (2017). Bradley-Terry model for assessing the performance of ten ODI cricket teams adjusting for home ground effect. 
-&lt;a href=&#34;http://www.jds-online.com/file_download/628/221-OK.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Data Science&lt;/em&gt;&lt;/a&gt;, 16, 657-668.&lt;/p&gt;
+&lt;p&gt;Islam, M, Khan JR, &lt;strong&gt;Raheem, E.&lt;/strong&gt; (2017). Bradley-Terry model for assessing the performance of ten ODI cricket teams adjusting for home ground effect. &lt;a href=&#34;http://www.jds-online.com/file_download/628/221-OK.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Data Science&lt;/em&gt;&lt;/a&gt;, 16, 657-668.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2016&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Dey, S., &amp;amp; &lt;strong&gt;Raheem, E.&lt;/strong&gt; (2016). Multilevel multinomial logistic regression model for identifying factors associated with anemia in children 6–59 months in northeastern states of India. 
-&lt;a href=&#34;http://www.tandfonline.com/doi/full/10.1080/23311835.2016.1159798&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Cogent Mathematics&lt;/em&gt;&lt;/a&gt;, 3(1), 1159798.&lt;/li&gt;
+&lt;li&gt;Dey, S., &amp;amp; &lt;strong&gt;Raheem, E.&lt;/strong&gt; (2016). Multilevel multinomial logistic regression model for identifying factors associated with anemia in children 6–59 months in northeastern states of India. &lt;a href=&#34;http://www.tandfonline.com/doi/full/10.1080/23311835.2016.1159798&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Cogent Mathematics&lt;/em&gt;&lt;/a&gt;, 3(1), 1159798.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2015&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Jahan Y, &lt;strong&gt;Raheem E&lt;/strong&gt;, Akhteruzzaman M, Hussain MA, Kazal RK, et al. (2015) Association of TSH Level with First Trimester Pregnancy Loss in Anti-TPO Antibody Negative Women in Bangladesh. 
-&lt;a href=&#34;http://www.jscimedcentral.com/Obstetrics/obstetrics-3-1061.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Med J Obstet Gynecol&lt;/em&gt;&lt;/a&gt; 3(3): 1061&lt;/p&gt;
+&lt;p&gt;Jahan Y, &lt;strong&gt;Raheem E&lt;/strong&gt;, Akhteruzzaman M, Hussain MA, Kazal RK, et al. (2015) Association of TSH Level with First Trimester Pregnancy Loss in Anti-TPO Antibody Negative Women in Bangladesh. &lt;a href=&#34;http://www.jscimedcentral.com/Obstetrics/obstetrics-3-1061.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Med J Obstet Gynecol&lt;/em&gt;&lt;/a&gt; 3(3): 1061&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Sanku Dey, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, and Preenan Sarkar (2014). Identifying the Factors Influencing Institutional and Non-Institutional Delivery Practices in Slums of Shillong City. 
-&lt;a href=&#34;http://medind.nic.in/hab/t14/i3/habt14i3p76.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Health and Population – Perspectives and Issues&lt;/em&gt;&lt;/a&gt; 37 (3 &amp;amp; 4), 76-87, 2014 (Published in June 2015)&lt;/p&gt;
+&lt;p&gt;Sanku Dey, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt;, and Preenan Sarkar (2014). Identifying the Factors Influencing Institutional and Non-Institutional Delivery Practices in Slums of Shillong City. &lt;a href=&#34;http://medind.nic.in/hab/t14/i3/habt14i3p76.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Health and Population – Perspectives and Issues&lt;/em&gt;&lt;/a&gt; 37 (3 &amp;amp; 4), 76-87, 2014 (Published in June 2015)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Sanku Dey, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt; (2015). Socio-Economic Determinants of Family Planning Acceptance among Slum Dwellers of Shillong City, Meghalaya–A Multivariate Analysis using Logistic Regression Model, 
-&lt;a href=&#34;https://www.researchgate.net/profile/Enayetur_Raheem/publication/283273293_Socio-Economic_Determinants_of_Family_Planning_Acceptance_among_Slum_Dwellers_of_Shillong_City_Meghalaya-A_Multivariate_Analysis_Using_Logistic_Regression_Model/links/563003f908ae76226de004ff/Socio-Economic-Determinants-of-Family-Planning-Acceptance-among-Slum-Dwellers-of-Shillong-City-Meghalaya-A-Multivariate-Analysis-Using-Logistic-Regression-Model.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Demography India&lt;/em&gt;&lt;/a&gt;, 41, 1&amp;amp;2, pp. 65-74.&lt;/p&gt;
+&lt;p&gt;Sanku Dey, &lt;strong&gt;Enayetur Raheem&lt;/strong&gt; (2015). Socio-Economic Determinants of Family Planning Acceptance among Slum Dwellers of Shillong City, Meghalaya–A Multivariate Analysis using Logistic Regression Model, &lt;a href=&#34;https://www.researchgate.net/profile/Enayetur_Raheem/publication/283273293_Socio-Economic_Determinants_of_Family_Planning_Acceptance_among_Slum_Dwellers_of_Shillong_City_Meghalaya-A_Multivariate_Analysis_Using_Logistic_Regression_Model/links/563003f908ae76226de004ff/Socio-Economic-Determinants-of-Family-Planning-Acceptance-among-Slum-Dwellers-of-Shillong-City-Meghalaya-A-Multivariate-Analysis-Using-Logistic-Regression-Model.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Demography India&lt;/em&gt;&lt;/a&gt;, 41, 1&amp;amp;2, pp. 65-74.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2014&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Dey, S., &lt;strong&gt;Raheem, E.&lt;/strong&gt;, &amp;amp; Sarkar, P. (2014). Identifying the factors influencing institutional and non-institutional delivery practices in slums of Shillong city. 
-&lt;a href=&#34;http://medind.nic.in/hab/t14/i3/habt14i3p76.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Health and Population: Perspectives and Issues&lt;/em&gt;&lt;/a&gt;, 37(3-4), 76-87.&lt;/p&gt;
+&lt;p&gt;Dey, S., &lt;strong&gt;Raheem, E.&lt;/strong&gt;, &amp;amp; Sarkar, P. (2014). Identifying the factors influencing institutional and non-institutional delivery practices in slums of Shillong city. &lt;a href=&#34;http://medind.nic.in/hab/t14/i3/habt14i3p76.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Health and Population: Perspectives and Issues&lt;/em&gt;&lt;/a&gt;, 37(3-4), 76-87.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Yusuf Ali, Shah AL-Emran, M. B. Islam, and &lt;strong&gt;E. Raheem&lt;/strong&gt; (2014). Adaptation to climate change in coastal saline area of south-western region of Bangladesh. &lt;em&gt;Int. J. Sustain. Agril. Tech.&lt;/em&gt; 10(4): 09-16.&lt;/p&gt;
@@ -2046,18 +2047,15 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 &lt;p&gt;2012&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;S. Ejaz Ahmed, and &lt;strong&gt;S. E. Raheem&lt;/strong&gt;, (2012). Shrinkage and absolute penalty estimation in linear models, 
-&lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1002/wics.1232/full&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;WIREs Computational Statistics&lt;/em&gt;&lt;/a&gt;. Volume 4, Issue 6, pages 541–553, November/December 2012.&lt;/p&gt;
+&lt;p&gt;S. Ejaz Ahmed, and &lt;strong&gt;S. E. Raheem&lt;/strong&gt;, (2012). Shrinkage and absolute penalty estimation in linear models, &lt;a href=&#34;http://onlinelibrary.wiley.com/doi/10.1002/wics.1232/full&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;WIREs Computational Statistics&lt;/em&gt;&lt;/a&gt;. Volume 4, Issue 6, pages 541–553, November/December 2012.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Raheem, E&lt;/strong&gt;, Ahmed S. E., Doksum K. A. (2012). Absolute penalty and shrinkage estimation in partially linear models. 
-&lt;a href=&#34;http://dx.doi.org/10.1016/j.csda.2011.09.021&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Computational Statistics and Data Analysis&lt;/em&gt;&lt;/a&gt;. 56(4):874-891.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Raheem, E&lt;/strong&gt;, Ahmed S. E., Doksum K. A. (2012). Absolute penalty and shrinkage estimation in partially linear models. &lt;a href=&#34;http://dx.doi.org/10.1016/j.csda.2011.09.021&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Computational Statistics and Data Analysis&lt;/em&gt;&lt;/a&gt;. 56(4):874-891.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2011&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Raheem, E.&lt;/strong&gt; and Ahmed, S. E. (2011). Positive-shrinkage and Pretest Estimation in Multiple Regression: A Monte Carlo study with Applications. 
-&lt;a href=&#34;http://jirss.irstat.ir/browse.php?a_id=166&amp;amp;sid=1&amp;amp;slc_lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Iranian Statistical Society&lt;/em&gt;&lt;/a&gt;. 10(2):267-289.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Raheem, E.&lt;/strong&gt; and Ahmed, S. E. (2011). Positive-shrinkage and Pretest Estimation in Multiple Regression: A Monte Carlo study with Applications. &lt;a href=&#34;http://jirss.irstat.ir/browse.php?a_id=166&amp;amp;sid=1&amp;amp;slc_lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Iranian Statistical Society&lt;/em&gt;&lt;/a&gt;. 10(2):267-289.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;2010 and before&lt;/p&gt;
 &lt;ul&gt;
@@ -2077,8 +2075,7 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 2002&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Raheem, S.&lt;/strong&gt; and Sekander Hayat Khan (2002). Combining Probability of Emptiness and Mean First Overflow Time of a Dam to Determine its Capacity. 
-&lt;a href=&#34;http://www.spatialhydrology.net/index.php/JOSH/article/view/12/12&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Spatial Hydrology&lt;/em&gt;&lt;/a&gt;, Vol. 2, No.2.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Raheem, S.&lt;/strong&gt; and Sekander Hayat Khan (2002). Combining Probability of Emptiness and Mean First Overflow Time of a Dam to Determine its Capacity. &lt;a href=&#34;http://www.spatialhydrology.net/index.php/JOSH/article/view/12/12&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Journal of Spatial Hydrology&lt;/em&gt;&lt;/a&gt;, Vol. 2, No.2.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;courses-taught&#34;&gt;Courses Taught&lt;/h2&gt;
@@ -2112,8 +2109,7 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 &lt;p&gt;দু:খজনক হলেও সত্যি যে আমাদের দেশে পড়াশুনা ও গবেষণার জন্য সত্যিকার কোন মোটিভেশন না থাকায় এই কোর্সটিও কাগুজে কোর্সে পরিণত হয়। এরকম কোর্স থেকে শিক্ষার্থীরা সামান্য কিছুই পেয়ে থাকে যেগুলোকে তারা পরবর্তীতে নিজেদের গবেষণায় কাজে লাগাতে পারে। এর কারণ বহুবিদ। অন্যতম কারণটি হলো শিক্ষার সাথে ব্যবহারিক কাজের কোনো সম্পর্ক না থাকা।&lt;/p&gt;
 &lt;p&gt;এই সমস্যার উত্তরণের একটি পথ আছে যেটি হলো গবেষণায় নেমে পড়া। বাংলাদেশের তরুণ শিক্ষার্থীরা অনেকেই গবেষণা করতে চায় কিন্তু কীভাবে করবে সেটি অনেক সময় খুঁজে পায়না। এর কারণ মুলত শিক্ষা প্রতিষ্ঠানগুলোতে গবেষণার পরিবেশ না থাকা কিংবা আনপ্রোডাক্টিভ খাতে সময়ের অপচয় করা। এছাড়া আগেই যেমনটা বলেছি– শিক্ষার্থীদের মোটিভেশনের অভাব আরেকটি বড় কারণ। অনেক সময় শিক্ষক গবেষণায় আগ্রহী কিন্তু শিক্ষার্থী সিস্টেমের ফাঁক ফোকর ব্যবহার করে দায়সারা কাজ করে পার পেয়ে যেতে চায়।&lt;/p&gt;
 &lt;h1 id=&#34;গবষণ-পদধত&#34;&gt;গবেষণা পদ্ধতি&lt;/h1&gt;
-&lt;p&gt;এই লেখায় গবেষণার বিস্তারিত আলোচনা করবো না। গবেষণার পুরো বৃত্তান্তের স্টেপ বাই স্টেপ বর্ণনা করেছেন রাগিব হাসান তার 
-&lt;a href=&#34;http://elochinta.com/gobeshona/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;গবেষণায় হাতেখড়ি&lt;/a&gt; বইটিতে। আমি সেখানকার চুম্বক অংশ তুলে দিচ্ছি।&lt;/p&gt;
+&lt;p&gt;এই লেখায় গবেষণার বিস্তারিত আলোচনা করবো না। গবেষণার পুরো বৃত্তান্তের স্টেপ বাই স্টেপ বর্ণনা করেছেন রাগিব হাসান তার &lt;a href=&#34;http://elochinta.com/gobeshona/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;গবেষণায় হাতেখড়ি&lt;/a&gt; বইটিতে। আমি সেখানকার চুম্বক অংশ তুলে দিচ্ছি।&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;বইটা ভাগ করা হয়েছে কয়েকটি অংশে। প্রথমে আলোচনা করা হয়েছে গবেষণা কাকে বলে, এর প্রয়োজনীয়তা এবং মূলনীতি নিয়ে। এর পরে আস্তে আস্তে বলা হয়েছে, কীভাবে গবেষণা শুরু করবেন, বিষয় নির্বাচন ও লিটারেচার রিভিউ করবেন। তার পরে ধাপে ধাপে দেখানো হয়েছে, রিসার্চ পেপার পড়া, বোঝা, এবং নিজের গবেষণাপত্র কীভাবে লিখবেন। গবেষণার সমস্যা সমাধানের জন্য নতুন আইডিয়া কীভাবে চিন্তা করবেন ও যাচাই করবেন। এছাড়া গবেষণার ফলাফলকে প্রেজেন্টেশন বা বক্তৃতার মাধ্যমে উপস্থাপন করার নানা কৌশল সম্পর্কে লিখেছি। এবং সবশেষে আলোচনা করেছি গবেষণার অর্থায়ন কীভাবে করবেন, এবং গবেষণার সাথে আনুসঙ্গিক অনেক বিষয় যেমন গবেষকদের অভ্যাস, গবেষণার জন্য সময় জোগাড় করা, এসব কিছু।&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2143,8 +2139,7 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 &lt;p&gt;অবজারভেশনাল স্টাডিতে আপনি শুধু অবজার্ভ করবেন বা দেখবেন। সেটি হতে পারে স্টাডি শুরু থেকে ভবিষ্যতের দিকে আপনার স্টাডি সাবজেক্টকে ফলো করা। আবার হতে পারে স্টাডি শুরুর সময় থেকে পিছনের দিকে অরজার্ভ করা। উদাহরণস্বরূপ আপনি দেখতে চাইছেন নেশাদ্রব্য গ্রহণের সাথে স্ট্রোকের সম্পর্ক আছে কিনা বা নেশাদ্রব্য গ্রহণ স্ট্রোকের সম্ভাবনা বাড়িয়ে দেয় কিনা। এজন্য আপনি টার্গেট পপুলেশনের একটি অংশকে আজ থেকে ফলো করা (অবজার্ভ) করা শুরু করলেন এবং আগামী ৫ বছর তাদের অবজার্ভ করবেন। ৫ বছর শেষে আপনি দেখবেন এদের মধ্যে যাদের স্ট্রোক হয়েছে তাদের কেউ কেউ নেশাকারী এবং কেউ কেউ নয়। এভাবে স্টাডি করে দেখা যাবে নেশাদ্রব্য গ্রহণের সাথে স্ট্রোকের এসোসিয়েসন আছে কিনা। এ ধরনের স্টাডিকে বলে প্রসপেকটিভ স্টাডি।&lt;/p&gt;
 &lt;p&gt;আবার অন্য ধরনের অবজারভেশনাল স্টাডিতে প্রথমেই তাদেরকে বেছে নেয়া যাদের স্ট্রোক হয়েছে। অর্থাৎ ইভেন্ট যাদের মধ্যে ঘটেছে তাদের বাছাই করে তাদের ইন্টারভিউয়ের মাধ্যমে জানা যে তারা অতীতে কোন নেশাদ্রব্য নিয়মিত গ্রহণ করতো কিনা। এধরনের স্টাডিকে বলে রেট্রোস্পেক্টিভ স্টাডি যা বর্তমানের ইভেন্ট দেখে অতীতকে পর্যবেক্ষণ করা যে ইভেন্টটি ঘটার সাথে অতীতের কার্যকলাপের (নেশাদ্রব্য গ্রহণ) এসোসিয়েশন আছে কিনা।&lt;/p&gt;
 &lt;p&gt;অবজারভেশনাল স্টাডিতে শুধুই অবজার্ভ করা হয়, কোন ইন্টারভেনশন দেয়া হয়না।&lt;/p&gt;
-&lt;p&gt;এক্সপেরিমেন্টাল স্টাডি অনেকটা ফলোআপ বা প্রসপেক্টিভ অবজারভেশনাল স্টাডির মতো। এখানে মূল পার্থক্য হলো এ ধরনের গবেষণায় নতুন ইন্টারভেনশন দেয়া হয় এটা দেখতে যে ইন্টারভেনশনটির কোন এফেক্ট আছে কিনা। ধরা যাক স্ট্রোক কমাতে নতুন একটি ড্রাগ বা লাইফস্টাইলের এফেক্ট আপনি যাচাই করতে চাইছেন। এক্ষেত্রে আপনি দৈব চয়নের মাধ্যমে আপনার গবেষণায় অংশগ্রহণকারিদের একটি অংশকে এই নতুন ড্রাগ বা লাইফস্টাইল দিবেন আর অন্য অংশকে প্লাসিবো দিবেন। 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Placebo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;প্লাসিবো&lt;/a&gt; হলো ঔষধের মতো যেটির আসলে কোন ঔষধি গুন নেই। বিস্তারিত জানতে উইকিতে দেখুন।&lt;/p&gt;
+&lt;p&gt;এক্সপেরিমেন্টাল স্টাডি অনেকটা ফলোআপ বা প্রসপেক্টিভ অবজারভেশনাল স্টাডির মতো। এখানে মূল পার্থক্য হলো এ ধরনের গবেষণায় নতুন ইন্টারভেনশন দেয়া হয় এটা দেখতে যে ইন্টারভেনশনটির কোন এফেক্ট আছে কিনা। ধরা যাক স্ট্রোক কমাতে নতুন একটি ড্রাগ বা লাইফস্টাইলের এফেক্ট আপনি যাচাই করতে চাইছেন। এক্ষেত্রে আপনি দৈব চয়নের মাধ্যমে আপনার গবেষণায় অংশগ্রহণকারিদের একটি অংশকে এই নতুন ড্রাগ বা লাইফস্টাইল দিবেন আর অন্য অংশকে প্লাসিবো দিবেন। &lt;a href=&#34;https://en.wikipedia.org/wiki/Placebo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;প্লাসিবো&lt;/a&gt; হলো ঔষধের মতো যেটির আসলে কোন ঔষধি গুন নেই। বিস্তারিত জানতে উইকিতে দেখুন।&lt;/p&gt;
 &lt;h1 id=&#34;এনলসস&#34;&gt;এনালিসিস&lt;/h1&gt;
 &lt;p&gt;এই ধাপে স্ট্যাটিসটিক্যাল এনালিসিস করা হবে। ডেটা সংগ্রহের পর সেটিকে ক্লিন করে সামারি রেজাল্ট এবং পরিসংখ্যানের মডেল (যদি দরকার হয়) ব্যবহার করে সিদ্ধান্ত গ্রহণ করা হবে। গবেষণার জন্য নেয়া নমুনা যদি জনগোষ্ঠীর প্রতিনিধিত্বমূলক হয় তাহলে গবেষণার ফলকে সেই টার্গেট পপুলেশনের উপর জেনারেলাইজ করা যাবে অর্থাৎ গবেষণার ফলটি ওই জনগোষ্ঠীর জন্য প্রযোজ্য এমনটি বলা যাবে।&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2232,20 +2227,14 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 &lt;p&gt;বিস্তারিত দিচ্ছি।&lt;/p&gt;
 &lt;h2 id=&#34;১-পরসখযন-গণত-ও-মশন-লরনএর-পঠ&#34;&gt;১. পরিসংখ্যান, গণিত ও মেশিন লারনিংএর পাঠ&lt;/h2&gt;
 &lt;p&gt;আপনি পরিসংখ্যানের ছাত্র হলে এই অংশটুকু স্কিপ করতে পারেন। যদি পুরানো টপিকগুলো ঝালাই করার দরকার হয় তাহলে নিচের সূত্রগুলো রিভিউ করে নিতে পারেন।&lt;/p&gt;
-&lt;p&gt;পরিসংখ্যানের প্রাথমিক পাঠের জন্য ইউডাসিটির 
-&lt;a href=&#34;https://www.udacity.com/course/intro-to-statistics--st101&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;এই কোর্সটি&lt;/a&gt; দেখা যাবে। বাংলায় পরিসংখ্যানের একেবারে প্রাথমিক লেভেলের 
-&lt;a href=&#34;http://www.shikkhok.com/%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%9A%E0%A6%BF%E0%A6%A4%E0%A6%BF/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;এই পাঠ&lt;/a&gt; নিতে পারেন। পরিসংখ্যানের প্রাথমিক ধারণা এবং রিগ্রশনের ধারণা নিতে হবে। তারপর মেশিন লারনিং-এ যেতে হবে। মেশিন লারনিংএর অনেকগুলো কোর্স অনলাইনে আছে। ফ্রি। তাদের মধ্যে স্ট্যানফোর্ডের 
-&lt;a href=&#34;http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;এই কোর্সটি&lt;/a&gt; দিয়ে শুরু করা যেতে পারে।&lt;/p&gt;
-&lt;p&gt;বাংলায় পাইথন দিয়ে 
-&lt;a href=&#34;https://ml.manash.me/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;মেশিন লারনিং&lt;/a&gt; এর একটা ভালো বই পাওয়া যাবে এখানে।&lt;/p&gt;
+&lt;p&gt;পরিসংখ্যানের প্রাথমিক পাঠের জন্য ইউডাসিটির &lt;a href=&#34;https://www.udacity.com/course/intro-to-statistics--st101&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;এই কোর্সটি&lt;/a&gt; দেখা যাবে। বাংলায় পরিসংখ্যানের একেবারে প্রাথমিক লেভেলের &lt;a href=&#34;http://www.shikkhok.com/%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE/%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%9A%E0%A6%BF%E0%A6%A4%E0%A6%BF/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;এই পাঠ&lt;/a&gt; নিতে পারেন। পরিসংখ্যানের প্রাথমিক ধারণা এবং রিগ্রশনের ধারণা নিতে হবে। তারপর মেশিন লারনিং-এ যেতে হবে। মেশিন লারনিংএর অনেকগুলো কোর্স অনলাইনে আছে। ফ্রি। তাদের মধ্যে স্ট্যানফোর্ডের &lt;a href=&#34;http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;এই কোর্সটি&lt;/a&gt; দিয়ে শুরু করা যেতে পারে।&lt;/p&gt;
+&lt;p&gt;বাংলায় পাইথন দিয়ে &lt;a href=&#34;https://ml.manash.me/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;মেশিন লারনিং&lt;/a&gt; এর একটা ভালো বই পাওয়া যাবে এখানে।&lt;/p&gt;
 &lt;p&gt;মেশিন লারনিং শিখতে সবচেয়ে বেশী সময় ব্যয় হবে। ওভারল ধারণা নিতে কমপক্ষে ৩ মাস সময় ব্যয় করতে হবে। কারো কারো আরে বেশী সময় লাগতে পারে।&lt;/p&gt;
 &lt;h2 id=&#34;২-পরগরম&#34;&gt;২. প্রোগ্রামিং&lt;/h2&gt;
 &lt;p&gt;মূলত স্ট্যাটিসটিক্যাল প্রোগ্রামিং জানতে হবে। এর জন্য R বা SAS বা Python এর যে কোনটি কিংবা একাধিক ল্যাঙ্গুয়েজ সম্পর্কে জ্ঞান নিতে হবে।  যারা ইতোমধ্যেই পরিসংখ্যান শিখেছেন এবং R বা SAS এর সাথে পরিচিত তারা এগুলো রিভিউ করে নিবেন। আর নতুন ল্যাঙ্গুয়েজ শিখতে চাইলে পাইথন শেখার পরামর্শ দিবো।&lt;/p&gt;
 &lt;p&gt;R শেখার অসংখ্য সাইট আছে। যেটা ভালো লাগে সেটা দিয়ে শিখে নিন। ট্রাই-আর নামে একটা সাইট আছে সেটা কোডস্কুল পরিচালনা করে। ওদের লিংক http://tryr.codeschool.com/&lt;/p&gt;
 &lt;p&gt;Python শেখার জন্য সেরকম অনেক সাইট আছে। গুগলের একটা সাইট হল &lt;a href=&#34;https://developers.google.com/edu/python/&#34;&gt;https://developers.google.com/edu/python/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;SAS শেখার জন্য ওদের সাইটে কিছু 
-&lt;a href=&#34;http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ভিডিও&lt;/a&gt; আছে। আর 
-&lt;a href=&#34;http://shikkhok.com/%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE/intro-to-sas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;বাংলায় স্যাস-এর একটা কোর্স&lt;/a&gt; শিক্ষক ডট কম সাইটে আছে।&lt;/p&gt;
+&lt;p&gt;SAS শেখার জন্য ওদের সাইটে কিছু &lt;a href=&#34;http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ভিডিও&lt;/a&gt; আছে। আর &lt;a href=&#34;http://shikkhok.com/%E0%A6%95%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE/intro-to-sas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;বাংলায় স্যাস-এর একটা কোর্স&lt;/a&gt; শিক্ষক ডট কম সাইটে আছে।&lt;/p&gt;
 &lt;p&gt;ব্যক্তিগতভাবে আমি ওপেন সোর্স এবং ফ্রি সফটওয়্যার পছন্দ করি। তবে কমার্শিয়াল সফটওয়্যারের মধ্যে অন্যতম হল স্যাস। আমেরিকায় হেল্থকেয়ার এবং ফাইন্যানশিয়াল অর্গানাইজেশনে স্যাস ব্যবহার করে। আমার কাছ স্ট্যাকচারড ডেটার ম্যানেজমেন্ট এবং প্রসেসিং এর জন্য স্যাস পছন্দ। আর মডেলিং এর জন্য R পছন্দের।&lt;/p&gt;
 &lt;h2 id=&#34;৩-ডটবইজ-সমপরক-ধরণ-রখ&#34;&gt;৩. ডেটাবেইজ সম্পর্কে ধারণা রাখা&lt;/h2&gt;
 &lt;p&gt;ডেটা সায়েন্টিস্টদের কাজের প্রথম ধাপ হলো ডেটাবেইজ থেকে ডেটাকে কোয়েরি করে এনে তারপর কাজ করা। ডেটাবেইজে ম্যাসিভ এমাউন্ট অব ডেটা স্টোর করা থাকে। কোন একটি নির্দিষ্ট বিজনেজ কোশ্চেন উত্তর করতে সব ডেটার দরকার হয়না। শুধু দরকারি ভ্যারিয়েবলগুলোকে নিয়ে মূল ডেটার একটা সাবসেট নিয়ে কাজ করা হয়। সেজন্যই কোয়েরি ল্যাংগুয়েজ জানতে হয়।&lt;/p&gt;
@@ -2279,9 +2268,7 @@ Charlotte, NC 28202, USA&lt;/p&gt;
       <pubDate>Sat, 19 Nov 2016 00:00:00 +0000</pubDate>
       <guid>/post/understanding-data-science-job-market/</guid>
       <description>&lt;p&gt;ডেটা সায়েন্স- আপনার উপযুক্ত জব কোনটি– এটি আজকের লেখার বিষয়। এটি খুবই গুরুত্বপূর্ণ একটি টপিক। কেননা জব মার্কেটে নামার আগেই জানতে হবে কোন ধরনের জবের সাথে আপনার স্কিলসেট মেলে এবং কোন ধরনের জবের ফাংশন কী।&lt;/p&gt;
-&lt;p&gt;হার্ভার্ড বিজনেস রিভিউ 
-&lt;a href=&#34;https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;২০১২ সনে লিখেছিল&lt;/a&gt; একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। 
-&lt;a href=&#34;/post/what-is-datascience-and-who-are-datascientists/&#34;&gt;আগের লেখায়&lt;/a&gt; বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।&lt;/p&gt;
+&lt;p&gt;হার্ভার্ড বিজনেস রিভিউ &lt;a href=&#34;https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;২০১২ সনে লিখেছিল&lt;/a&gt; একবিংশ শতাব্দীর সেক্সিয়েস্ট জব হলো ডেটা সায়েন্স। এর সত্যতা প্রমাণের দরকার নেই; চাকরি বাজারে তাকালেই এর সত্যতা মেলে। &lt;a href=&#34;/post/what-is-datascience-and-who-are-datascientists/&#34;&gt;আগের লেখায়&lt;/a&gt; বলেছিলাম ডেটা সায়েন্স এখন হট টপিক। তেমনি হট এর চাকুরির বাজার। আর বাজারের চাহিদা মেটাতে আমেরিকা এবং কানাডার অনেক বিশ্ববিদ্যালয়ে সম্প্রতি ডেটা সায়েন্স প্রোগ্রাম চালু করেছে। ধারণা করা যায় এই অনেকদিন অব্যাহত থাকবে যতদিন না বাজারে ডেটা সায়েন্টিস্টদের চাহিদার সাথে যোগানের সমন্বয় হয়।&lt;/p&gt;
 &lt;p&gt;বাংলাদেশে এখনো সেভাবে ডেটা সায়েন্স-এর প্রচার কিংবা ডেটা সায়েন্টিস্টদের প্রয়োজনীয়তা অনুভূত হয়নি। তবে অন্যান্য দেশের মতো বাংলাদেশেও ব্যাপকভাবে ডেটা ভিত্তিক সিদ্ধান্তগ্রহণের কাজ দ্রুত শুরু হয়ে যাবে। এখন একটু একটু করে ঢেউ বাংলাদেশে এসে লাগছে। আমার ধারণা আগামী ১ থেকে ২ বছরের মধ্যেই এই ঢেউ সুনামির রূপ ধারণ করবে। যার মানে হলো আমেরিকার মতো বাংলাদেশেও ডেটা ব্যবহার করে ব্যবসায়িক সিদ্ধান্তগ্রহণ করা শুরু হবে। আর তখনই ডেটা সায়েন্স জব মার্কেটে দক্ষ ডেটা সায়েন্টিস্ট ও এনালিস্টদের শুন্যতা অনুভূত হবে।&lt;/p&gt;
 &lt;p&gt;বিদেশে বিশেষ করে আমেরিকাতে গত এক বছরে ডেটা সায়েন্স ফিল্ডে চাকুরির বাজার ব্যাপক প্রসার লাভ করেছে। যার ফলে এই ফিল্ডের সাথে যে-কোনভাবে সম্পর্কযুক্ত সবাই এই মার্কেটে ঢুকতে চাইছে। ফলে প্রতিযোগিতা বাড়ছে তবে এখনো দক্ষ জনবলের অভাব রয়ে গিয়েছে। ফলে যত বেশী জবের সুযোগ আছে তত বেশী প্রার্থী পাওয়া যাচ্ছে না। কিছুদিন আগেও চাকুরি প্রার্থী এবং চাকুরি দাতা কেউই ঠিকমতো জানতো না ডেটা সায়েন্স এবং ডেটা সায়েন্টিস্টদের আসলে কোথায় কাজে লাগানো হবে। কিংবা কী ধরনের দক্ষতা সম্পন্ন লোকদের হায়ার করতে হবে। সে পরিস্থিতি এখনও খুব একটা পরিবর্তিত হয়েছে তা বলা যাবে না তবে আগের চেয়ে পরিশোধিত হয়েছে এবং চাকুরিদাতারা এখন ডেটা সায়েন্টিস্টদের কাজের পরিধি এবং কাজের ধরণ আগের চেয়ে ভালো বুঝতে পারছে এবং সে মোতাবেক দক্ষ ব্যক্তিদের হায়ার করছে। বলা যায় আগামী দিনে কাজের পরিধিগুলো আরো সুনির্দিষ্ট হবে এবং চাকুরি প্রার্থীরা জব মার্কেটে তাদের জায়গা খুঁজে পাবে।&lt;/p&gt;
 &lt;h1 id=&#34;পরসখযনবদর-কভব-এই-বজর-নজদর-উপযগ-জব-খজব&#34;&gt;পরিসংখ্যানবিদরা কীভাবে এই বাজারে নিজেদের উপযোগী জব খুঁজবে?&lt;/h1&gt;
@@ -2331,6 +2318,11 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 
 
 
+
+  
+
+
+
   
   
 
@@ -2344,10 +2336,10 @@ Charlotte, NC 28202, USA&lt;/p&gt;
 
 
 
-&lt;figure&gt;
+&lt;figure id=&#34;figure-র-ডট---একসটরযকট-টরনসফরম-লড---সটযটসটকযল-মডল&#34;&gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/understanding-data-science-job-market/featured_hua002c6c73f163860c09bdce7b1741c74_24852_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;র ডেটা -&amp;gt; এক্সট্র্যাক্ট, ট্রান্সফরম, লোড -&amp;gt; স্ট্যাটিসটিক্যাল মডেলিং&#34;&gt;
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/post/understanding-data-science-job-market/featured_hua002c6c73f163860c09bdce7b1741c74_24852_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;র ডেটা -&amp;amp;gt; এক্সট্র্যাক্ট, ট্রান্সফরম, লোড -&amp;amp;gt; স্ট্যাটিসটিক্যাল মডেলিং&#34;&gt;
 
 
   &lt;img data-src=&#34;/post/understanding-data-science-job-market/featured_hua002c6c73f163860c09bdce7b1741c74_24852_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;893&#34; height=&#34;463&#34;&gt;

@@ -220,84 +220,84 @@ It turns out that the bottom left one fits the current data best. So lets put th
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> 36 </td>
-   <td style="text-align:left;"> 2020-04-12 </td>
-   <td style="text-align:right;"> 139 </td>
-   <td style="text-align:right;"> 142 </td>
-   <td style="text-align:right;"> 621 </td>
-   <td style="text-align:right;"> 840 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 37 </td>
-   <td style="text-align:left;"> 2020-04-13 </td>
-   <td style="text-align:right;"> 182 </td>
-   <td style="text-align:right;"> 172 </td>
-   <td style="text-align:right;"> 803 </td>
-   <td style="text-align:right;"> 1012 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 38 </td>
-   <td style="text-align:left;"> 2020-04-14 </td>
-   <td style="text-align:right;"> 209 </td>
-   <td style="text-align:right;"> 206 </td>
-   <td style="text-align:right;"> 1012 </td>
-   <td style="text-align:right;"> 1218 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 39 </td>
-   <td style="text-align:left;"> 2020-04-15 </td>
-   <td style="text-align:right;"> 219 </td>
-   <td style="text-align:right;"> 248 </td>
-   <td style="text-align:right;"> 1231 </td>
-   <td style="text-align:right;"> 1466 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 40 </td>
-   <td style="text-align:left;"> 2020-04-16 </td>
-   <td style="text-align:right;"> 341 </td>
-   <td style="text-align:right;"> 298 </td>
-   <td style="text-align:right;"> 1572 </td>
-   <td style="text-align:right;"> 1764 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 41 </td>
-   <td style="text-align:left;"> 2020-04-17 </td>
-   <td style="text-align:right;"> 266 </td>
-   <td style="text-align:right;"> 359 </td>
-   <td style="text-align:right;"> 1838 </td>
-   <td style="text-align:right;"> 2123 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> 42 </td>
-   <td style="text-align:left;"> 2020-04-18 </td>
+   <td style="text-align:left;"> 254 </td>
+   <td style="text-align:left;"> 2020-11-16 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 433 </td>
+   <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 2556 </td>
+   <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 43 </td>
-   <td style="text-align:left;"> 2020-04-19 </td>
+   <td style="text-align:left;"> 255 </td>
+   <td style="text-align:left;"> 2020-11-17 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 521 </td>
+   <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 3077 </td>
+   <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 44 </td>
-   <td style="text-align:left;"> 2020-04-20 </td>
+   <td style="text-align:left;"> 256 </td>
+   <td style="text-align:left;"> 2020-11-18 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 626 </td>
+   <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 3703 </td>
+   <td style="text-align:right;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 45 </td>
-   <td style="text-align:left;"> 2020-04-21 </td>
+   <td style="text-align:left;"> 257 </td>
+   <td style="text-align:left;"> 2020-11-19 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 754 </td>
+   <td style="text-align:right;"> 0 </td>
    <td style="text-align:right;"> NA </td>
-   <td style="text-align:right;"> 4457 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 258 </td>
+   <td style="text-align:left;"> 2020-11-20 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 259 </td>
+   <td style="text-align:left;"> 2020-11-21 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 260 </td>
+   <td style="text-align:left;"> 2020-11-22 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 261 </td>
+   <td style="text-align:left;"> 2020-11-23 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 262 </td>
+   <td style="text-align:left;"> 2020-11-24 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 263 </td>
+   <td style="text-align:left;"> 2020-11-25 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0 </td>
   </tr>
 </tbody>
 </table>
