@@ -172,17 +172,6 @@ projects: []
 
 এটি সত্যি যে সব ধরনের জবের জন্য প্রস্তুতি নেয়া কারো পক্ষেই সম্ভব নয়। সেজন্য আপনি যে বিষয়ে পড়াশুনা করছেন সেই বিষয় ও তার সাথে সম্পর্কযুক্ত চাকুরীগুলোর কথা টার্গেট করে প্রস্তুতি নিতে পারেন।
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-6844136270310089"
-     data-ad-slot="7220073377"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 এ লক্ষে স্কিল ডেভেলপমেন্ট বা দক্ষতা অর্জনের জন্য বাড়তি কোর্সওয়ার্ক বা ওয়ার্কশপ করার প্রয়োজন হলে সেগুলো আপনার পরিকল্পনার অংশ করে নিন।
 
 শেষ করতে চাই একটি মেসেজ দিয়ে– পাঁচ বছর পরে যে প্রশ্ন নিজেকে করবেন– আহারে কেন পাঁচ বছর আগে এভাবে প্রস্তুত নেইনি– সেই চিত্রটি কল্পনা করে আজ থেকেই নিজেকে তৈরি করা শুরু করুন।
