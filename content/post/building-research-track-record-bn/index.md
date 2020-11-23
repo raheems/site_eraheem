@@ -6,16 +6,15 @@ date: '2020-03-01'
 slug: 'building-research-track-record-bn'
 subtitle: 'স্পেশালটি এরিয়া ডেভলপ করা গবেষক হিসেবে প্রতিষ্ঠিত হওয়ার অন্যতম ধাপ যা নতুনরা প্রায়ই বুঝতে পারে না'
 summary: 'নতুন গবেষকরা তাদের ক্যারিয়ারের শুরুতে একটি ব্যাপার পুরোপুরি অনুধাবন করতে পারে না। সেটি হলো ট্র্যাক রেকর্ড। ট্র্যাক রেকর্ড বলতে বোঝায় record of performance — অর্থাৎ কর্মদক্ষতার প্রমাণ। গবেষণার ট্র্যাক রেকর্ড ও সেরকমই।'
-categories: ["Mentoring"]
+categories: ["Research"]
 tags: ["গবেষণা", "বাংলা"]
-lastmod: '2020-03-01'
 
 featured: no
 image:
   placement: 1
   caption: "Photo by Lysander Yuen on Unsplash"
   focal_point: "Center"
-  preview_only: false
+  preview_only: true
 projects: []
 
 ---
@@ -112,6 +111,17 @@ projects: []
 
 উপরিউক্ত বর্ণনার আলোকে এইটুকু বলতে পারি তরুণ শিক্ষার্থীরা নিজেদেরকে গবেষক হিসেবে প্রতিষ্ঠা করতে চাইলে কোন একটি বিষয় সম্পর্কে আগ্রহ সৃষ্টি করতে হবে। সেরকম আগ্রহ শুধু ইচ্ছে করলেই সৃষ্টি হয় না বরং একাডেমিক কোরস। করার সময় কোন একটি বিশেষ বিষয়বস্তু সম্পর্কে আগ্রহ জন্মাতে পারে। কিংবা পাঠ্যবইয়ের বাহিরের কোন একটি বিষয়ের প্রতিও কারো আগ্রহ জন্মাতে পারে। ‌ সে ক্ষেত্রে সেই বিষয়ের তথ্য জ্ঞান নিজে পড়াশোনা করে অর্জন করা যেতে পারে। ‌এভাবে নিজেকে তথ্য জ্ঞানে প্রাথমিকভাবে সমৃদ্ধ করার পর সেই বিষয়ের একজন গবেষকের সাথে ইন্টার্নশিপ করে গবেষণায় হাতে খড়ি হতে পারে।
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6844136270310089"
+     data-ad-slot="7220073377"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## নিজেকে গবেষণার জন্য প্রস্তুত করা
 
 - যে বিষয় সম্পর্কে আগ্রহ সৃষ্টি হয়েছে এবং যে বিষয়টি নিয়ে গবেষণার করার ইচ্ছা জেগেছে সেই বিষয় সম্পর্কে তত্ত্বীয় জ্ঞান অর্জন করা ভালো হবে। তত্ত্বীয় জ্ঞান বলতে বিষয়টি সম্পর্কে ভালোমতো ধারণা নিতে হবে।
@@ -129,6 +139,17 @@ projects: []
 - সিনিয়র গবেষকের তত্ত্বাবধানে গবেষণাপত্রটি সম্পন্ন করার জন্য আর কী কী দরকার সে ধাপগুলো সম্পন্ন করে গবেষণার কাজটি শুরু করবেন। গবেষণা শেষ হলে সে গবেষণার কাজগুলোকে সেকশন আকারে সাজিয়ে ম্যানুস্ক্রিপ্ট তৈরী করবেন।
     
 - প্রথম ড্রাফ্ট তৈরি হলে নিজে আরও কয়েকবার পড়ে সংশোধন ও পরিবর্ধন করে তারপর সিনিয়র রিসার্চার বা মেন্টর এর কাছে পাঠাতে পারেন তার মতামতের জন্য।
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6844136270310089"
+     data-ad-slot="7220073377"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## শেষ কথা
 

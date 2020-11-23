@@ -18,7 +18,7 @@ organizations:
   url: "https://www.phastar.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Supporting pharmaceutical clients generating real world evidence (RWE) from real world data (RWD). The best way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
+bio: I support pharmaceutical companies to generate real world evidence (RWE) from real world data (RWD). The easiest way to get a response from me is to leave a comment down below. For career advice, please use email. Opinion expressed here are my own.
 
 interests:
 - Statistical Inference
