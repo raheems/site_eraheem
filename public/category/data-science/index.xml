@@ -5,12 +5,49 @@
     <link>/category/data-science/</link>
       <atom:link href="/category/data-science/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Science</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/eraheem_socialcard.jpg</url>
       <title>Data Science</title>
       <link>/category/data-science/</link>
     </image>
+    
+    <item>
+      <title>Git Essentials for Data Scientists</title>
+      <link>/post/git-essentials-data-scientists/</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/git-essentials-data-scientists/</guid>
+      <description>&lt;p&gt;I describe what is git and how to use git in your data science or analytic workflow. Git is mostly used by software developers. But as data scientists are more and more working with software developers and data enginerss and other devops people, they need to understand at least the very basics of git and how to use it.&lt;/p&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#what-is-git&#34;&gt;What is git?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#why-git&#34;&gt;Why git?&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;h2 id=&#34;what-is-git&#34;&gt;What is git?&lt;/h2&gt;
+&lt;p&gt;The way I see giit is the following. It may not be technically correct, but its how I understand it.&lt;/p&gt;
+&lt;p&gt;Git is a version control system which can be used as a tool to track all the changes you make to your tex-like documents such as codes written in your favorite languages&amp;ndash;R, Python, SAS, SQL or whatever.&lt;/p&gt;
+&lt;p&gt;You can also think of git as a central backup of you codes which you can access, download, make changes, and then backup them up again using only a handful of commands.&lt;/p&gt;
+&lt;h2 id=&#34;why-git&#34;&gt;Why git?&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;git pull
+git add --all
+git commit -m &amp;quot;updated the feature 1&amp;quot;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph LR
+A[Repository] --&amp;gt;|Text| -B(Local repository)
+A[Repository] --&amp;gt; B(Remote repository)
+B(Remote repository) --&amp;gt; C(git pull &amp;lt;br&amp;gt; git add --all &amp;lt;br&amp;gt; git commit -m &#39;commit message&#39; &amp;lt;br&amp;gt; git push origin master )
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>করোনা ভাইরাসে প্রথম মৃত্যু থেকে ক্রমযোজিত মৃতের সংখ্যা ও বাংলাদেশের তুলনামূলক অবস্হান</title>

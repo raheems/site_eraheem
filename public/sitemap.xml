@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/data-science/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/git/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/git-essentials-data-scientists/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/advanced-regression-models-with-sas-and-r/</loc>
     <lastmod>2020-11-20T00:00:00+00:00</lastmod>
   </url>
@@ -13,21 +48,6 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tag/r/</loc>
     <lastmod>2020-11-20T00:00:00+00:00</lastmod>
   </url>
@@ -35,11 +55,6 @@
   <url>
     <loc>/tag/sas/</loc>
     <lastmod>2020-11-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -120,11 +135,6 @@
   <url>
     <loc>/tag/sars-cov2/</loc>
     <lastmod>2020-03-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/data-science/</loc>
-    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>

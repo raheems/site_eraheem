@@ -11,7 +11,6 @@ header:
   caption: ''
   image: ''
 ---
-<script data-ad-client="ca-pub-6844136270310089" async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 Thinking of using github? Great!
 
