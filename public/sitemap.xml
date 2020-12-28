@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+    <loc>/category/career/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/data-science/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/internship/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/internshi-in-usa/</loc>
+    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/data-science/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,16 +49,6 @@
   
   <url>
     <loc>/post/git-essentials-data-scientists/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -74,11 +89,6 @@
   
   <url>
     <loc>/post/change-fisher-lecture-after-david-blackwell/</loc>
-    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/category/career/</loc>
     <lastmod>2020-11-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -183,11 +193,6 @@
   </url>
   
   <url>
-    <loc>/category/mentoring/</loc>
-    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/author/mohammad-sorowar-hossain/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -213,6 +218,11 @@
   </url>
   
   <url>
+    <loc>/category/research/</loc>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/building-research-track-record-bn/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -229,6 +239,11 @@
   
   <url>
     <loc>/tag/etiquette/</loc>
+    <lastmod>2019-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/mentoring/</loc>
     <lastmod>2019-07-13T00:00:00+00:00</lastmod>
   </url>
   
