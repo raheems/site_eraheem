@@ -18,7 +18,7 @@ image:
   preview_only: true
 projects: []
 diagram: false
-draft: true
+draft: false
 ---
 
 
